@@ -1,0 +1,32 @@
+digraph Sistem {
+  graph [rankdir=TB, bgcolor="white", pad="0.28", nodesep="0.55", ranksep="0.68", splines=polyline,
+    fontname="DejaVu Sans", fontsize=19, labelloc=t,
+    label="Şekil 1. Planlanan sistem mimarisi\nESP32 ve enkoderli iki motorlu araç"];
+  node [shape=box, style="rounded,filled", fillcolor="#F1F5F9", color="#475569", penwidth=1.3,
+    fontname="DejaVu Sans", fontsize=12, margin="0.16,0.12"];
+  edge [color="#475569", arrowsize=0.75, fontname="DejaVu Sans", fontsize=10, penwidth=1.2];
+
+  arayuz [label="Kullanıcı arayüzü\nBilgisayar öncelikli, telefon erişimli\nWaypoint girişi ve durum gösterimi", fillcolor="#DBEAFE", color="#2563EB"];
+  mesafe [label="Mesafe sensörleri\nEngel ve çevre açıklığı\nTür, sayı ve yerleşim seçilecek"];
+  enkoder [label="Sol ve sağ enkoder\nTekerlek dönüş ölçümleri", fillcolor="#DCFCE7", color="#15803D"];
+  imu [label="IMU desteği\nDeğerlendirilen seçenek", style="rounded,dashed,filled", fillcolor="#FFFFFF", color="#94A3B8"];
+  kontrol [label="ESP32\nKonum kestirimi\nRota ve kaçınma kontrolü\nDurum / veri kaydı", fillcolor="#DBEAFE", color="#2563EB", penwidth=1.8];
+  surucu [label="Motor sürücüsü\nModel, motorlara göre seçilecek"];
+  motor [label="Sol ve sağ tahrik motoru\nİki motor bağımsız kontrol", fillcolor="#DCFCE7", color="#15803D"];
+
+  {rank=min; arayuz; imu;}
+  {rank=same; mesafe; kontrol; surucu;}
+  {rank=same; enkoder; motor;}
+  arayuz -> kontrol [dir=both, label="Rota / durum aktarımı\nWi-Fi: önerilen bağlantı", color="#2563EB"];
+  mesafe -> kontrol [label="Mesafe verileri"];
+  enkoder -> kontrol [constraint=false];
+  imu -> kontrol [style=dashed, color="#94A3B8", constraint=false];
+  kontrol -> surucu [label="Motor kontrol komutları"];
+  surucu -> motor [label="Motor sürme"];
+  motor:w -> enkoder:e [label="Tekerlek dönüşü", style=dashed, constraint=false, color="#15803D"];
+
+  aciklama [shape=plain, style="", fontsize=10, fontcolor="#64748B",
+    label="Tasarım şemasıdır; tamamlanmış prototip göstermez.\nGüç altyapısı ve parça modelleri ayrıca seçilecektir.\nKesik IMU bağlantısı, henüz seçilmemiş bir seçeneği gösterir."];
+  {rank=sink; aciklama;}
+  motor -> aciklama [style=invis];
+}

@@ -21,6 +21,7 @@ Proje, arayüzde tanımlanan waypoint rotasını izleyen küçük bir ESP32 taba
 
 ## Hazırlık ve kaynak notları
 
+- [Başvuru görselleri: sistem şeması, çalışma akışı ve deney alanı](docs/2209-A/gorseller/README.md)
 - [Literatür karşılaştırması ve okuma durumu](docs/2209-A/LITERATUR_KARSILASTIRMASI.md)
 - [2026 başvuru kuralları ve resmî kaynaklar](docs/2209-A/2026_BASVURU_KURALLARI.md)
 - [Proje kararları ve açık bilgiler](docs/2209-A/PROJE_NOTLARI.md)

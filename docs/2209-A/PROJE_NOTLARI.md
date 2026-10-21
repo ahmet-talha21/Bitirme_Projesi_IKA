@@ -38,6 +38,8 @@ Başvuru sahibinin bildirdiği kurum, bölüm, sınıf, danışman ve tek yürü
 
 [Yöntem bölümünün ilk metin taslağı](YONTEM_TASLAGI.md) hazırlandı. Enkoderli iki motorlu şasi kullanıcı tarafından seçildi. Bug 2 mantığıyla durum makinesi öneri durumunda; algoritma, ürün seçimi ve sayısal deney parametreleri henüz kesinleşmedi.
 
+[Başvuru görselleri](gorseller/README.md) hazırlandı: sistem mimarisi, önerilen kontrol akışı ve örnek deney alanı. Bunlar özgün teknik çizimlerdir; fotoğraf, gerçek deney kaydı veya simülasyon sonucu değildir. Kullanıcıdan şu anda çekim yapması beklenmiyor. İleride deney ölçümünde kamera kullanımı ayrı bir seçenek olarak açık kalıyor.
+
 - Ölçülü waypoint ekranının fiziksel alanla eşleştirilmesi ve başlangıç noktası/yönünün tanımlanması.
 - Planlanan 3 × 3 metre alanın fiziksel yeri, kesin araç ölçüleri ve donanım seçildikten sonra parkurun yeterliliğinin değerlendirilmesi.
 - Manuel kontrolün ayrıca gerekip gerekmediği.

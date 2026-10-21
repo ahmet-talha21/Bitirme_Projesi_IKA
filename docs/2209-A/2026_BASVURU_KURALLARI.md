@@ -48,5 +48,5 @@ Kontrol tarihi: 21 Ekim 2026. Bu not, aşağıdaki resmî kaynaklardan hazırlan
 
 - Çağrı duyurusunun 8.4 ve 8.5 maddeleri ÜYZ rehberine uyumu ve içeriğin yürütücü/danışman tarafından kontrol edilmesini gerektiriyor.
 - Rehberin 1.2 bölümüne göre taslak oluşturma gibi önemli ölçüde kullanım, başvuru sistemindeki ilgili alanda araç/versiyon, kullanım yeri ve kapsamıyla beyan edilecek. Görünmeyen bir model sürümü tahmin edilmeyecek.
-- Bu çalışma sürecinde ChatGPT/Codex; resmî belgelerin incelenmesi, hazırlık notlarının düzenlenmesi, teknik seçeneklerin tartışılması ve ilk amaç taslağının oluşturulmasında kullanıldı. Sonraki kullanımlar da gerçeğe uygun olarak kaydedilecek.
+- Bu çalışma sürecinde ChatGPT/Codex; resmî belgelerin incelenmesi, hazırlık notlarının düzenlenmesi, teknik seçeneklerin tartışılması, literatür karşılaştırması, bölüm taslakları ve sistem/akış/deney alanı şemalarını üreten Graphviz/Python kaynaklarının hazırlanmasında kullanıldı. Sonraki kullanımlar da gerçeğe uygun olarak kaydedilecek. Görsellerin destekle hazırlandığı şekil açıklamalarında belirtildi.
 - Taslak nihai metin sayılmayacak; kullanıcı ve akademik danışman doğruluk, kaynaklar, özgün katkı ve güncelliği kontrol edecek. Kişisel, gizli veya üçüncü kişilere ait özel bilgiler paylaşılmayacak.

@@ -1,0 +1,45 @@
+digraph Akis {
+  graph [rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.45", ranksep="0.48", splines=polyline,
+    fontname="DejaVu Sans", fontsize=18, labelloc=t,
+    label="Şekil 2. Önerilen kontrol akışı\nBug 2 yaklaşımına dayalı durum makinesi taslağı"];
+  node [shape=box, style="rounded,filled", fillcolor="#F1F5F9", color="#475569", penwidth=1.2,
+    fontname="DejaVu Sans", fontsize=11, margin="0.15,0.10"];
+  edge [color="#475569", arrowsize=0.7, fontname="DejaVu Sans", fontsize=10, penwidth=1.1];
+
+  basla [shape=oval, label="Başlat\nRota ve başlangıç pozu tanımlı", fillcolor="#DBEAFE", color="#2563EB"];
+  oku [label="Sensör ve konum verilerini al\nWaypoint sırasını güncelle"];
+  hata [shape=diamond, label="Hata veya\nsüre aşımı?", fillcolor="#FFFFFF"];
+  dur [label="Dur ve nedeni kaydet", fillcolor="#FEE2E2", color="#B91C1C"];
+  bitti [shape=diamond, label="Rota\ntamamlandı mı?", fillcolor="#FFFFFF"];
+  bitir [shape=oval, label="Görevi bitir\nSonuçları kaydet", fillcolor="#DCFCE7", color="#15803D"];
+  durum [shape=diamond, label="Kaçınma durumu\netkin mi?", fillcolor="#FFFFFF"];
+  engel [shape=diamond, label="İlerleme yönünde\nengel var mı?", fillcolor="#FFFFFF"];
+  izle [label="Waypoint takibini sürdür", fillcolor="#DBEAFE", color="#2563EB"];
+  kacin [label="Yavaşla / dur\nKaçınmaya geç\nKarşılaşma konumunu kaydet", fillcolor="#FEF3C7", color="#B45309"];
+  cevre [label="Mesafe verileriyle\nengel çevresini takip et", fillcolor="#FEF3C7", color="#B45309"];
+  katil [shape=diamond, label="Rotaya katılma\nkoşulları sağlandı mı?", fillcolor="#FFFFFF"];
+  geri [label="Rota izlemeye geç", fillcolor="#DBEAFE", color="#2563EB"];
+  dongu [shape=oval, label="Yeni kontrol döngüsü", fillcolor="#F8FAFC"];
+
+  basla -> oku;
+  oku -> hata;
+  hata -> dur [label="Evet", color="#B91C1C"];
+  hata -> bitti [label="Hayır"];
+  bitti -> bitir [label="Evet", color="#15803D"];
+  bitti -> durum [label="Hayır"];
+  durum -> engel [label="Hayır"];
+  durum -> cevre [label="Evet"];
+  engel -> izle [label="Hayır"];
+  engel -> kacin [label="Evet"];
+  cevre -> katil;
+  katil -> geri [label="Evet"];
+  katil -> dongu [label="Hayır"];
+  izle -> dongu;
+  kacin -> dongu;
+  geri -> dongu;
+  dongu -> oku [constraint=false, color="#94A3B8"];
+
+  not [shape=plain, style="", fontsize=10, fontcolor="#64748B",
+    label="Rotaya katılma: doğrultuya yakınlık + hedefe ilerleme + yeterli açıklık.\nAlgoritma, eşikler ve sensör düzeni henüz kesinleşmedi.\nBu akış, uygulanmış veya başarıyla test edilmiş yazılımı göstermez."];
+  dongu -> not [style=invis];
+}
