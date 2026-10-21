@@ -1,47 +1,45 @@
-# Başvuru için hazırlanan tasarım görselleri
+# Başvuru görselleri — yenilenen sürüm
 
-Bu çizimler, 21 Ekim 2026 tarihli proje kararları ve teknik öneriler temel alınarak özgün biçimde hazırlandı. Fotoğraf, çalışır prototip görüntüsü veya deney sonucu değildir. Şekiller ChatGPT/Codex desteğiyle Graphviz ve Python/Matplotlib kullanılarak oluşturuldu; bu destek başvurunun ÜYZ kullanım beyanına dahil edilecek.
+Güncelleme: 21 Ekim 2026. Üç şekil, kullanıcının daha açıklayıcı ve görsel olarak özenli tasarım isteğiyle yeniden hazırlandı. Paylaşılan kabul almış örneklerin kısa blok, simge ve aşamalı anlatımı incelendi; onların metinleri, şekilleri veya sonuçları kopyalanmadı.
 
-TYBS'ye eklemek için PNG dosyaları; düzenleme ve yüksek çözünürlüklü dışa aktarım için SVG/PDF dosyaları bulunuyor. Yerleştirmeden sonra görünürlük, boyut ve sayfa taşmaları ön izlemeyle kontrol edilecek. Nihai şekil numaraları metindeki sıraya göre ayarlanacak.
+Bu şekiller tasarım önerisidir; fotoğraf, uygulanmış devre, yapılmış deney veya simülasyon sonucu değildir. Sensör ve araç simgeleri belirli bir ürün modelini ya da satın alınmış donanımı göstermez. Çizimler image_gen aracıyla ÜYZ desteği kullanılarak yenilendi; [yenileme kaydı](kaynaklar/yenileme_notlari.md) bu kullanımın başvuruda beyan edilmesine yardımcı olacaktır.
 
-## Şekil 1 — planlanan sistem mimarisi
+TYBS için PNG dosyaları, birlikte incelemek için [PDF paketi](gorseller_toplu.pdf) bulunuyor. Güncel PDF'ler PNG'lerin belgeye yerleştirilmiş hâlidir; düzenlenebilir vektör çizim değildir. İlk sürümün PNG/SVG/PDF ve kaynakları [arşivde](arsiv/ilk_surum/README.md) korunuyor. Nihai şekil numaraları ve TYBS'deki okunaklılık ön izlemeyle kontrol edilecek.
 
-![Planlanan sistem mimarisi](sekil_1_sistem_mimarisi.png)
+## Şekil 1 — sistem mimarisi
 
-**Önerilen açıklama:** Kullanıcı arayüzü, ESP32 kontrol birimi, mesafe algılama, enkoder geri bildirimi ve iki motorun sürülmesi arasındaki planlanan veri akışı. Kesik çizgili IMU bloğu henüz seçilmemiş bir seçenektir. Parça modelleri ve güç altyapısı ayrıca belirlenecektir. Çizim ChatGPT/Codex desteğiyle hazırlanmıştır.
+![Sistem mimarisi](sekil_1_sistem_mimarisi.png)
 
-[PNG](sekil_1_sistem_mimarisi.png) · [SVG](sekil_1_sistem_mimarisi.svg) · [PDF](sekil_1_sistem_mimarisi.pdf)
+**Önerilen açıklama:** Kullanıcı arayüzü, algılama, ESP32 kontrol birimi ve motor sürme işlevleri arasındaki planlanan veri akışı. Mesafe ölçümleri ve enkoder geri bildirimi kontrol birimine aktarılır; motor komutları sürücü üzerinden iki motora iletilir. Wi-Fi önerilen arayüz bağlantısıdır. Simgeler temsilidir; sensör türleri, parça modelleri ve güç altyapısı ayrıca belirlenecektir. Çizim ÜYZ desteğiyle hazırlanmıştır.
 
-## Şekil 2 — önerilen kontrol akışı
+[PNG](sekil_1_sistem_mimarisi.png) · [PDF](sekil_1_sistem_mimarisi.pdf)
+
+## Şekil 2 — önerilen çalışma akışı
 
 ![Önerilen çalışma akışı](sekil_2_calisma_akisi.png)
 
-**Önerilen açıklama:** Rota takibi, engel algılama, kaçınma ve rotaya katılma durumlarının Bug 2 yaklaşımı temelinde önerilen akışı. Algoritma, eşikler ve sensör düzeni henüz kesinleşmemiştir. Akış şeması, uygulanmış veya test edilmiş yazılım sonucu değildir. Çizim ChatGPT/Codex desteğiyle hazırlanmıştır.
+**Önerilen açıklama:** Rota izleme ve engelden kaçınma durumlarının iki kolda gösterildiği kontrol akışı önerisi. “A” bağlantıları sensör ve konum verilerinin güncellendiği yeni kontrol döngüsüne dönüşü gösterir. Kaçınma etkinken engel çevresi izlenir ve rotaya katılma koşulları değerlendirilir; etkin değilken waypoint takibi ve engel tespiti yürütülür. Geçersiz veri veya süre aşımında güvenli duruş öngörülür. Algoritma, eşikler ve sensör düzeni henüz kesinleşmemiştir. Çizim ÜYZ desteğiyle hazırlanmıştır.
 
-[PNG](sekil_2_calisma_akisi.png) · [SVG](sekil_2_calisma_akisi.svg) · [PDF](sekil_2_calisma_akisi.pdf)
+Uzun dış dönüş oku kaldırıldı; karar dalları Evet/Hayır etiketleri ve kısa bağlantılarla düzenlendi. “A” işareti fiziksel kablo veya ek sensör anlamına gelmez.
 
-## Şekil 3 — örnek deney alanı planı
+[PNG](sekil_2_calisma_akisi.png) · [PDF](sekil_2_calisma_akisi.pdf)
 
-![Planlanan deney alanı](sekil_3_deney_alani.png)
+## Şekil 3 — planlanan deney düzeni
 
-**Önerilen açıklama:** Yaklaşık 3 × 3 metre olarak planlanan düz zeminli deney alanına ait örnek waypoint rotası ve sabit engel yerleşimi. Noktalar, engel sayısı, boyutları ve konumları anlatım amaçlı seçilmiştir; nihai deney düzeni değildir. Kesik mavi çizgi kullanıcı tarafından tanımlanabilecek referans rotayı temsil eder. Çizgi engellerden geçebilir; kaçınma sırasında araç bu referanstan geçici olarak ayrılacaktır. Ölçülmüş veya simülasyonla elde edilmiş bir kaçınma yolu gösterilmemektedir. Çizim ChatGPT/Codex desteğiyle hazırlanmıştır.
+![Planlanan deney düzeni](sekil_3_deney_alani.png)
 
-[PNG](sekil_3_deney_alani.png) · [SVG](sekil_3_deney_alani.svg) · [PDF](sekil_3_deney_alani.pdf)
+**Önerilen açıklama:** Yaklaşık 3 × 3 metre olarak planlanan deney alanında örnek waypoint rotası, sabit engel ve kaçınma davranışının temsili gösterimi. Kesik mavi çizgi referans rotayı, turkuaz çizgi anlatım amacıyla çizilmiş olası bir kaçınma yolunu gösterir. Sağdaki aşamalar rota izleme, algılama, kaçınma ve rotaya katılma işlevlerini açıklar. Noktalar, engel boyutları ve konumu, algılama alanı ve kaçınma eğrisi nihai ölçülendirme değildir; çizimden sayısal açıklık veya performans sonucu çıkarılmayacaktır. Kaçınma eğrisi deney veya simülasyon verisi değildir; nihai algoritmanın tam olarak bu eğriyi izleyeceği iddia edilmemektedir. Çizim ÜYZ desteğiyle hazırlanmıştır.
 
-## Çizim ile deney kaydı arasındaki fark
+[PNG](sekil_3_deney_alani.png) · [PDF](sekil_3_deney_alani.pdf)
 
-- Bu şekiller başvuruya planlanan sistemi ve yöntemi açıklamak için hazırlanmıştır.
-- Araç geliştirildiğinde gerçek hareketin ölçülmesi ayrı bir iştir. Sabit kamera, o aşamada bağımsız referans ölçümü için değerlendirilen seçeneklerden biridir; kullanıcının kamera erişimi henüz doğrulanmadı.
-- Şekilleri hazırlamak için kullanıcının şu anda araç kurması, fotoğraf veya video çekmesi gerekmiyor.
+## Dosyalar ve yeniden paketleme
 
-## Yeniden oluşturma
+Şekilleri hazırlamak için şu anda araç kurulması veya fotoğraf/video çekilmesi gerekmiyor. İleride gerçek hareketin bağımsız ölçülmesi ayrı bir iştir; kamera o aşama için değerlendirilen bir seçenektir.
 
-Gereksinimler: Python 3, Matplotlib ve Graphviz `dot`. Bu ortamda mevcut araçlarla çizimler oluşturuldu ve PNG çıktıları görsel olarak kontrol edildi.
-
-Depo kökünden:
+Yeni PNG çıktıları görsel olarak kontrol edildi. Mevcut PNG'leri içeriklerini değiştirmeden PDF belgelere yerleştirmek için Python 3 ve ReportLab kullanılıyor. Depo kökünden:
 
 ```sh
-python docs/2209-A/gorseller/kaynaklar/olustur.py
+python docs/2209-A/gorseller/kaynaklar/pdf_paketle.py
 ```
 
-İlk iki şeklin düzenlenebilir kaynakları `kaynaklar/*.dot`, üçüncü şeklin çizim kodu `kaynaklar/olustur.py` içindedir. Şekiller dış kaynak görseli kopyalanarak üretilmedi. Yöntemin kavramsal kaynakları ilgili [yöntem taslağında](../YONTEM_TASLAGI.md) belirtilmiştir.
+İlk sürümün Graphviz/Matplotlib kaynakları ve çıktıları [arşivde](arsiv/ilk_surum/README.md) bulunuyor; bunlar güncel görselleri yeniden üretmez. Yöntemin kavramsal kaynakları [yöntem taslağında](../YONTEM_TASLAGI.md) belirtilmiştir.
