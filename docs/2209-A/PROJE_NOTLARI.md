@@ -38,6 +38,8 @@ Başvuru sahibinin bildirdiği kurum, bölüm, sınıf, danışman ve tek yürü
 
 [Yöntem bölümünün ilk metin taslağı](YONTEM_TASLAGI.md) hazırlandı. Enkoderli iki motorlu şasi kullanıcı tarafından seçildi. Bug 2 mantığıyla durum makinesi öneri durumunda; algoritma, ürün seçimi ve sayısal deney parametreleri henüz kesinleşmedi.
 
+[Risk yönetimi](RISK_YONETIMI_TASLAGI.md) ve [yaygın etki](YAYGIN_ETKI_TASLAGI.md) için ilk taslaklar hazırlandı. Önlemler ve çıktı miktarları plan önerileridir; kullanıcı tarafından kesinleştirilmiş donanım, yeni ekipman erişimi veya gerçekleşmiş başarı olarak sunulmayacak. [Başvuru durumu ve kalan işler](BASVURU_DURUMU_VE_EKSIKLER.md) bölüm bazında izleniyor.
+
 [Başvuru görselleri](gorseller/README.md), kullanıcının daha açıklayıcı ve görsel olarak özenli tasarım isteğiyle yenilendi: simgeli sistem mimarisi, dış dönüş oku yerine “A” bağlantıları kullanan iki kollu kontrol akışı ve temsili kaçınma yolunu da gösteren deney şeması. İlk sürüm arşivlendi. Yeni şekiller ÜYZ destekli tasarım çizimleridir; fotoğraf, gerçek deney kaydı veya simülasyon sonucu değildir. Kullanıcıdan şu anda çekim yapması beklenmiyor. İleride deney ölçümünde kamera kullanımı ayrı bir seçenek olarak açık kalıyor.
 
 - Ölçülü waypoint ekranının fiziksel alanla eşleştirilmesi ve başlangıç noktası/yönünün tanımlanması.

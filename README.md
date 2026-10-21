@@ -18,9 +18,12 @@ Proje, arayüzde tanımlanan waypoint rotasını izleyen küçük bir ESP32 taba
 | [1.1 Bilimsel nitelik taslağı](docs/2209-A/BILIMSEL_NITELIK_TASLAGI.md) | Konunun önemi, ilgili çalışmalar, araştırma sorusu ve beklenen katkı. |
 | [Amaç ve hedefler taslağı](docs/2209-A/AMAC_VE_KAPSAM_TASLAGI.md) | Projenin kapsamı ve geliştirilecek temel işlevler. |
 | [2 Yöntem taslağı](docs/2209-A/YONTEM_TASLAGI.md) | Önerilen mimari, kaçınma yaklaşımı, deney değişkenleri ve ölçüm düzeni. |
+| [3.2 Risk yönetimi taslağı](docs/2209-A/RISK_YONETIMI_TASLAGI.md) | Olası teknik sorunlar, önleyici kontroller ve temel hedefleri koruyan B planları. |
+| [4 Yaygın etki taslağı](docs/2209-A/YAYGIN_ETKI_TASLAGI.md) | Beklenen prototip, arayüz, deney kayıtları ve teknik dokümantasyon çıktıları. |
 
 ## Hazırlık ve kaynak notları
 
+- [Başvuru durumu, kalan işler ve önerilen tamamlama sırası](docs/2209-A/BASVURU_DURUMU_VE_EKSIKLER.md)
 - [Başvuru görselleri: sistem şeması, çalışma akışı ve deney alanı](docs/2209-A/gorseller/README.md)
 - [Literatür karşılaştırması ve okuma durumu](docs/2209-A/LITERATUR_KARSILASTIRMASI.md)
 - [2026 başvuru kuralları ve resmî kaynaklar](docs/2209-A/2026_BASVURU_KURALLARI.md)
