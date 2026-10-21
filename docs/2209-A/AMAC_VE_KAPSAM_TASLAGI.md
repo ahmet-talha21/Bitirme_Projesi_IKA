@@ -12,6 +12,8 @@ Bu projenin amacı, kullanıcı tarafından belirlenen bir rotada ilerlerken sab
 
 Kullanıcı arayüzünde bilgisayardan kullanım öncelikli olacak, telefondan erişim de hedeflenecektir. Prototipin küçük RC araç ölçeğinde ve düz zeminde kullanılması planlanmaktadır. İlk deneyler için yaklaşık 3 × 3 metre alan düşünülmektedir; alanın uygunluğu araç ölçüleri ve hareket kabiliyeti belirlendikten sonra değerlendirilecektir. İlk rota ekranı ölçülü ızgara olacak; ölçekli mekân krokisi sonraki aşamada isteğe bağlı olarak değerlendirilebilecektir.
 
+Hareket altyapısı, iki motorun bağımsız kontrol edildiği ve tekerlek dönüşlerinin enkoderlerle ölçüldüğü bir şasi üzerine kurulacaktır. Motor, sürücü ve sensör modelleri ayrıca seçilecektir.
+
 Henüz fiziksel geliştirme veya deney yapılmamıştır. Bu metin planlanan çalışmayı tanımlar.
 
 ## Araştırma sorusu adayı — kullanıcı ve literatür değerlendirmesi gerekiyor

@@ -1,6 +1,6 @@
 # 2. Yöntem — ilk bölüm taslağı
 
-Durum: Kullanıcının ve danışmanın incelemesine açık öneri. İki motorlu enkoderli şasi ve Bug 2 tabanlı yaklaşım öneriliyor; bunlar kullanıcı tarafından henüz kesinleştirilmedi. Sayısal hedefler, sensör modelleri ve referans ölçüm düzeni seçilmeden bu metin nihai TYBS içeriği olarak aktarılmayacak. Deney gerçekleştirilmiş değildir.
+Durum: Kullanıcının ve danışmanın incelemesine açık çalışma taslağı. İki motorlu enkoderli şasi kullanıcı tarafından seçildi; Bug 2 tabanlı yaklaşım öneri durumunda. Sayısal hedefler, sensör modelleri ve referans ölçüm düzeni seçilmeden bu metin nihai TYBS içeriği olarak aktarılmayacak. Deney gerçekleştirilmiş değildir.
 
 ## 2.1. Araştırma tasarımı
 
@@ -10,7 +10,7 @@ Koordinat tabanlı uygulama verilerinin ESP32 tabanlı mobil robota aktarılmas�
 
 ## 2.2. Donanım ve konum kestirimi önerisi
 
-Önerilen platform, iki tahrik tekerinin bağımsız kontrol edildiği küçük bir şasi, enkoderli motorlar, ESP32, motor sürücüsü, mesafe sensörleri ve uygun güç altyapısından oluşacaktır. Tekerlek dönüşlerinden göreli hareketin hesaplanması için diferansiyel sürüş kinematiği kullanılabilecektir (Dellaert ve Hutchinson, t.y.). Motor, sürücü ve besleme seçimi elektriksel gereksinimler birlikte kontrol edilerek yapılacaktır. Engel sensörlerinin türü, sayısı ve yerleşimi; algılama mesafesi, yüzey davranışı, güncelleme hızı ve kaçınma sırasında gerekli ön/yan kapsama göre seçilecektir.
+Platform, iki tahrik tekerinin bağımsız kontrol edildiği küçük bir şasi ve enkoderli motorlar üzerine kurulacaktır. ESP32, motor sürücüsü, mesafe sensörleri ve uygun güç altyapısının bütünleştirilmesi planlanmaktadır. Tekerlek dönüşlerinden göreli hareketin hesaplanması için diferansiyel sürüş kinematiği kullanılabilecektir (Dellaert ve Hutchinson, t.y.). Motor, sürücü ve besleme modelleri elektriksel gereksinimler birlikte kontrol edilerek seçilecektir. Engel sensörlerinin türü, sayısı ve yerleşimi; algılama mesafesi, yüzey davranışı, güncelleme hızı ve kaçınma sırasında gerekli ön/yan kapsama göre seçilecektir.
 
 Başlangıç konumu ve yönü tanımlanacak; enkoder verileriyle göreli konum/yön kestirimi yapılması değerlendirilecektir. Gerekirse IMU desteği kullanılacaktır. Tekerlek ölçekleri ve dönüş davranışı kalibre edilecek; kayma ve ölçüm hatalarının rota takibine etkisi incelenecektir. Seçilen yaklaşım yeterli doğruluğu sağlamazsa ek konum düzeltme yöntemi, hedefleri değiştirmeyen bir B planı olarak ayrıca tanımlanacaktır. Bağımsız ölçümde kullanılan kameranın konum kestirimine de veri sağlaması seçilirse, bu değişiklik açıkça belirtilecektir.
 
@@ -44,7 +44,7 @@ Rota sapması için, işaretlenmiş deney alanını gören sabit bir kameradan b
 
 | Parametre | Mevcut durum |
 | --- | --- |
-| Şasi, motor/enkoder ve sensör modelleri | Teknik mimari önerisi var; ürünler seçilmedi. |
+| Şasi, motor/enkoder ve sensör modelleri | Enkoderli iki motorlu hareket mimarisi seçildi; ölçüler ve ürünler seçilmedi. |
 | Hız, algılama/durma ve yan açıklık mesafeleri | Donanım/kalibrasyonla gerekçelendirilecek. |
 | Waypoint ve rotaya katılma toleransları | Konum ölçümü doğruluğuyla birlikte seçilecek. |
 | Engel düzenleri ve tekrar sayıları | İlk tasarım belirlendi; sayısal deney planı hazırlanacak. |

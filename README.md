@@ -8,7 +8,7 @@ Proje, arayüzde tanımlanan waypoint rotasını izleyen küçük bir ESP32 taba
 
 ## Çalışma durumu
 
-Şu an 2026 yılı 2209-A araştırma önerisi hazırlanıyor. Belgeler çalışma taslağıdır. Donanım seçimi, algoritma, sayısal deney hedefleri, süre ve bütçe kesinleştirilecek. Fiziksel prototip geliştirme ve deneyler henüz yapılmadı.
+Şu an 2026 yılı 2209-A araştırma önerisi hazırlanıyor. Belgeler çalışma taslağıdır. Enkoderli iki motorlu hareket mimarisi seçildi; parça modelleri, algoritma, sayısal deney hedefleri, süre ve bütçe kesinleştirilecek. Fiziksel prototip geliştirme ve deneyler henüz yapılmadı.
 
 ## Başvuru bölümleri
 

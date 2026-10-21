@@ -6,6 +6,7 @@ Güncelleme: 21 Ekim 2026. Bu belge başvuru metni değil, kullanıcı tarafınd
 
 - Geçici başlık: Kullanıcı tarafından belirlenen rota bilgisine göre hareket eden otonom araç tasarımı.
 - Araç ESP32 ile geliştirilecek.
+- Kullanıcı, iki motoru bağımsız kontrol edilen küçük bir şasi ve her iki tahrik tekerinin dönüşünü ölçen enkoderlerle ilerlemeyi seçti. Şasi ölçüleri, motor/enkoder modelleri ve taşıyıcı teker düzeni henüz belirlenmedi.
 - Kullanıcı arayüzü proje sahibi tarafından tasarlanacak; araç bu arayüz üzerinden kontrol edilecek.
 - Kullanıcı rotayı arayüzden tanımlayacak; araç rotayı otonom takip edecek.
 - Engel algılandığında engelden kaçınma davranışı devreye girecek; araç daha sonra rotasına dönerek ilerleyecek. Algoritma henüz seçilmedi.
@@ -35,7 +36,7 @@ Başvuru sahibinin bildirdiği kurum, bölüm, sınıf, danışman ve tek yürü
 
 [Konunun önemi ve bilimsel niteliği taslağı](BILIMSEL_NITELIK_TASLAGI.md), DOI ve yayın bilgileri doğrulanan iki ilgili uygulama makalesiyle geliştirildi. Okunan içerik ve ilk karşılaştırma [literatür notunda](LITERATUR_KARSILASTIRMASI.md) kayıtlı. Bu ilk inceleme kapsamlı tarama veya literatürde boşluk kanıtı sayılmayacak.
 
-[Yöntem bölümünün ilk metin taslağı](YONTEM_TASLAGI.md) hazırlandı. Enkoderli iki motorlu şasi ve Bug 2 mantığıyla durum makinesi öneri durumunda; kullanıcı tercihi, ürün seçimi ve sayısal deney parametreleri henüz kesinleşmedi.
+[Yöntem bölümünün ilk metin taslağı](YONTEM_TASLAGI.md) hazırlandı. Enkoderli iki motorlu şasi kullanıcı tarafından seçildi. Bug 2 mantığıyla durum makinesi öneri durumunda; algoritma, ürün seçimi ve sayısal deney parametreleri henüz kesinleşmedi.
 
 - Ölçülü waypoint ekranının fiziksel alanla eşleştirilmesi ve başlangıç noktası/yönünün tanımlanması.
 - Planlanan 3 × 3 metre alanın fiziksel yeri, kesin araç ölçüleri ve donanım seçildikten sonra parkurun yeterliliğinin değerlendirilmesi.

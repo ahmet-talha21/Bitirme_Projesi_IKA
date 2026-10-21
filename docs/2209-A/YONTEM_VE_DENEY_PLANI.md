@@ -5,6 +5,7 @@ Durum: Görüşülmek üzere hazırlanmış tasarım önerisi. Kullanıcının b
 ## 1. Kesinleşen kapsam
 
 - Küçük ölçekli, ESP32 tabanlı bir kara aracı.
+- Kullanıcı tarafından seçilen hareket mimarisi: iki bağımsız tahrik motoru ve tekerlek dönüşlerini ölçen enkoderler.
 - Bilgisayar öncelikli, telefondan da erişilebilir arayüz.
 - Ölçülü kareli ekranda tanımlanan waypoint rotası.
 - Engel algılama, çarpışmasız kaçınma ve rotaya yeniden katılmanın değerlendirilmesi.
@@ -16,8 +17,8 @@ Durum: Görüşülmek üzere hazırlanmış tasarım önerisi. Kullanıcının b
 | Bileşen | Öneri ve gerekçe | Seçim durumu |
 | --- | --- | --- |
 | Kontrolcü | ESP32; rota, sensör okuma ve hareket kontrolü araç üzerinde yürütülebilir. | Kullanıcı tarafından seçildi; kart modeli belirsiz. |
-| Şasi ve hareket | İki motorun ayrı kontrol edildiği, iki tahrik tekeri ve taşıyıcı tekeri olan küçük diferansiyel sürüşlü şasi. Dar alanda dönüş ve iki tekerin hareketini ayrı ölçme açısından değerlendirilecek. | Öneri; şasi boyutu ve motorlar seçilmedi. |
-| Hareket geri bildirimi | Her tahrik tekeri için enkoder; dönüş miktarı ve hız ölçümünden göreli konum kestirimi. ESP32 PCNT birimi quadrature sinyal çözümlemeyi destekliyor [T1]. | Enkoderli motor öneriliyor; çözünürlük ve elektriksel uyumluluk kontrol edilecek. |
+| Şasi ve hareket | İki motorun ayrı kontrol edildiği küçük diferansiyel sürüşlü şasi. | İki motorlu enkoderli mimari seçildi; şasi boyutu, taşıyıcı teker düzeni ve motor modelleri seçilmedi. |
+| Hareket geri bildirimi | Her tahrik tekeri için enkoder; dönüş miktarı ve hız ölçümünden göreli konum kestirimi. ESP32 PCNT birimi quadrature sinyal çözümlemeyi destekliyor [T1]. | Enkoder kullanımı seçildi; model, çözünürlük ve elektriksel uyumluluk kontrol edilecek. |
 | Yön/hareket ölçümü | IMU ile yön değişimi ölçümünün enkoder bilgisiyle birlikte değerlendirilmesi. Kalibrasyon ve sürüklenme incelenecek. | İhtiyaç ve model belirsiz; yalnızca IMU ile kesin konum varsayılmayacak. |
 | Engel algılama | Ön bölge ve kaçınma sırasında yan açıklıklar için yeterli kapsama sağlayan mesafe sensörü düzeni. Ultrasonik veya ToF seçenekleri; algılama alanı, minimum mesafe, yüzey davranışı, güncelleme hızı ve bütçeyle karşılaştırılacak. | Tür, sayı, yerleşim ve tarama mekanizması seçilmedi. |
 | Motor sürücüsü | Seçilecek motorların beslemesine ve kalkış/sıkışma akımına uygun çift kanallı sürücü. | Motor seçilmeden model seçilmeyecek. |

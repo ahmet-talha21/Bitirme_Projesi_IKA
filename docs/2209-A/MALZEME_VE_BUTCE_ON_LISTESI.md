@@ -11,7 +11,7 @@ Durum: Tek prototip için miktar ve uyumluluk planı. Kesin satın alma listesi 
 
 ## Temel mimari için teklif alınacak kalemler
 
-Bu miktarlar iki tahrik tekerli diferansiyel sürüş önerisine aittir; kullanıcı bu şasiyi henüz seçmedi.
+İki motorlu, enkoderli hareket mimarisi kullanıcı tarafından seçildi. Aşağıdaki miktarlar bu mimarinin ürün seçimi için ön listedir; şasi boyutu ve destek tekeri düzeni henüz belirlenmedi.
 
 | Kalem | Önerilen miktar | Seçimde kontrol edilecek özellik |
 | --- | --- | --- |
