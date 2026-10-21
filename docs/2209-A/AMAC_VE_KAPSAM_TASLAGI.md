@@ -10,9 +10,11 @@ Kullanıcı Tanımlı Rota Takibi ve Engelden Kaçınma Özellikli Otonom Kara A
 
 Bu projenin amacı, kullanıcı tarafından bir arayüz üzerinden belirlenen rotayı otonom olarak takip eden, hareket sırasında karşılaştığı engellerden kaçınarak yeniden rotasına dönmesi hedeflenen mikrodenetleyici tabanlı bir kara aracı prototipi geliştirmektir. Çalışma kapsamında kullanıcı arayüzü, araç kontrol yazılımı ve gerekli donanımın birlikte tasarlanması planlanmaktadır. Arayüzün tasarımı proje sahibi tarafından gerçekleştirilecek; rota tanımlama yöntemi, konum takibi ve engelden kaçınma yaklaşımı teknik seçenekler değerlendirilerek belirlenecektir.
 
+Kullanıcı arayüzünde bilgisayardan kullanım öncelikli olacak, telefondan erişim de hedeflenecektir. Prototipin küçük RC araç ölçeğinde ve düz zeminde kullanılması planlanmaktadır. Rota ekranının gerçek coğrafi harita, ölçekli mekân planı veya ızgara olması henüz kararlaştırılmamıştır; deney alanının ölçüleri ve konum takibi yöntemi ayrıca belirlenecektir.
+
 ## Bu metnin tamamlanması için gerekenler
 
-- İlk test kapsamının ve arayüz platformunun seçilmesi.
+- İlk test alanının, parkur ölçülerinin ve bilgisayar/telefon erişimi için uygulama teknolojisinin seçilmesi.
 - Rota girişi ve aracın fiziksel konumunu/yönünü belirleme yönteminin netleştirilmesi.
 - Prototip geliştirme işini ölçülebilir bir araştırmaya dönüştürecek sorunun ve karşılaştırma düzeninin seçilmesi.
 - Donanım, kontrol/kaçınma yöntemleri, bağımsız referans ölçümü, tekrar sayıları ve sayısal başarı hedeflerinin kararlaştırılması.

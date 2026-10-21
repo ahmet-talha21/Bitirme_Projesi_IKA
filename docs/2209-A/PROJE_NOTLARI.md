@@ -10,7 +10,9 @@ Güncelleme: 21 Ekim 2026. Bu belge başvuru metni değil, kullanıcı tarafınd
 - Kullanıcı rotayı arayüzden tanımlayacak; araç rotayı otonom takip edecek.
 - Engel algılandığında engelden kaçınma davranışı devreye girecek; araç daha sonra rotasına dönerek ilerleyecek. Algoritma henüz seçilmedi.
 - Waypoint (ara rota noktaları) kullanımı düşünülüyor; rota girişi henüz kesinleşmedi.
-- Kullanıcı ev, okul ve iş yeri gibi farklı yerlerde kullanılabilirlik istiyor. İlk deney ortamı, zemin ve parkur boyutu henüz sınırlandırılmadı; her ortamda çalışacağı doğrulanmış bir özellik değil.
+- Kullanıcı ev, okul ve iş yeri gibi farklı yerlerde kullanılabilirlik istiyor. Küçük Arduino/RC araçları boyutunda bir prototip ve düz zeminde kullanım belirtildi. Kesin araç ölçüleri, ilk deney ortamı ve parkur boyutu henüz belirlenmedi; her ortamda çalışacağı doğrulanmış bir özellik değil.
+- Arayüzde öncelik bilgisayar kullanımı; telefonda da çalışması isteniyor. Her iki cihazda açılabilen tarayıcı arayüzü teknik seçenek olarak değerlendiriliyor; yazılım teknolojisi ve haberleşme yöntemi seçilmedi.
+- Gerçek coğrafi harita ile yerel rota ekranı arasında karar verilmedi; kullanıcı seçeneklerin zorluğu konusunda öneri istiyor.
 - ESP32 dışındaki malzemeler birlikte seçilecek; donanım listesi henüz kesinleşmedi.
 - TÜBİTAK 2209-A başvurusu hazırlanacak.
 - Teknik ayrıntılar kullanıcıya sorularak netleştirilecek; bilinmeyen özellikler ve sonuçlar yazılmayacak.
@@ -18,10 +20,10 @@ Güncelleme: 21 Ekim 2026. Bu belge başvuru metni değil, kullanıcı tarafınd
 ## Netleştirilecek konular
 
 - Rota girişi: harita noktaları, çizim, mesafe/açı komutları veya başka bir yöntem.
-- Çalışma ortamı: iç/dış mekân, zemin ve yaklaşık parkur boyutu.
+- İlk deneyin iç/dış mekân seçimi, yaklaşık parkur boyutu ve kesin araç ölçüleri. Düz zemin ve küçük RC araç ölçeği belirtildi.
 - Manuel kontrolün ayrıca gerekip gerekmediği.
 - Konum/yön ölçümü, sensörler, motorlar, sürücü ve mevcut donanım.
-- Arayüz platformu, haberleşme yöntemi ve engelden kaçınma algoritması.
+- Bilgisayar öncelikli ve telefonda da çalışan arayüzün uygulama teknolojisi, haberleşme yöntemi ve engelden kaçınma algoritması.
 - Araştırma sorusu, karşılaştırma yöntemi ve ölçülebilir başarı ölçütleri.
 - Ekip, danışman, kurum, olanaklar, süre ve bütçe.
 
@@ -37,6 +39,8 @@ Güncelleme: 21 Ekim 2026. Bu belge başvuru metni değil, kullanıcı tarafınd
 ## Kullanıcıyla görüşülecek teknik öneriler — henüz karar değil
 
 - Başlangıç için ölçülü bir ızgara üzerinde yerel (x, y) waypoint'ler öneriliyor. Waypoint kullanmak GPS kullanmayı zorunlu kılmaz; serbest çizilmiş bir rota da noktalara dönüştürülebilir.
+- Rota görünümü için ara seçenek olarak gerçek mekânın ölçekli krokisi veya planı değerlendirilebilir. Planın fiziksel ölçüsü, başlangıç noktası ve yönüyle eşleştirilmesi gerekir; görüntü yüklemek tek başına konumlandırma sağlamaz. Bu öneri henüz kullanıcı tarafından seçilmedi.
+- Gerçek coğrafi haritayı görüntülemek ile araç konumunu harita koordinatlarıyla eşleştirmek ayrı işlerdir. Küçük araçla kısa mesafeli kapalı alan deneylerinde standart GPS uygun bir hassas konumlandırma çözümü olarak varsayılmayacak. Harita veya kroki seçimi, fiziksel konum takibi ihtiyacını ortadan kaldırmaz.
 - Başlangıç noktası ve yönü bilinen, düz zeminli, kısa bir kapalı alan parkuru öneriliyor. Bu seçim aracın başka yerlerde denenmesini dışlamaz; doğrulanacak kapsamı belirler.
 - Motor enkoderleri ve IMU ile göreli konum/yön kestirimi değerlendirilebilir. Kayma ve ölçüm hataları zamanla birikir; bu yaklaşım tek başına kesin veya sınırsız konum doğruluğu sağlamaz. Parkur boyutu ve hata hedeflerine göre ek konum düzeltmesi gerekebilir.
 - Mesafe sensörleriyle yerel engelden kaçınma ve ardından rotaya katılma değerlendirilecek. Sensör tipi, sayısı, görüş alanı ve algoritma seçilmedi; her engelin aşılabileceği iddia edilmeyecek.
