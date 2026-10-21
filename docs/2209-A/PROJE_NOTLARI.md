@@ -9,22 +9,24 @@ Güncelleme: 21 Ekim 2026. Bu belge başvuru metni değil, kullanıcı tarafınd
 - Kullanıcı arayüzü proje sahibi tarafından tasarlanacak; araç bu arayüz üzerinden kontrol edilecek.
 - Kullanıcı rotayı arayüzden tanımlayacak; araç rotayı otonom takip edecek.
 - Engel algılandığında engelden kaçınma davranışı devreye girecek; araç daha sonra rotasına dönerek ilerleyecek. Algoritma henüz seçilmedi.
-- Waypoint (ara rota noktaları) kullanımı düşünülüyor; rota girişi henüz kesinleşmedi.
-- Kullanıcı ev, okul ve iş yeri gibi farklı yerlerde kullanılabilirlik istiyor. Küçük Arduino/RC araçları boyutunda bir prototip ve düz zeminde kullanım belirtildi. Kesin araç ölçüleri, ilk deney ortamı ve parkur boyutu henüz belirlenmedi; her ortamda çalışacağı doğrulanmış bir özellik değil.
+- İlk sürüm için ölçülü kareli alan üzerinde waypoint (ara rota noktaları) seçimi kullanıcı tarafından uygun bulundu. Sonraki aşamada isteğe bağlı ölçekli mekân krokisi ekleme yaklaşımı da uygun bulundu; bu ek özellik ilk sürüm için zorunlu teslim olarak belirlenmedi.
+- Kullanıcı ev, okul ve iş yeri gibi farklı yerlerde kullanılabilirlik istiyor. Küçük Arduino/RC araçları boyutunda bir prototip ve düz zeminde kullanım belirtildi. İlk deneyler için yaklaşık 3 × 3 metre alan planlanıyor; bu, ölçülmüş veya üzerinde test yapılmış bir alan değil. Kesin araç ölçüleri ve kullanılacak fiziksel yer henüz belirlenmedi.
 - Arayüzde öncelik bilgisayar kullanımı; telefonda da çalışması isteniyor. Her iki cihazda açılabilen tarayıcı arayüzü teknik seçenek olarak değerlendiriliyor; yazılım teknolojisi ve haberleşme yöntemi seçilmedi.
-- Gerçek coğrafi harita ile yerel rota ekranı arasında karar verilmedi; kullanıcı seçeneklerin zorluğu konusunda öneri istiyor.
+- Gerçek coğrafi harita ilk sürüm kapsamına alınmadı; yerel rota ekranı seçildi.
 - ESP32 dışındaki malzemeler birlikte seçilecek; donanım listesi henüz kesinleşmedi.
 - TÜBİTAK 2209-A başvurusu hazırlanacak.
 - Teknik ayrıntılar kullanıcıya sorularak netleştirilecek; bilinmeyen özellikler ve sonuçlar yazılmayacak.
+- Kullanıcı projeye henüz başlamadığını belirtti. Şu an başvuru hazırlığı ve tasarım planlama aşamasındayız; çalışan araç, kurulmuş deney düzeneği veya tamamlanmış ön deney bulunmuş gibi yazılmayacak.
 
 ## Netleştirilecek konular
 
-- Rota girişi: harita noktaları, çizim, mesafe/açı komutları veya başka bir yöntem.
-- İlk deneyin iç/dış mekân seçimi, yaklaşık parkur boyutu ve kesin araç ölçüleri. Düz zemin ve küçük RC araç ölçeği belirtildi.
+- Ölçülü waypoint ekranının fiziksel alanla eşleştirilmesi ve başlangıç noktası/yönünün tanımlanması.
+- Planlanan 3 × 3 metre alanın fiziksel yeri, kesin araç ölçüleri ve donanım seçildikten sonra parkurun yeterliliğinin değerlendirilmesi.
 - Manuel kontrolün ayrıca gerekip gerekmediği.
 - Konum/yön ölçümü, sensörler, motorlar, sürücü ve mevcut donanım.
 - Bilgisayar öncelikli ve telefonda da çalışan arayüzün uygulama teknolojisi, haberleşme yöntemi ve engelden kaçınma algoritması.
 - Araştırma sorusu, karşılaştırma yöntemi ve ölçülebilir başarı ölçütleri.
+- İlk deneylerde sabit engeller mi yoksa hareketli engeller de mi kullanılacağı; belirli bir uygulama görevi olup olmadığı.
 - Ekip, danışman, kurum, olanaklar, süre ve bütçe.
 
 ## Belgeler ve doğrulama durumu
@@ -36,13 +38,14 @@ Güncelleme: 21 Ekim 2026. Bu belge başvuru metni değil, kullanıcı tarafınd
 - Resmî sayfa: https://tubitak.gov.tr/tr/burslar/lisans-onlisans/destek-programlari/2209-universite-ogrencileri-arastirma-projeleri-destekleme-programi
 - Önceki 403 erişim hatasının ardından 21 Ekim 2026 tarihinde yeniden denendi: program sayfası, 2026 çağrı duyurusu, 2026 başvuru içeriği bilgi notu ve ÜYZ rehberi HTTP 200 ile indirildi. Kullanıcının yüklediği bilgi notunun SHA-256 değeri resmî dosyayla aynı: `d5bf5477971b5924fe079970bab156057378afa1c2bff07df0a0d78614aba0e6`.
 
-## Kullanıcıyla görüşülecek teknik öneriler — henüz karar değil
+## Teknik değerlendirme ve görüşülecek öneriler
 
-- Başlangıç için ölçülü bir ızgara üzerinde yerel (x, y) waypoint'ler öneriliyor. Waypoint kullanmak GPS kullanmayı zorunlu kılmaz; serbest çizilmiş bir rota da noktalara dönüştürülebilir.
-- Rota görünümü için ara seçenek olarak gerçek mekânın ölçekli krokisi veya planı değerlendirilebilir. Planın fiziksel ölçüsü, başlangıç noktası ve yönüyle eşleştirilmesi gerekir; görüntü yüklemek tek başına konumlandırma sağlamaz. Bu öneri henüz kullanıcı tarafından seçilmedi.
+- İlk sürümde seçilen ölçülü ızgara üzerinde yerel (x, y) waypoint'ler kullanılacak. Waypoint kullanmak GPS kullanmayı zorunlu kılmaz; serbest çizimi noktalara dönüştürme ayrıca değerlendirilebilecek bir özelliktir.
+- Sonraki aşama için isteğe bağlı ölçekli kroki görünümü değerlendirilebilir. Planın fiziksel ölçüsü, başlangıç noktası ve yönüyle eşleştirilmesi gerekir; görüntü yüklemek tek başına konumlandırma sağlamaz.
 - Gerçek coğrafi haritayı görüntülemek ile araç konumunu harita koordinatlarıyla eşleştirmek ayrı işlerdir. Küçük araçla kısa mesafeli kapalı alan deneylerinde standart GPS uygun bir hassas konumlandırma çözümü olarak varsayılmayacak. Harita veya kroki seçimi, fiziksel konum takibi ihtiyacını ortadan kaldırmaz.
-- Başlangıç noktası ve yönü bilinen, düz zeminli, kısa bir kapalı alan parkuru öneriliyor. Bu seçim aracın başka yerlerde denenmesini dışlamaz; doğrulanacak kapsamı belirler.
+- Planlanan yaklaşık 3 × 3 metre deney alanında başlangıç noktası ve yönü bilinen kısa parkurlar öneriliyor. Parkurun boyutu ve engel açıklıkları, şasi ölçüleri ve hareket kabiliyeti seçilince kontrol edilecek; mevcut planın yeterli olduğu henüz deneyle doğrulanmadı.
 - Motor enkoderleri ve IMU ile göreli konum/yön kestirimi değerlendirilebilir. Kayma ve ölçüm hataları zamanla birikir; bu yaklaşım tek başına kesin veya sınırsız konum doğruluğu sağlamaz. Parkur boyutu ve hata hedeflerine göre ek konum düzeltmesi gerekebilir.
 - Mesafe sensörleriyle yerel engelden kaçınma ve ardından rotaya katılma değerlendirilecek. Sensör tipi, sayısı, görüş alanı ve algoritma seçilmedi; her engelin aşılabileceği iddia edilmeyecek.
 - Basit süreye bağlı hareket komutları ilk hareket deneyi için kullanılabilir; engel etrafından dolaştıktan sonra rotaya doğru dönüşü güvenilir biçimde göstermek için konum/yön geri bildirimi gerekir.
 - Rota sapması, hedefe ulaşma oranı, engelden sonra rotaya dönüş ve tamamlanma süresi olası ölçütlerdir. Karşılaştırma yöntemi, tekrar sayıları ve hedef değerler henüz belirlenmedi. Gerçek rota hatası, yalnızca aracın kendi kestiriminden hesaplanmayacak; bağımsız referans ölçüm yöntemi seçilecek.
+- Kullanıcının değerlendirmesine sunulacak öneri: ilk aşamada sabit engellerle, rota geometrisi ve engel yerleşiminin takip başarısına etkisini incelemek. Araştırma sorusu literatür kontrolü ve kullanıcı kararıyla kesinleştirilecek; özgünlük iddiası henüz yok.

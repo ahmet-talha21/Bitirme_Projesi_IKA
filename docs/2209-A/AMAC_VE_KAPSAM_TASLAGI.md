@@ -8,14 +8,22 @@ Kullanıcı Tanımlı Rota Takibi ve Engelden Kaçınma Özellikli Otonom Kara A
 
 ## Kullanıcının belirttiği kapsamdan oluşturulan amaç taslağı
 
-Bu projenin amacı, kullanıcı tarafından bir arayüz üzerinden belirlenen rotayı otonom olarak takip eden, hareket sırasında karşılaştığı engellerden kaçınarak yeniden rotasına dönmesi hedeflenen mikrodenetleyici tabanlı bir kara aracı prototipi geliştirmektir. Çalışma kapsamında kullanıcı arayüzü, araç kontrol yazılımı ve gerekli donanımın birlikte tasarlanması planlanmaktadır. Arayüzün tasarımı proje sahibi tarafından gerçekleştirilecek; rota tanımlama yöntemi, konum takibi ve engelden kaçınma yaklaşımı teknik seçenekler değerlendirilerek belirlenecektir.
+Bu projenin amacı, kullanıcının bir arayüzdeki ölçülü kareli alan üzerinde belirlediği ara rota noktalarını otonom olarak takip eden, hareket sırasında karşılaştığı engellerden kaçınarak yeniden rotasına dönmesi hedeflenen mikrodenetleyici tabanlı bir kara aracı prototipi geliştirmektir. Çalışma kapsamında kullanıcı arayüzü, araç kontrol yazılımı ve gerekli donanımın birlikte tasarlanması planlanmaktadır. Arayüzün tasarımı proje sahibi tarafından gerçekleştirilecek; konum takibi ve engelden kaçınma yaklaşımı teknik seçenekler değerlendirilerek belirlenecektir.
 
-Kullanıcı arayüzünde bilgisayardan kullanım öncelikli olacak, telefondan erişim de hedeflenecektir. Prototipin küçük RC araç ölçeğinde ve düz zeminde kullanılması planlanmaktadır. Rota ekranının gerçek coğrafi harita, ölçekli mekân planı veya ızgara olması henüz kararlaştırılmamıştır; deney alanının ölçüleri ve konum takibi yöntemi ayrıca belirlenecektir.
+Kullanıcı arayüzünde bilgisayardan kullanım öncelikli olacak, telefondan erişim de hedeflenecektir. Prototipin küçük RC araç ölçeğinde ve düz zeminde kullanılması planlanmaktadır. İlk deneyler için yaklaşık 3 × 3 metre alan düşünülmektedir; alanın uygunluğu araç ölçüleri ve hareket kabiliyeti belirlendikten sonra değerlendirilecektir. İlk rota ekranı ölçülü ızgara olacak; ölçekli mekân krokisi sonraki aşamada isteğe bağlı olarak değerlendirilebilecektir.
+
+Henüz fiziksel geliştirme veya deney yapılmamıştır. Bu metin planlanan çalışmayı tanımlar.
+
+## Araştırma sorusu adayı — kullanıcı ve literatür değerlendirmesi gerekiyor
+
+Kullanıcı tanımlı waypoint rotalarını izleyen küçük ölçekli bir otonom kara aracında, rota geometrisi ve engel yerleşimi; rota sapmasını, hedefe ulaşma başarısını ve görev tamamlama süresini nasıl etkiler?
+
+Bu soru bir öneridir. Deney koşulları, kontrol/kaçınma yöntemleri, karşılaştırma düzeni ve bağımsız referans ölçümü seçilmeden yöntem bölümü tamamlanmış sayılmaz. Sabit engellerle başlama önerisi henüz kullanıcı tarafından onaylanmadı; hareketli engeller kapsamda varsayılmadı.
 
 ## Bu metnin tamamlanması için gerekenler
 
-- İlk test alanının, parkur ölçülerinin ve bilgisayar/telefon erişimi için uygulama teknolojisinin seçilmesi.
-- Rota girişi ve aracın fiziksel konumunu/yönünü belirleme yönteminin netleştirilmesi.
+- Yaklaşık 3 × 3 metre deney alanının fiziksel yerinin ve bilgisayar/telefon erişimi için uygulama teknolojisinin seçilmesi; alanın araç boyutlarına uygunluğunun kontrol edilmesi.
+- Waypoint'lerin fiziksel alanla eşleştirilmesi ve aracın konumunu/yönünü belirleme yönteminin netleştirilmesi.
 - Prototip geliştirme işini ölçülebilir bir araştırmaya dönüştürecek sorunun ve karşılaştırma düzeninin seçilmesi.
 - Donanım, kontrol/kaçınma yöntemleri, bağımsız referans ölçümü, tekrar sayıları ve sayısal başarı hedeflerinin kararlaştırılması.
 - Kaynaklarla desteklenen gerekçe ve yöntem bölümlerinin yazılması; ardından amaç/hedefler metninin bu kararlara göre yeniden düzenlenmesi.
