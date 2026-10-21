@@ -33,7 +33,9 @@ Mevcut ekipman durumu ve teklif alınacak kalemler [malzeme ve bütçe ön liste
 
 Başvuru sahibinin bildirdiği kurum, bölüm, sınıf, danışman ve tek yürütücülü görev dağılımı [genel bilgiler ve görevler taslağında](GENEL_BILGILER_VE_GOREVLER.md) tutuluyor. Üniversitedeki kayıt veya altyapı olanakları bağımsız olarak doğrulanmış değildir.
 
-[Konunun önemi ve bilimsel niteliği için ilk kaynaklı taslak](BILIMSEL_NITELIK_TASLAGI.md) hazırlandı. İlk metin akademik ders kitabı bölümleriyle destekleniyor; benzer deneysel çalışmalarla özgün katkı karşılaştırması henüz tamamlanmadı.
+[Konunun önemi ve bilimsel niteliği taslağı](BILIMSEL_NITELIK_TASLAGI.md), DOI ve yayın bilgileri doğrulanan iki ilgili uygulama makalesiyle geliştirildi. Okunan içerik ve ilk karşılaştırma [literatür notunda](LITERATUR_KARSILASTIRMASI.md) kayıtlı. Bu ilk inceleme kapsamlı tarama veya literatürde boşluk kanıtı sayılmayacak.
+
+[Yöntem bölümünün ilk metin taslağı](YONTEM_TASLAGI.md) hazırlandı. Enkoderli iki motorlu şasi ve Bug 2 mantığıyla durum makinesi öneri durumunda; kullanıcı tercihi, ürün seçimi ve sayısal deney parametreleri henüz kesinleşmedi.
 
 - Ölçülü waypoint ekranının fiziksel alanla eşleştirilmesi ve başlangıç noktası/yönünün tanımlanması.
 - Planlanan 3 × 3 metre alanın fiziksel yeri, kesin araç ölçüleri ve donanım seçildikten sonra parkurun yeterliliğinin değerlendirilmesi.
