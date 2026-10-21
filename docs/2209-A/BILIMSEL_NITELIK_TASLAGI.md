@@ -16,18 +16,12 @@ Bu projede ele alınacak problem, kullanıcı tarafından belirlenen waypoint ro
 
 ## Bu taslakta kullanılan kaynaklar
 
-1. Dellaert, F. ve Hutchinson, S. (t.y.). “Motion Model for the Differential Drive Robot.” *Introduction to Robotics and Perception*, Bölüm 5.2. [Yazarların kaynak deposundaki bölüm](https://github.com/gtbook/robotics/blob/main/S52_diffdrive_actions.ipynb). Erişim: 21 Ekim 2026.
-2. Hauser, K. (t.y.-a). “Motion planning in simple geometric spaces.” *Robotic Systems*, Bölüm 9. [Yazarın kaynak deposundaki bölüm](https://github.com/krishauser/RoboticSystemsBook/blob/master/GeometricMotionPlanning.ipynb). Erişim: 21 Ekim 2026.
-3. Hauser, K. (t.y.-b). “Calibration.” *Robotic Systems*, Bölüm 22. [Yazarın kaynak deposundaki bölüm](https://github.com/krishauser/RoboticSystemsBook/blob/master/Calibration.ipynb). Erişim: 21 Ekim 2026.
-4. Iqbal, F., Ahmed, S., Amin, F., Qayyum, S., Ullah, F. 2023. “Integrating BIM–IoT and Autonomous Mobile Robots for Construction Site Layout Printing”, *Buildings*, 13(9), 2212. DOI: [10.3390/buildings13092212](https://doi.org/10.3390/buildings13092212).
-5. Rodrigues, V. O. B., Silva, G. A. A., Pugliese, L. F., Silva, W. W. A. G., Monte-Mor, J. A., Karolak, D. B., Gomides, L. M., Braga, R. A. S. 2026. “Hierarchical Control Architecture for Trajectory Tracking of Differential-Drive Nonholonomic Robots Using LQG-Based Velocity Control”, *Robotics*, 15(9), 171. DOI: [10.3390/robotics15090171](https://doi.org/10.3390/robotics15090171).
-
-Bu elektronik ders kitabı bölümlerinin incelenen sayfalarında kesin yayın tarihi ve DOI bilgisi belirlenmedi; yıl veya DOI uydurulmadı. Kaynakların nihai bibliyografik biçimi başvuru öncesinde TÜBİTAK yönergesiyle yeniden kontrol edilecek. Kaynak metinler veya görseller depoya kopyalanmadı; bölüm metni proje kapsamında özgün biçimde yazıldı.
+Bu bölümün beş kaynağı ile yöntemde kullanılan Espressif dokümanı [tek alfabetik kaynakçada](KAYNAKCA_TASLAGI.md) birleştirildi. Metin içi atıf eşleştirmesi, erişim tarihleri ve doğrulanmış DOI'ler aynı dosyadadır. Ders kitabı bölümlerine doğrulanmamış yayın yılı veya DOI eklenmedi. Kaynak metinler veya görseller depoya kopyalanmadı; bölüm metni proje kapsamında özgün biçimde yazıldı.
 
 ## Tamamlanacak bilimsel gerekçe
 
 - İlk karşılaştırmanın benzer engelden kaçınma çalışmalarına genişletilmesi; iki ilgili uygulama ile sınırlı incelemenin tamamlanmış sistematik tarama gibi sunulmaması.
 - Bu karşılaştırma üzerinden projenin somut katkısının daraltılması; henüz doğrulanmamış “ilk”, “üstün”, “daha ucuz” veya “literatürde yok” iddiaları eklenmemesi.
 - Kesinleşen algılama, konum kestirimi ve kaçınma yönteminin ilgili akademik çalışmalarla desteklenmesi.
-- Deney sayılarının, başarı tanımlarının, hata toleranslarının ve referans ölçüm yönteminin belirlenmesi.
+- Kullanıcının seçtiği 40 deneme ve koşul başına en az 8/10 birleşik başarı hedefiyle uyum; kalan hata/süre toleransları ve bağımsız referans ölçüm yönteminin belirlenmesi.
 - Araştırma sorusu ve bölüm metninin kullanıcı ile danışman görüşleri doğrultusunda son hâline getirilmesi.

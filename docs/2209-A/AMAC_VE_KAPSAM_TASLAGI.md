@@ -1,6 +1,6 @@
 # Amaç ve kapsam — ilk çalışma taslağı
 
-Durum: Kullanıcının incelemesine açık çalışma taslağı. Nihai başvuru metni değildir. Temel işlev ve sabit engelli deney kapsamı belirlendi; teknik yöntem, araştırma sorusunun son biçimi ve sayısal başarı eşikleri henüz seçilmemiştir.
+Durum: Kullanıcının ve danışmanın incelemesine açık çalışma taslağı. Nihai başvuru metni değildir. Kullanıcı 40 denemelik planı ve her engelli koşulda en az 8/10 birleşik görev başarısı hedefini uygun buldu. Teknik yöntem, araştırma sorusunun son biçimi ve diğer sayısal parametreler henüz kesinleşmedi.
 
 ## Başlık önerisi — henüz onaylanmadı
 
@@ -29,21 +29,24 @@ Bu soru bir öneridir. Sabit engeller ilk deney kapsamı olarak seçildi; hareke
 3. Kaçınma sonrasında tanımlı rotaya yeniden katılmayı ve hedefe ilerlemeyi sağlamak.
 4. Engel yerleşimleri değiştirilerek tekrarlanacak denemelerde algılama, çarpışmasız kaçınma ve rotaya dönüş oranlarını; görev tamamlama süresini ve uygun referans ölçümüyle rota sapmasını değerlendirmek.
 
-Başarı tanımları, kabul edilecek rota sapması, deneme sayıları ve sayısal hedefler henüz kesinleştirilmedi. [Deney protokolü önerisinde](DENEY_PROTOKOLU_ONERISI.md) şu ölçülebilir hedefler incelemeye sunuldu:
+Kullanıcı [deney protokolündeki](DENEY_PROTOKOLU_ONERISI.md) şu tekrar planı ve ana başarı hedefini uygun buldu:
 
 - Engelsiz referans ve üç sabit engel yerleşiminde koşul başına 10, toplam 40 geçerli değerlendirme denemesi yapmak.
-- Engelsiz koşulda en az 9/10 görev tamamlama; engelli koşulların her birinde en az 9/10 temas öncesi algılama hedeflemek.
 - Engelli koşulların her birinde en az 8/10 denemede temas öncesi algılama, çarpışmasız kaçınma, rotaya dönüş ve süre içinde sıralı waypoint'ler/hedefe erişimi birlikte sağlamak.
+
+Ek sayısal öneriler henüz kesinleşmedi:
+
+- Engelsiz koşulda en az 9/10 görev tamamlama; engelli koşulların her birinde en az 9/10 temas öncesi algılama hedeflemek.
 - 10 cm waypoint/rotaya dönüş bandını, 120 saniye süre sınırını ve bunların bağımsız ölçüm gereksinimlerini uygulanabilirlik incelemesiyle kararlaştırmak.
 
-Bunlar planlama önerileridir; kullanıcı/danışman onayı, donanım ve ölçüm düzeni netleşince amaç/hedefler metnine nihai biçimi verilecek. Gerçekleşmiş performans veya kabul garantisi değildir.
+Bunlar gelecekteki çalışma için planlanan hedeflerdir; gerçekleşmiş performans veya kabul garantisi değildir. Seçilen iki karar korunarak kalan parametreler, donanım ve ölçüm düzeni netleştirilecek; danışman incelemesiyle amaç/hedefler metnine nihai biçimi verilecek.
 
 ## Bu metnin tamamlanması için gerekenler
 
 - Yaklaşık 3 × 3 metre deney alanının fiziksel yerinin ve bilgisayar/telefon erişimi için uygulama teknolojisinin seçilmesi; alanın araç boyutlarına uygunluğunun kontrol edilmesi.
 - Waypoint'lerin fiziksel alanla eşleştirilmesi ve aracın konumunu/yönünü belirleme yönteminin netleştirilmesi.
 - Prototip geliştirme işini ölçülebilir bir araştırmaya dönüştürecek sorunun ve karşılaştırma düzeninin seçilmesi.
-- Donanım, kontrol/kaçınma yöntemleri, bağımsız referans ölçümü, tekrar sayıları ve sayısal başarı hedeflerinin kararlaştırılması.
+- Donanım, kontrol/kaçınma yöntemleri, bağımsız referans ölçümü ve kalan sayısal parametrelerin kararlaştırılması; seçilen tekrar planı ve ana hedefin uygulanabilirlik/danışman incelemesi.
 - Kaynaklarla desteklenen gerekçe ve yöntem bölümlerinin yazılması; ardından amaç/hedefler metninin bu kararlara göre yeniden düzenlenmesi.
 
 Bu aşamada her ortamda çalışma, özgün algoritma, belirli doğruluk oranı, belirli maliyet veya tamamlanmış deney iddiası bulunmuyor.

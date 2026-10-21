@@ -31,6 +31,8 @@ Bu seçeneğin gerekçesi, yerel engel algısı ve rotaya dönüş davranışın
 
 Alfabetik düzen, yazar adları ve DOI ekleri için [TÜBİTAK bibliyografik düzenleme açıklamaları](https://tubitak.gov.tr/tr/duyuru/bibliyografik-verilerin-duzenlenmesi) incelendi. Elektronik ders kitaplarının tarih bilgisi belirlenemediğinden tarih uydurulmadı.
 
+Başvuru metninde kullanılanlar, yöntem/kalibrasyon kaynakları da dahil edilerek [tek kaynakça dosyasında](KAYNAKCA_TASLAGI.md) birleştirildi. Aşağıdaki liste ilk literatür incelemesinin kaydıdır; TYBS aktarımında güncel birleşik liste esas alınacak.
+
 - Dellaert, F., Hutchinson, S. “Motion Model for the Differential Drive Robot”. *Introduction to Robotics and Perception*. [İnternet adresi](https://github.com/gtbook/robotics/blob/main/S52_diffdrive_actions.ipynb). Son erişim: 21 Ekim 2026.
 - Hauser, K. “Motion planning in simple geometric spaces”. *Robotic Systems*. [İnternet adresi](https://github.com/krishauser/RoboticSystemsBook/blob/master/GeometricMotionPlanning.ipynb). Son erişim: 21 Ekim 2026.
 - Iqbal, F., Ahmed, S., Amin, F., Qayyum, S., Ullah, F. 2023. “Integrating BIM–IoT and Autonomous Mobile Robots for Construction Site Layout Printing”, *Buildings*, 13(9), 2212. DOI: [10.3390/buildings13092212](https://doi.org/10.3390/buildings13092212). [Okunan yayıncı tam metni](https://www.mdpi.com/2075-5309/13/9/2212).

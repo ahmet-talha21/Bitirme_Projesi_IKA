@@ -1,6 +1,6 @@
 # Deney protokolü — sayısal plan önerisi
 
-Sürüm: 0.1 — 22 Ekim 2026. **İncelenmek üzere hazırlanmış öneridir; kullanıcı/danışman tarafından kesinleştirilmedi.** Aşağıdaki sayılar yapılmış deney veya kanıtlanmış araç performansı değildir. Donanım seçimi, deney alanına erişim ve ölçüm uygulanabilirliği henüz tamamlanmadı. Nihai değerlendirmeden önce protokol ve yazılım sürümü sabitlenecek.
+Sürüm: 0.2 — 22 Ekim 2026. **Kullanıcı dört koşulda 10'ar tekrar, toplam 40 değerlendirme denemesini ve her engelli koşulda en az 8/10 birleşik otonom görev başarısı hedefini uygun buldu.** Bu seçim, diğer sayısal önerilerin veya tüm protokolün kesinleştiği anlamına gelmez. Sayılar yapılmış deney veya kanıtlanmış araç performansı değildir. Donanım seçimi, deney alanına erişim ve ölçüm uygulanabilirliği henüz tamamlanmadı. Danışman incelemesi ve kalan parametreler sonrasında, nihai değerlendirmeden önce protokol ve yazılım sürümü sabitlenecek.
 
 ## 1. Araştırma sorusu ve karşılaştırma
 
@@ -17,7 +17,7 @@ Tek bir kaçınma yaklaşımının farklı engel yerleşimlerindeki davranışı
 - Engelli koşullarda aynı **tek, opak, mat yüzeyli dikdörtgen prizma** kullanılacak. Başlangıç boyut önerisi **30 × 30 cm taban, 30 cm yükseklik**; sensör yüksekliği ve algılama kontrolünden sonra kesinleştirilecek.
 - Araç dış ölçüleri, dönüşte kapladığı alan, sensörlerin konumu ve gerekli açıklıklar bilinmeden bu yerleşimin uygulanabilir olduğu kabul edilmeyecek. Engel, waypoint'i veya gerekli geçişi kapatmayacak; sınırlar ve serbest yol, aracın tüm gövdesi dikkate alınarak kontrol edilecek.
 
-| Koşul | Engel durumu / merkez koordinatı | Amaç | Önerilen geçerli tekrar |
+| Koşul | Engel durumu / merkez koordinatı | Amaç | Seçilen geçerli tekrar |
 | --- | --- | --- | --- |
 | K0 | Engel yok. | Temel rota takibi, süre ve yanlış engel uyarılarını görmek. | 10 |
 | K1 | İlk düz parçada `(1,40; 0,75)`. | Düz bölümde algılama, kaçınma ve aynı parçaya dönüşü incelemek. | 10 |
@@ -34,7 +34,7 @@ Bu koordinatlar alanı hazırlamak için öneridir; nihai şasiyle geometrik kon
 
 Son değerlendirmede algoritma, rota, hız hedefi, sensör eşikleri ve yazılım sürümü koşullar arasında değiştirilmeyecek. Değişiklik gerekirse eski kayıtlar korunacak, yeni sürüm açıkça ayrılacak ve karşılaştırılan koşullar yeni sürümle tamamlanacak. Başarısızlığı gördükten sonra kabul eşiği veya deney koşulu gevşetilmeyecek.
 
-## 4. Başlangıç için sayısal hedef önerileri
+## 4. Seçilen ana hedef ve ek sayısal öneriler
 
 | Parametre / ölçüt | Öneri | Gerekçe ve sınırlama |
 | --- | --- | --- |
@@ -44,10 +44,10 @@ Son değerlendirmede algoritma, rota, hız hedefi, sensör eşikleri ve yazılı
 | Deneme süre sınırı | Hareket başlangıcından itibaren **120 saniye**. | 3 m rota, önerilen hızda kesintisiz düz ilerleme için yaklaşık 30 saniye eder; dönüş/kaçınmaya ek süre ayıran başlangıç önerisidir. Süre başarısı henüz bilinmiyor. |
 | Engelsiz görev başarısı | K0'da **en az 9/10** geçerli denemede sıralı waypoint'ler ve son hedef tamamlanacak. | Temel rota takibinin ayrı değerlendirilmesini sağlar. |
 | Temas öncesi engel algılama | K1, K2 ve K3'ün **her birinde en az 9/10** geçerli denemede. | Bir yerleşimdeki düşük performansın toplam oran içinde gizlenmemesi amaçlanır. |
-| Birleşik otonom görev başarısı | K1, K2 ve K3'ün **her birinde en az 8/10** geçerli denemede: temas öncesi algılama **ve** çarpışmasız kaçınma **ve** rotaya dönüş **ve** süre içinde sıralı waypoint'ler ve hedefe varış. | En az 24/30 engelli denemeye karşılık gelir; yalnız toplam 24/30 olması koşul başına hedefi karşılamaya yetmez. Algılama ve kaçınma aşamaları ayrıca raporlanacak. |
+| Birleşik otonom görev başarısı | K1, K2 ve K3'ün **her birinde en az 8/10** geçerli denemede: temas öncesi algılama **ve** çarpışmasız kaçınma **ve** rotaya dönüş **ve** süre içinde sıralı waypoint'ler ve hedefe varış. | Kullanıcı bu ana hedefi uygun buldu. En az 24/30 engelli denemeye karşılık gelir; yalnız toplam 24/30 olması koşul başına hedefi karşılamaya yetmez. Algılama ve kaçınma aşamaları ayrıca raporlanacak. |
 | Bağımsız konum ölçümü kontrolü | Değerlendirmede kullanılan alanı kapsayan, dönüşüm hesabında kullanılmamış kontrol noktalarında mutlak konum hatası hedefi **en çok 2 cm**. | 10 cm kabul bandına göre beşte bir kontrol hedefidir; sağlandığı henüz bilinmiyor. Tek başına tüm hareketli ölçümlerin belirsizliğini kanıtlamaz. |
 
-Bu eşikler uygulanabilirliği incelenecek proje hedefleridir; kabul garantisi veya istatistiksel güç hesabı değildir. Hedefler kullanıcı ve danışmanla başvurudan önce kararlaştırılacak. Kalibrasyonla seçilecek algılama/durma mesafesi, yan açıklık, örnekleme aralığı ve zaman eşleme doğruluğu ayrıca sayısallaştırılacak; şimdilik doğrulanmamış değer yazılmadı.
+40 denemelik tekrar planı ve her engelli koşulda en az 8/10 birleşik başarı hedefi kullanıcı tarafından seçildi. Diğer satırlardaki hız, 9/10 ek hedefleri, mesafe, süre ve ölçüm kontrol değerleri öneri durumunda. Tüm planın uygulanabilirliği ve danışman değerlendirmesi başvurudan önce tamamlanacak; bunlar kabul garantisi veya istatistiksel güç hesabı değildir. Kalibrasyonla seçilecek algılama/durma mesafesi, yan açıklık, örnekleme aralığı ve zaman eşleme doğruluğu ayrıca sayısallaştırılacak; şimdilik doğrulanmamış değer yazılmadı.
 
 Algılama eşiğinde sensörün gövdeye göre konumu, toplam algılama/karar gecikmesindeki ilerleme, ölçülmüş durma mesafesi ve açıklık payı birlikte dikkate alınacak. Sensörün kendi referansından verdiği mesafe doğrudan araç gövdesinin açıklığı sayılmayacak.
 
@@ -86,6 +86,6 @@ Engelsiz ve kaçınma dışındaki rota izleme bölümleri için sonlu referans 
 1. Deney alanının yeri/erişimi ve telefonun tüm alanı sabit görebilmesi; bu bilgi kullanıcıya soruldu, yanıt henüz alınmadı.
 2. Nihai gövde ölçüleri, engel ve sensör geometrisi; önerilen parkurda serbest yolun doğrulanması.
 3. Algoritma, başlangıç/rotaya dönüş kuralları ve bağlantı/sensör hatası davranışı.
-4. Bu belgedeki tekrarlar ve hedefler için kullanıcı/danışman değerlendirmesi; kalibrasyona bağlı eksik parametreler ve resmî takvimle uyum.
+4. Seçilen tekrar planı ve ana hedefin danışman incelemesi; kalan sayısal önerilerin değerlendirilmesi, kalibrasyona bağlı eksik parametreler ve resmî takvimle uyum.
 
 Yöntemin literatür dayanağı [yöntem taslağı](YONTEM_TASLAGI.md) ve [literatür karşılaştırmasında](LITERATUR_KARSILASTIRMASI.md) kayıtlıdır. Buradaki koşullar ve sayısal eşikler bu proje için tasarım önerisidir; anılan kaynakların elde ettiği sonuçlar olarak sunulmaz.

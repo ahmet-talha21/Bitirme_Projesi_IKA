@@ -8,7 +8,7 @@ Proje, arayüzde tanımlanan waypoint rotasını izleyen küçük bir ESP32 taba
 
 ## Çalışma durumu
 
-Şu an 2026 yılı 2209-A araştırma önerisi hazırlanıyor. Belgeler çalışma taslağıdır. Enkoderli iki motorlu hareket mimarisi ve beş sabit mesafe sensörü düzeni seçildi: ön orta, iki ön çapraz ve iki yan. Parça modelleri, kesin sensör açıları, algoritma, sayısal deney hedefleri, süre ve bütçe kesinleştirilecek. Fiziksel prototip geliştirme ve deneyler henüz yapılmadı.
+Şu an 2026 yılı 2209-A araştırma önerisi hazırlanıyor. Belgeler çalışma taslağıdır. Enkoderli iki motorlu hareket mimarisi ve beş sabit mesafe sensörü düzeni seçildi: ön orta, iki ön çapraz ve iki yan. Kullanıcı dört koşulda 10'ar tekrar, toplam 40 değerlendirme denemesini ve her engelli koşulda en az 8/10 birleşik görev başarısı hedefini uygun buldu. Parça modelleri, kesin sensör açıları, algoritma, kalan sayısal parametreler, süre ve bütçe kesinleştirilecek. Fiziksel prototip geliştirme ve deneyler henüz yapılmadı.
 
 Kullanıcı Haziran 2027 hedefinin bitirme projesi teslimi olduğunu, kesin günün henüz belli olmadığını açıkladı. Mayısta deney/analiz, Haziranda inceleme/teslim hedefi önerildi. Resmî TÜBİTAK başlangıcı belli olmadığı için toplam süre otomatik olarak altı ay kabul edilmedi.
 
@@ -30,6 +30,7 @@ Kullanıcı Haziran 2027 hedefinin bitirme projesi teslimi olduğunu, kesin gün
 - [Başvuru durumu, kalan işler ve önerilen tamamlama sırası](docs/2209-A/BASVURU_DURUMU_VE_EKSIKLER.md)
 - [Başvuru görselleri: sistem şeması, çalışma akışı ve deney alanı](docs/2209-A/gorseller/README.md)
 - [Literatür karşılaştırması ve okuma durumu](docs/2209-A/LITERATUR_KARSILASTIRMASI.md)
+- [Başvuru metninde kullanılan kaynakların tek alfabetik listesi](docs/2209-A/KAYNAKCA_TASLAGI.md)
 - [2026 başvuru kuralları ve resmî kaynaklar](docs/2209-A/2026_BASVURU_KURALLARI.md)
 - [Proje kararları ve açık bilgiler](docs/2209-A/PROJE_NOTLARI.md)
 - [Teknik yöntem ve deney planı](docs/2209-A/YONTEM_VE_DENEY_PLANI.md)
