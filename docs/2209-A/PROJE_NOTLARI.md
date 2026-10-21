@@ -18,6 +18,9 @@ Güncelleme: 21 Ekim 2026. Bu belge başvuru metni değil, kullanıcı tarafınd
 - Kullanıcının elinde henüz ESP32 yok; satın almayı planlıyor. Diğer araç bileşenlerinin mevcut olduğu bildirilmedi. Yaklaşık bütçe henüz bilinmiyor.
 - Kullanıcının lehim ekipmanı var ve araç montajında sorun yaşayacağını düşünmüyor. Bu bilgi kişisel olanaktır; üniversite laboratuvarı, 3D yazıcı veya başka kurum altyapısının mevcut olduğu henüz doğrulanmadı.
 - TÜBİTAK 2209-A başvurusu hazırlanacak.
+- Başvuru tek öğrenciyle yapılacak; proje ortağı bulunmayacak.
+- Başvuru sahibi Konya Teknik Üniversitesi Elektrik-Elektronik Mühendisliği Bölümü 4. sınıf öğrencisi olduğunu belirtti. Adı ve soyadı henüz bildirilmedi; GitHub kullanıcı adından çıkarılmayacak.
+- Akademik danışman, kullanıcının bildirdiği üzere Prof. Dr. Murat Ceylan.
 - Teknik ayrıntılar kullanıcıya sorularak netleştirilecek; bilinmeyen özellikler ve sonuçlar yazılmayacak.
 - Kullanıcı projeye henüz başlamadığını belirtti. Şu an başvuru hazırlığı ve tasarım planlama aşamasındayız; çalışan araç, kurulmuş deney düzeneği veya tamamlanmış ön deney bulunmuş gibi yazılmayacak.
 - Kullanıcı deney kapsamının uygulanabilir ve güçlü bir başvuru sağlayacak şekilde seçilmesini istedi. Bu kapsamda ilk deneyler için sabit engeller seçildi: engeller denemeler sırasında hareketsiz olacak, yerleşimleri denemeler arasında değiştirilebilecek. Hareketli engeller ana başvuru kapsamına eklenmedi. Bu bir çalışma planıdır; deney sonucu değildir.
@@ -28,6 +31,8 @@ Güncelleme: 21 Ekim 2026. Bu belge başvuru metni değil, kullanıcı tarafınd
 
 Mevcut ekipman durumu ve teklif alınacak kalemler [malzeme ve bütçe ön listesinde](MALZEME_VE_BUTCE_ON_LISTESI.md) tutuluyor. Fiyatlar doğrulanmadan başvuru bütçesi oluşturulmayacak.
 
+Başvuru sahibinin bildirdiği kurum, bölüm, sınıf, danışman ve tek yürütücülü görev dağılımı [genel bilgiler ve görevler taslağında](GENEL_BILGILER_VE_GOREVLER.md) tutuluyor. Üniversitedeki kayıt veya altyapı olanakları bağımsız olarak doğrulanmış değildir.
+
 - Ölçülü waypoint ekranının fiziksel alanla eşleştirilmesi ve başlangıç noktası/yönünün tanımlanması.
 - Planlanan 3 × 3 metre alanın fiziksel yeri, kesin araç ölçüleri ve donanım seçildikten sonra parkurun yeterliliğinin değerlendirilmesi.
 - Manuel kontrolün ayrıca gerekip gerekmediği.
@@ -35,13 +40,13 @@ Mevcut ekipman durumu ve teklif alınacak kalemler [malzeme ve bütçe ön liste
 - Bilgisayar öncelikli ve telefonda da çalışan arayüzün uygulama teknolojisi, haberleşme yöntemi ve engelden kaçınma algoritması.
 - Araştırma sorusu, karşılaştırma yöntemi ve ölçülebilir başarı ölçütleri.
 - Sabit engellerin boyutları, malzemeleri, geçiş açıklıkları ve yerleşimleri; algılama mesafesi, hız ve başarının sayısal eşikleri.
-- Ekip, danışman, kurum, olanaklar, süre ve bütçe.
+- Yürütücünün adı/soyadı, kullanılabilecek kurum olanakları, proje süresi ve bütçe. Tek yürütücülü başvuru, üniversite/bölüm/sınıf ve danışman bilgisi kullanıcı tarafından belirtildi.
 
 ## Belgeler ve doğrulama durumu
 
 - Kullanıcı tarafından kabul almış örnekler olarak sunulan iki PDF incelendi. İç kapaklarında 2025 yılı belirtiliyor. Bunlar araştırma önerisi formu niteliğinde; güncel resmî şablon veya sonuç raporu olarak kullanılmayacak.
 - Örneklerde bilimsel nitelik, amaç/hedefler, yöntem, proje yönetimi, yaygın etki ve kaynaklar bulunuyor. Güncel şartlar resmî 2026 belgeleriyle ayrıca kontrol edildi; ayrıntılar [2026 başvuru kurallarında](2026_BASVURU_KURALLARI.md).
-- Örnek metinler kopyalanmayacak; içlerindeki kaynaklar bağımsız doğrulama yapılmadan kullanılmayacak. Kişisel bilgiler ve örnek PDF'ler bu depoya eklenmedi.
+- Örnek metinler kopyalanmayacak; içlerindeki kaynaklar bağımsız doğrulama yapılmadan kullanılmayacak. Örnek PDF'ler ve bu örneklerdeki diğer başvuru sahiplerinin kişisel bilgileri bu depoya aktarılmadı. Mevcut başvuru sahibinin bu çalışma için bildirdiği bilgiler ayrı taslakta tutuluyor.
 - Öğretim üyesinin paylaşılan uyarıları: güncel yönergeleri izlemek, eksik/uydurma kaynak kullanmamak, kaynak metinleri aynen aktarmamak ve yüklemeden önce öğretim üyesi kontrolünü sağlamak.
 - Resmî sayfa: https://tubitak.gov.tr/tr/burslar/lisans-onlisans/destek-programlari/2209-universite-ogrencileri-arastirma-projeleri-destekleme-programi
 - Önceki 403 erişim hatasının ardından 21 Ekim 2026 tarihinde yeniden denendi: program sayfası, 2026 çağrı duyurusu, 2026 başvuru içeriği bilgi notu ve ÜYZ rehberi HTTP 200 ile indirildi. Kullanıcının yüklediği bilgi notunun SHA-256 değeri resmî dosyayla aynı: `d5bf5477971b5924fe079970bab156057378afa1c2bff07df0a0d78614aba0e6`.
