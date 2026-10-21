@@ -1,26 +1,27 @@
-﻿Kod;Kalem;Aday_ozellik;Onerilen_adet;Birim;Taslak_kapsami;Tam_urun_kodu;Satici_URL;Fiyat_tarihi;Birim_fiyat_TL;KDV_durumu;Ara_toplam_TL;Stok;Uyumluluk_durumu;Not
-B01;ESP32 geliştirme kartı;DevKitC V4 / WROOM-32E;1;adet;temel öneri;;;;;;;;ürün düzeyinde kontrol bekliyor;Kart sürümü ve besleme şeması doğrulanacak.
-B02;Enkoderli redüktörlü DC motor;N20 sınıfı düşük akımlı 6 V yaklaşık 100 d/d;2;adet;temel öneri;;;;;;;;ürün düzeyinde kontrol bekliyor;İki aynı model. Akım, tork, enkoder çıkışı ve çözünürlük doğrulanacak.
-B03;Tahrik tekerleği;Motor miline uyumlu yaklaşık 60 mm;2;adet;temel öneri;;;;;;;;ürün düzeyinde kontrol bekliyor;Kitte varsa mükerrer alım olmayacak.
-B04;Şasi;Yaklaşık 20 x 15 cm sınıfı;1;adet;temel öneri;;;;;;;;ürün düzeyinde kontrol bekliyor;Boyut, kütle ve parça yerleşimi doğrulanacak.
-B05;Motor bağlantı aparatı;Seçilecek motor ve şasiye uyumlu;2;adet;temel öneri;;;;;;;;ürün düzeyinde kontrol bekliyor;Kitte varsa mükerrer alım olmayacak.
-B06;Serbest taşıyıcı teker;Tahrik tekerleklerine uygun yükseklikte;1;adet;temel öneri;;;;;;;;ürün düzeyinde kontrol bekliyor;Kitte varsa mükerrer alım olmayacak.
-B07;Çift kanallı motor sürücüsü;TB6612FNG düşük akımlı motor koşuluyla;1;adet;temel öneri;;;;;;;;ürün düzeyinde kontrol bekliyor;Motor ve gerçek modülün sürekli akım/ısıl sınırlarıyla birlikte seçilecek.
-B08;Sabit mesafe sensörü;VL53L0X ve belgeli 3,3 V arayüz;5;adet;sayı/düzen seçildi, model aday;;;;;;;;ürün düzeyinde kontrol bekliyor;Kullanıcı beş sabit sensörle ilerlemeyi seçti: ön orta, iki ön çapraz, iki yan. Model ve kesin açılar seçilmedi.
-B09;I2C çoklayıcı modül;TCA9548A;1;adet;temel öneri;;;;;;;;ürün düzeyinde kontrol bekliyor;Aynı adresli sensörler ayrı kanallarda okunacak.
-B10;Hazır korumalı batarya paketi;2S paket / kimya-kapasite-akım seçilecek;1;adet;temel öneri;;;;;;;;ürün düzeyinde kontrol bekliyor;Tam ürün ve şarj uyumu doğrulanacak.
-B11;Batarya şarj cihazı;Seçilecek paket kimyası ve hücre sayısına uygun;1;adet;temel öneri;;;;;;;;ürün düzeyinde kontrol bekliyor;Paket içeriğindeyse ayrıca ikinci kez bütçelenmeyecek.
-B12;5 V regülatör modülü;Batarya aralığında en az 3 A sürekli çıkış adayı;1;adet;temel öneri;;;;;;;;ürün düzeyinde kontrol bekliyor;Gerçek giriş, çıkış ve ısıl sınırlar doğrulanacak.
-B13;3,3 V regülatör modülü;Sensör, çoklayıcı ve sürücü mantığı için;1;adet;temel öneri;;;;;;;;ürün düzeyinde kontrol bekliyor;Gerekli akım ve ısıl kapasite ürünlere göre hesaplanacak.
-B14;Ana güç anahtarı;Akım kapasitesi seçilecek;1;adet;temel öneri;;;;;;;;ürün düzeyinde kontrol bekliyor;Gerçek güç gereksinimine göre seçilecek.
-B15;Sigorta ve yuvası;Değer ve tip seçilecek;1;takım;temel öneri;;;;;;;;ürün düzeyinde kontrol bekliyor;Motor kalkışı ve kablo kapasitesi dikkate alınacak.
-B16;Devre montaj kartı;Boyut ve bağlantı düzeni seçilecek;1;adet;temel öneri;;;;;;;;ürün düzeyinde kontrol bekliyor;Motor akımı yollarının kapasitesi kontrol edilecek.
-B17;USB veri kablosu;Seçilecek kartın konektörüne uygun;1;adet;temel öneri;;;;;;;;ürün düzeyinde kontrol bekliyor;Mevcut olup olmadığı kontrol edilecek.
-B18;Bağlantı kabloları;Kesit ve uzunluklar çıkarılacak;;metre;miktarı belirlenecek;;;;;;;;ürün düzeyinde kontrol bekliyor;Bağlantı şemasından miktarlandırılmadan fiyat toplamına alınmayacak.
-B19;Güç ve sinyal konnektörleri;Tip ve akım kapasitesi seçilecek;;adet;miktarı belirlenecek;;;;;;;;ürün düzeyinde kontrol bekliyor;Farklı tipler nihai formda ayrı satırlar olacak.
-B20;Mekanik bağlantı elemanları;Vida, somun, yükseltici tipleri seçilecek;;adet;miktarı belirlenecek;;;;;;;;ürün düzeyinde kontrol bekliyor;Farklı tipler nihai formda ayrı satırlar olacak.
-B21;Motor ve besleme süzme elemanları;Değer ve tipler devreye göre seçilecek;;adet;miktarı belirlenecek;;;;;;;;ürün düzeyinde kontrol bekliyor;Farklı tipler nihai formda ayrı satırlar olacak.
-O01;IMU modülü;Altı eksenli / model seçilmedi;1;adet;isteğe bağlı;;;;;;;;ürün düzeyinde kontrol bekliyor;Gereksinimi belirlenmeden temel bütçeye eklenmeyecek.
-D01;Multimetre;Erişim ve uygun ölçüm olanakları doğrulanacak;;adet;olanak kontrolü;;;;;;;;ürün düzeyinde kontrol bekliyor;Mevcut olduğu varsayılmıyor. Satın alım kararı değil.
-D02;Metre ve alan işaretleme malzemesi;Deney düzenine göre belirlenecek;;adet;olanak kontrolü;;;;;;;;ürün düzeyinde kontrol bekliyor;İhtiyaç ve mevcut ekipman kontrol edilecek.
-D03;Bağımsız referans ölçüm düzeneği;Kamera veya alternatif yöntem seçilmedi;;adet;olanak kontrolü;;;;;;;;ürün düzeyinde kontrol bekliyor;Deney yöntemi için netleştirilecek. Kamera alımı kararı değil.
+﻿Kod;Kalem;Aday_ozellik;Onerilen_adet;Birim;Taslak_kapsami;Tam_urun_kodu;Satici_URL;Fiyat_tarihi;Birim_fiyat_TL;Kaynak_birim_fiyati;Kaynak_para_birimi;KDV_durumu;Ara_toplam_TL;Stok;Uyumluluk_durumu;Not
+B01;ESP32 geliştirme kartı;DevKitC V4 / WROOM-32E;1;adet;temel öneri;;;;;;;;;;ürün düzeyinde kontrol bekliyor;Kart sürümü ve besleme şeması doğrulanacak.
+B02;Enkoderli redüktörlü DC motor;Pololu #5143 MP 210:1 6 V / 100 d/d veya belgeli eşdeğer;2;adet;temel öneri;Pololu 5143 (referans aday);https://www.pololu.com/product/5143/specs;2026-10-21;;29,95;USD;Türkiye teslim vergileri doğrulanmadı;;"Sayfada InStock; miktar teyit edilmedi";"referans sinyal/besleme incelendi; gerçek yük ve temin açık";6 V için 0,67 A teorik sıkışma akımı. 5 V yük davranışı kontrol edilecek. İthalat/kur/kargo bilinmediği için TL fiyat boş.
+B03;Tahrik tekerleği;Motor miline uyumlu yaklaşık 60 mm;2;adet;temel öneri;;;;;;;;;;ürün düzeyinde kontrol bekliyor;Kitte varsa mükerrer alım olmayacak.
+B04;Şasi;Yaklaşık 20 x 15 cm sınıfı;1;adet;temel öneri;;;;;;;;;;ürün düzeyinde kontrol bekliyor;Boyut, kütle ve parça yerleşimi doğrulanacak.
+B05;Motor bağlantı aparatı;Seçilecek motor ve şasiye uyumlu;2;adet;temel öneri;;;;;;;;;;ürün düzeyinde kontrol bekliyor;Kitte varsa mükerrer alım olmayacak.
+B06;Serbest taşıyıcı teker;Tahrik tekerleklerine uygun yükseklikte;1;adet;temel öneri;;;;;;;;;;ürün düzeyinde kontrol bekliyor;Kitte varsa mükerrer alım olmayacak.
+B07;Çift kanallı motor sürücüsü;TB6612FNG düşük akımlı motor koşuluyla;1;adet;temel öneri;Direnc.net 21228 (yerel aday);https://www.direnc.net/tb6612fng-dc-ve-step-motor-surucu-modulu;2026-10-21;81,36;81,36;TRY;Dahil;81,36;"Sayfada InStock; miktar teyit edilmedi";gerçek taşıyıcı bağlantı/ısıl kontrolü açık;"Fiyat adayı. Teknik taşıyıcı referansı Pololu #713; farklı modüllerin kapasitesi aynı varsayılmayacak."
+B08;Sabit mesafe sensörü;VL53L0X ve belgeli 3,3 V arayüz;5;adet;sayı/düzen seçildi, model aday;;;;;;;;;;ürün düzeyinde kontrol bekliyor;Kullanıcı beş sabit sensörle ilerlemeyi seçti: ön orta, iki ön çapraz, iki yan. Model ve kesin açılar seçilmedi.
+B09;I2C çoklayıcı modül;TCA9548A;1;adet;temel öneri;;;;;;;;;;ürün düzeyinde kontrol bekliyor;Aynı adresli sensörler ayrı kanallarda okunacak.
+B10;Hazır korumalı batarya paketi;2S paket / kimya-kapasite-akım seçilecek;1;adet;temel öneri;;;;;;;;;;ürün düzeyinde kontrol bekliyor;"Korumalı paket koşulu açık. Power-Xtra 16322 fiyat adayı ayrı karşılaştırmada; koruması doğrulanmadan bu satırda seçilmiş sayılmayacak."
+B11;Batarya şarj cihazı;Seçilecek paket kimyası ve hücre sayısına uygun;1;adet;temel öneri;RLF11A04-4021 (aday);https://www.robolinkmarket.com/a3-kompakt-lipo-2s-3s-sarj-aleti;2026-10-21;870,00;870,00;TRY;Dahil;870,00;"Sayfada InStock; miktar teyit edilmedi";bataryayla akım, dengeleme ve soket uyumu açık;2S/3S LiPo şarj adayı. Seçilecek paketin şarj akımı ve bağlantısı kontrol edilmeden kesin ürün olmayacak.
+B12;5 V regülatör modülü;Batarya aralığında en az 3 A sürekli çıkış adayı;1;adet;temel öneri;;;;;;;;;;ürün düzeyinde kontrol bekliyor;Gerçek giriş, çıkış ve ısıl sınırlar doğrulanacak.
+B13;3,3 V regülatör modülü;Sensör, çoklayıcı ve sürücü mantığı için;1;adet;temel öneri;;;;;;;;;;ürün düzeyinde kontrol bekliyor;Gerekli akım ve ısıl kapasite ürünlere göre hesaplanacak.
+B14;Ana güç anahtarı;Akım kapasitesi seçilecek;1;adet;temel öneri;;;;;;;;;;ürün düzeyinde kontrol bekliyor;Gerçek güç gereksinimine göre seçilecek.
+B15;Sigorta ve yuvası;Değer ve tip seçilecek;1;takım;temel öneri;;;;;;;;;;ürün düzeyinde kontrol bekliyor;Motor kalkışı ve kablo kapasitesi dikkate alınacak.
+B16;Devre montaj kartı;Boyut ve bağlantı düzeni seçilecek;1;adet;temel öneri;;;;;;;;;;ürün düzeyinde kontrol bekliyor;Motor akımı yollarının kapasitesi kontrol edilecek.
+B17;USB veri kablosu;Seçilecek kartın konektörüne uygun;1;adet;temel öneri;;;;;;;;;;ürün düzeyinde kontrol bekliyor;Mevcut olup olmadığı kontrol edilecek.
+B18;Bağlantı kabloları;Kesit ve uzunluklar çıkarılacak;;metre;miktarı belirlenecek;;;;;;;;;;ürün düzeyinde kontrol bekliyor;Bağlantı şemasından miktarlandırılmadan fiyat toplamına alınmayacak.
+B19;Güç ve sinyal konnektörleri;Tip ve akım kapasitesi seçilecek;;adet;miktarı belirlenecek;;;;;;;;;;ürün düzeyinde kontrol bekliyor;"Farklı tipler ayrı satırlar olacak. Referans motorun iki kablosu B22 içinde; mükerrer sayılmayacak."
+B20;Mekanik bağlantı elemanları;Vida, somun, yükseltici tipleri seçilecek;;adet;miktarı belirlenecek;;;;;;;;;;ürün düzeyinde kontrol bekliyor;Farklı tipler nihai formda ayrı satırlar olacak.
+B21;Motor ve besleme süzme elemanları;Değer ve tipler devreye göre seçilecek;;adet;miktarı belirlenecek;;;;;;;;;;ürün düzeyinde kontrol bekliyor;Farklı tipler nihai formda ayrı satırlar olacak.
+B22;Motor/enkoder bağlantı kablosu;Altı pin JST SH tarzı tek uçlu 30 cm / Pololu #4763;2;adet;referans motorla gerekli, ürün aday;Pololu 4763 (aday);https://www.pololu.com/product/4763;2026-10-21;;3,00;USD;Türkiye teslim vergileri doğrulanmadı;;"Sayfada InStock; miktar teyit edilmedi";referans motor konektörüyle eşleşme incelendi;Referans motorlara dahil değil. Farklı motor seçilirse soket değişebilir. USD TL tutara çevrilmedi.
+O01;IMU modülü;Altı eksenli / model seçilmedi;1;adet;isteğe bağlı;;;;;;;;;;ürün düzeyinde kontrol bekliyor;Gereksinimi belirlenmeden temel bütçeye eklenmeyecek.
+D01;Multimetre;Erişim ve uygun ölçüm olanakları doğrulanacak;;adet;olanak kontrolü;;;;;;;;;;ürün düzeyinde kontrol bekliyor;Mevcut olduğu varsayılmıyor. Satın alım kararı değil.
+D02;Metre ve alan işaretleme malzemesi;Deney düzenine göre belirlenecek;;adet;olanak kontrolü;;;;;;;;;;ürün düzeyinde kontrol bekliyor;İhtiyaç ve mevcut ekipman kontrol edilecek.
+D03;Bağımsız referans ölçüm düzeneği;Kamera veya alternatif yöntem seçilmedi;;adet;olanak kontrolü;;;;;;;;;;ürün düzeyinde kontrol bekliyor;Deney yöntemi için netleştirilecek. Kamera alımı kararı değil.

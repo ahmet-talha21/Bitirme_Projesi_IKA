@@ -14,6 +14,7 @@ Kontrol tarihi: 21 Ekim 2026. Bu not, aşağıdaki resmî kaynaklardan hazırlan
 - Program sayfasına göre araştırma önerisi formu TYBS'ye girilen bilgilerden sistem tarafından oluşturuluyor; ayrı araştırma önerisi dosyası yükleme adımı bulunmuyor. Depodaki taslaklar ilgili TYBS alanlarına aktarılacak hazırlık metinleridir.
 - Başvuru ve akademik danışman onayı için son tarih: 11 Kasım 2026, saat 17.30 (Türkiye saati). Kuruluş yetkilisi e-imza dönemi: 16–23 Kasım 2026. Başvuru, danışman ve kuruluş onay süreçleri birlikte takip edilecek.
 - Program sayfasında destek üst sınırı 12.000 TL, azami süre 12 ay olarak belirtiliyor. Bunlar proje için seçilmiş süre veya bütçe değil; malzeme bütçesi ayrıca oluşturulacak.
+- 2026 çağrı duyurusunun 6.1 maddesi süreyi değerlendirme sonuçlarının ilan edildiği tarihten itibaren en fazla 12 ay olarak tanımlıyor. Başlangıç tarihi sonuçlar açıklanmadan kesinmiş gibi yazılmayacak; kullanıcının Haziran bitiş hedefiyle resmî süre hesabı birlikte ele alınacak.
 - Metin Türkçe hazırlanacak. Başlık amacı ve içeriği yansıtacak; marka veya ticari ürün öne çıkarılmayacak. Teknik bileşen seçimiyle ilgili bilgiler gerekli teknik bağlamda açıklanacak.
 
 ## Bilgi notundaki bölüm şartları

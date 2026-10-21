@@ -29,6 +29,8 @@ Enkoder ve IMU ile konum kestiriminde hata birikebilir. Parkur uzunluğu, zemin 
 
 Malzeme planını somutlaştırmak için [ayrı bir donanım adayı](DONANIM_SECENEKLERI_VE_UYUMLULUK.md) hazırlandı. Kullanıcı beş sabit sensörlü düzenle ilerlemeyi seçti. ToF modeli ve I²C çoklayıcı hâlen adaydır. Ürünlerin fiyatı, motor/sürücü/güç uyumu ve gerçek sensör kapsaması doğrulandıktan sonra yöntemle birlikte güncellenecek.
 
+[Motor–sürücü–batarya karşılaştırmasında](MOTOR_SURUCU_BATARYA_KARSILASTIRMASI.md) somut referans motorların üretici verileri, enkoder sinyal seviyeleri ve bir TB6612FNG taşıyıcısının besleme/akım sınırları incelendi. Bu çalışma, parça önerisini destekler; 5 V altında yük deneyi, kurulmuş prototip veya kesin ürün seçimi değildir. Batarya/şarj/koruma ve toplam maliyet ayrıca tamamlanacak.
+
 ## 3. Arayüz ve haberleşme önerisi
 
 - Bilgisayar ve telefon tarayıcısından açılabilen bir web arayüzü.

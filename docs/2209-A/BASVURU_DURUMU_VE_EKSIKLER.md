@@ -6,16 +6,16 @@ Güncelleme: 21 Ekim 2026. Bu liste hazırlık durumunu gösterir; başvurunun g
 
 | Bölüm | Durum | Tamamlanması için gereken |
 | --- | --- | --- |
-| Genel bilgiler | Yürütücü, kurum/bölüm ve danışman bilgileri kullanıcıdan alındı. | Son başlık, süre ve bütçe. |
+| Genel bilgiler | Yürütücü, kurum/bölüm, danışman ve Haziran 2027 bitirme teslim hedefi alındı. | Son başlık, kesin teslim günü, resmî TÜBİTAK süresi ve bütçe. |
 | 1.1 Bilimsel nitelik | Kaynak destekli ilk metin ve ilgili çalışma karşılaştırması hazır. | Yöntemle tutarlılık, katkının son ifadesi ve danışman incelemesi. |
 | 1.2 Amaç ve hedefler | Kapsam ve temel işlevler taslak olarak yazıldı. | Ölçülebilir başarı eşikleri ve bunların uygulanabilirlik gerekçesi. |
 | 2 Yöntem | Enkoderli iki motorlu araç, beş sabit mesafe sensörü düzeni, waypoint rotası ve sabit engelli deney yaklaşımı yazıldı. | Parça modelleri, kesin sensör açıları, algoritma, bağımsız referans ölçümü, koşul/tekrar sayıları ve toleranslar. |
 | Görseller | Üç yenilenmiş şema PNG ve PDF olarak hazır. | Son yöntem ve parça seçiminden sonra etiket kontrolü; TYBS önizlemesinde okunabilirlik. |
-| 3.1 Çalışma takvimi | Beş iş paketi ve tek öğrenciye ait görevler önerildi. | Proje süresi, ay aralıkları, başarı ölçütleri ve toplamı 100 olan katkı değerleri. |
+| 3.1 Çalışma takvimi | Kasım–Haziran akademik hedef planı, beş iş paketi, bağımlılıklar, başarı kontrolleri ve toplamı %100 olan katkı önerisi yazıldı. | Resmî başlangıç/süreyle uyumlu TYBS ay aralıkları, kesin teslim günü ve sayısal deney eşikleri. |
 | 3.2 Risk yönetimi | Temel hedefleri koruyan önlem ve B planları taslak olarak hazır. | Nihai donanım, algoritma ve ölçüm düzenine göre somutlaştırma. |
 | 3.3 Araştırma olanakları | Kişisel lehim ekipmanı biliniyor. | Kurumda gerçekten kullanılabilecek altyapı ve deney yeri kullanıcı/danışmanla doğrulanacak. |
 | 4 Yaygın etki | Prototip, arayüz, deney kayıtları ve dokümantasyon çıktıları önerildi. | Süre ve kapsamla son uyum; danışman incelemesi. |
-| Malzeme / bütçe | Aday donanım düzeni, miktar listesi, uyumluluk koşulları ve CSV teklif formu hazır. | Kullanıcıyla son seçim; motor/batarya tam kodları, ürün düzeyinde uyumluluk, tarihli fiyatlar ve toplam. Satıcı erişimi kısıtlı; doğrulanmış toplam yok. |
+| Malzeme / bütçe | Aday düzen, miktar listesi ve CSV formu hazır. Referans motor/sürücü verileri ve bazı tarihli satıcı fiyatları okundu. | Son ürün seçimi, batarya/şarj/koruma uyumu, gerçek yük, motorun teslim maliyeti, kalan fiyatlar ve toplam. Satıcı erişimi sağlandı; tam bütçe hâlâ yok. |
 | Kaynakça | Okunan kaynaklar ve doğrulama durumu kayıtlı. | Nihai metinde kullanılan kaynakların tek alfabetik listede birleştirilmesi, atıf ve DOI kontrolü. |
 | Özet | Henüz yazılmadı. | Diğer bölümler kesinleşince 25–450 kelime olarak yazılacak. |
 

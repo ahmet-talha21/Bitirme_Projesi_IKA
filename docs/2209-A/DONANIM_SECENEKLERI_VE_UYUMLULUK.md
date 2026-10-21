@@ -1,13 +1,13 @@
 # Donanım seçeneği ve uyumluluk değerlendirmesi
 
-Tarih: 21 Ekim 2026. Bu belge, birlikte değerlendirilecek ilk somut donanım önerisidir. ESP32, iki enkoderli motor mimarisi ve beş sabit mesafe sensörü düzeni kullanıcı tarafından seçildi. Sensörlerin genel yönleri ön orta, iki ön çapraz ve iki yandır. Aşağıdaki kart/modül modelleri, kesin montaj açıları, ölçüler ve besleme düzeni henüz kullanıcı kararı veya kesin satın alma listesi değildir. Ürünlerin stok, fiyat ve tüm elektriksel özellikleri doğrulanmış değildir.
+Tarih: 21 Ekim 2026. Bu belge, birlikte değerlendirilecek donanım önerisidir. ESP32, iki enkoderli motor mimarisi ve beş sabit mesafe sensörü düzeni kullanıcı tarafından seçildi. Sensörlerin genel yönleri ön orta, iki ön çapraz ve iki yandır. Aşağıdaki kart/modül modelleri, kesin montaj açıları, ölçüler ve besleme düzeni henüz kullanıcı kararı veya kesin satın alma listesi değildir. Bazı ürünlerin teknik verileri ve sayfa fiyatları sonradan doğrulandı; tüm ürünlerin uyumluluğu, temini ve toplam bütçe tamamlanmadı.
 
 ## 1. Önerilen başlangıç düzeni
 
 | İşlev | Önerilen aday | Gerekçe / seçimi tamamlayacak koşul |
 | --- | --- | --- |
 | Ana kontrol | Bir ESP32-DevKitC V4, ESP32-WROOM-32E modüllü sürüm. | Wi-Fi, motor kontrolü ve enkoder/sensör bağlantıları için aday. Gerçek kartın pinleri ve besleme şeması kontrol edilecek. Farklı ESP32 kartları aynı pin düzenine sahip varsayılmayacak. |
-| Hareket | İki aynı model, enkoderli N20 sınıfı düşük akımlı 6 V redüktörlü DC motor; yaklaşık 100 d/d çıkış hızı bir arama ölçütü. | Küçük araç için başlangıç adayı. Sıkışma akımı, tork, enkoder beslemesi/çıkışı ve çözünürlük tanımı alınmadan ürün seçilmeyecek. Bu öneri belirli bir N20 ürününün bu şartları karşıladığı iddiası değildir. |
+| Hareket | İki aynı model enkoderli 6 V motor; Pololu #5143 MP 210:1 / 100 d/d somut referans adayı. | Üretici 0,67 A teorik sıkışma akımı ve 3,3 V ile beslenebilir enkoder bildiriyor. Yerel temin, teslim maliyeti ve gerçek yük davranışı açık. LP #5115 alternatifiyle karşılaştırma ayrı belgede. |
 | Mekanik | Yaklaşık 20 × 15 cm sınıfında şasi; motor miline uygun yaklaşık 60 mm iki tekerlek, iki motor bağlantısı ve bir serbest taşıyıcı teker. | Ölçüler tasarım önerisi. Batarya, motor ve sensörler yerleştirilince toplam kütle, tekerlek açıklığı ve dönüş sırasında taranan alan kontrol edilecek. Hazır kitte bulunan parçalar ayrıca iki kez bütçelenmeyecek. |
 | Motor sürücüsü | Bir TB6612FNG çift kanallı modül, düşük akımlı motor şartıyla. | İki motor için bağımsız hız/yön kontrolü. Bu ön düzen için her motorun 6 V'daki sıkışma akımı en fazla 1 A olan model aranacak; seçilecek modülün sürekli akım/ısıl kapasitesi ayrıca doğrulanacak. Uygun motor bulunamazsa sürücü adayı değiştirilecek. |
 | Engel mesafesi | Beş sabit mesafe sensörü; VL53L0X ToF taşıyıcısı model adayı. | Sensör sayısı ve ön orta, iki ön çapraz, iki yan düzeni kullanıcı tarafından seçildi. Tür/model, kesin açılar ve gerçek kapsama doğrulanacak. ToF adayı için 3,3 V besleme ve I²C uyumluluğu belgeli olacak. |
@@ -21,6 +21,8 @@ Motorun yalnızca boşta akımı yeterli değildir. Sürücü seçimi için çal
 Başlangıç için düşük akımlı motor arama koşulu konuldu. Motor bu koşulu karşılamıyorsa listede yalnızca adını değiştirmek yetmez; sürücü, regülatör ve batarya akım gereksinimi birlikte yeniden hesaplanacak. İki motor aynı anda yük altındayken gerekli toplam akım da dikkate alınacak.
 
 Enkoderin A/B çıkışları ESP32'nin 3,3 V girişleriyle uyumlu olacak. Enkoderin motorla aynı beslemeyi kullandığı varsayılmayacak; gerekirse uygun seviye dönüştürme veya başka motor/enkoder ürünü seçilecek. Çözünürlük, motor mili/çıkış mili ayrımı ve sayılan kenarlar belirtilerek kaydedilecek.
+
+Sonraki incelemede Pololu #5143 ve #5115 motorlarının üretici sayfaları, Rev 6.2 veri sayfasının ilgili tablosu/enkoder açıklaması ve #713 TB6612FNG taşıyıcı belgesi okundu. Referans eşleşme ile yerel fiyatlar [motor–sürücü–batarya karşılaştırmasında](MOTOR_SURUCU_BATARYA_KARSILASTIRMASI.md). Sinyal/besleme sınırları incelendi; gerçek araç yükü ve ürün temini tamamlanmadı.
 
 ## 2. Seçilen beş sabit sensörlü düzen
 
@@ -76,10 +78,12 @@ Batarya kapasitesinden çalışma süresi henüz hesaplanmadı. Motor yükü, el
 - **[D5]** Adafruit, *vl53l0x_dual* örneği: [kaynak](https://github.com/adafruit/Adafruit_VL53L0X/blob/master/examples/vl53l0x_dual/vl53l0x_dual.ino). XSHUT ile sıralı başlatma ve ayrı adresler incelendi; bu proje kodu olarak denenmedi.
 - **[D6]** Adafruit, *TCA9548A I2C Multiplexer PCB*: [taşıyıcı kaynak deposu](https://github.com/adafruit/Adafruit-TCA9548A-I2C-Multiplexer-PCB). Sekiz kanal ve kanal seçimi açıklaması okundu.
 
-Motor ve batarya için henüz seçilmiş ürün veri sayfası yok. Ürün düzeyindeki uyumluluk kontrolü bu nedenle tamamlanmış sayılmıyor.
+Motor için referans ürün sayfaları ve ilgili veri sayfası bölümleri sonradan incelendi. Bunlar henüz satın alma kararı değil. Bataryanın satıcı bilgileri bulundu; paket koruması, izin verilen şarj akımı ve soket uyumu tamamlanmadığı için tüm sistemin ürün düzeyindeki kontrolü bitmiş sayılmıyor.
 
 ## Erişim ve fiyat durumu
 
-Robotistan, Robolink Market ve Direnc.net sayfaları ile Pololu, ST, TI ve Espressif'in doğrudan doküman sitelerine istekler ağ aracısında 403 ile engellendi. İlgili GitHub kaynakları okunabildi. Fiyat karşılaştırması veya toplam maliyet elde edilemedi.
+İlk incelemede Robotistan, Robolink Market ve Direnc.net sayfaları ile Pololu, ST, TI ve Espressif'in doğrudan doküman sitelerine istekler ağ aracısında 403 ile engellendi. İlgili GitHub kaynakları okunabildi. O aşamada fiyat karşılaştırması elde edilemedi.
 
-Gerekli alan adları, önceki izinler korunarak ortam yapılandırma taslağına eklendi. Araç `saved` ve `requires_publish: true` döndürdü. Bu kayıt ağı etkinleştirmedi; kayıttan sonraki denemelerde de 403 sürdü. Ortam ayarlarında değişikliklerin kaydedilip ortamın yayımlanması gerekiyor. Eklenen alan adları: `www.robotistan.com`, `www.robolinkmarket.com`, `www.direnc.net`, `www.pololu.com`, `www.st.com`, `www.ti.com`, `docs.espressif.com`, `www.espressif.com`.
+Gerekli alan adları, önceki izinler korunarak ortam yapılandırma taslağına eklendi. Araç `saved` ve `requires_publish: true` döndürdü; taslak kaydı yayımlanmış yapılandırma kanıtı değildir. İlk tekrar denemelerinde de 403 sürmüştü. Eklenen alan adları: `www.robotistan.com`, `www.robolinkmarket.com`, `www.direnc.net`, `www.pololu.com`, `www.st.com`, `www.ti.com`, `docs.espressif.com`, `www.espressif.com`.
+
+21 Ekim 2026 tarihli son motor–sürücü incelemesinde Pololu, Robotistan, Robolink Market ve Direnc.net sayfalarına HTTP 200 ile erişildi. Bazı gerçek fiyatlar ve üretici teknik verileri okunabildi. Bu gözlem, ortamın yayımlandığına ilişkin ayrı bir doğrulama değildir. Güncel fiyatlar ve açık teknik koşullar [karşılaştırma belgesinde](MOTOR_SURUCU_BATARYA_KARSILASTIRMASI.md); tam proje toplamı hâlâ yok.

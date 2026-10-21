@@ -14,7 +14,7 @@ Durum: Kullanıcının 21 Ekim 2026 tarihinde bildirdiği bilgilerle hazırlanm�
 | Sınıf | 4. sınıf |
 | Akademik danışman | Prof. Dr. Murat Ceylan |
 | Proje başlığı | Kullanıcı Tanımlı Rota Takibi ve Engelden Kaçınma Özellikli Otonom Kara Aracının Geliştirilmesi — öneri; son başlık henüz onaylanmadı. |
-| Süre | Henüz belirlenmedi. |
+| Süre | Bitirme projesi teslim hedefi Haziran 2027; kesin gün henüz belli değil. Resmî TÜBİTAK başlangıcı ve toplam ay sayısı ayrıca belirlenecek. |
 | Talep edilecek bütçe | Henüz belirlenmedi; fiyatlar doğrulanacak. |
 
 Üniversite ve bölüm bilgisi, belirli bir laboratuvara veya ekipmana erişim olduğu anlamına gelmez. Kesin deney yeri ve kurum olanakları ayrıca netleştirilecek. Bu belgede kayıt durumu, danışman onayı veya TYBS işlemlerinin tamamlandığı iddia edilmiyor.
@@ -26,7 +26,7 @@ Durum: Kullanıcının 21 Ekim 2026 tarihinde bildirdiği bilgilerle hazırlanm�
 
 ## Çalışma takvimine temel olacak iş paketleri
 
-Süre, tarih aralığı, ölçülebilir başarı eşikleri ve katkı yüzdeleri henüz seçilmedi. Aşağıdaki yapı görev dağılımı önerisidir; resmî çalışma takvimi olarak aktarılmaya hazır değildir.
+Bitirme projesi hedefi Haziran 2027. [Çalışma takvimi taslağında](CALISMA_TAKVIMI_TASLAGI.md) Kasım–Haziran akademik hedef planı, iş bağımlılıkları, başarı kontrolleri ve toplamı %100 olan katkı dağılımı önerildi. Resmî TÜBİTAK başlangıcı, toplam süre, TYBS ay aralıkları ve sayısal deney eşikleri henüz kesinleşmedi. Aşağıdaki yapı görev dağılımı önerisidir; nihai TYBS takvimi değildir.
 
 | İş paketi | Uygulama sorumlusu | Planlanan çıktı / kontrol |
 | --- | --- | --- |

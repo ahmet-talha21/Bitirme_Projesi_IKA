@@ -10,6 +10,8 @@ Proje, arayüzde tanımlanan waypoint rotasını izleyen küçük bir ESP32 taba
 
 Şu an 2026 yılı 2209-A araştırma önerisi hazırlanıyor. Belgeler çalışma taslağıdır. Enkoderli iki motorlu hareket mimarisi ve beş sabit mesafe sensörü düzeni seçildi: ön orta, iki ön çapraz ve iki yan. Parça modelleri, kesin sensör açıları, algoritma, sayısal deney hedefleri, süre ve bütçe kesinleştirilecek. Fiziksel prototip geliştirme ve deneyler henüz yapılmadı.
 
+Kullanıcı Haziran 2027 hedefinin bitirme projesi teslimi olduğunu, kesin günün henüz belli olmadığını açıkladı. Mayısta deney/analiz, Haziranda inceleme/teslim hedefi önerildi. Resmî TÜBİTAK başlangıcı belli olmadığı için toplam süre otomatik olarak altı ay kabul edilmedi.
+
 ## Başvuru bölümleri
 
 | Belge | İçerik |
@@ -18,6 +20,7 @@ Proje, arayüzde tanımlanan waypoint rotasını izleyen küçük bir ESP32 taba
 | [1.1 Bilimsel nitelik taslağı](docs/2209-A/BILIMSEL_NITELIK_TASLAGI.md) | Konunun önemi, ilgili çalışmalar, araştırma sorusu ve beklenen katkı. |
 | [Amaç ve hedefler taslağı](docs/2209-A/AMAC_VE_KAPSAM_TASLAGI.md) | Projenin kapsamı ve geliştirilecek temel işlevler. |
 | [2 Yöntem taslağı](docs/2209-A/YONTEM_TASLAGI.md) | Önerilen mimari, kaçınma yaklaşımı, deney değişkenleri ve ölçüm düzeni. |
+| [3.1 Çalışma takvimi taslağı](docs/2209-A/CALISMA_TAKVIMI_TASLAGI.md) | Haziran hedefi, iş bağımlılıkları, başarı kontrolleri ve katkı dağılımı önerisi. |
 | [3.2 Risk yönetimi taslağı](docs/2209-A/RISK_YONETIMI_TASLAGI.md) | Olası teknik sorunlar, önleyici kontroller ve temel hedefleri koruyan B planları. |
 | [4 Yaygın etki taslağı](docs/2209-A/YAYGIN_ETKI_TASLAGI.md) | Beklenen prototip, arayüz, deney kayıtları ve teknik dokümantasyon çıktıları. |
 
@@ -31,6 +34,7 @@ Proje, arayüzde tanımlanan waypoint rotasını izleyen küçük bir ESP32 taba
 - [Teknik yöntem ve deney planı](docs/2209-A/YONTEM_VE_DENEY_PLANI.md)
 - [Malzeme ve bütçe ön listesi](docs/2209-A/MALZEME_VE_BUTCE_ON_LISTESI.md)
 - [Donanım adayları ve uyumluluk koşulları](docs/2209-A/DONANIM_SECENEKLERI_VE_UYUMLULUK.md)
+- [Motor–sürücü–batarya karşılaştırması ve bulunan fiyatlar](docs/2209-A/MOTOR_SURUCU_BATARYA_KARSILASTIRMASI.md)
 - [Ürün ve fiyat teklifi tablosu (CSV)](docs/2209-A/MALZEME_TEKLIF_FORMU.csv)
 
 Nihai metin, güncel TYBS alanlarına aktarılmadan önce yürütücü ve akademik danışman tarafından kontrol edilecek. Kaynaklar, deney sonuçları ve mevcut olanaklar doğrulanmış bilgilere dayanacak.

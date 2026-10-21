@@ -25,6 +25,7 @@ Güncelleme: 21 Ekim 2026. Bu belge başvuru metni değil, kullanıcı tarafınd
 - Akademik danışman, kullanıcının bildirdiği üzere Prof. Dr. Murat Ceylan.
 - Teknik ayrıntılar kullanıcıya sorularak netleştirilecek; bilinmeyen özellikler ve sonuçlar yazılmayacak.
 - Kullanıcı projeye henüz başlamadığını belirtti. Şu an başvuru hazırlığı ve tasarım planlama aşamasındayız; çalışan araç, kurulmuş deney düzeneği veya tamamlanmış ön deney bulunmuş gibi yazılmayacak.
+- Süre sorusuna kullanıcı “haziran ayına kadar sürücek” yanıtını verdi. Ardından Haziran 2027 hedefinin bitirme projesi teslimi olduğunu ve kesin günün henüz belli olmadığını açıkladı. Altı aylık süre veya Ocak başlangıcı onaylanmış sayılmayacak. Resmî TÜBİTAK süresi, sonuç ilanı ve başlangıç koşullarıyla ayrıca belirlenecek.
 - Kullanıcı deney kapsamının uygulanabilir ve güçlü bir başvuru sağlayacak şekilde seçilmesini istedi. Bu kapsamda ilk deneyler için sabit engeller seçildi: engeller denemeler sırasında hareketsiz olacak, yerleşimleri denemeler arasında değiştirilebilecek. Hareketli engeller ana başvuru kapsamına eklenmedi. Bu bir çalışma planıdır; deney sonucu değildir.
 
 ## Netleştirilecek konular
@@ -33,7 +34,9 @@ Güncelleme: 21 Ekim 2026. Bu belge başvuru metni değil, kullanıcı tarafınd
 
 Mevcut ekipman durumu ve teklif alınacak kalemler [malzeme ve bütçe ön listesinde](MALZEME_VE_BUTCE_ON_LISTESI.md) tutuluyor. Fiyatlar doğrulanmadan başvuru bütçesi oluşturulmayacak.
 
-Kullanıcının malzeme listesini oluşturma isteği üzerine [donanım adayı ve uyumluluk değerlendirmesi](DONANIM_SECENEKLERI_VE_UYUMLULUK.md) hazırlandı: WROOM-32E modüllü DevKitC, düşük akımlı enkoderli N20 motorlar, koşullu TB6612FNG, beş sabit VL53L0X ve TCA9548A, regüle beslemeli 2S paket başlangıç önerileri. Kullanıcı sonrasında beş sabit sensörlü düzenle ilerlemeyi seçti; bu yanıt belirli ürün modellerini veya kesin montaj açılarını onaylamış sayılmıyor. Motor ve batarya tam ürünleri doğrulanmadı; fiyat toplamı yok. [Teklif tablosu](MALZEME_TEKLIF_FORMU.csv) oluşturuldu. İncelenen üretici belgeleri ve devam eden ağ kısıtı teknik değerlendirmede kayıtlı.
+Kullanıcının malzeme listesini oluşturma isteği üzerine [donanım adayı ve uyumluluk değerlendirmesi](DONANIM_SECENEKLERI_VE_UYUMLULUK.md) hazırlandı: WROOM-32E modüllü DevKitC, düşük akımlı enkoderli N20 motorlar, koşullu TB6612FNG, beş sabit VL53L0X ve TCA9548A, regüle beslemeli 2S paket başlangıç önerileri. Kullanıcı sonrasında beş sabit sensörlü düzenle ilerlemeyi seçti; bu yanıt belirli ürün modellerini veya kesin montaj açılarını onaylamış sayılmıyor. İlk aşamada motor/batarya ürünleri ve fiyatlar doğrulanmamıştı. [Teklif tablosu](MALZEME_TEKLIF_FORMU.csv) oluşturuldu; sonraki incelemeyle referanslar ve bazı fiyatlar eklendi.
+
+Sonraki [motor–sürücü–batarya incelemesinde](MOTOR_SURUCU_BATARYA_KARSILASTIRMASI.md) Pololu #5143 (MP 210:1, 6 V, 100 d/d) somut motor referansı, #5115 alternatif ve #713 TB6612FNG referans taşıyıcı olarak incelendi. Bunlar ürün satın alma/onay kararı değil. Yerel satıcı ve üretici erişimi HTTP 200 ile sağlandı; bazı gerçek fiyatlar ve stok etiketleri kaydedildi. Batarya koruma/şarj bilgileri, ithal motorun teslim maliyeti, gerçek araç yükü ve tam bütçe açık. Kaynak fiyatları TL ve USD ayrı tutulacak.
 
 Başvuru sahibinin bildirdiği kurum, bölüm, sınıf, danışman ve tek yürütücülü görev dağılımı [genel bilgiler ve görevler taslağında](GENEL_BILGILER_VE_GOREVLER.md) tutuluyor. Üniversitedeki kayıt veya altyapı olanakları bağımsız olarak doğrulanmış değildir.
 
@@ -42,6 +45,8 @@ Başvuru sahibinin bildirdiği kurum, bölüm, sınıf, danışman ve tek yürü
 [Yöntem bölümünün ilk metin taslağı](YONTEM_TASLAGI.md) hazırlandı. Enkoderli iki motorlu şasi kullanıcı tarafından seçildi. Bug 2 mantığıyla durum makinesi öneri durumunda; algoritma, ürün seçimi ve sayısal deney parametreleri henüz kesinleşmedi.
 
 [Risk yönetimi](RISK_YONETIMI_TASLAGI.md) ve [yaygın etki](YAYGIN_ETKI_TASLAGI.md) için ilk taslaklar hazırlandı. Önlemler ve çıktı miktarları plan önerileridir; kullanıcı tarafından kesinleştirilmiş donanım, yeni ekipman erişimi veya gerçekleşmiş başarı olarak sunulmayacak. [Başvuru durumu ve kalan işler](BASVURU_DURUMU_VE_EKSIKLER.md) bölüm bazında izleniyor.
+
+Haziran hedefi için [çalışma takvimi taslağı](CALISMA_TAKVIMI_TASLAGI.md) hazırlandı: beş iş paketi, bağımlılıklar ve %20/%15/%20/%30/%15 katkı önerisi. Kasım–Mayıs teknik çalışma, Haziran inceleme/teslim planı akademik hedef önerisidir. Resmî TÜBİTAK başlangıcı ve toplam süre bu akademik takvimden varsayılmayacak.
 
 [Başvuru görselleri](gorseller/README.md), kullanıcının daha açıklayıcı ve görsel olarak özenli tasarım isteğiyle yenilendi: simgeli sistem mimarisi, dış dönüş oku yerine “A” bağlantıları kullanan iki kollu kontrol akışı ve temsili kaçınma yolunu da gösteren deney şeması. İlk sürüm arşivlendi. Yeni şekiller ÜYZ destekli tasarım çizimleridir; fotoğraf, gerçek deney kaydı veya simülasyon sonucu değildir. Kullanıcıdan şu anda çekim yapması beklenmiyor. İleride deney ölçümünde kamera kullanımı ayrı bir seçenek olarak açık kalıyor.
 

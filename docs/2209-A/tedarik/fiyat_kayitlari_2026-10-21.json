@@ -1,0 +1,181 @@
+{
+  "checked_on": "2026-10-21",
+  "timezone": "Europe/Istanbul",
+  "scope": "Public product page observations; no purchase, reservation, binding quote or complete project budget. USD has not been converted to TRY. Stock is a page label, not confirmed quantity.",
+  "records": [
+    {
+      "source_url": "https://www.pololu.com/product/5143/specs",
+      "html_sha256": "9910b81bd9d33be872690c5974d99a9091ad2e997321a02de4462404f800991e",
+      "product_name": "210:1 Micro Metal Gearmotor MP 6V with 12 CPR Encoder, Side Connector",
+      "sku": "5143",
+      "structured_offer": {
+        "price": "29.95",
+        "priceCurrency": "USD",
+        "availability": "InStock"
+      },
+      "observed_price_excluding_vat_try": null,
+      "observed_price_including_vat_try": null,
+      "evaluation_note": "ana teknik motor referansı; Türkiye teslim maliyeti açık"
+    },
+    {
+      "source_url": "https://www.pololu.com/product/5115/specs",
+      "html_sha256": "4cc199a0d01d50c0845ebc831ad1326d7e4e1917ddbda83e39178c8a055a78cb",
+      "product_name": "150:1 Micro Metal Gearmotor LP 6V with 12 CPR Encoder, Side Connector",
+      "sku": "5115",
+      "structured_offer": {
+        "price": "29.95",
+        "priceCurrency": "USD",
+        "availability": "InStock"
+      },
+      "observed_price_excluding_vat_try": null,
+      "observed_price_including_vat_try": null,
+      "evaluation_note": "LP alternatif; ana motorla birlikte toplanmayacak"
+    },
+    {
+      "source_url": "https://www.pololu.com/product/713",
+      "html_sha256": "3a22b40ebdf3bb74a9a063cb5f566489618e00361f4882adf189ec176f2b9a99",
+      "product_name": "TB6612FNG Dual Motor Driver Carrier",
+      "sku": "713",
+      "structured_offer": {
+        "price": "4.95",
+        "priceCurrency": "USD",
+        "availability": "InStock"
+      },
+      "observed_price_excluding_vat_try": null,
+      "observed_price_including_vat_try": null,
+      "evaluation_note": "teknik taşıyıcı referansı"
+    },
+    {
+      "source_url": "https://www.pololu.com/product/4763",
+      "html_sha256": "b7c7e1790654b6dcf9c77b184abd3ba6cfb1afbb59911f15382489cdc15acab8",
+      "product_name": "JST SH-Style Cable for Micro Metal Gearmotor Encoders, 6-Pin, Single-Ended Female, 30cm",
+      "sku": "4763",
+      "structured_offer": {
+        "price": "3.0",
+        "priceCurrency": "USD",
+        "availability": "InStock"
+      },
+      "observed_price_excluding_vat_try": null,
+      "observed_price_including_vat_try": null,
+      "evaluation_note": "motorlara dahil olmayan bağlantı kablosu"
+    },
+    {
+      "source_url": "https://www.direnc.net/tb6612fng-dc-ve-step-motor-surucu-modulu",
+      "html_sha256": "cda1b114e0e0e9c55595b7f8eafef5135a184f5a0eaba9c7ddff9bd67575fb2e",
+      "product_name": "TB6612FNG DC ve Step Motor Sürücü Modülü",
+      "sku": "T21228",
+      "structured_offer": {
+        "price": "67.80",
+        "priceCurrency": "TRY",
+        "availability": "https://schema.org/InStock"
+      },
+      "observed_price_excluding_vat_try": "67.80",
+      "observed_price_including_vat_try": "81.36",
+      "evaluation_note": "yerel taşıyıcı fiyat adayı; ürün düzeyinde kontrol açık"
+    },
+    {
+      "source_url": "https://www.direnc.net/6v-300rpm-enkoderli-motor",
+      "html_sha256": "fac08dc1fc357e22d13ac2b931596120498e2c18dda906bf822b6b3ad958a262",
+      "product_name": "JGA12-N20B - 6V 300RPM Enkoderli Motor",
+      "sku": "T22429",
+      "structured_offer": {
+        "price": "339.02",
+        "priceCurrency": "TRY",
+        "availability": "https://schema.org/InStock"
+      },
+      "observed_price_excluding_vat_try": "339.02",
+      "observed_price_including_vat_try": "406.82",
+      "evaluation_note": "akım/enkoder bilgisi eksik ve farklı hız sınıfı; uygun eşdeğer kabul edilmedi"
+    },
+    {
+      "source_url": "https://www.direnc.net/74v-2s1p-1000-mah-15c-li-polymer-pil-soketli",
+      "html_sha256": "835dd69e4f43d77f7c26ccd46cb38b5b5e76353ab2d3c72d5bde9f2137f46d5f",
+      "product_name": "7.4V 2S1P 1000 mAh (15C) Li-Polymer Pil - Soketli",
+      "sku": "T16322",
+      "structured_offer": {
+        "price": "849.97",
+        "priceCurrency": "TRY",
+        "availability": "https://schema.org/InStock"
+      },
+      "observed_price_excluding_vat_try": "849.97",
+      "observed_price_including_vat_try": "1019.96",
+      "evaluation_note": "koruma ve şarj koşulları açık; kesin paket seçimi değil"
+    },
+    {
+      "source_url": "https://www.robolinkmarket.com/a3-kompakt-lipo-2s-3s-sarj-aleti",
+      "html_sha256": "374728cda67e3fb525c18282205e96ccd369f018838cb45a02e1f487f0b49cd8",
+      "product_name": "A3 Kompakt Lipo (2S - 3S) Şarj Aleti",
+      "sku": "RLF11A04-4021",
+      "structured_offer": {
+        "price": "870.00",
+        "priceCurrency": "TRY",
+        "availability": "https://schema.org/InStock"
+      },
+      "observed_price_excluding_vat_try": "725.00",
+      "observed_price_including_vat_try": "870.00",
+      "evaluation_note": "bataryayla akım ve soket uyumu açık"
+    },
+    {
+      "source_url": "https://www.robolinkmarket.com/ubec-5v-3a-2s-6s",
+      "html_sha256": "9a2ccb1c004becd177f3e449da2fb6a9197267c1bc33978f158e201d4043fd0d",
+      "product_name": "UBEC 5V/3A (2S-6S)",
+      "sku": "RLM1D14-0848",
+      "structured_offer": {
+        "price": "273.00",
+        "priceCurrency": "TRY",
+        "availability": "https://schema.org/OutOfStock"
+      },
+      "observed_price_excluding_vat_try": "227.50",
+      "observed_price_including_vat_try": "273.00",
+      "evaluation_note": "stok yok; maksimum akım bilgisi sürekli akım kanıtı değil"
+    },
+    {
+      "source_url": "https://www.robolinkmarket.com/74v-2s-850mah-40c-lipo-batarya",
+      "html_sha256": "173ffd34baf9c9f6643e698be4ad671785a2020942e32042cc8b4e8bebc6d3dc",
+      "product_name": "7.4V 2S 850mAh 40C Lipo Batarya",
+      "sku": "RLA6B05-0850",
+      "structured_offer": {
+        "price": "1104.00",
+        "priceCurrency": "TRY",
+        "availability": "https://schema.org/OutOfStock"
+      },
+      "observed_price_excluding_vat_try": "920.00",
+      "observed_price_including_vat_try": "1104.00",
+      "evaluation_note": "stok yok; koruma bilgisi açık"
+    },
+    {
+      "source_url": "https://www.robotistan.com/tb6612fng-step-motor-surucu-dc-motor-sucuru",
+      "html_sha256": "6666b56dd3b30b5cde7d10f034ced68bfded5f5cd91b74ed8e0a8af20d456737",
+      "product_name": "TB6612FNG Step Motor Sürücü / DC Motor Sürücü",
+      "sku": "17723",
+      "structured_offer": {
+        "price": "122.04",
+        "priceCurrency": "TRY",
+        "availability": "https://schema.org/InStock"
+      },
+      "observed_price_excluding_vat_try": null,
+      "observed_price_including_vat_try": null,
+      "evaluation_note": "KDV hariç/dahil metinleri ve JSON-LD tutarı arasında tutarsızlık; bütçe referansına alınmadı"
+    },
+    {
+      "source_url": "https://www.robotistan.com/tinylab-74v-2s-lipo-batarya-1300mah-40c",
+      "html_sha256": "325dee49f889a559db9437efaee8368062652bbb7a34d8c84f35e51d7dd4d8d1",
+      "product_name": "Tinylab 7.4V 2S Lipo Batarya 1300mAh 40C",
+      "sku": "24437",
+      "structured_offer": {
+        "price": "632.34",
+        "priceCurrency": "TRY",
+        "availability": "https://schema.org/InStock"
+      },
+      "observed_price_excluding_vat_try": null,
+      "observed_price_including_vat_try": null,
+      "evaluation_note": "KDV etiketleri tutarsız; bütçe referansına alınmadı"
+    }
+  ],
+  "technical_document": {
+    "url": "https://www.pololu.com/file/0J1487/pololu-micro-metal-gearmotors-rev-6-2.pdf",
+    "revision": "February 2026 / Rev 6.2",
+    "sha256": "fb949beb58a92c4dff4d6e1849c8989761ddabe3a3224075755ad71561520ed0",
+    "read_scope": "Relevant motor specification table and encoder count definition."
+  }
+}
