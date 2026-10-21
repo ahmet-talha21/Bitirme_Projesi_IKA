@@ -14,7 +14,7 @@ Mevcut telefon ve lehim ekipmanı için yeni alım bedeli yazılmayacak. Telefon
 ## Tamamlanacak bilgiler
 
 - Kurumda kullanılabilecek çalışma alanı/laboratuvar ve erişim koşulları; kullanıcı veya danışman tarafından doğrulanacak.
-- Yaklaşık 3 × 3 metre düz deney alanının fiziksel yeri ve sabit görüntülemeye elverişliliği.
+- Kullanıcı 22 Ekim 2026 tarihinde deney yerinin henüz belli olmadığını bildirdi. Yaklaşık 3 × 3 metre düz alan seçilecek; sabit görüntülemeye elverişliliği kontrol edilecek. Yer bilgisi ilk metnin yazılması için bekletici koşul yapılmadı.
 - Multimetre ve metre/cetvel erişimi; kullanıcıya soruldu, henüz yanıtlanmadı.
 - Gerekirse şasi delme/imalat ve telefon sabitleme olanakları; mevcut sayılmadı.
 

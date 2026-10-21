@@ -83,7 +83,7 @@ Engelsiz ve kaçınma dışındaki rota izleme bölümleri için sonlu referans 
 
 ## Kesinleştirme için açık bilgiler
 
-1. Deney alanının yeri/erişimi ve telefonun tüm alanı sabit görebilmesi; bu bilgi kullanıcıya soruldu, yanıt henüz alınmadı.
+1. Kullanıcı deney yerinin henüz belli olmadığını bildirdi. Yer/erişim seçilecek ve telefonun tüm alanı sabit görebilmesi kontrol edilecek.
 2. Nihai gövde ölçüleri, engel ve sensör geometrisi; önerilen parkurda serbest yolun doğrulanması.
 3. Algoritma, başlangıç/rotaya dönüş kuralları ve bağlantı/sensör hatası davranışı.
 4. Seçilen tekrar planı ve ana hedefin danışman incelemesi; kalan sayısal önerilerin değerlendirilmesi, kalibrasyona bağlı eksik parametreler ve resmî takvimle uyum.

@@ -2,6 +2,8 @@
 
 Güncelleme: 22 Ekim 2026. Bu liste hazırlık durumunu gösterir; başvurunun gönderildiği veya onaylandığı anlamına gelmez.
 
+[İlk birleşik başvuru metni](ARASTIRMA_ONERISI_BIRLESIK_TASLAK.md), [PDF](ARASTIRMA_ONERISI_BIRLESIK_TASLAK.pdf) ve [Word](ARASTIRMA_ONERISI_BIRLESIK_TASLAK.docx) biçiminde hazırlandı. Bölümler ve mevcut üç görsel aynı belgede okunabilir. Deney yerinin henüz belli olmaması, ilk metnin hazırlanmasını durdurmadı; eksikler son bölümde açıkça işaretlendi.
+
 ## Hazırlanan bölümler
 
 | Bölüm | Durum | Tamamlanması için gereken |
@@ -17,7 +19,7 @@ Güncelleme: 22 Ekim 2026. Bu liste hazırlık durumunu gösterir; başvurunun g
 | 4 Yaygın etki | Prototip, arayüz, deney kayıtları ve dokümantasyon çıktıları önerildi. | Süre ve kapsamla son uyum; danışman incelemesi. |
 | Malzeme / bütçe | TL ve USD ara toplamlar, kaynak kayıtları ve güncel CSV hazır. 21 Ekim TCMB kuru ile eksik giderler hariç referans karşılık 11.986,24 TL; destek sınırına yalnızca 13,76 TL fark kalıyor. Pil fotoğrafındaki dört bağlantılı soket ayrıca kaydedildi. | Daha uygun fiyatlı belgeli tedarik; pil–şarj pin/akım uyumu, eksik mekanik/bağlantı/ölçüm fiyatları ve Türkiye teslim TL teklifleri. Tam proje bütçesi henüz yok. |
 | Kaynakça | Mevcut bilimsel nitelik/yöntem metinlerinde kullanılan altı kaynak tek alfabetik listede birleştirildi; atıf eşleştirmesi ve DOI'ler kaydedildi. | Nihai metin değişikliklerinde listeyi ve atıfları güncellemek; danışman incelemesi. |
-| Özet | Henüz yazılmadı. | Diğer bölümler kesinleşince 25–450 kelime olarak yazılacak. |
+| Özet | Birleşik metnin diğer bölümleri toplandıktan sonra 211 kelimelik ilk özet yazıldı. | Son yöntem, kapsam ve süre kararlarıyla yeniden eşleştirmek. |
 
 ## Görsellerin son durumu
 
@@ -30,7 +32,7 @@ Güncel görsel düzeni korunabilir. Teknik seçimler değişirse etiketler veya
 1. Motor/enkoder, şasi, mesafe sensörleri, sürücü ve güç bileşenlerini uyumluluk ve fiyatlarla seçmek. Kaçınma yaklaşımının gerektirdiği algılama kapsamını bu seçimle birlikte kararlaştırmak.
 2. Deney yeri ve bağımsız ölçüm imkânını doğrulamak; [hazırlanan protokol önerisini](DENEY_PROTOKOLU_ONERISI.md) kullanıcı/danışmanla gözden geçirmek ve kalibrasyona bağlı parametrelerle birlikte kesinleştirmek. Bunlar gelecek deneyler için planlanan ölçütler olacak.
 3. Proje süresini ve ay bazında çalışma takvimini belirlemek; risk, bütçe ve çıktı taslaklarını aynı kapsamda sonlandırmak.
-4. Başlık, bilimsel katkı, amaç ve yöntem metinlerini birlikte gözden geçirmek; birleşik kaynakçayı son metinle eşleştirmek ve özeti yazmak.
+4. Başlık, bilimsel katkı, amaç ve yöntem metinlerini birlikte gözden geçirmek; birleşik kaynakçayı son metinle eşleştirmek ve ilk özeti son kararlara göre güncellemek.
 5. Yürütücü ve danışman incelemesinden sonra metin, tablo ve PNG görselleri güncel TYBS alanlarına aktarmak; önizlemeyi, kaynakları ve gerekli ÜYZ beyanını kontrol ederek başvuru/onay adımlarını tamamlamak.
 
 Son tarih ve biçim kuralları [2026 başvuru kuralları notunda](2026_BASVURU_KURALLARI.md) tutuluyor. Görsellerin hazır olması, yöntem ve bütçe kararlarının da tamamlandığı anlamına gelmiyor.
