@@ -26,7 +26,7 @@ Tablodaki TL tutarlar sayfalarda görülen KDV dahil fiyatlardır. Satış paket
 
 ## Dövizle listelenen referanslar
 
-Bu tutarlar TL bütçesi değildir. Kur, Türkiye teslim kargosu, varsa vergi ve tedarik giderleri doğrulanmadı; USD tutarlar TL toplamına eklenmedi.
+Bu tutarlar satıcının USD liste fiyatlarıdır. Aşağıda resmî kurla bir planlama karşılığı hesaplandı; Türkiye teslim kargosu, varsa vergi ve tedarik giderleri henüz doğrulanmadı. Döviz çevrimi Türkiye teslim TL teklifi sayılmadı.
 
 | Kalem | Taslak miktar / satış birimi | Birim fiyat | Ara toplam |
 | --- | --- | --- | --- |
@@ -38,11 +38,24 @@ Bu tutarlar TL bütçesi değildir. Kur, Türkiye teslim kargosu, varsa vergi ve
 
 **Bu referansların ara toplamı: 177,35 USD.**
 
+## Resmî kurla planlama karşılığı
+
+22 Ekim'in ilk saatlerinde yapılan kontrolde, [TCMB'nin 21 Ekim 2026 tarihli bülteninde](https://www.tcmb.gov.tr/kurlar/202610/21102026.xml) USD **döviz satış** kuru **49,6015 TL/USD** olarak okundu. 22 Ekim bülteni aynı kontrolde henüz erişilebilir değildi (HTTP 404); hesapta kullanılan kur tarihi bu nedenle 21 Ekim'dir. Bu gösterge kuru, kart/banka işlem kuru veya bağlayıcı satıcı teklifi değildir.
+
+| Hesap | Planlama karşılığı |
+| --- | --- |
+| Yurt dışı referanslar: 177,35 USD × 49,6015 | 8.796,83 TL |
+| Fiyatı bulunan yerel adaylar | 3.189,41 TL |
+| Bu iki ara toplamın birleşimi | **11.986,24 TL** |
+| 12.000 TL destek üst sınırına kalan aritmetik fark | **13,76 TL** |
+
+Hesap, ara değerler yuvarlanmadan yapılıp sonuç kuruşa yuvarlandı. Şasi, eksik bağlantılar ve Türkiye teslim giderleri bu tutarda yok. Dolayısıyla bu referans sepetiyle tüm ihtiyaçların 12.000 TL destek içinde karşılanabildiği gösterilmiş değildir. Bütçeyi tamamlamak için, iki enkoderli motor ve beş sensör korunarak yerel tedarik ve teknik olarak belgelenmiş daha uygun fiyatlı taşıyıcılar öncelikle değerlendirilecek. Kullanıcının kişisel katkı yapacağı varsayılmadı.
+
 ## Alternatif yerel sensör fiyatı
 
 [CJMCU-530 VL53L0X](https://www.direnc.net/tof-arduino-mesafe-sensoru-modulu-cjmcu-530-vl53l0x) sayfasında KDV dahil **156,92 TL/adet**, beş adet için **784,60 TL** fiyat görülüyor. Sayfa stok verisi OutOfStock ve satıcı beslemeyi 5 V olarak belirtiyor. Bu kart, 3,3 V ile beslenen belgeli Pololu taşıyıcının hazır eşdeğeri sayılmadı. Kartın I²C seviyeleri, güç bağlantısı ve temini doğrulanırsa ayrı bir seçenek olabilir.
 
-Yalnızca sensör fiyatını bu alternatifle değiştiren aritmetik kıyas **3.974,01 TL + 77,60 USD** olur. Bu, kullanılabilirliği/uyumu doğrulanmış bir set veya tüm proje bütçesi değildir; olası ek arayüz maliyeti de doğrulanmadı.
+Yalnızca sensör fiyatını bu alternatifle değiştiren aritmetik kıyas **3.974,01 TL + 77,60 USD** olur; aynı kurla planlama karşılığı **7.823,09 TL**'dir. Bu, kullanılabilirliği/uyumu doğrulanmış bir set veya tüm proje bütçesi değildir; olası ek arayüz maliyeti de doğrulanmadı. Düşük görünen fiyat, stokta bulunmayan bu kartı kesin alım seçeneği yapmaz.
 
 ## Henüz toplamın dışında kalanlar
 
@@ -55,10 +68,10 @@ Yalnızca sensör fiyatını bu alternatifle değiştiren aritmetik kıyas **3.9
 
 Kullanıcının mevcut lehim ekipmanı ve deneyde kullanabileceğini doğruladığı telefon yeni satın alma kalemi yapılmadı. Yeni kamera alımı planlanmıyor. Telefon erişimi, ölçüm düzeneğinin kalibre edildiği anlamına gelmez.
 
-**Sonuç:** Fiyatı bulunan kalemler için para birimi başına ara toplam hazır. Eksik kalemleri sıfır sayarak tek bir proje toplamı veya 12.000 TL sınırına uyum iddiası oluşturulmadı. Nihai TL bütçesi başvurudan önce tamamlanacak.
+Fiyatı bulunan kalemler için para birimi başına ara toplam ve resmî kurla planlama karşılığı hazır. Eksik kalemler sıfır sayılmadı; nihai TL bütçesi başvurudan önce tamamlanacak. Özellikle pil fotoğrafındaki dört bağlantılı soket nedeniyle pil–şarj cihazı uyumu açık kontroldür.
 
 ## Teknik kontrol ve kaynak kaydı
 
 Batarya–şarj–koruma taslağı [ayrı planda](BATARYA_VE_SARJ_PLANI.md); tüm fiyat, para birimi, stok etiketi ve değerlendirme notları [22 Ekim kaynak kaydında](tedarik/fiyat_kayitlari_2026-10-22.json). [CSV teklif formu](MALZEME_TEKLIF_FORMU.csv) aynı fiyatlarla güncellendi.
 
-Üreticinin pil/şarj verisi ve resmî kur için `www.power-xtra.com` ile `www.tcmb.gov.tr` alan adları mevcut izinler korunarak ortam taslağına eklendi. Araç kaydı doğruladı ve `requires_publish: true` bildirdi; sonraki isteklerde tünel 403 sürdü. Taslak kaydı erişimin etkinleştiğini göstermez. Etkinleştirmek için ortam ayarlarında değişikliklerin kaydedilip ortamın yayımlanması gerekiyor. Bu nedenle doğrulanmamış kur veya pil şarj akımı yazılmadı.
+Önceki 403 hatalarının ardından 22 Ekim'deki yeni kontrolde `www.power-xtra.com` ana sayfası ve TCMB'nin 21 Ekim XML bülteni HTTP 200 ile indirildi. Erişim durumu bu gerçek yanıtlarla doğrulandı; ortamın yayımlanma durumu hakkında çıkarım yapılmadı. Üreticinin ana sayfasının ürünler için bağlantı verdiği `www.birikimpilleri.net` adresinde ise ağ aracısı 403 döndürdü. Pilin izin verilen şarj akımı ve pin bağlantıları henüz doğrulanmadı. Fiyat kayıtlarında kaynak para birimleri korundu; CSV'nin USD satırlarına gerçek TL teklifmiş gibi dönüştürülmüş fiyat yazılmadı.

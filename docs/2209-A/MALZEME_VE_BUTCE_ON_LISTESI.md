@@ -4,7 +4,7 @@ Güncelleme: 22 Ekim 2026. Tek prototip için miktar ve uyumluluk önerisi. Kesi
 
 Adayların gerekçeleri ve elektriksel koşulları [donanım uyumluluk değerlendirmesinde](DONANIM_SECENEKLERI_VE_UYUMLULUK.md); fiyat/ürün bilgisi girilecek tablo [teklif formunda](MALZEME_TEKLIF_FORMU.csv). CSV, noktalı virgülle ayrılmış UTF-8 tablodur. Boş fiyat alanları sıfır maliyet anlamına gelmez.
 
-Motor için #5143 ve #5115 referansları, TB6612FNG taşıyıcısı ve yerelde bulunan batarya/şarj adayları [karşılaştırma dosyasında](MOTOR_SURUCU_BATARYA_KARSILASTIRMASI.md). CSV'de kaynak para birimi ayrıca tutuluyor; USD fiyatı için TL hücresi dönüştürülmeden boş bırakıldı. Fiyatı bulunan adayın uyum kontrolü bitmiş sayılmayacak.
+Motor için #5143 ve #5115 referansları, TB6612FNG taşıyıcısı ve yerelde bulunan batarya/şarj adayları [karşılaştırma dosyasında](MOTOR_SURUCU_BATARYA_KARSILASTIRMASI.md). CSV'de kaynak para birimi ayrıca tutuluyor; gerçek TL teklifi olmayan USD satırlarının TL hücreleri boş bırakıldı. Resmî kurla ayrı hesaplanan referans karşılık 11.986,24 TL; eksik kalemler dahil olmadan destek üst sınırına 13,76 TL fark kaldığından daha uygun fiyatlı belgeli seçenekler değerlendirilecek. Fiyatı bulunan adayın uyum kontrolü bitmiş sayılmayacak.
 
 ## Mevcut olanaklar
 

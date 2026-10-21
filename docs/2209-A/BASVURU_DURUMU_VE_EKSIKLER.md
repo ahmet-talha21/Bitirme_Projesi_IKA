@@ -15,7 +15,7 @@ Güncelleme: 22 Ekim 2026. Bu liste hazırlık durumunu gösterir; başvurunun g
 | 3.2 Risk yönetimi | Temel hedefleri koruyan önlem ve B planları taslak olarak hazır. | Nihai donanım, algoritma ve ölçüm düzenine göre somutlaştırma. |
 | 3.3 Araştırma olanakları | Kişisel lehim ekipmanı ve deneyde kullanılabilecek telefon doğrulandı; taslak hazır. | Kurum altyapısı, deney yeri, sabitleme/kalibrasyon ve diğer ölçüm araçları doğrulanacak. |
 | 4 Yaygın etki | Prototip, arayüz, deney kayıtları ve dokümantasyon çıktıları önerildi. | Süre ve kapsamla son uyum; danışman incelemesi. |
-| Malzeme / bütçe | Referans parça listesi için TL ve USD ara toplamlar, kaynak kayıtları ve güncel CSV hazır. Batarya/şarj/koruma adayları detaylandırıldı. | Son ürün seçimi ve güç uyumu; eksik mekanik/bağlantı/ölçüm fiyatları ve Türkiye teslim TL teklifleri. Tam proje bütçesi henüz yok. |
+| Malzeme / bütçe | TL ve USD ara toplamlar, kaynak kayıtları ve güncel CSV hazır. 21 Ekim TCMB kuru ile eksik giderler hariç referans karşılık 11.986,24 TL; destek sınırına yalnızca 13,76 TL fark kalıyor. Pil fotoğrafındaki dört bağlantılı soket ayrıca kaydedildi. | Daha uygun fiyatlı belgeli tedarik; pil–şarj pin/akım uyumu, eksik mekanik/bağlantı/ölçüm fiyatları ve Türkiye teslim TL teklifleri. Tam proje bütçesi henüz yok. |
 | Kaynakça | Okunan kaynaklar ve doğrulama durumu kayıtlı. | Nihai metinde kullanılan kaynakların tek alfabetik listede birleştirilmesi, atıf ve DOI kontrolü. |
 | Özet | Henüz yazılmadı. | Diğer bölümler kesinleşince 25–450 kelime olarak yazılacak. |
 

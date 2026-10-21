@@ -189,7 +189,7 @@
       "currency": "TRY",
       "vat_scope": "KDV dahil sayfa tutarı",
       "line_amount": "1019.96",
-      "evaluation_note": "Fiyat adayı; koruma, izin verilen şarj akımı ve soketler teyit edilecek.",
+      "evaluation_note": "Fiyat adayı; fotoğrafta dört bağlantılı soket ve 1S 3.7V*2 etiketi var. 2S1P satış tanımıyla pin/hücre bağlantısı, koruma ve izin verilen şarj akımı teyit edilecek.",
       "role": "referans bütçe adayı"
     },
     {
@@ -210,7 +210,7 @@
       "currency": "TRY",
       "vat_scope": "KDV dahil sayfa tutarı",
       "line_amount": "870.00",
-      "evaluation_note": "Paketle şarj akımı ve dengeleme soketi uyumu açık.",
+      "evaluation_note": "Pil fotoğrafındaki dört bağlantılı soket nedeniyle doğrudan bağlantı onaylı değil; şarj akımı/profili ve pin uyumu teyit edilecek.",
       "role": "referans bütçe adayı"
     },
     {
@@ -386,7 +386,49 @@
     "TRY": "3189.41",
     "USD": "177.35"
   },
-  "currency_conversion": null,
+  "currency_conversion": {
+    "purpose": "Planning arithmetic only; not a supplier TRY quote or landed project budget",
+    "source_url": "https://www.tcmb.gov.tr/kurlar/202610/21102026.xml",
+    "source_sha256": "bee105ca06680720285f32ef07f8ffa6f603b19f9871e5121d0c4658ac6af42b",
+    "source_date": "21.10.2026",
+    "bulletin_number": "2026/199",
+    "checked_on": "2026-10-22",
+    "check_timezone": "Europe/Istanbul",
+    "source_currency": "USD",
+    "target_currency": "TRY",
+    "unit": "1",
+    "rate_field": "ForexSelling",
+    "rate_type": "TCMB indicative foreign-exchange selling rate",
+    "rate": "49.6015",
+    "foreign_reference_subtotal_USD": "177.35",
+    "foreign_reference_equivalent_TRY": "8796.83",
+    "local_reference_subtotal_TRY": "3189.41",
+    "combined_reference_equivalent_TRY": "11986.24",
+    "support_cap_TRY": "12000.00",
+    "arithmetic_remainder_to_cap_TRY": "13.76",
+    "rounding": "Aggregate calculations use unrounded Decimal values; displayed results round half up to 0.01 TRY.",
+    "not_included": [
+      "N20 montajına uygun boş/özel şasi",
+      "Sigorta ve yuvası",
+      "Ana güç kabloları ve uygun konnektörler",
+      "Kesin montaj elemanları ve gerekli süzme parçaları",
+      "Telefon sabitleme ve alan işaretleme ihtiyacı",
+      "Henüz teyit edilmemiş ölçüm olanakları",
+      "International delivery, taxes and import/transaction costs not verified"
+    ],
+    "cap_compliance_demonstrated": false,
+    "alternative_sensor_scenario": {
+      "local_subtotal_TRY": "3974.01",
+      "foreign_subtotal_USD": "77.60",
+      "planning_equivalent_TRY": "7823.09",
+      "status": "Arithmetic comparison only; sensor stock and board compatibility remain unresolved."
+    },
+    "same_day_bulletin_check": {
+      "url": "https://www.tcmb.gov.tr/kurlar/202610/22102026.xml",
+      "http_status": 404,
+      "interpretation": "Not available at the time of this check; the 21 October source date is retained."
+    }
+  },
   "unpriced_categories": [
     "N20 montajına uygun boş/özel şasi",
     "Sigorta ve yuvası",
@@ -485,7 +527,46 @@
       "www.tcmb.gov.tr"
     ],
     "save_status": "saved; requires_publish true",
-    "runtime_observation": "Requests still failed with tunnel 403 after saving. Draft persistence does not prove runtime application.",
-    "impact": "Battery manufacturer charging specification and official FX rate not verified."
+    "runtime_observation": "On 22 October local time, Power-Xtra homepage and TCMB 21 October bulletin returned HTTP 200. This does not establish environment publication status.",
+    "impact": "Official FX verified. Battery manufacturer charging current and connector pinout remain unverified.",
+    "prior_runtime_observation": "Requests still failed with tunnel 403 after saving. Draft persistence does not prove runtime application.",
+    "linked_product_host_observation": {
+      "url": "https://www.birikimpilleri.net/tr/urunler?catid=1954&brand_id=7",
+      "linked_from": "https://www.power-xtra.com/",
+      "result": "Tunnel connection failed: 403 Forbidden",
+      "draft_changed_for_this_host": false
+    }
+  },
+  "battery_followup": {
+    "checked_on": "2026-10-22",
+    "evidence_type": "Visual inspection of seller-hosted product photos; not a manufacturer datasheet or pinout",
+    "photo_sources": [
+      {
+        "url": "https://www.direnc.net/74v-2s1p-1000-mah-15c-li-polymer-pil-soketli-2s-74v-lipo-piller-power-xtra-43457-16-B.jpg",
+        "sha256": "9a13d89f05b1d820de98943f146bb8429305635c4c7b1cad3f97a471fb224048",
+        "http_status": 200
+      },
+      {
+        "url": "https://www.direnc.net/74v-2s1p-1000-mah-15c-li-polymer-pil-soketli-2s-74v-lipo-piller-power-xtra-53197-16-B.jpg",
+        "sha256": "57abdeeb381f3eb696769440ad18ca26f5a584af7bcbdf137affb39c79ffe760",
+        "http_status": 200
+      }
+    ],
+    "visible_label_text": [
+      "PX1000XL",
+      "1000mAh",
+      "15C",
+      "1S 3.7V*2"
+    ],
+    "connector_observation": "Four-position connector and four leads visible; functions, internal series connection and direct charger fit cannot be established from the photos.",
+    "seller_title": "7.4 V 2S1P 1000 mAh 15C",
+    "required_clarifications": [
+      "Reconcile seller 2S1P description with label and connector",
+      "Manufacturer charge current and profile",
+      "Cell wiring and individual pin functions",
+      "Protection and documented charger connector compatibility"
+    ],
+    "direct_A3_connection_confirmed": false,
+    "recommendation": "Obtain the missing documentation or select another documented ready-made battery and matching charger; no replacement selected."
   }
 }
