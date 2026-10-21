@@ -1,6 +1,6 @@
 # Yöntem ve deney planı — teknik öneri
 
-Durum: Görüşülmek üzere hazırlanmış tasarım önerisi. Kullanıcının bildirdiği kapsamı temel alır; satın alma listesi, tamamlanmış yöntem bölümü veya deney sonucu değildir. ESP32 dışında parça modelleri seçilmedi. Bütçe, mevcut parçalar ve kurum olanakları henüz bilinmiyor.
+Durum: Görüşülmek üzere hazırlanmış tasarım önerisi. Kullanıcının bildirdiği kapsamı temel alır; kesin satın alma listesi, tamamlanmış yöntem bölümü veya deney sonucu değildir. ESP32 dışında parça modelleri seçilmedi. ESP32 henüz satın alınmadı; kullanıcının lehim ekipmanı var. Yaklaşık bütçe, diğer parçaların mevcudiyeti ve kurum olanakları henüz bilinmiyor.
 
 ## 1. Kesinleşen kapsam
 
@@ -63,7 +63,7 @@ Deneme sayıları, engel geometrileri, sayısal hedefler ve karşılaştırma/an
 
 ## 6. Açık bilgiler
 
-- Mevcut parçalar, yaklaşık bütçe, laboratuvar ve üretim olanakları.
+- ESP32 dışındaki parçaların mevcudiyeti, yaklaşık bütçe ve kurum olanakları. Kullanıcının lehim ekipmanı olduğu doğrulandı; ESP32 satın alınacak.
 - Şasi, enkoder, mesafe sensörü, motor sürücüsü ve güç bileşenleri.
 - Referans ölçümü için kamera veya alternatif ölçüm olanakları.
 - Kullanıcının teknik önerilere ilişkin tercihleri ve danışman görüşü.

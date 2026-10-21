@@ -15,6 +15,8 @@ Güncelleme: 21 Ekim 2026. Bu belge başvuru metni değil, kullanıcı tarafınd
 - Arayüzde öncelik bilgisayar kullanımı; telefonda da çalışması isteniyor. Her iki cihazda açılabilen tarayıcı arayüzü teknik seçenek olarak değerlendiriliyor; yazılım teknolojisi ve haberleşme yöntemi seçilmedi.
 - Gerçek coğrafi harita ilk sürüm kapsamına alınmadı; yerel rota ekranı seçildi.
 - ESP32 dışındaki malzemeler birlikte seçilecek; donanım listesi henüz kesinleşmedi.
+- Kullanıcının elinde henüz ESP32 yok; satın almayı planlıyor. Diğer araç bileşenlerinin mevcut olduğu bildirilmedi. Yaklaşık bütçe henüz bilinmiyor.
+- Kullanıcının lehim ekipmanı var ve araç montajında sorun yaşayacağını düşünmüyor. Bu bilgi kişisel olanaktır; üniversite laboratuvarı, 3D yazıcı veya başka kurum altyapısının mevcut olduğu henüz doğrulanmadı.
 - TÜBİTAK 2209-A başvurusu hazırlanacak.
 - Teknik ayrıntılar kullanıcıya sorularak netleştirilecek; bilinmeyen özellikler ve sonuçlar yazılmayacak.
 - Kullanıcı projeye henüz başlamadığını belirtti. Şu an başvuru hazırlığı ve tasarım planlama aşamasındayız; çalışan araç, kurulmuş deney düzeneği veya tamamlanmış ön deney bulunmuş gibi yazılmayacak.
@@ -23,6 +25,8 @@ Güncelleme: 21 Ekim 2026. Bu belge başvuru metni değil, kullanıcı tarafınd
 ## Netleştirilecek konular
 
 İlk donanım mimarisi, arayüz/haberleşme seçenekleri, kaçınma yaklaşımı ve deney önerileri [yöntem ve deney planında](YONTEM_VE_DENEY_PLANI.md) hazırlandı. Bu teknik öneriler parça satın alma kararı veya kullanıcı tarafından onaylanmış nihai yöntem değildir.
+
+Mevcut ekipman durumu ve teklif alınacak kalemler [malzeme ve bütçe ön listesinde](MALZEME_VE_BUTCE_ON_LISTESI.md) tutuluyor. Fiyatlar doğrulanmadan başvuru bütçesi oluşturulmayacak.
 
 - Ölçülü waypoint ekranının fiziksel alanla eşleştirilmesi ve başlangıç noktası/yönünün tanımlanması.
 - Planlanan 3 × 3 metre alanın fiziksel yeri, kesin araç ölçüleri ve donanım seçildikten sonra parkurun yeterliliğinin değerlendirilmesi.
