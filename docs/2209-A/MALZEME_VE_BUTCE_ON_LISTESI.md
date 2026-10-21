@@ -1,6 +1,6 @@
 # Malzeme ve bütçe ön listesi
 
-Güncelleme: 21 Ekim 2026. Tek prototip için miktar ve uyumluluk önerisi. Kesin satın alma listesi veya TYBS bütçesi değildir. ESP32 ve enkoderli iki motor mimarisi kullanıcı tarafından seçildi. Aşağıdaki model/sayı önerileri birlikte değerlendirilecek; fiyatlar ve toplam tutar doğrulanmış değildir.
+Güncelleme: 21 Ekim 2026. Tek prototip için miktar ve uyumluluk önerisi. Kesin satın alma listesi veya TYBS bütçesi değildir. ESP32, enkoderli iki motor mimarisi ve beş sabit mesafe sensörü düzeni kullanıcı tarafından seçildi. Model önerileri, kesin montaj açıları ve diğer parça miktarları birlikte değerlendirilecek; fiyatlar ve toplam tutar doğrulanmış değildir.
 
 Adayların gerekçeleri ve elektriksel koşulları [donanım uyumluluk değerlendirmesinde](DONANIM_SECENEKLERI_VE_UYUMLULUK.md); fiyat/ürün bilgisi girilecek tablo [teklif formunda](MALZEME_TEKLIF_FORMU.csv). CSV, noktalı virgülle ayrılmış UTF-8 tablodur. Boş fiyat alanları sıfır maliyet anlamına gelmez.
 
@@ -13,7 +13,7 @@ Adayların gerekçeleri ve elektriksel koşulları [donanım uyumluluk değerlen
 
 ## Temel mimari için teklif alınacak kalemler
 
-Başlangıç önerisi: küçük iki tekerlekli diferansiyel sürüşlü şasi; beş sabit ToF sensörü ve bir I²C çoklayıcı. Enkoderli motorlar seçildi; N20 sınıfı, yaklaşık 100 d/d ve 6 V önerisi ise henüz tam ürün koduna dönüştürülmedi. Şasi ölçüleri ve destek tekeri düzeni kesinleşmedi.
+Seçilen başlangıç düzeni: küçük iki tekerlekli diferansiyel sürüşlü şasi ve beş sabit mesafe sensörü (ön orta, iki ön çapraz, iki yan). ToF tipi ve I²C çoklayıcı hâlen adaydır. Enkoderli motorlar seçildi; N20 sınıfı, yaklaşık 100 d/d ve 6 V önerisi ise henüz tam ürün koduna dönüştürülmedi. Şasi ölçüleri ve destek tekeri düzeni kesinleşmedi.
 
 | Kalem | Önerilen miktar | Seçimde kontrol edilecek özellik |
 | --- | --- | --- |
@@ -24,7 +24,7 @@ Başlangıç önerisi: küçük iki tekerlekli diferansiyel sürüşlü şasi; b
 | Motor bağlantı aparatı | 2 | Seçilecek motor ve şasiye uyumlu; kitte varsa ayrıca alınmayacak. |
 | Serbest taşıyıcı teker | 1 | Tahrik tekerleriyle uygun yükseklik ve küçük alanda dönme. |
 | Çift kanallı motor sürücüsü | 1 | TB6612FNG aday; düşük akımlı motor koşulu ve modülün sürekli akım/ısıl sınırları doğrulanacak. |
-| ToF mesafe sensörü taşıyıcısı | 5 | VL53L0X aday: ön orta, ön çaprazlar, iki yan. 3,3 V besleme/I²C ve algılama kapsaması kontrol edilecek. |
+| Sabit mesafe sensörü | 5 | Sayı ve ön orta, iki ön çapraz, iki yan düzeni seçildi. VL53L0X/ToF model adayı; kesin açılar, 3,3 V besleme/I²C ve algılama kapsaması kontrol edilecek. |
 | I²C çoklayıcı | 1 | TCA9548A aday; aynı adresli sensörler ayrı kanallara bağlanacak. |
 | Hazır korumalı batarya paketi | 1 | 2S paket önerisi; kimya, kapasite ve akım gereksinimleri doğrulanacak. |
 | Pakete uygun şarj cihazı | 1 | Batarya kimyası ve hücre sayısıyla uyumlu olacak; paketteki koruma devresiyle aynı parça sayılmayacak. |
@@ -43,7 +43,7 @@ Basit bir araç kitinde enkoder bulunması otomatik olarak varsayılmayacak. Mot
 ## İhtiyaca göre ayrıca değerlendirilecekler
 
 - IMU: yön ölçümü ve konum kestirimine katkısı, kalibrasyon ihtiyacı ve bütçeyle değerlendirilecek; model seçilmedi, zorunlu alım değil.
-- Sensör sayısı/türü: beş sabit ToF başlangıç önerisi; üç sensörlü veya farklı türde bir düzen ancak kapsama, kaçınma yeterliliği ve fiyat birlikte değerlendirilerek seçilecek. Servo bu öneride zorunlu parça değil.
+- Sensör türü/modeli: beş sabit sensörlü düzen seçildi. VL53L0X/ToF adayı, gerçek kapsama ve fiyatla birlikte değerlendirilecek. Kesin montaj açıları seçilmedi; servo bu düzende zorunlu parça değil.
 - Gövde/muhafaza: hazır bağlantı parçaları yeterliyse özel üretim gerekmeyebilir; 3D yazıcı erişimi varsayılmayacak.
 - Deney ölçümü: metre, zemin işaretleri, uygun referans kamera ve sabitleme olanağı incelenecek. Rota sapmasını bağımsız ölçmek yöntem için gereklidir; kamera kullanımı ve satın alımı henüz kararlaştırılmadı.
 

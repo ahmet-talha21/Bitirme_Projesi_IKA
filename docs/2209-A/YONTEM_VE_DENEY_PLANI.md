@@ -9,6 +9,7 @@ Durum: Görüşülmek üzere hazırlanmış tasarım önerisi. Kullanıcının b
 - Bilgisayar öncelikli, telefondan da erişilebilir arayüz.
 - Ölçülü kareli ekranda tanımlanan waypoint rotası.
 - Engel algılama, çarpışmasız kaçınma ve rotaya yeniden katılmanın değerlendirilmesi.
+- Beş sabit mesafe sensörü: ön orta, iki ön çapraz ve iki yan. Model ve kesin montaj açıları henüz seçilmedi.
 - Düz zeminde, yaklaşık 3 × 3 metre olarak planlanan deney alanı; uygunluğu şasi seçilince kontrol edilecek.
 - İlk deneylerde sabit engeller; yerleşimler denemeler arasında değiştirilebilecek.
 
@@ -20,13 +21,13 @@ Durum: Görüşülmek üzere hazırlanmış tasarım önerisi. Kullanıcının b
 | Şasi ve hareket | İki motorun ayrı kontrol edildiği küçük diferansiyel sürüşlü şasi. | İki motorlu enkoderli mimari seçildi; şasi boyutu, taşıyıcı teker düzeni ve motor modelleri seçilmedi. |
 | Hareket geri bildirimi | Her tahrik tekeri için enkoder; dönüş miktarı ve hız ölçümünden göreli konum kestirimi. ESP32 PCNT birimi quadrature sinyal çözümlemeyi destekliyor [T1]. | Enkoder kullanımı seçildi; model, çözünürlük ve elektriksel uyumluluk kontrol edilecek. |
 | Yön/hareket ölçümü | IMU ile yön değişimi ölçümünün enkoder bilgisiyle birlikte değerlendirilmesi. Kalibrasyon ve sürüklenme incelenecek. | İhtiyaç ve model belirsiz; yalnızca IMU ile kesin konum varsayılmayacak. |
-| Engel algılama | Ön bölge ve kaçınma sırasında yan açıklıklar için yeterli kapsama sağlayan mesafe sensörü düzeni. Ultrasonik veya ToF seçenekleri; algılama alanı, minimum mesafe, yüzey davranışı, güncelleme hızı ve bütçeyle karşılaştırılacak. | Tür, sayı, yerleşim ve tarama mekanizması seçilmedi. |
+| Engel algılama | Ön orta, iki ön çapraz ve iki yana bakan beş sabit mesafe sensörü. ToF adayı; algılama alanı, minimum mesafe, yüzey davranışı, güncelleme hızı ve bütçeyle değerlendirilecek. | Beş sensör ve genel yönleri kullanıcı tarafından seçildi. Tür/model, kesin açılar ve gerçek kapsama kontrol edilecek. |
 | Motor sürücüsü | Seçilecek motorların beslemesine ve kalkış/sıkışma akımına uygun çift kanallı sürücü. | Motor seçilmeden model seçilmeyecek. |
 | Güç | Motorlar ve elektronik için uygun besleme, regülasyon ve açma/kapama düzeni. | Pil ve şarj çözümü seçilmedi; bütçeye ayrıca yazılacak. |
 
 Enkoder ve IMU ile konum kestiriminde hata birikebilir. Parkur uzunluğu, zemin ve kabul edilecek hata birlikte değerlendirilecek; gerekirse ek konum düzeltmesi planlanacak. Sensör görüş alanı ve aracın fiziksel genişliği kaçınma kararında dikkate alınacak.
 
-Malzeme planını somutlaştırmak için [ayrı bir donanım adayı](DONANIM_SECENEKLERI_VE_UYUMLULUK.md) hazırlandı. Beş sabit ToF sensörü ve I²C çoklayıcı bu adayda öneriliyor; bu tablodaki açık seçimleri kesinleştirmiş sayılmaz. Ürünlerin fiyatı, motor/sürücü/güç uyumu ve gerçek sensör kapsaması doğrulandıktan sonra yöntemle birlikte güncellenecek.
+Malzeme planını somutlaştırmak için [ayrı bir donanım adayı](DONANIM_SECENEKLERI_VE_UYUMLULUK.md) hazırlandı. Kullanıcı beş sabit sensörlü düzenle ilerlemeyi seçti. ToF modeli ve I²C çoklayıcı hâlen adaydır. Ürünlerin fiyatı, motor/sürücü/güç uyumu ve gerçek sensör kapsaması doğrulandıktan sonra yöntemle birlikte güncellenecek.
 
 ## 3. Arayüz ve haberleşme önerisi
 

@@ -9,7 +9,7 @@ Güncelleme: 21 Ekim 2026. Bu liste hazırlık durumunu gösterir; başvurunun g
 | Genel bilgiler | Yürütücü, kurum/bölüm ve danışman bilgileri kullanıcıdan alındı. | Son başlık, süre ve bütçe. |
 | 1.1 Bilimsel nitelik | Kaynak destekli ilk metin ve ilgili çalışma karşılaştırması hazır. | Yöntemle tutarlılık, katkının son ifadesi ve danışman incelemesi. |
 | 1.2 Amaç ve hedefler | Kapsam ve temel işlevler taslak olarak yazıldı. | Ölçülebilir başarı eşikleri ve bunların uygulanabilirlik gerekçesi. |
-| 2 Yöntem | Enkoderli iki motorlu araç, waypoint rotası ve sabit engelli deney yaklaşımı yazıldı. | Parçalar, algoritma, bağımsız referans ölçümü, koşul/tekrar sayıları ve toleranslar. |
+| 2 Yöntem | Enkoderli iki motorlu araç, beş sabit mesafe sensörü düzeni, waypoint rotası ve sabit engelli deney yaklaşımı yazıldı. | Parça modelleri, kesin sensör açıları, algoritma, bağımsız referans ölçümü, koşul/tekrar sayıları ve toleranslar. |
 | Görseller | Üç yenilenmiş şema PNG ve PDF olarak hazır. | Son yöntem ve parça seçiminden sonra etiket kontrolü; TYBS önizlemesinde okunabilirlik. |
 | 3.1 Çalışma takvimi | Beş iş paketi ve tek öğrenciye ait görevler önerildi. | Proje süresi, ay aralıkları, başarı ölçütleri ve toplamı 100 olan katkı değerleri. |
 | 3.2 Risk yönetimi | Temel hedefleri koruyan önlem ve B planları taslak olarak hazır. | Nihai donanım, algoritma ve ölçüm düzenine göre somutlaştırma. |

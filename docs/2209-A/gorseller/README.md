@@ -4,6 +4,8 @@ Güncelleme: 21 Ekim 2026. Üç şekil, kullanıcının daha açıklayıcı ve g
 
 Bu şekiller tasarım önerisidir; fotoğraf, uygulanmış devre, yapılmış deney veya simülasyon sonucu değildir. Sensör ve araç simgeleri belirli bir ürün modelini ya da satın alınmış donanımı göstermez. Çizimler image_gen aracıyla ÜYZ desteği kullanılarak yenilendi; [yenileme kaydı](kaynaklar/yenileme_notlari.md) bu kullanımın başvuruda beyan edilmesine yardımcı olacaktır.
 
+Sonraki teknik karar: Kullanıcı beş sabit mesafe sensörüyle ilerlemeyi seçti (ön orta, iki ön çapraz ve iki yan). Mevcut şekiller işlevsel şemalardır; bire bir sensör yerleşim çizimi değildir. Sensör modeli, kesin açılar ve ölçüler seçilince gerekli teknik etiketler güncellenecektir.
+
 TYBS için PNG dosyaları, birlikte incelemek için [PDF paketi](gorseller_toplu.pdf) bulunuyor. Güncel PDF'ler PNG'lerin belgeye yerleştirilmiş hâlidir; düzenlenebilir vektör çizim değildir. İlk sürümün PNG/SVG/PDF ve kaynakları [arşivde](arsiv/ilk_surum/README.md) korunuyor. Nihai şekil numaraları ve TYBS'deki okunaklılık ön izlemeyle kontrol edilecek.
 
 ## Şekil 1 — sistem mimarisi

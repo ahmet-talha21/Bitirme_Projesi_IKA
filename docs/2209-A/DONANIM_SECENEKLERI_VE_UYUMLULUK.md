@@ -1,6 +1,6 @@
 # Donanım seçeneği ve uyumluluk değerlendirmesi
 
-Tarih: 21 Ekim 2026. Bu belge, birlikte değerlendirilecek ilk somut donanım önerisidir. ESP32 ve iki enkoderli motor mimarisi kullanıcı tarafından seçildi. Aşağıdaki kart/modül modelleri, sensör sayısı, ölçüler ve besleme düzeni henüz kullanıcı kararı veya kesin satın alma listesi değildir. Ürünlerin stok, fiyat ve tüm elektriksel özellikleri doğrulanmış değildir.
+Tarih: 21 Ekim 2026. Bu belge, birlikte değerlendirilecek ilk somut donanım önerisidir. ESP32, iki enkoderli motor mimarisi ve beş sabit mesafe sensörü düzeni kullanıcı tarafından seçildi. Sensörlerin genel yönleri ön orta, iki ön çapraz ve iki yandır. Aşağıdaki kart/modül modelleri, kesin montaj açıları, ölçüler ve besleme düzeni henüz kullanıcı kararı veya kesin satın alma listesi değildir. Ürünlerin stok, fiyat ve tüm elektriksel özellikleri doğrulanmış değildir.
 
 ## 1. Önerilen başlangıç düzeni
 
@@ -10,7 +10,7 @@ Tarih: 21 Ekim 2026. Bu belge, birlikte değerlendirilecek ilk somut donanım ö
 | Hareket | İki aynı model, enkoderli N20 sınıfı düşük akımlı 6 V redüktörlü DC motor; yaklaşık 100 d/d çıkış hızı bir arama ölçütü. | Küçük araç için başlangıç adayı. Sıkışma akımı, tork, enkoder beslemesi/çıkışı ve çözünürlük tanımı alınmadan ürün seçilmeyecek. Bu öneri belirli bir N20 ürününün bu şartları karşıladığı iddiası değildir. |
 | Mekanik | Yaklaşık 20 × 15 cm sınıfında şasi; motor miline uygun yaklaşık 60 mm iki tekerlek, iki motor bağlantısı ve bir serbest taşıyıcı teker. | Ölçüler tasarım önerisi. Batarya, motor ve sensörler yerleştirilince toplam kütle, tekerlek açıklığı ve dönüş sırasında taranan alan kontrol edilecek. Hazır kitte bulunan parçalar ayrıca iki kez bütçelenmeyecek. |
 | Motor sürücüsü | Bir TB6612FNG çift kanallı modül, düşük akımlı motor şartıyla. | İki motor için bağımsız hız/yön kontrolü. Bu ön düzen için her motorun 6 V'daki sıkışma akımı en fazla 1 A olan model aranacak; seçilecek modülün sürekli akım/ısıl kapasitesi ayrıca doğrulanacak. Uygun motor bulunamazsa sürücü adayı değiştirilecek. |
-| Engel mesafesi | Beş VL53L0X ToF taşıyıcı modül. | Ön orta, ön sol, ön sağ, sol yan ve sağ yan için öneriliyor. Modüllerin 3,3 V besleme ve I²C uyumluluğu belgeli olacak. |
+| Engel mesafesi | Beş sabit mesafe sensörü; VL53L0X ToF taşıyıcısı model adayı. | Sensör sayısı ve ön orta, iki ön çapraz, iki yan düzeni kullanıcı tarafından seçildi. Tür/model, kesin açılar ve gerçek kapsama doğrulanacak. ToF adayı için 3,3 V besleme ve I²C uyumluluğu belgeli olacak. |
 | Sensör bağlantısı | Bir TCA9548A I²C çoklayıcı modül. | Aynı başlangıç adresindeki sensörleri ayrı kanallardan okumayı sağlar. Her işlemde yalnızca ilgili sensör kanalı etkinleştirilecek. |
 | Güç | Hazır korumalı iki hücreli seri lityum pil paketi (2S), pakete uygun şarj cihazı; 5 V ve 3,3 V regülasyon dalları. | Kapasite, çıkış akımı ve gerçek ürün seçilmedi. Önerilen güç düzeni aşağıda açıklandı. |
 
@@ -22,7 +22,7 @@ Başlangıç için düşük akımlı motor arama koşulu konuldu. Motor bu koşu
 
 Enkoderin A/B çıkışları ESP32'nin 3,3 V girişleriyle uyumlu olacak. Enkoderin motorla aynı beslemeyi kullandığı varsayılmayacak; gerekirse uygun seviye dönüştürme veya başka motor/enkoder ürünü seçilecek. Çözünürlük, motor mili/çıkış mili ayrımı ve sayılan kenarlar belirtilerek kaydedilecek.
 
-## 2. Neden beş sabit sensör öneriliyor?
+## 2. Seçilen beş sabit sensörlü düzen
 
 Öndeki ölçüm engeli fark etmek için, yan ölçümler ise engelin kenarını izleyip açıklığı korumak için kullanılabilecek. Ön çapraz ölçümler, köşelere yaklaşırken ek bilgi sağlayabilecek. Açılar yaklaşık ön orta, ±45° ve ±90° olarak düşünülebilir; bunlar nihai montaj açıları değildir. Şasi ve sensör görüş alanına göre düzenlenecek.
 
@@ -30,8 +30,8 @@ VL53L0X taşıyıcısı için Adafruit dar algılama alanını ve taşıyıcı �
 
 | Düzen | Katkısı | Sınırlılığı / karar durumu |
 | --- | --- | --- |
-| Beş sabit ToF sensörü + çoklayıcı | Ön, ön çaprazlar ve iki yandan ölçüm; hareketli tarama mekanizması gerektirmez. | Bu belgedeki başlangıç önerisi. Ürün maliyeti ve gerçek kapsama doğrulanacak. |
-| Üç sabit ToF sensörü: ön, sol, sağ | Daha az modül ve bağlantı kullanır. | Ön çaprazlarda daha az bilgi sağlar; parça sayısının azalması tek başına kaçınma için yeterli olduğunu göstermez. Ancak deneyle yeterliliği doğrulanırsa değerlendirilecek. |
+| Beş sabit ToF sensörü + çoklayıcı | Ön, ön çaprazlar ve iki yandan ölçüm; hareketli tarama mekanizması gerektirmez. | Beş sensör ve genel yönleri seçildi; ToF modeli ve çoklayıcı henüz aday. Ürün maliyeti ve gerçek kapsama doğrulanacak. |
+| Üç sabit ToF sensörü: ön, sol, sağ | Daha az modül ve bağlantı kullanır. | İlk karşılaştırmadaki alternatif; kullanıcı beş sensörlü düzenle ilerlemeyi seçti. Ön çaprazlarda daha az bilgi sağlar. |
 | Ultrasonik sensör düzeni | Başka bir mesafe algılama seçeneği. | Gerçek modülün yankı sinyali seviyesi, yüzey/açı davranışı ve çoklu sensörlerin birbirini etkilemesi kontrol edilmeli. Güncel fiyatlarla karşılaştırma henüz yapılamadı. |
 
 Çoklayıcı zorunlu olan tek bağlantı yöntemi değildir. VL53L0X kütüphanesinde adres değiştirme işlevi, Adafruit örneğinde de XSHUT ile sensörleri sırayla başlatma yaklaşımı bulunuyor [D4–D5]. Çoklayıcı önerisi, beş sensörde ayrı adres atama ve çok sayıda XSHUT bağlantısını yönetme gereğini azaltmak içindir; hem çoklayıcı hem ayrı XSHUT düzeni birlikte zorunlu alım olarak yazılmadı.

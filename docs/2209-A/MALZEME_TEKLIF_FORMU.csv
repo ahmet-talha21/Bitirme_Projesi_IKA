@@ -6,7 +6,7 @@ B04;Şasi;Yaklaşık 20 x 15 cm sınıfı;1;adet;temel öneri;;;;;;;;ürün düz
 B05;Motor bağlantı aparatı;Seçilecek motor ve şasiye uyumlu;2;adet;temel öneri;;;;;;;;ürün düzeyinde kontrol bekliyor;Kitte varsa mükerrer alım olmayacak.
 B06;Serbest taşıyıcı teker;Tahrik tekerleklerine uygun yükseklikte;1;adet;temel öneri;;;;;;;;ürün düzeyinde kontrol bekliyor;Kitte varsa mükerrer alım olmayacak.
 B07;Çift kanallı motor sürücüsü;TB6612FNG düşük akımlı motor koşuluyla;1;adet;temel öneri;;;;;;;;ürün düzeyinde kontrol bekliyor;Motor ve gerçek modülün sürekli akım/ısıl sınırlarıyla birlikte seçilecek.
-B08;ToF mesafe sensörü taşıyıcısı;VL53L0X ve belgeli 3,3 V arayüz;5;adet;temel öneri;;;;;;;;ürün düzeyinde kontrol bekliyor;Ön orta, iki ön çapraz ve iki yan. Sayı henüz kullanıcı kararı değil.
+B08;Sabit mesafe sensörü;VL53L0X ve belgeli 3,3 V arayüz;5;adet;sayı/düzen seçildi, model aday;;;;;;;;ürün düzeyinde kontrol bekliyor;Kullanıcı beş sabit sensörle ilerlemeyi seçti: ön orta, iki ön çapraz, iki yan. Model ve kesin açılar seçilmedi.
 B09;I2C çoklayıcı modül;TCA9548A;1;adet;temel öneri;;;;;;;;ürün düzeyinde kontrol bekliyor;Aynı adresli sensörler ayrı kanallarda okunacak.
 B10;Hazır korumalı batarya paketi;2S paket / kimya-kapasite-akım seçilecek;1;adet;temel öneri;;;;;;;;ürün düzeyinde kontrol bekliyor;Tam ürün ve şarj uyumu doğrulanacak.
 B11;Batarya şarj cihazı;Seçilecek paket kimyası ve hücre sayısına uygun;1;adet;temel öneri;;;;;;;;ürün düzeyinde kontrol bekliyor;Paket içeriğindeyse ayrıca ikinci kez bütçelenmeyecek.
