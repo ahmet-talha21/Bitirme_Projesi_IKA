@@ -30,5 +30,7 @@ Proje, arayüzde tanımlanan waypoint rotasını izleyen küçük bir ESP32 taba
 - [Proje kararları ve açık bilgiler](docs/2209-A/PROJE_NOTLARI.md)
 - [Teknik yöntem ve deney planı](docs/2209-A/YONTEM_VE_DENEY_PLANI.md)
 - [Malzeme ve bütçe ön listesi](docs/2209-A/MALZEME_VE_BUTCE_ON_LISTESI.md)
+- [Donanım adayları ve uyumluluk koşulları](docs/2209-A/DONANIM_SECENEKLERI_VE_UYUMLULUK.md)
+- [Ürün ve fiyat teklifi tablosu (CSV)](docs/2209-A/MALZEME_TEKLIF_FORMU.csv)
 
 Nihai metin, güncel TYBS alanlarına aktarılmadan önce yürütücü ve akademik danışman tarafından kontrol edilecek. Kaynaklar, deney sonuçları ve mevcut olanaklar doğrulanmış bilgilere dayanacak.

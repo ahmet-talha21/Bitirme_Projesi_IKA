@@ -15,7 +15,7 @@ Güncelleme: 21 Ekim 2026. Bu liste hazırlık durumunu gösterir; başvurunun g
 | 3.2 Risk yönetimi | Temel hedefleri koruyan önlem ve B planları taslak olarak hazır. | Nihai donanım, algoritma ve ölçüm düzenine göre somutlaştırma. |
 | 3.3 Araştırma olanakları | Kişisel lehim ekipmanı biliniyor. | Kurumda gerçekten kullanılabilecek altyapı ve deney yeri kullanıcı/danışmanla doğrulanacak. |
 | 4 Yaygın etki | Prototip, arayüz, deney kayıtları ve dokümantasyon çıktıları önerildi. | Süre ve kapsamla son uyum; danışman incelemesi. |
-| Malzeme / bütçe | İşlev ve miktar ön listesi var. | Uyumlu modeller, tarihli fiyat/teklifler ve toplam tutar. Henüz doğrulanmış toplam yok. |
+| Malzeme / bütçe | Aday donanım düzeni, miktar listesi, uyumluluk koşulları ve CSV teklif formu hazır. | Kullanıcıyla son seçim; motor/batarya tam kodları, ürün düzeyinde uyumluluk, tarihli fiyatlar ve toplam. Satıcı erişimi kısıtlı; doğrulanmış toplam yok. |
 | Kaynakça | Okunan kaynaklar ve doğrulama durumu kayıtlı. | Nihai metinde kullanılan kaynakların tek alfabetik listede birleştirilmesi, atıf ve DOI kontrolü. |
 | Özet | Henüz yazılmadı. | Diğer bölümler kesinleşince 25–450 kelime olarak yazılacak. |
 

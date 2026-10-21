@@ -1,6 +1,8 @@
 # Malzeme ve bütçe ön listesi
 
-Durum: Tek prototip için miktar ve uyumluluk planı. Kesin satın alma listesi veya TYBS bütçesi değildir. Kullanıcıdan yaklaşık bütçe henüz alınmadı; fiyatlar ve toplam tutar doğrulanmış değildir.
+Güncelleme: 21 Ekim 2026. Tek prototip için miktar ve uyumluluk önerisi. Kesin satın alma listesi veya TYBS bütçesi değildir. ESP32 ve enkoderli iki motor mimarisi kullanıcı tarafından seçildi. Aşağıdaki model/sayı önerileri birlikte değerlendirilecek; fiyatlar ve toplam tutar doğrulanmış değildir.
+
+Adayların gerekçeleri ve elektriksel koşulları [donanım uyumluluk değerlendirmesinde](DONANIM_SECENEKLERI_VE_UYUMLULUK.md); fiyat/ürün bilgisi girilecek tablo [teklif formunda](MALZEME_TEKLIF_FORMU.csv). CSV, noktalı virgülle ayrılmış UTF-8 tablodur. Boş fiyat alanları sıfır maliyet anlamına gelmez.
 
 ## Mevcut olanaklar
 
@@ -11,26 +13,37 @@ Durum: Tek prototip için miktar ve uyumluluk planı. Kesin satın alma listesi 
 
 ## Temel mimari için teklif alınacak kalemler
 
-İki motorlu, enkoderli hareket mimarisi kullanıcı tarafından seçildi. Aşağıdaki miktarlar bu mimarinin ürün seçimi için ön listedir; şasi boyutu ve destek tekeri düzeni henüz belirlenmedi.
+Başlangıç önerisi: küçük iki tekerlekli diferansiyel sürüşlü şasi; beş sabit ToF sensörü ve bir I²C çoklayıcı. Enkoderli motorlar seçildi; N20 sınıfı, yaklaşık 100 d/d ve 6 V önerisi ise henüz tam ürün koduna dönüştürülmedi. Şasi ölçüleri ve destek tekeri düzeni kesinleşmedi.
 
 | Kalem | Önerilen miktar | Seçimde kontrol edilecek özellik |
 | --- | --- | --- |
-| ESP32 geliştirme kartı | 1 | Kesin kart modeli, kullanılabilir pinler, sensör ve enkoder bağlantıları, USB bağlantısı. |
-| Enkoderli redüktörlü DC motor | 2 | Aynı model iki motor; besleme, kalkış/sıkışma akımı, redüksiyon, enkoder çıkışı ve çözünürlüğü. |
-| Motorlarla uyumlu tekerlek | 2 | Mil bağlantısı, çap, zemin tutuşu ve konum hesabında kullanılacak çevre ölçüsü. |
-| Şasi, motor bağlantıları ve taşıyıcı teker | 1 set | İki motoru ayrı kontrol etmeye ve sensör yerleşimine uygunluk; küçük alan içindeki dönüş ve geçiş açıklıkları. |
-| Çift kanallı motor sürücüsü | 1 | Motorların besleme/akım gereksinimleri, ESP32 kontrol sinyalleriyle uyumluluk ve ısıl kapasite. |
-| Mesafe algılama düzeni | Sayı belirlenecek | Ön ve yan açıklıklar için kapsama; minimum mesafe, algılama alanı, güncelleme hızı, yüzey ve elektriksel uyumluluk. Ultrasonik/ToF seçilmedi. |
-| Batarya ve uygun şarj çözümü | 1 set | Motor ve elektronik beslemesi, beklenen çalışma süresi ve seçilen pil türüne uygun şarj. |
-| Gerilim regülasyonu ve güç dağıtımı | 1 set | Seçilen batarya, motor ve kartın gerektirdiği gerilim/akımlara uygunluk. |
-| Anahtar, kablo, konnektör, montaj ve devre malzemesi | İhtiyaca göre | Kesin devre ve şasiye göre miktarlandırılacak; set adıyla belirsiz toplu tutar yerine başvuru için gerekirse ayrı kalemler çıkarılacak. |
+| ESP32 geliştirme kartı | 1 | ESP32-DevKitC V4 / WROOM-32E sürümü aday; satılan kartın pin ve besleme düzeni doğrulanacak. |
+| Enkoderli redüktörlü DC motor | 2 | Aynı model N20 sınıfı düşük akımlı 6 V motor aday. Sıkışma akımı, tork ve enkoder elektriksel bilgisi olmadan ürün seçilmeyecek. |
+| Motorlarla uyumlu tekerlek | 2 | Yaklaşık 60 mm çap önerisi; mil bağlantısı ve zemin tutuşu kontrol edilecek. |
+| Şasi | 1 | Yaklaşık 20 × 15 cm sınıfı öneri; toplam kütle, dönüş alanı ve parça yerleşimi kontrol edilecek. |
+| Motor bağlantı aparatı | 2 | Seçilecek motor ve şasiye uyumlu; kitte varsa ayrıca alınmayacak. |
+| Serbest taşıyıcı teker | 1 | Tahrik tekerleriyle uygun yükseklik ve küçük alanda dönme. |
+| Çift kanallı motor sürücüsü | 1 | TB6612FNG aday; düşük akımlı motor koşulu ve modülün sürekli akım/ısıl sınırları doğrulanacak. |
+| ToF mesafe sensörü taşıyıcısı | 5 | VL53L0X aday: ön orta, ön çaprazlar, iki yan. 3,3 V besleme/I²C ve algılama kapsaması kontrol edilecek. |
+| I²C çoklayıcı | 1 | TCA9548A aday; aynı adresli sensörler ayrı kanallara bağlanacak. |
+| Hazır korumalı batarya paketi | 1 | 2S paket önerisi; kimya, kapasite ve akım gereksinimleri doğrulanacak. |
+| Pakete uygun şarj cihazı | 1 | Batarya kimyası ve hücre sayısıyla uyumlu olacak; paketteki koruma devresiyle aynı parça sayılmayacak. |
+| 5 V regülatör modülü | 1 | Seçilen bataryanın giriş aralığında gerçek sürekli akım kapasitesi doğrulanacak; ilk arama ölçütü en az 3 A. |
+| 3,3 V regülatör modülü | 1 | Sensör/çoklayıcı/sürücü mantığı için; toplam tüketim ve ısıl hesap yapılacak. |
+| Ana güç anahtarı | 1 | Hesaplanan akıma uygun. |
+| Sigorta ve yuvası | 1 takım | Değer/tip, motor kalkışı ve kablo kapasitesiyle seçilecek. |
+| Devre montaj kartı | 1 | Boyut, bağlantı ve akım yollarına uygun. |
+| USB veri kablosu | 1 | Seçilecek kartın konektörüyle uyumlu; mevcutsa yeni alım olmayacak. |
+| Kablo, konnektör, bağlantı elemanları ve süzme parçaları | Adetler çıkarılacak | Son bağlantı şemasına göre ayrı kalemler halinde fiyatlandırılacak; belirsiz toplu fiyat girilmeyecek. |
 
-Basit bir araç kitinde enkoder bulunması otomatik olarak varsayılmayacak. Motor, sürücü ve güç bileşenleri birlikte kontrol edilmeden ürün listesi kesinleştirilmeyecek.
+Önerilen ilk güç düzeninde motor sürücüsü ve ESP32 ayrı kablo dallarından regüle 5 V ile beslenecek; sensör/mantık için 3,3 V dalı kullanılacak. 6 V anma değerli motorun 5 V'taki yük davranışı ayrıca kontrol edilecek. Bataryanın ham çıkışı doğrudan motora veya ESP32'ye bağlanacakmış gibi planlanmadı. Ayrıntılar [uyumluluk değerlendirmesinde](DONANIM_SECENEKLERI_VE_UYUMLULUK.md).
+
+Basit bir araç kitinde enkoder bulunması otomatik olarak varsayılmayacak. Motor, sürücü ve güç bileşenleri birlikte kontrol edilmeden ürün listesi kesinleştirilmeyecek. Kitteki şasi, motor aparatı veya tekerlekler ayrı alımlarla mükerrer bütçelenmeyecek.
 
 ## İhtiyaca göre ayrıca değerlendirilecekler
 
-- IMU: yön ölçümü ve konum kestirimine katkısı, kalibrasyon ihtiyacı ve bütçeyle değerlendirilecek; model seçilmedi.
-- İlave mesafe sensörü veya tarama mekanizması: kaçınma algoritmasının istediği kapsama göre belirlenecek.
+- IMU: yön ölçümü ve konum kestirimine katkısı, kalibrasyon ihtiyacı ve bütçeyle değerlendirilecek; model seçilmedi, zorunlu alım değil.
+- Sensör sayısı/türü: beş sabit ToF başlangıç önerisi; üç sensörlü veya farklı türde bir düzen ancak kapsama, kaçınma yeterliliği ve fiyat birlikte değerlendirilerek seçilecek. Servo bu öneride zorunlu parça değil.
 - Gövde/muhafaza: hazır bağlantı parçaları yeterliyse özel üretim gerekmeyebilir; 3D yazıcı erişimi varsayılmayacak.
 - Deney ölçümü: metre, zemin işaretleri, uygun referans kamera ve sabitleme olanağı incelenecek. Rota sapmasını bağımsız ölçmek yöntem için gereklidir; kamera kullanımı ve satın alımı henüz kararlaştırılmadı.
 
@@ -42,4 +55,6 @@ Basit bir araç kitinde enkoder bulunması otomatik olarak varsayılmayacak. Mot
 4. Yeni alınacak ve kişisel olarak zaten mevcut parçalar ayrılacak. Mevcut lehim ekipmanı yeni alım kalemi olarak varsayılmayacak.
 5. Adet × birim fiyat üzerinden toplam çıkarılacak; program sınırı ve danışman görüşüyle son bütçe oluşturulacak. Kontrol edilen program sayfasındaki destek üst sınırı 12.000 TL; bu tutar projenin belirlenmiş bütçesi veya destek alma garantisi değildir.
 
-21 Ekim 2026 tarihinde üç satıcının ESP32 sayfasına erişim denemeleri ağ aracısı tarafından 403 ile engellendi. Bu nedenle bu belgede güncel fiyat, doğrulanmış ürün modeli veya toplam maliyet verilmedi. Resmî bütçeye doğrulanmamış tahmin eklenmeyecek.
+21 Ekim 2026 tarihli tekrar denemelerinde Robotistan, Robolink Market ve Direnc.net sayfaları ağ aracısı tarafından 403 ile engellendi. Gerekli alan adları ortam yapılandırma taslağına eklendi; kayıt ağ erişimini kendiliğinden etkinleştirmedi. Bu nedenle güncel fiyat veya toplam maliyet verilmedi. Aday kart/sensör/sürücülerin erişilebilen üretici GitHub belgeleri okundu; bu inceleme satılan ürünün tüm özellikleri ve fiyatının doğrulanması anlamına gelmiyor.
+
+**Teklif formu doldurma:** Her kaleme tam ürün kodu, satıcı bağlantısı, teklif tarihi, KDV durumu, stok, adet ve birim fiyat yazılacak. Şimdilik boş olan fiyat/tutar hücreleri sıfır kabul edilmeyecek. İsteğe bağlı ve mevcut ekipman satırları kesin alım toplamına otomatik dahil edilmeyecek. Toplam ancak temel parçalar ve bağımsız deney ölçümü için gereken kaynaklar tamamlandığında oluşturulacak.

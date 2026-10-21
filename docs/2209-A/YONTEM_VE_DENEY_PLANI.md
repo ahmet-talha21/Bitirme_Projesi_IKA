@@ -26,6 +26,8 @@ Durum: Görüşülmek üzere hazırlanmış tasarım önerisi. Kullanıcının b
 
 Enkoder ve IMU ile konum kestiriminde hata birikebilir. Parkur uzunluğu, zemin ve kabul edilecek hata birlikte değerlendirilecek; gerekirse ek konum düzeltmesi planlanacak. Sensör görüş alanı ve aracın fiziksel genişliği kaçınma kararında dikkate alınacak.
 
+Malzeme planını somutlaştırmak için [ayrı bir donanım adayı](DONANIM_SECENEKLERI_VE_UYUMLULUK.md) hazırlandı. Beş sabit ToF sensörü ve I²C çoklayıcı bu adayda öneriliyor; bu tablodaki açık seçimleri kesinleştirmiş sayılmaz. Ürünlerin fiyatı, motor/sürücü/güç uyumu ve gerçek sensör kapsaması doğrulandıktan sonra yöntemle birlikte güncellenecek.
+
 ## 3. Arayüz ve haberleşme önerisi
 
 - Bilgisayar ve telefon tarayıcısından açılabilen bir web arayüzü.

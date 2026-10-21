@@ -32,6 +32,8 @@ Güncelleme: 21 Ekim 2026. Bu belge başvuru metni değil, kullanıcı tarafınd
 
 Mevcut ekipman durumu ve teklif alınacak kalemler [malzeme ve bütçe ön listesinde](MALZEME_VE_BUTCE_ON_LISTESI.md) tutuluyor. Fiyatlar doğrulanmadan başvuru bütçesi oluşturulmayacak.
 
+Kullanıcının malzeme listesini oluşturma isteği üzerine [donanım adayı ve uyumluluk değerlendirmesi](DONANIM_SECENEKLERI_VE_UYUMLULUK.md) hazırlandı: WROOM-32E modüllü DevKitC, düşük akımlı enkoderli N20 motorlar, koşullu TB6612FNG, beş sabit VL53L0X ve TCA9548A, regüle beslemeli 2S paket başlangıç önerileri. Bunlar henüz kullanıcı tarafından onaylanmış ürün/sensör sayısı kararları değildir. Motor ve batarya tam ürünleri doğrulanmadı; fiyat toplamı yok. [Teklif tablosu](MALZEME_TEKLIF_FORMU.csv) oluşturuldu. İncelenen üretici belgeleri ve devam eden ağ kısıtı teknik değerlendirmede kayıtlı.
+
 Başvuru sahibinin bildirdiği kurum, bölüm, sınıf, danışman ve tek yürütücülü görev dağılımı [genel bilgiler ve görevler taslağında](GENEL_BILGILER_VE_GOREVLER.md) tutuluyor. Üniversitedeki kayıt veya altyapı olanakları bağımsız olarak doğrulanmış değildir.
 
 [Konunun önemi ve bilimsel niteliği taslağı](BILIMSEL_NITELIK_TASLAGI.md), DOI ve yayın bilgileri doğrulanan iki ilgili uygulama makalesiyle geliştirildi. Okunan içerik ve ilk karşılaştırma [literatür notunda](LITERATUR_KARSILASTIRMASI.md) kayıtlı. Bu ilk inceleme kapsamlı tarama veya literatürde boşluk kanıtı sayılmayacak.
