@@ -17,7 +17,7 @@ Durum: Kullanıcının 21 Ekim 2026 tarihinde bildirdiği bilgilerle hazırlanm�
 | Süre | Bitirme projesi teslim hedefi Haziran 2027; kesin gün henüz belli değil. Resmî TÜBİTAK başlangıcı ve toplam ay sayısı ayrıca belirlenecek. |
 | Talep edilecek bütçe | Henüz belirlenmedi; fiyatlar doğrulanacak. |
 
-Üniversite ve bölüm bilgisi, belirli bir laboratuvara veya ekipmana erişim olduğu anlamına gelmez. Kesin deney yeri ve kurum olanakları ayrıca netleştirilecek. Bu belgede kayıt durumu, danışman onayı veya TYBS işlemlerinin tamamlandığı iddia edilmiyor.
+Kullanıcının doğruladığı kişisel lehim ekipmanı ve telefon, [araştırma olanakları taslağında](ARASTIRMA_OLANAKLARI_TASLAGI.md) tutuluyor. Üniversite ve bölüm bilgisi, belirli bir laboratuvara veya ekipmana erişim olduğu anlamına gelmez. Kesin deney yeri ve kurum olanakları ayrıca netleştirilecek. Bu belgede kayıt durumu, danışman onayı veya TYBS işlemlerinin tamamlandığı iddia edilmiyor.
 
 ## Sorumluluklar
 

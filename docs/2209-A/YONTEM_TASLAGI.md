@@ -40,7 +40,7 @@ Her deneme için engelin temas öncesinde algılanıp algılanmadığı, kaçın
 
 Başarı oranları başarılı deneme sayısının ilgili koşuldaki geçerli deneme sayısına bölünmesiyle hesaplanacaktır. Süreler ve rota sapması için uygun özet istatistikler verilecek; tamamlanamayan denemeler süre sınırı/başarısızlık kaydıyla ayrıca gösterilecektir. Rota izleme sırasında referans doğru parçasına uzaklık, kaçınma sırasındaki geçici sapma ve rotaya katılma sonrası izleme hatası ayrı değerlendirilecektir. Böylece engelden dolaşmanın gerektirdiği geçici rota değişimi doğrudan başarısız izleme olarak etiketlenmeyecektir. Bu aşamada istatistiksel anlamlılık veya belirli bir başarı yüzdesi vaat edilmemektedir. Tekrar sayıları ve karşılaştırma yöntemi son deney planında belirlenecektir.
 
-Rota sapması için, işaretlenmiş deney alanını gören sabit bir kameradan bağımsız referans yol ölçümü değerlendirilmekte; kamera ve görüntü kalibrasyonu olanakları henüz doğrulanmamıştır. Ölçümün güvenilir referansla ilişkilendirilmesi ve kalibrasyon gereksinimi Hauser'in kalibrasyon çerçevesiyle uyumludur (Hauser, t.y.-b). Rota hatası, yalnızca aracın kendi konum tahmini yine kendisiyle karşılaştırılarak doğrulanmayacaktır.
+Rota sapması için, işaretlenmiş deney alanını gören sabit bir kameradan bağımsız referans yol ölçümü değerlendirilmektedir. Kullanıcı deneylerde kullanabileceği telefonunun olduğunu bildirmiştir; alanın tamamını gören yerleşim, sabitleme ve görüntü kalibrasyonu henüz doğrulanmamıştır. Ölçümün güvenilir referansla ilişkilendirilmesi ve kalibrasyon gereksinimi Hauser'in kalibrasyon çerçevesiyle uyumludur (Hauser, t.y.-b). Rota hatası, yalnızca aracın kendi konum tahmini yine kendisiyle karşılaştırılarak doğrulanmayacaktır.
 
 ## Kesinleştirilecek parametreler
 
@@ -51,7 +51,7 @@ Rota sapması için, işaretlenmiş deney alanını gören sabit bir kameradan b
 | Waypoint ve rotaya katılma toleransları | Konum ölçümü doğruluğuyla birlikte seçilecek. |
 | Engel düzenleri ve tekrar sayıları | İlk tasarım belirlendi; sayısal deney planı hazırlanacak. |
 | Başarı eşikleri ve süre sınırı | Henüz seçilmedi. |
-| Bağımsız referans ölçümü | Kamera erişimi ve alanı görebilen düzenek doğrulanacak. |
+| Bağımsız referans ölçümü | Kullanıcının telefonu mevcut; alanı gören sabitleme düzeni ve ölçüm doğruluğu doğrulanacak. |
 
 ## Kaynaklar
 

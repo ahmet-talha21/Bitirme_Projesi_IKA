@@ -2,6 +2,8 @@
 
 Kontrol tarihi: 21 Ekim 2026. Ürün sayfaları ve ilgili üretici belgesi incelendi. Bu belge önerilen eşleşmeyi somutlaştırır; kullanıcı tarafından onaylanmış ürün modellerini veya çalıştırılmış bir prototipi anlatmaz. Seçili mimari iki enkoderli motor ve beş sabit mesafe sensörüdür.
 
+22 Ekim güncellemesi: daha fazla kalemin fiyatı [bütçe taslağında](FIYATLI_BUTCE_TASLAGI.md), paket/şarj/koruma eşleştirmesi [güç planında](BATARYA_VE_SARJ_PLANI.md) işlendi. Aşağıdaki 21 Ekim gözlemleri tarihleriyle korunuyor.
+
 ## Motor için somut referans
 
 Ana aday, **iki adet Pololu #5143: 210:1 Micro Metal Gearmotor MP 6V with 12 CPR Encoder, Side Connector** veya aynı gereksinimleri belgelenmiş biçimde karşılayan bir üründür. Bu ürün, önceki yaklaşık 100 d/d ve düşük akım arama ölçütünü somutlaştırıyor. Yerel bir N20 motor yalnızca aynı boyutta göründüğü için eşdeğer kabul edilmeyecek.

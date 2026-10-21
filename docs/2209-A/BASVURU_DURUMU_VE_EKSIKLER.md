@@ -1,6 +1,6 @@
 # Başvuru durumu ve kalan işler
 
-Güncelleme: 21 Ekim 2026. Bu liste hazırlık durumunu gösterir; başvurunun gönderildiği veya onaylandığı anlamına gelmez.
+Güncelleme: 22 Ekim 2026. Bu liste hazırlık durumunu gösterir; başvurunun gönderildiği veya onaylandığı anlamına gelmez.
 
 ## Hazırlanan bölümler
 
@@ -13,9 +13,9 @@ Güncelleme: 21 Ekim 2026. Bu liste hazırlık durumunu gösterir; başvurunun g
 | Görseller | Üç yenilenmiş şema PNG ve PDF olarak hazır. | Son yöntem ve parça seçiminden sonra etiket kontrolü; TYBS önizlemesinde okunabilirlik. |
 | 3.1 Çalışma takvimi | Kasım–Haziran akademik hedef planı, beş iş paketi, bağımlılıklar, başarı kontrolleri ve toplamı %100 olan katkı önerisi yazıldı. | Resmî başlangıç/süreyle uyumlu TYBS ay aralıkları, kesin teslim günü ve sayısal deney eşikleri. |
 | 3.2 Risk yönetimi | Temel hedefleri koruyan önlem ve B planları taslak olarak hazır. | Nihai donanım, algoritma ve ölçüm düzenine göre somutlaştırma. |
-| 3.3 Araştırma olanakları | Kişisel lehim ekipmanı biliniyor. | Kurumda gerçekten kullanılabilecek altyapı ve deney yeri kullanıcı/danışmanla doğrulanacak. |
+| 3.3 Araştırma olanakları | Kişisel lehim ekipmanı ve deneyde kullanılabilecek telefon doğrulandı; taslak hazır. | Kurum altyapısı, deney yeri, sabitleme/kalibrasyon ve diğer ölçüm araçları doğrulanacak. |
 | 4 Yaygın etki | Prototip, arayüz, deney kayıtları ve dokümantasyon çıktıları önerildi. | Süre ve kapsamla son uyum; danışman incelemesi. |
-| Malzeme / bütçe | Aday düzen, miktar listesi ve CSV formu hazır. Referans motor/sürücü verileri ve bazı tarihli satıcı fiyatları okundu. | Son ürün seçimi, batarya/şarj/koruma uyumu, gerçek yük, motorun teslim maliyeti, kalan fiyatlar ve toplam. Satıcı erişimi sağlandı; tam bütçe hâlâ yok. |
+| Malzeme / bütçe | Referans parça listesi için TL ve USD ara toplamlar, kaynak kayıtları ve güncel CSV hazır. Batarya/şarj/koruma adayları detaylandırıldı. | Son ürün seçimi ve güç uyumu; eksik mekanik/bağlantı/ölçüm fiyatları ve Türkiye teslim TL teklifleri. Tam proje bütçesi henüz yok. |
 | Kaynakça | Okunan kaynaklar ve doğrulama durumu kayıtlı. | Nihai metinde kullanılan kaynakların tek alfabetik listede birleştirilmesi, atıf ve DOI kontrolü. |
 | Özet | Henüz yazılmadı. | Diğer bölümler kesinleşince 25–450 kelime olarak yazılacak. |
 

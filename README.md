@@ -22,6 +22,7 @@ Kullanıcı Haziran 2027 hedefinin bitirme projesi teslimi olduğunu, kesin gün
 | [2 Yöntem taslağı](docs/2209-A/YONTEM_TASLAGI.md) | Önerilen mimari, kaçınma yaklaşımı, deney değişkenleri ve ölçüm düzeni. |
 | [3.1 Çalışma takvimi taslağı](docs/2209-A/CALISMA_TAKVIMI_TASLAGI.md) | Haziran hedefi, iş bağımlılıkları, başarı kontrolleri ve katkı dağılımı önerisi. |
 | [3.2 Risk yönetimi taslağı](docs/2209-A/RISK_YONETIMI_TASLAGI.md) | Olası teknik sorunlar, önleyici kontroller ve temel hedefleri koruyan B planları. |
+| [3.3 Araştırma olanakları taslağı](docs/2209-A/ARASTIRMA_OLANAKLARI_TASLAGI.md) | Doğrulanan kişisel ekipman ve kurumdan teyit edilecek altyapı. |
 | [4 Yaygın etki taslağı](docs/2209-A/YAYGIN_ETKI_TASLAGI.md) | Beklenen prototip, arayüz, deney kayıtları ve teknik dokümantasyon çıktıları. |
 
 ## Hazırlık ve kaynak notları
@@ -33,6 +34,9 @@ Kullanıcı Haziran 2027 hedefinin bitirme projesi teslimi olduğunu, kesin gün
 - [Proje kararları ve açık bilgiler](docs/2209-A/PROJE_NOTLARI.md)
 - [Teknik yöntem ve deney planı](docs/2209-A/YONTEM_VE_DENEY_PLANI.md)
 - [Malzeme ve bütçe ön listesi](docs/2209-A/MALZEME_VE_BUTCE_ON_LISTESI.md)
+- [Fiyatlı bütçe taslağı ve para birimi başına ara toplamlar](docs/2209-A/FIYATLI_BUTCE_TASLAGI.md)
+- [Batarya–şarj–güç dağıtımı taslağı](docs/2209-A/BATARYA_VE_SARJ_PLANI.md)
+- [Eksik ürün bilgileri ve Türkiye teslim fiyatı için teklif metni](docs/2209-A/TEKLIF_ICIN_GEREKEN_BILGILER.md)
 - [Donanım adayları ve uyumluluk koşulları](docs/2209-A/DONANIM_SECENEKLERI_VE_UYUMLULUK.md)
 - [Motor–sürücü–batarya karşılaştırması ve bulunan fiyatlar](docs/2209-A/MOTOR_SURUCU_BATARYA_KARSILASTIRMASI.md)
 - [Ürün ve fiyat teklifi tablosu (CSV)](docs/2209-A/MALZEME_TEKLIF_FORMU.csv)

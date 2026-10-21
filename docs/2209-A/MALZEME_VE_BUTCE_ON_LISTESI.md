@@ -1,6 +1,6 @@
 # Malzeme ve bütçe ön listesi
 
-Güncelleme: 21 Ekim 2026. Tek prototip için miktar ve uyumluluk önerisi. Kesin satın alma listesi veya TYBS bütçesi değildir. ESP32, enkoderli iki motor mimarisi ve beş sabit mesafe sensörü düzeni kullanıcı tarafından seçildi. Model önerileri, kesin montaj açıları ve diğer parça miktarları birlikte değerlendirilecek. Bazı ürün fiyatları doğrulandı; tam proje toplamı henüz yok.
+Güncelleme: 22 Ekim 2026. Tek prototip için miktar ve uyumluluk önerisi. Kesin satın alma listesi veya TYBS bütçesi değildir. ESP32, enkoderli iki motor mimarisi ve beş sabit mesafe sensörü düzeni kullanıcı tarafından seçildi. Model önerileri, kesin montaj açıları ve diğer parça miktarları birlikte değerlendirilecek. Fiyatı bulunan kalemlerin ara toplamları [fiyatlı bütçe taslağında](FIYATLI_BUTCE_TASLAGI.md); tam proje toplamı henüz yok.
 
 Adayların gerekçeleri ve elektriksel koşulları [donanım uyumluluk değerlendirmesinde](DONANIM_SECENEKLERI_VE_UYUMLULUK.md); fiyat/ürün bilgisi girilecek tablo [teklif formunda](MALZEME_TEKLIF_FORMU.csv). CSV, noktalı virgülle ayrılmış UTF-8 tablodur. Boş fiyat alanları sıfır maliyet anlamına gelmez.
 
@@ -11,24 +11,26 @@ Motor için #5143 ve #5115 referansları, TB6612FNG taşıyıcısı ve yerelde b
 - ESP32 henüz mevcut değil; kullanıcı satın almayı planlıyor.
 - Kullanıcı lehim ekipmanına sahip ve montajda sorun beklemiyor. Araç henüz monte edilmedi.
 - Diğer parçaların mevcut olduğu bildirilmedi.
-- Üniversite laboratuvarı, 3D yazıcı ve referans ölçüm kamerasına erişim henüz doğrulanmadı. Bunlar başvuruda mevcut altyapı olarak gösterilmeyecek.
+- Kullanıcı 22 Ekim 2026 tarihinde telefonunu deneylerde kullanabileceğini doğruladı. Yeni kamera alımı planlanmıyor; uygun görüş alanı, sabitleme ve kalibrasyon düzeni kontrol edilecek.
+- Üniversite laboratuvarı ve 3D yazıcıya erişim henüz doğrulanmadı. Bunlar başvuruda mevcut kurum altyapısı olarak gösterilmeyecek.
 
 ## Temel mimari için teklif alınacak kalemler
 
-Seçilen başlangıç düzeni: küçük iki tekerlekli diferansiyel sürüşlü şasi ve beş sabit mesafe sensörü (ön orta, iki ön çapraz, iki yan). ToF tipi ve I²C çoklayıcı hâlen adaydır. Enkoderli motorlar seçildi; N20 sınıfı, yaklaşık 100 d/d ve 6 V önerisi ise henüz tam ürün koduna dönüştürülmedi. Şasi ölçüleri ve destek tekeri düzeni kesinleşmedi.
+Seçilen başlangıç düzeni: küçük iki tekerlekli diferansiyel sürüşlü şasi ve beş sabit mesafe sensörü (ön orta, iki ön çapraz, iki yan). ToF tipi ve I²C çoklayıcı hâlen adaydır. Yaklaşık 100 d/d, 6 V motor için Pololu #5143 somut referans olarak incelendi; bu, satın alma/model onayı değildir. Şasi ölçüleri ve taşıyıcı teker yüksekliği kesinleşmedi.
 
 | Kalem | Önerilen miktar | Seçimde kontrol edilecek özellik |
 | --- | --- | --- |
-| ESP32 geliştirme kartı | 1 | ESP32-DevKitC V4 / WROOM-32E sürümü aday; satılan kartın pin ve besleme düzeni doğrulanacak. |
+| ESP32 geliştirme kartı | 1 | Yerel fiyat adayı ESP32-WROOM CP2102 Type-C kartı. Önceki DevKitC referansıyla aynı pin/güç devresine sahip varsayılmayacak. |
 | Enkoderli redüktörlü DC motor | 2 | Pololu #5143, 6 V / MP 210:1 / 100 d/d ve belgeli eşdeğerleri aday. Üretici teknik verileri okundu; 5 V yük davranışı, gerçek kütle, temin ve teslim maliyeti açık. |
-| Motorlarla uyumlu tekerlek | 2 | Yaklaşık 60 mm çap önerisi; mil bağlantısı ve zemin tutuşu kontrol edilecek. |
+| Motorlarla uyumlu tekerlek | 2, bir çift | Pololu #1420 60×8 mm / 3 mm D mil referansı; yükseklik ve şasi yerleşimi kontrol edilecek. CSV'de bir çift olarak fiyatlandı. |
 | Şasi | 1 | Yaklaşık 20 × 15 cm sınıfı öneri; toplam kütle, dönüş alanı ve parça yerleşimi kontrol edilecek. |
-| Motor bağlantı aparatı | 2 | Seçilecek motor ve şasiye uyumlu; kitte varsa ayrıca alınmayacak. |
-| Serbest taşıyıcı teker | 1 | Tahrik tekerleriyle uygun yükseklik ve küçük alanda dönme. |
+| Motor bağlantı aparatı | 2, bir çift | Pololu #1089 referans çift; şasi delik düzeni ve dahil vidalar kontrol edilecek. |
+| Serbest taşıyıcı teker | İhtiyaç 1 | Yerel fiyat adayı iki adetlik paket satılıyor; paketin tam bedeli alındı. Gerekli yükseklik/spacer kontrol edilecek. |
 | Çift kanallı motor sürücüsü | 1 | TB6612FNG aday; düşük akımlı motor koşulu ve modülün sürekli akım/ısıl sınırları doğrulanacak. |
-| Sabit mesafe sensörü | 5 | Sayı ve ön orta, iki ön çapraz, iki yan düzeni seçildi. VL53L0X/ToF model adayı; kesin açılar, 3,3 V besleme/I²C ve algılama kapsaması kontrol edilecek. |
+| Sabit mesafe sensörü | 5 | Sayı ve yönler seçildi. Bütçe örneğinde 3,3 V arayüzü belgeli Pololu #2490 referansı var; daha ucuz 5 V kart gözlemi ayrı tutuldu. Model, açı ve kapsama nihai değil. |
 | I²C çoklayıcı | 1 | TCA9548A aday; aynı adresli sensörler ayrı kanallara bağlanacak. |
-| Hazır korumalı batarya paketi | 1 | 2S paket önerisi; kimya, kapasite ve akım gereksinimleri doğrulanacak. |
+| Hazır batarya paketi | 1 | 2S / 1000 mAh Power-Xtra fiyat adayı. Paket koruması, şarj akımı ve soketler teyit edilecek. |
+| Gerekirse harici koruma modülü | 1 | 2S BMS fiyat adayı ayrı gösterildi; paket korumalı gelirse ayrıca alınmayacak. |
 | Pakete uygun şarj cihazı | 1 | Batarya kimyası ve hücre sayısıyla uyumlu olacak; paketteki koruma devresiyle aynı parça sayılmayacak. |
 | 5 V regülatör modülü | 1 | Seçilen bataryanın giriş aralığında gerçek sürekli akım kapasitesi doğrulanacak; ilk arama ölçütü en az 3 A. |
 | 3,3 V regülatör modülü | 1 | Sensör/çoklayıcı/sürücü mantığı için; toplam tüketim ve ısıl hesap yapılacak. |
@@ -37,9 +39,10 @@ Seçilen başlangıç düzeni: küçük iki tekerlekli diferansiyel sürüşlü 
 | Devre montaj kartı | 1 | Boyut, bağlantı ve akım yollarına uygun. |
 | USB veri kablosu | 1 | Seçilecek kartın konektörüyle uyumlu; mevcutsa yeni alım olmayacak. |
 | Motor/enkoder bağlantı kablosu | 2 | Referans Pololu motorlara dahil değil; altı pinli JST SH tarzı #4763 aday. Genel konnektör satırıyla mükerrer sayılmayacak. |
+| Sinyal jumper seti | 1 paket, 40 hat | Yerel fiyat adayı. Motorların ana güç kablosu yerine sayılmayacak. |
 | Kablo, konnektör, bağlantı elemanları ve süzme parçaları | Adetler çıkarılacak | Son bağlantı şemasına göre ayrı kalemler halinde fiyatlandırılacak; belirsiz toplu fiyat girilmeyecek. |
 
-Önerilen ilk güç düzeninde motor sürücüsü ve ESP32 ayrı kablo dallarından regüle 5 V ile beslenecek; sensör/mantık için 3,3 V dalı kullanılacak. 6 V anma değerli motorun 5 V'taki yük davranışı ayrıca kontrol edilecek. Bataryanın ham çıkışı doğrudan motora veya ESP32'ye bağlanacakmış gibi planlanmadı. Ayrıntılar [uyumluluk değerlendirmesinde](DONANIM_SECENEKLERI_VE_UYUMLULUK.md).
+Önerilen ilk güç düzeninde motor sürücüsü ve ESP32 ayrı kablo dallarından regüle 5 V ile beslenecek; referans sensör/mantık için 3,3 V dalı kullanılacak. 6 V motorun 5 V'taki yük davranışı ayrıca kontrol edilecek. [Batarya–şarj–güç planı](BATARYA_VE_SARJ_PLANI.md), paket/koruma ve şarj akımıyla ilgili açık kontrolleri gösteriyor.
 
 Basit bir araç kitinde enkoder bulunması otomatik olarak varsayılmayacak. Motor, sürücü ve güç bileşenleri birlikte kontrol edilmeden ürün listesi kesinleştirilmeyecek. Kitteki şasi, motor aparatı veya tekerlekler ayrı alımlarla mükerrer bütçelenmeyecek.
 
@@ -48,7 +51,7 @@ Basit bir araç kitinde enkoder bulunması otomatik olarak varsayılmayacak. Mot
 - IMU: yön ölçümü ve konum kestirimine katkısı, kalibrasyon ihtiyacı ve bütçeyle değerlendirilecek; model seçilmedi, zorunlu alım değil.
 - Sensör türü/modeli: beş sabit sensörlü düzen seçildi. VL53L0X/ToF adayı, gerçek kapsama ve fiyatla birlikte değerlendirilecek. Kesin montaj açıları seçilmedi; servo bu düzende zorunlu parça değil.
 - Gövde/muhafaza: hazır bağlantı parçaları yeterliyse özel üretim gerekmeyebilir; 3D yazıcı erişimi varsayılmayacak.
-- Deney ölçümü: metre, zemin işaretleri, uygun referans kamera ve sabitleme olanağı incelenecek. Rota sapmasını bağımsız ölçmek yöntem için gereklidir; kamera kullanımı ve satın alımı henüz kararlaştırılmadı.
+- Deney ölçümü: kullanıcının mevcut telefonu, metre, zemin işaretleri ve uygun sabitleme düzeni değerlendirilecek. Yeni kamera alımı planlanmıyor. Telefon erişimi, rota sapmasının bağımsız ve yeterli doğrulukta ölçüldüğü anlamına gelmez; görüş alanı ve kalibrasyon kontrol edilecek.
 
 ## Bütçeyi kesinleştirme yöntemi
 

@@ -63,7 +63,7 @@ Kesin algoritma henüz seçilmedi. İdeal noktasal robot veya hatasız konum var
 | Görev tamamlama | Süre sınırı içinde tanımlı hedefe ulaşan denemelerin oranı. |
 | Süre ve rota sapması | Tamamlanma süresi ve bağımsız referans ölçümüne göre izlenen yolun tanımlı rotadan sapması. |
 
-Rota sapması aracın kendi enkoder tahminini yine kendisiyle karşılaştırarak doğrulanmayacak. İşaretlenmiş alanı gören harici bir kamerayla referans yol ölçümü aday yöntemdir; kamera erişimi, görüş alanı, ölçek kalibrasyonu ve ölçüm doğruluğu henüz doğrulanmadı. Araç üstü kamera bu nedenle seçilmiş değildir.
+Rota sapması aracın kendi enkoder tahminini yine kendisiyle karşılaştırarak doğrulanmayacak. İşaretlenmiş alanı gören harici bir kamerayla referans yol ölçümü aday yöntemdir. Kullanıcı telefonunu deneylerde kullanabileceğini bildirdi; görüş alanı, sabitleme, ölçek kalibrasyonu ve ölçüm doğruluğu henüz doğrulanmadı. Bu telefon araç üstü algılama kamerası olarak seçilmedi.
 
 Deneme sayıları, engel geometrileri, sayısal hedefler ve karşılaştırma/analiz yöntemi donanım ve olanaklar netleşince belirlenecek. Mevcut kaynak incelemesi literatürde özgünlük veya üstünlük iddiası kurmak için yeterli değildir; ilgili akademik çalışmalar ayrıca incelenecek.
 

@@ -12,7 +12,7 @@ Tarih: 21 Ekim 2026. Bu belge, birlikte değerlendirilecek donanım önerisidir.
 | Motor sürücüsü | Bir TB6612FNG çift kanallı modül, düşük akımlı motor şartıyla. | İki motor için bağımsız hız/yön kontrolü. Bu ön düzen için her motorun 6 V'daki sıkışma akımı en fazla 1 A olan model aranacak; seçilecek modülün sürekli akım/ısıl kapasitesi ayrıca doğrulanacak. Uygun motor bulunamazsa sürücü adayı değiştirilecek. |
 | Engel mesafesi | Beş sabit mesafe sensörü; VL53L0X ToF taşıyıcısı model adayı. | Sensör sayısı ve ön orta, iki ön çapraz, iki yan düzeni kullanıcı tarafından seçildi. Tür/model, kesin açılar ve gerçek kapsama doğrulanacak. ToF adayı için 3,3 V besleme ve I²C uyumluluğu belgeli olacak. |
 | Sensör bağlantısı | Bir TCA9548A I²C çoklayıcı modül. | Aynı başlangıç adresindeki sensörleri ayrı kanallardan okumayı sağlar. Her işlemde yalnızca ilgili sensör kanalı etkinleştirilecek. |
-| Güç | Hazır korumalı iki hücreli seri lityum pil paketi (2S), pakete uygun şarj cihazı; 5 V ve 3,3 V regülasyon dalları. | Kapasite, çıkış akımı ve gerçek ürün seçilmedi. Önerilen güç düzeni aşağıda açıklandı. |
+| Güç | Hazır iki hücreli seri lityum paket (2S), uygun paket koruması veya gerekirse harici koruma, şarj cihazı; 5 V ve 3,3 V dalları. | 2S / 1000 mAh paket ile şarj/koruma fiyat adayları bulundu; üretici şarj akımı ve soket uyumu henüz açık. |
 
 ### Motor ve sürücü birlikte nasıl seçilecek?
 
@@ -56,7 +56,7 @@ Batarya kapasitesinden çalışma süresi henüz hesaplanmadı. Motor yükü, el
 - Altı eksenli IMU, enkoderle yapılan yön/konum kestiriminin gereksinimine göre değerlendirilecek; şu anda zorunlu alım değil ve tek başına mutlak konum referansı sağlamaz.
 - Motor gürültüsünü sınırlayacak ve beslemeyi süzecek elemanların değer/adetleri, seçilen motor ve sürücü belgesine göre çıkarılacak.
 - Multimetre, metre ve deney alanı işaretleme malzemesine erişim doğrulanacak. Kullanıcının lehim ekipmanı mevcut; diğer araçlar mevcut sayılmıyor.
-- Bağımsız referans ölçümü için kamera/düzenek henüz seçilmedi. Kamera kullanımı veya alımı bu listeyle kesinleştirilmedi; ölçüm planı ve varsa ek maliyeti ayrıca tamamlanacak.
+- Kullanıcı 22 Ekim 2026 tarihinde telefonunu deneylerde kullanabileceğini doğruladı. Yeni kamera alımı planlanmıyor; görüş alanı, sabitleme ve bağımsız ölçüm kalibrasyonu kontrol edilecek.
 
 ## 5. Teklif alınmadan önce gerekli ürün bilgileri
 
@@ -87,3 +87,5 @@ Motor için referans ürün sayfaları ve ilgili veri sayfası bölümleri sonra
 Gerekli alan adları, önceki izinler korunarak ortam yapılandırma taslağına eklendi. Araç `saved` ve `requires_publish: true` döndürdü; taslak kaydı yayımlanmış yapılandırma kanıtı değildir. İlk tekrar denemelerinde de 403 sürmüştü. Eklenen alan adları: `www.robotistan.com`, `www.robolinkmarket.com`, `www.direnc.net`, `www.pololu.com`, `www.st.com`, `www.ti.com`, `docs.espressif.com`, `www.espressif.com`.
 
 21 Ekim 2026 tarihli son motor–sürücü incelemesinde Pololu, Robotistan, Robolink Market ve Direnc.net sayfalarına HTTP 200 ile erişildi. Bazı gerçek fiyatlar ve üretici teknik verileri okunabildi. Bu gözlem, ortamın yayımlandığına ilişkin ayrı bir doğrulama değildir. Güncel fiyatlar ve açık teknik koşullar [karşılaştırma belgesinde](MOTOR_SURUCU_BATARYA_KARSILASTIRMASI.md); tam proje toplamı hâlâ yok.
+
+22 Ekim güncellemesi: daha fazla parça için [fiyatlı bütçe taslağı](FIYATLI_BUTCE_TASLAGI.md) ve [batarya–şarj planı](BATARYA_VE_SARJ_PLANI.md) hazırlandı. Yerel ve USD ara toplamlar ayrı tutuldu. Pil üreticisi ve resmî kur alan adları taslağa eklendi; henüz etkin erişim doğrulanmadı.

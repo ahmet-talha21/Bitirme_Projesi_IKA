@@ -1,0 +1,491 @@
+{
+  "checked_on": "2026-10-22",
+  "timezone": "Europe/Istanbul",
+  "scope": "Product-page price observations for a proposed reference basket; no purchase, reservation, binding quote or completed project budget. Stock refers to structured page labels. Models and most quantities remain proposals.",
+  "reference_parts": [
+    {
+      "source_url": "https://www.robolinkmarket.com/esp32-wroom-cp2102-wifi-ve-bluetooth-modulu-type-c",
+      "html_sha256": "48423b3497754a2aada655bb9dbdc70cab690f04c6c8aaf9573485322d813d99",
+      "name": "ESP32-WROOM CP2102 Wifi ve Bluetooth Modülü - Type C",
+      "sku": "RLF31A08-7271",
+      "structured_offer": {
+        "price": "628.50",
+        "priceCurrency": "TRY",
+        "availability": "https://schema.org/InStock"
+      },
+      "code": "B01",
+      "display_name": "ESP32-WROOM CP2102 Type-C geliştirme kartı",
+      "quantity": "1",
+      "unit": "adet",
+      "observed_unit_price": "628.50",
+      "currency": "TRY",
+      "vat_scope": "KDV dahil sayfa tutarı",
+      "line_amount": "628.50",
+      "evaluation_note": "Kart sürümü/pin ve güç şeması son seçimde kontrol edilecek.",
+      "role": "referans bütçe adayı"
+    },
+    {
+      "source_url": "https://www.pololu.com/product/5143/specs",
+      "html_sha256": "46e21e40b7081d80fec4d6e70495308773444cfce25398cf2bbb63b4ab9911d0",
+      "name": "210:1 Micro Metal Gearmotor MP 6V with 12 CPR Encoder, Side Connector",
+      "sku": "5143",
+      "structured_offer": {
+        "price": "29.95",
+        "priceCurrency": "USD",
+        "availability": "InStock"
+      },
+      "code": "B02",
+      "display_name": "Pololu #5143 MP 210:1 6 V enkoderli motor",
+      "quantity": "2",
+      "unit": "adet",
+      "observed_unit_price": "29.95",
+      "currency": "USD",
+      "vat_scope": "Türkiye teslim vergi ve giderleri doğrulanmadı",
+      "line_amount": "59.90",
+      "evaluation_note": "Referans ürün; 5 V yük davranışı ve Türkiye teslim maliyeti açık.",
+      "role": "referans bütçe adayı"
+    },
+    {
+      "source_url": "https://www.pololu.com/product/1420",
+      "html_sha256": "26f3ffe9dbe1d1fb45525f332c22d23bebaf50f39be0e5dcb669064b0acc16d8",
+      "name": "Pololu Wheel 60×8mm Pair - Black",
+      "sku": "1420",
+      "structured_offer": {
+        "price": "6.75",
+        "priceCurrency": "USD",
+        "availability": "InStock"
+      },
+      "code": "B03",
+      "display_name": "Pololu #1420 60×8 mm tekerlek çifti",
+      "quantity": "1",
+      "unit": "çift (2 tekerlek)",
+      "observed_unit_price": "6.75",
+      "currency": "USD",
+      "vat_scope": "Türkiye teslim vergi ve giderleri doğrulanmadı",
+      "line_amount": "6.75",
+      "evaluation_note": "3 mm D mil referansına uygun; şasi/taşıyıcı teker yüksekliği kontrol edilecek.",
+      "role": "referans bütçe adayı"
+    },
+    {
+      "source_url": "https://www.pololu.com/product/1089",
+      "html_sha256": "d9049d6a2bf0bce10de1f54176931ecfbbc3437d40152f0643158842e6a94781",
+      "name": "Pololu Micro Metal Gearmotor Bracket Extended Pair",
+      "sku": "1089",
+      "structured_offer": {
+        "price": "4.95",
+        "priceCurrency": "USD",
+        "availability": "InStock"
+      },
+      "code": "B05",
+      "display_name": "Pololu #1089 uzatılmış motor bağlantı çifti",
+      "quantity": "1",
+      "unit": "çift (2 bağlantı)",
+      "observed_unit_price": "4.95",
+      "currency": "USD",
+      "vat_scope": "Türkiye teslim vergi ve giderleri doğrulanmadı",
+      "line_amount": "4.95",
+      "evaluation_note": "Referans motor geometrisi; şasi delikleri ve kutu içeriğiyle son kontrol yapılacak.",
+      "role": "referans bütçe adayı"
+    },
+    {
+      "source_url": "https://www.direnc.net/mini-sarhos-tekerlek-plastik-2-adet",
+      "html_sha256": "e1729b2f9137786863f95dcfa07916d74b48252b81202b6cf82f831552d5991f",
+      "name": "Mini Sarhoş Tekerlek Plastik - 2 Adet",
+      "sku": "T21604",
+      "structured_offer": {
+        "price": "47.15",
+        "priceCurrency": "TRY",
+        "availability": "https://schema.org/InStock"
+      },
+      "code": "B06",
+      "display_name": "Mini serbest tekerlek, 2 adetlik paket",
+      "quantity": "1",
+      "unit": "paket (2 adet)",
+      "observed_unit_price": "56.58",
+      "currency": "TRY",
+      "vat_scope": "KDV dahil sayfa tutarı",
+      "line_amount": "56.58",
+      "evaluation_note": "Araçta bir adet planlanıyor; referans satış paketi iki adet. Paket bedeli bölünmedi.",
+      "role": "referans bütçe adayı"
+    },
+    {
+      "source_url": "https://www.direnc.net/tb6612fng-dc-ve-step-motor-surucu-modulu",
+      "html_sha256": "5d89669d45884c3b8fb4abb8fd578f6048af8b6f5a10fca7341d2f6f4d116c7e",
+      "name": "TB6612FNG DC ve Step Motor Sürücü Modülü",
+      "sku": "T21228",
+      "structured_offer": {
+        "price": "67.80",
+        "priceCurrency": "TRY",
+        "availability": "https://schema.org/InStock"
+      },
+      "code": "B07",
+      "display_name": "TB6612FNG sürücü modülü",
+      "quantity": "1",
+      "unit": "adet",
+      "observed_unit_price": "81.36",
+      "currency": "TRY",
+      "vat_scope": "KDV dahil sayfa tutarı",
+      "line_amount": "81.36",
+      "evaluation_note": "Gerçek taşıyıcının bağlantı ve ısıl kontrolü açık.",
+      "role": "referans bütçe adayı"
+    },
+    {
+      "source_url": "https://www.pololu.com/product/2490",
+      "html_sha256": "385c76e62f39b9e048ce6a4bdbc42fd6a57d1154bd447646b19c93bb751592c6",
+      "name": "VL53L0X Time-of-Flight Distance Sensor Carrier with Voltage Regulator, 200cm Max",
+      "sku": "2490",
+      "structured_offer": {
+        "price": "19.95",
+        "priceCurrency": "USD",
+        "availability": "InStock"
+      },
+      "code": "B08",
+      "display_name": "Pololu #2490 VL53L0X taşıyıcısı",
+      "quantity": "5",
+      "unit": "adet",
+      "observed_unit_price": "19.95",
+      "currency": "USD",
+      "vat_scope": "Türkiye teslim vergi ve giderleri doğrulanmadı",
+      "line_amount": "99.75",
+      "evaluation_note": "Belgeli 3,3 V arayüz referansı; kullanıcı beş sensörü seçti, ürün modeli henüz aday.",
+      "role": "referans bütçe adayı"
+    },
+    {
+      "source_url": "https://www.robolinkmarket.com/tca9548a-i2c-coklayici",
+      "html_sha256": "691840d375d5cc33218ce5a86081e62983d24599f338dd69f1a235cb41dd30a9",
+      "name": "TCA9548A I2C Çoklayıcı",
+      "sku": "RLC2B10-2904",
+      "structured_offer": {
+        "price": "76.50",
+        "priceCurrency": "TRY",
+        "availability": "https://schema.org/InStock"
+      },
+      "code": "B09",
+      "display_name": "TCA9548A I²C çoklayıcı",
+      "quantity": "1",
+      "unit": "adet",
+      "observed_unit_price": "76.50",
+      "currency": "TRY",
+      "vat_scope": "KDV dahil sayfa tutarı",
+      "line_amount": "76.50",
+      "evaluation_note": "Taşıyıcının besleme/çekme direnci düzeni son kontrolde doğrulanacak.",
+      "role": "referans bütçe adayı"
+    },
+    {
+      "source_url": "https://www.direnc.net/74v-2s1p-1000-mah-15c-li-polymer-pil-soketli",
+      "html_sha256": "9d4d3734bebfb5dfccde6b10e1172f2e07fdfa3b2de959df89950a86988ffeb7",
+      "name": "7.4V 2S1P 1000 mAh (15C) Li-Polymer Pil - Soketli",
+      "sku": "T16322",
+      "structured_offer": {
+        "price": "849.97",
+        "priceCurrency": "TRY",
+        "availability": "https://schema.org/InStock"
+      },
+      "code": "B10",
+      "display_name": "Power-Xtra 7,4 V 2S1P 1000 mAh paket",
+      "quantity": "1",
+      "unit": "adet",
+      "observed_unit_price": "1019.96",
+      "currency": "TRY",
+      "vat_scope": "KDV dahil sayfa tutarı",
+      "line_amount": "1019.96",
+      "evaluation_note": "Fiyat adayı; koruma, izin verilen şarj akımı ve soketler teyit edilecek.",
+      "role": "referans bütçe adayı"
+    },
+    {
+      "source_url": "https://www.robolinkmarket.com/a3-kompakt-lipo-2s-3s-sarj-aleti",
+      "html_sha256": "91738b6acbcd0ed2d3079de6ad28bbb4e14c97c9768744b635fe90ee34ed544b",
+      "name": "A3 Kompakt Lipo (2S - 3S) Şarj Aleti",
+      "sku": "RLF11A04-4021",
+      "structured_offer": {
+        "price": "870.00",
+        "priceCurrency": "TRY",
+        "availability": "https://schema.org/InStock"
+      },
+      "code": "B11",
+      "display_name": "A3 2S/3S LiPo dengelemeli şarj cihazı",
+      "quantity": "1",
+      "unit": "adet",
+      "observed_unit_price": "870.00",
+      "currency": "TRY",
+      "vat_scope": "KDV dahil sayfa tutarı",
+      "line_amount": "870.00",
+      "evaluation_note": "Paketle şarj akımı ve dengeleme soketi uyumu açık.",
+      "role": "referans bütçe adayı"
+    },
+    {
+      "source_url": "https://www.robolinkmarket.com/fpv-ubec-5v-3a-2-6s-dc-dc-voltaj-regulatoru",
+      "html_sha256": "bc9ed6d12537a5ddd11c6bb214e1f7111ac35e49be111fca76f7323df003846e",
+      "name": "FPV UBEC 5V 3A 2-6S DC-DC Voltaj Regülatörü",
+      "sku": "RLA16A25-8412",
+      "structured_offer": {
+        "price": "214.50",
+        "priceCurrency": "TRY",
+        "availability": "https://schema.org/InStock"
+      },
+      "code": "B12",
+      "display_name": "FPV UBEC 5 V 3 A 2–6S",
+      "quantity": "1",
+      "unit": "adet",
+      "observed_unit_price": "214.50",
+      "currency": "TRY",
+      "vat_scope": "KDV dahil sayfa tutarı",
+      "line_amount": "214.50",
+      "evaluation_note": "Satıcının 3 A etiketinin sürekli çıkış koşulları ve düşük pil girişinde kararlılık teyit edilecek.",
+      "role": "referans bütçe adayı"
+    },
+    {
+      "source_url": "https://www.robolinkmarket.com/ams1117-33v-voltaj-regulator-modulu",
+      "html_sha256": "10d3da8ca6a103e904000c12697d4953ce64e1ecafbc402fee436fa182e27ebc",
+      "name": "Ams1117 3.3v Voltaj Regülatör Modülü",
+      "sku": "RLB2B07-0213",
+      "structured_offer": {
+        "price": "27.00",
+        "priceCurrency": "TRY",
+        "availability": "https://schema.org/InStock"
+      },
+      "code": "B13",
+      "display_name": "AMS1117 3,3 V regülatör modülü",
+      "quantity": "1",
+      "unit": "adet",
+      "observed_unit_price": "27.00",
+      "currency": "TRY",
+      "vat_scope": "KDV dahil sayfa tutarı",
+      "line_amount": "27.00",
+      "evaluation_note": "5 V dalından beslenecek; toplam tüketim ve ısıl kontrol yapılacak.",
+      "role": "referans bütçe adayı"
+    },
+    {
+      "source_url": "https://www.direnc.net/dc131a-3p-on-off-anahtar-12v-isikli-yuvarlak-20mm",
+      "html_sha256": "5aa19863abd2a15cb37bcce1f2663bd745eccd8d17a070b764f0b0ab3d4460f4",
+      "name": "DC131A 3P On / Off Anahtar 12V 20mm Işıklı Yuvarlak",
+      "sku": "T492",
+      "structured_offer": {
+        "price": "23.01",
+        "priceCurrency": "TRY",
+        "availability": "https://schema.org/InStock"
+      },
+      "code": "B14",
+      "display_name": "DC131A 12 V ana güç anahtarı",
+      "quantity": "1",
+      "unit": "adet",
+      "observed_unit_price": "23.01",
+      "currency": "TRY",
+      "vat_scope": "KDV dahil sayfa tutarı",
+      "line_amount": "23.01",
+      "evaluation_note": "Kontak akımı ve yerleşim son güç hesabıyla kontrol edilecek.",
+      "role": "referans bütçe adayı"
+    },
+    {
+      "source_url": "https://www.robolinkmarket.com/6x13-delikli-pertinaks",
+      "html_sha256": "5f85e6c47db07146d4b9bee97c49ebd32634d7d0583047131e54bdcc6232efbb",
+      "name": "6x13 Delikli Pertinaks",
+      "sku": "RLO2B01-3572",
+      "structured_offer": {
+        "price": "39.00",
+        "priceCurrency": "TRY",
+        "availability": "https://schema.org/InStock"
+      },
+      "code": "B16",
+      "display_name": "6×13 cm delikli pertinaks",
+      "quantity": "1",
+      "unit": "adet",
+      "observed_unit_price": "39.00",
+      "currency": "TRY",
+      "vat_scope": "KDV dahil sayfa tutarı",
+      "line_amount": "39.00",
+      "evaluation_note": "Yerleşim adayı; motor/güç yolları uygun kesitte kablolarla düzenlenecek.",
+      "role": "referans bütçe adayı"
+    },
+    {
+      "source_url": "https://www.robolinkmarket.com/type-c-usb-a-kablo-1-metre",
+      "html_sha256": "66e9e469063e4a946d3920e6324b7ead79cd8316c20dc0af1777dc2e0869cdab",
+      "name": "Type C - USB A Kablo - 1 Metre",
+      "sku": "RLF62A01-1429",
+      "structured_offer": {
+        "price": "36.00",
+        "priceCurrency": "TRY",
+        "availability": "https://schema.org/InStock"
+      },
+      "code": "B17",
+      "display_name": "USB-A / Type-C kablo, 1 metre",
+      "quantity": "1",
+      "unit": "adet",
+      "observed_unit_price": "36.00",
+      "currency": "TRY",
+      "vat_scope": "KDV dahil sayfa tutarı",
+      "line_amount": "36.00",
+      "evaluation_note": "Kartla programlama/veri aktarımı uyumu kontrol edilecek; mevcutsa alım çıkarılacak.",
+      "role": "referans bütçe adayı"
+    },
+    {
+      "source_url": "https://www.robolinkmarket.com/40-pin-ayrilabilen-disi-erkek-jumper-kablo-200mm",
+      "html_sha256": "cd718e901a4e1740ad0f889bb1bbb4f171f9ff1d22a8f2eec5b11365c608d4b5",
+      "name": "40 Pin Ayrılabilen Dişi-Erkek Jumper Kablo-200mm",
+      "sku": "RLB2D06-0031",
+      "structured_offer": {
+        "price": "51.00",
+        "priceCurrency": "TRY",
+        "availability": "https://schema.org/InStock"
+      },
+      "code": "B18",
+      "display_name": "Dişi–erkek sinyal jumper kablosu, 40 hat",
+      "quantity": "1",
+      "unit": "paket (40 hat)",
+      "observed_unit_price": "51.00",
+      "currency": "TRY",
+      "vat_scope": "KDV dahil sayfa tutarı",
+      "line_amount": "51.00",
+      "evaluation_note": "Sinyal bağlantıları için fiyat adayı; ana motor/güç kablosu yerine sayılmadı.",
+      "role": "referans bütçe adayı"
+    },
+    {
+      "source_url": "https://www.pololu.com/product/4763",
+      "html_sha256": "405c73eff1906192aa092778cbf88499d754dba4bf50c189b94d8df50dd47b99",
+      "name": "JST SH-Style Cable for Micro Metal Gearmotor Encoders, 6-Pin, Single-Ended Female, 30cm",
+      "sku": "4763",
+      "structured_offer": {
+        "price": "3.0",
+        "priceCurrency": "USD",
+        "availability": "InStock"
+      },
+      "code": "B22",
+      "display_name": "Pololu #4763 motor/enkoder kablosu",
+      "quantity": "2",
+      "unit": "adet",
+      "observed_unit_price": "3.00",
+      "currency": "USD",
+      "vat_scope": "Türkiye teslim vergi ve giderleri doğrulanmadı",
+      "line_amount": "6.00",
+      "evaluation_note": "Referans motorlara dahil değil; aynı kablo genel konnektör satırında tekrar sayılmayacak.",
+      "role": "referans bütçe adayı"
+    },
+    {
+      "source_url": "https://www.robolinkmarket.com/2s-5a-bms-batarya-yonetim-ve-koruma-modulu",
+      "html_sha256": "ac4bd51a49eaf33e99f8be5ba93a82a9341b7f7f13bd0e6011af4caa91b6bac5",
+      "name": "2S 5A BMS - Batarya Yönetim ve Koruma Modülü",
+      "sku": "RLB0D03-6620",
+      "structured_offer": {
+        "price": "66.00",
+        "priceCurrency": "TRY",
+        "availability": "https://schema.org/InStock"
+      },
+      "code": "B23",
+      "display_name": "2S 5A BMS koruma modülü",
+      "quantity": "1",
+      "unit": "adet",
+      "observed_unit_price": "66.00",
+      "currency": "TRY",
+      "vat_scope": "KDV dahil sayfa tutarı",
+      "line_amount": "66.00",
+      "evaluation_note": "Harici koruma fiyat adayı. Paket korumalı gelirse çıkarılacak; BMS şarj cihazı yerine sayılmadı.",
+      "role": "referans bütçe adayı"
+    }
+  ],
+  "reference_subtotals": {
+    "TRY": "3189.41",
+    "USD": "177.35"
+  },
+  "currency_conversion": null,
+  "unpriced_categories": [
+    "N20 montajına uygun boş/özel şasi",
+    "Sigorta ve yuvası",
+    "Ana güç kabloları ve uygun konnektörler",
+    "Kesin montaj elemanları ve gerekli süzme parçaları",
+    "Telefon sabitleme ve alan işaretleme ihtiyacı",
+    "Henüz teyit edilmemiş ölçüm olanakları"
+  ],
+  "excluded_expenses": [
+    "Mevcut kişisel lehim ekipmanı",
+    "Kullanıcının deneylerde kullanabileceğini doğruladığı telefon; yeni kamera alımı yok"
+  ],
+  "alternative_sensor_observation": {
+    "source_url": "https://www.direnc.net/tof-arduino-mesafe-sensoru-modulu-cjmcu-530-vl53l0x",
+    "html_sha256": "7b467cf19ee758dc864be2634874159f1f9ff844bc948de4be5f84cf2e785436",
+    "name": "Arduino CJMCU-530 VL53L0X ToF Mesafe Ölçüm Sensörü Modülü",
+    "sku": "T12017",
+    "structured_offer": {
+      "price": "130.76",
+      "priceCurrency": "TRY",
+      "availability": "https://schema.org/OutOfStock"
+    },
+    "observed_unit_price": "156.92",
+    "currency": "TRY",
+    "vat_scope": "KDV dahil sayfa tutarı",
+    "quantity": "5",
+    "line_amount": "784.60",
+    "role": "alternatif fiyat karşılaştırması",
+    "evaluation_note": "Satıcı 5 V besleme belirtiyor ve stok verisi OutOfStock. 3,3 V arayüz ve tedarik doğrulanmadan uygun eşdeğer sayılmadı."
+  },
+  "rejected_or_unassigned_observations": [
+    {
+      "source_url": "https://www.robolinkmarket.com/2wd-mbot-robot-aluminyum-sase-kiti-mavi",
+      "html_sha256": "b414c51f07ea66f3f6c4261a1352f22d6eff8c7d00f1dbe9757e14b57e50f776",
+      "name": "2WD mBot Robot Alüminyum Şase Kiti-Mavi",
+      "sku": "RLG4A03-0003",
+      "structured_offer": {
+        "price": "756.00",
+        "priceCurrency": "TRY",
+        "availability": "https://schema.org/OutOfStock"
+      },
+      "evaluation_note": "TT motor/teker ve başka parçalar içeren kit; N20 ile doğrudan uyumlu boş şasi sayılmadı."
+    },
+    {
+      "source_url": "https://www.robolinkmarket.com/2wd-robot-araba-kiti",
+      "html_sha256": "4efbe66c56b895c218348409cbc607826c2b24a7ace0737c6fc4b8e2424ccbfe",
+      "name": "2WD Robot Araba Kiti",
+      "sku": "RLG1A01-0006",
+      "structured_offer": {
+        "price": "282.00",
+        "priceCurrency": "TRY",
+        "availability": "https://schema.org/OutOfStock"
+      },
+      "evaluation_note": "Standart 250 d/d motorlar, tekerler ve plastik encoder diskleri içeriyor. Enkoderli N20 motorun yerine konmadı; mükerrer bütçeye eklenmedi."
+    },
+    {
+      "source_url": "https://www.robotistan.com/vl53l0x-lazer-tof-sensor-modul-i2c-pwm-serial-siyah",
+      "html_sha256": "598cfb1e71519e9c3f07616663a89ffbdd9369edc953b7205a9a7366c812c8c4",
+      "name": "VL53L0X Lazer ToF Sensör Modül (I2C, PWM, Serial) - siyah",
+      "sku": "25505",
+      "structured_offer": {
+        "price": "352.42",
+        "priceCurrency": "TRY",
+        "availability": "https://schema.org/InStock"
+      },
+      "evaluation_note": "I2C/PWM/seri arayüzlü farklı taşıyıcı; fiyat/KDV ve kontrol arayüzü teyidi gerekli. Ana referansın yerine eklenmedi."
+    },
+    {
+      "source_url": "https://www.direnc.net/gy-vl53l0xv2-lazer-mesafe-modulu",
+      "html_sha256": "2cedda8b0cb91f782b73f7805a45574b832e8be898a79e3961695930cf9037b6",
+      "name": "GY-VL53L0XV2 Lazer Mesafe Modülü",
+      "sku": "T12934",
+      "structured_offer": {
+        "price": "363.23",
+        "priceCurrency": "TRY",
+        "availability": "https://schema.org/OutOfStock"
+      },
+      "evaluation_note": "Stok verisi OutOfStock; ana referansın yerine eklenmedi."
+    },
+    {
+      "source_url": "https://www.robolinkmarket.com/m3x5-ysb-vida-somun-ve-pul-seti",
+      "html_sha256": "93ccf472d4df728060e13bb7b3b644ec1dc751fc89f0204de0bea7c04974f52e",
+      "name": "M3x5 YSB Vida Somun ve Pul Seti - 10'lu Paket",
+      "sku": "RLD0E04-8954",
+      "structured_offer": {
+        "price": "46.50",
+        "priceCurrency": "TRY",
+        "availability": "https://schema.org/InStock"
+      },
+      "evaluation_note": "M3x5 paketinin fiyatı bulundu; vida ölçüleri yerleşimle belirlenmediği için ana bütçeye eklenmedi."
+    }
+  ],
+  "network_followup": {
+    "added_draft_domains": [
+      "www.power-xtra.com",
+      "www.tcmb.gov.tr"
+    ],
+    "save_status": "saved; requires_publish true",
+    "runtime_observation": "Requests still failed with tunnel 403 after saving. Draft persistence does not prove runtime application.",
+    "impact": "Battery manufacturer charging specification and official FX rate not verified."
+  }
+}

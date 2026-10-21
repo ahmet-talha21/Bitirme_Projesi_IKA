@@ -1,6 +1,6 @@
 # İKA — 2209-A hazırlık notları
 
-Güncelleme: 21 Ekim 2026. Bu belge başvuru metni değil, kullanıcı tarafından doğrulanan bilgiler ve açık soruların kaydıdır.
+Güncelleme: 22 Ekim 2026. Bu belge başvuru metni değil, kullanıcı tarafından doğrulanan bilgiler ve açık soruların kaydıdır.
 
 ## Kullanıcının belirttiği bilgiler
 
@@ -19,6 +19,7 @@ Güncelleme: 21 Ekim 2026. Bu belge başvuru metni değil, kullanıcı tarafınd
 - Kullanıcı beş sabit mesafe sensörüyle ilerlemeyi seçti: ön orta, iki ön çapraz ve iki yan. Bu karar sensör sayısı ve genel yerleşim düzenine aittir; VL53L0X/ToF modeli, kesin montaj açıları ve çoklayıcı ürünü henüz kesinleşmedi. Gerçek algılama kapsaması deneyle kontrol edilecek.
 - Kullanıcının elinde henüz ESP32 yok; satın almayı planlıyor. Diğer araç bileşenlerinin mevcut olduğu bildirilmedi. Yaklaşık bütçe henüz bilinmiyor.
 - Kullanıcının lehim ekipmanı var ve araç montajında sorun yaşayacağını düşünmüyor. Bu bilgi kişisel olanaktır; üniversite laboratuvarı, 3D yazıcı veya başka kurum altyapısının mevcut olduğu henüz doğrulanmadı.
+- Kullanıcı, deneylerde kullanabileceği bir telefonu olduğunu 22 Ekim 2026 tarihinde doğruladı. Telefon kişisel ölçüm olanağı olarak planlanacak; yeni kamera satın alımı eklenmeyecek. Alanın tamamını görme, sabitleme, kayıt özellikleri ve kalibrasyon henüz kontrol edilmedi; bağımsız ölçüm düzeni kurulmuş sayılmayacak.
 - TÜBİTAK 2209-A başvurusu hazırlanacak.
 - Başvuru tek öğrenciyle yapılacak; proje ortağı bulunmayacak.
 - Başvuru sahibi, adını Ahmet Talha Arslan olarak bildirdi; Konya Teknik Üniversitesi Elektrik-Elektronik Mühendisliği Bölümü 4. sınıf öğrencisi olduğunu belirtti.
@@ -38,6 +39,10 @@ Kullanıcının malzeme listesini oluşturma isteği üzerine [donanım adayı v
 
 Sonraki [motor–sürücü–batarya incelemesinde](MOTOR_SURUCU_BATARYA_KARSILASTIRMASI.md) Pololu #5143 (MP 210:1, 6 V, 100 d/d) somut motor referansı, #5115 alternatif ve #713 TB6612FNG referans taşıyıcı olarak incelendi. Bunlar ürün satın alma/onay kararı değil. Yerel satıcı ve üretici erişimi HTTP 200 ile sağlandı; bazı gerçek fiyatlar ve stok etiketleri kaydedildi. Batarya koruma/şarj bilgileri, ithal motorun teslim maliyeti, gerçek araç yükü ve tam bütçe açık. Kaynak fiyatları TL ve USD ayrı tutulacak.
 
+22 Ekim tarihli [fiyatlı bütçe taslağında](FIYATLI_BUTCE_TASLAGI.md) 13 yerel fiyat adayı için 3.189,41 TL, beş döviz kalemi için 177,35 USD ara toplam çıkarıldı. Bu tutarlar tam proje maliyeti veya kullanıcı tarafından onaylanmış alım listesi değil. Şasi, bazı güç/bağlantı parçaları, telefon sabitleme ve ithalat giderleri açık. Beş sensör için belgeli Pololu taşıyıcı fiyatı referans alındı; daha ucuz CJMCU gözlemi ayrı tutuldu, 5 V/3,3 V ve stok farkları yok sayılmadı.
+
+[Batarya ve şarj planı](BATARYA_VE_SARJ_PLANI.md), hazır 2S paket, uygun şarj ve gerekirse harici koruma üzerinden detaylandırıldı. Pilin şarj akımı ve soket bilgileri üreticiden teyit bekliyor; eşleşme tamamlanmış sayılmayacak. Power-Xtra ve TCMB alan adları ortam taslağına kaydedildi, araç yayımlama gerektiğini bildirdi ve erişim denemelerinde 403 sürdü. Doğrulanmamış kur veya üretici bilgisi eklenmedi.
+
 Başvuru sahibinin bildirdiği kurum, bölüm, sınıf, danışman ve tek yürütücülü görev dağılımı [genel bilgiler ve görevler taslağında](GENEL_BILGILER_VE_GOREVLER.md) tutuluyor. Üniversitedeki kayıt veya altyapı olanakları bağımsız olarak doğrulanmış değildir.
 
 [Konunun önemi ve bilimsel niteliği taslağı](BILIMSEL_NITELIK_TASLAGI.md), DOI ve yayın bilgileri doğrulanan iki ilgili uygulama makalesiyle geliştirildi. Okunan içerik ve ilk karşılaştırma [literatür notunda](LITERATUR_KARSILASTIRMASI.md) kayıtlı. Bu ilk inceleme kapsamlı tarama veya literatürde boşluk kanıtı sayılmayacak.
@@ -45,6 +50,8 @@ Başvuru sahibinin bildirdiği kurum, bölüm, sınıf, danışman ve tek yürü
 [Yöntem bölümünün ilk metin taslağı](YONTEM_TASLAGI.md) hazırlandı. Enkoderli iki motorlu şasi kullanıcı tarafından seçildi. Bug 2 mantığıyla durum makinesi öneri durumunda; algoritma, ürün seçimi ve sayısal deney parametreleri henüz kesinleşmedi.
 
 [Risk yönetimi](RISK_YONETIMI_TASLAGI.md) ve [yaygın etki](YAYGIN_ETKI_TASLAGI.md) için ilk taslaklar hazırlandı. Önlemler ve çıktı miktarları plan önerileridir; kullanıcı tarafından kesinleştirilmiş donanım, yeni ekipman erişimi veya gerçekleşmiş başarı olarak sunulmayacak. [Başvuru durumu ve kalan işler](BASVURU_DURUMU_VE_EKSIKLER.md) bölüm bazında izleniyor.
+
+[Araştırma olanakları taslağı](ARASTIRMA_OLANAKLARI_TASLAGI.md) mevcut kişisel lehim ekipmanı ve telefonla hazırlandı. Kurum laboratuvarı, kesin deney yeri ve diğer ölçüm araçları mevcut sayılmadı; multimetre ve metre/cetvel erişimi soruldu.
 
 Haziran hedefi için [çalışma takvimi taslağı](CALISMA_TAKVIMI_TASLAGI.md) hazırlandı: beş iş paketi, bağımlılıklar ve %20/%15/%20/%30/%15 katkı önerisi. Kasım–Mayıs teknik çalışma, Haziran inceleme/teslim planı akademik hedef önerisidir. Resmî TÜBİTAK başlangıcı ve toplam süre bu akademik takvimden varsayılmayacak.
 
