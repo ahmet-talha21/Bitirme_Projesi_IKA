@@ -19,7 +19,7 @@ Güncelleme: 21 Ekim 2026. Bu belge başvuru metni değil, kullanıcı tarafınd
 - Kullanıcının lehim ekipmanı var ve araç montajında sorun yaşayacağını düşünmüyor. Bu bilgi kişisel olanaktır; üniversite laboratuvarı, 3D yazıcı veya başka kurum altyapısının mevcut olduğu henüz doğrulanmadı.
 - TÜBİTAK 2209-A başvurusu hazırlanacak.
 - Başvuru tek öğrenciyle yapılacak; proje ortağı bulunmayacak.
-- Başvuru sahibi Konya Teknik Üniversitesi Elektrik-Elektronik Mühendisliği Bölümü 4. sınıf öğrencisi olduğunu belirtti. Adı ve soyadı henüz bildirilmedi; GitHub kullanıcı adından çıkarılmayacak.
+- Başvuru sahibi, adını Ahmet Talha Arslan olarak bildirdi; Konya Teknik Üniversitesi Elektrik-Elektronik Mühendisliği Bölümü 4. sınıf öğrencisi olduğunu belirtti.
 - Akademik danışman, kullanıcının bildirdiği üzere Prof. Dr. Murat Ceylan.
 - Teknik ayrıntılar kullanıcıya sorularak netleştirilecek; bilinmeyen özellikler ve sonuçlar yazılmayacak.
 - Kullanıcı projeye henüz başlamadığını belirtti. Şu an başvuru hazırlığı ve tasarım planlama aşamasındayız; çalışan araç, kurulmuş deney düzeneği veya tamamlanmış ön deney bulunmuş gibi yazılmayacak.
@@ -33,6 +33,8 @@ Mevcut ekipman durumu ve teklif alınacak kalemler [malzeme ve bütçe ön liste
 
 Başvuru sahibinin bildirdiği kurum, bölüm, sınıf, danışman ve tek yürütücülü görev dağılımı [genel bilgiler ve görevler taslağında](GENEL_BILGILER_VE_GOREVLER.md) tutuluyor. Üniversitedeki kayıt veya altyapı olanakları bağımsız olarak doğrulanmış değildir.
 
+[Konunun önemi ve bilimsel niteliği için ilk kaynaklı taslak](BILIMSEL_NITELIK_TASLAGI.md) hazırlandı. İlk metin akademik ders kitabı bölümleriyle destekleniyor; benzer deneysel çalışmalarla özgün katkı karşılaştırması henüz tamamlanmadı.
+
 - Ölçülü waypoint ekranının fiziksel alanla eşleştirilmesi ve başlangıç noktası/yönünün tanımlanması.
 - Planlanan 3 × 3 metre alanın fiziksel yeri, kesin araç ölçüleri ve donanım seçildikten sonra parkurun yeterliliğinin değerlendirilmesi.
 - Manuel kontrolün ayrıca gerekip gerekmediği.
@@ -40,7 +42,7 @@ Başvuru sahibinin bildirdiği kurum, bölüm, sınıf, danışman ve tek yürü
 - Bilgisayar öncelikli ve telefonda da çalışan arayüzün uygulama teknolojisi, haberleşme yöntemi ve engelden kaçınma algoritması.
 - Araştırma sorusu, karşılaştırma yöntemi ve ölçülebilir başarı ölçütleri.
 - Sabit engellerin boyutları, malzemeleri, geçiş açıklıkları ve yerleşimleri; algılama mesafesi, hız ve başarının sayısal eşikleri.
-- Yürütücünün adı/soyadı, kullanılabilecek kurum olanakları, proje süresi ve bütçe. Tek yürütücülü başvuru, üniversite/bölüm/sınıf ve danışman bilgisi kullanıcı tarafından belirtildi.
+- Kullanılabilecek kurum olanakları, proje süresi ve bütçe. Yürütücü adı/soyadı, tek yürütücülü başvuru, üniversite/bölüm/sınıf ve danışman bilgisi kullanıcı tarafından belirtildi.
 
 ## Belgeler ve doğrulama durumu
 
