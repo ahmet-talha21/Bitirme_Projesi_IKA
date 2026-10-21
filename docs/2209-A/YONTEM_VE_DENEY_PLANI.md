@@ -50,7 +50,7 @@ Kesin algoritma henüz seçilmedi. İdeal noktasal robot veya hatasız konum var
 ## 5. Deney düzeni önerisi
 
 1. Önce şasi boyutu, motor yönleri, enkoder ölçeği, sensör davranışı ve durma mesafesi kalibre edilecek.
-2. Aynı rota engelsiz durumda çalıştırılarak referans süre ve rota takibi ölçülecek.
+2. Geliştirme aşamasında aynı rota engelsiz durumda çalıştırılarak temel hareket ve rota takibi kontrol edilecek. Son değerlendirmedeki engelsiz referans denemeleri geliştirme denemelerinden ayrı tutulacak.
 3. Rotaya sabit engeller farklı yerleşimlerle konulacak. Engel çevresinde araç için geçiş alanı bırakılacak; açıklıklar şasi ve sensör seçimine göre belirlenecek.
 4. Her koşul birden çok kez tekrarlanacak. Başlangıç pozu, rota, hız ayarı ve zemin mümkün olduğunca aynı tutulacak; pil durumu ve başarısız denemeler kaydedilecek.
 5. Algılama, çarpışmasız kaçınma, rotaya dönüş ve görev tamamlama ayrı sonuçlar olarak raporlanacak. Tamamlanamayan denemeler analizden çıkarılmayacak; süre sınırı ve başarısızlık tanımı deneyden önce belirlenecek.
@@ -65,13 +65,13 @@ Kesin algoritma henüz seçilmedi. İdeal noktasal robot veya hatasız konum var
 
 Rota sapması aracın kendi enkoder tahminini yine kendisiyle karşılaştırarak doğrulanmayacak. İşaretlenmiş alanı gören harici bir kamerayla referans yol ölçümü aday yöntemdir. Kullanıcı telefonunu deneylerde kullanabileceğini bildirdi; görüş alanı, sabitleme, ölçek kalibrasyonu ve ölçüm doğruluğu henüz doğrulanmadı. Bu telefon araç üstü algılama kamerası olarak seçilmedi.
 
-Deneme sayıları, engel geometrileri, sayısal hedefler ve karşılaştırma/analiz yöntemi donanım ve olanaklar netleşince belirlenecek. Mevcut kaynak incelemesi literatürde özgünlük veya üstünlük iddiası kurmak için yeterli değildir; ilgili akademik çalışmalar ayrıca incelenecek.
+Sayısal planı somutlaştıran [deney protokolü önerisi](DENEY_PROTOKOLU_ONERISI.md) hazırlandı: dört koşul, her koşulda 10 tekrar, aynı 3 m L rotası ve engelli koşul başına en az 8/10 birleşik görev başarısı hedefi. 10 cm tolerans, 120 saniye süre ve bağımsız ölçüm kontrolleri de öneri olarak yazıldı. Kullanıcı/danışman tarafından kesinleştirilmedi; donanım/alan ve kalibrasyon gerektiren parametreler açık. [Deneme kayıt CSV'si](DENEY_KAYIT_SABLONU.csv) yalnız sütun başlıklarını içeriyor, deney sonucu yok. Mevcut kaynak incelemesi literatürde özgünlük veya üstünlük iddiası kurmak için yeterli değildir; ilgili akademik çalışmalar ayrıca incelenecek.
 
 ## 6. Açık bilgiler
 
 - ESP32 dışındaki parçaların mevcudiyeti, yaklaşık bütçe ve kurum olanakları. Kullanıcının lehim ekipmanı olduğu doğrulandı; ESP32 satın alınacak.
 - Şasi, enkoder, mesafe sensörü, motor sürücüsü ve güç bileşenleri.
-- Referans ölçümü için kamera veya alternatif ölçüm olanakları.
+- Referans ölçümü için kullanıcının telefonu mevcut; tüm alanı gören sabitleme ve kalibrasyonun uygulanabilirliği henüz doğrulanmadı.
 - Kullanıcının teknik önerilere ilişkin tercihleri ve danışman görüşü.
 
 ## İncelenen teknik kaynaklar

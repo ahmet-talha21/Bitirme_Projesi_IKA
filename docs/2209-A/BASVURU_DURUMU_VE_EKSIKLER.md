@@ -8,8 +8,8 @@ Güncelleme: 22 Ekim 2026. Bu liste hazırlık durumunu gösterir; başvurunun g
 | --- | --- | --- |
 | Genel bilgiler | Yürütücü, kurum/bölüm, danışman ve Haziran 2027 bitirme teslim hedefi alındı. | Son başlık, kesin teslim günü, resmî TÜBİTAK süresi ve bütçe. |
 | 1.1 Bilimsel nitelik | Kaynak destekli ilk metin ve ilgili çalışma karşılaştırması hazır. | Yöntemle tutarlılık, katkının son ifadesi ve danışman incelemesi. |
-| 1.2 Amaç ve hedefler | Kapsam ve temel işlevler taslak olarak yazıldı. | Ölçülebilir başarı eşikleri ve bunların uygulanabilirlik gerekçesi. |
-| 2 Yöntem | Enkoderli iki motorlu araç, beş sabit mesafe sensörü düzeni, waypoint rotası ve sabit engelli deney yaklaşımı yazıldı. | Parça modelleri, kesin sensör açıları, algoritma, bağımsız referans ölçümü, koşul/tekrar sayıları ve toleranslar. |
+| 1.2 Amaç ve hedefler | Kapsam ve temel işlevlere sayısal hedef önerileri eklendi; gerçekleşmiş performans olarak sunulmadı. | Önerilerin kullanıcı/danışman değerlendirmesi ve uygulanabilirlik gerekçesinin tamamlanması. |
+| 2 Yöntem | Enkoderli iki motorlu araç, beş sabit sensör ve waypoint yöntemi yazıldı. Dört koşul × 10 tekrar, 10 cm bant, 120 saniye ve koşul başına hedefleri içeren deney protokolü önerisi hazır. Sonuçsuz, boş kayıt şablonu oluşturuldu. | Parça modelleri, sensör açıları, algoritma, deney alanı, bağımsız ölçüm uygulanabilirliği ve önerilen sayısal planın kesinleştirilmesi. |
 | Görseller | Üç yenilenmiş şema PNG ve PDF olarak hazır. | Son yöntem ve parça seçiminden sonra etiket kontrolü; TYBS önizlemesinde okunabilirlik. |
 | 3.1 Çalışma takvimi | Kasım–Haziran akademik hedef planı, beş iş paketi, bağımlılıklar, başarı kontrolleri ve toplamı %100 olan katkı önerisi yazıldı. | Resmî başlangıç/süreyle uyumlu TYBS ay aralıkları, kesin teslim günü ve sayısal deney eşikleri. |
 | 3.2 Risk yönetimi | Temel hedefleri koruyan önlem ve B planları taslak olarak hazır. | Nihai donanım, algoritma ve ölçüm düzenine göre somutlaştırma. |
@@ -28,7 +28,7 @@ Güncel görsel düzeni korunabilir. Teknik seçimler değişirse etiketler veya
 ## Önerilen tamamlama sırası
 
 1. Motor/enkoder, şasi, mesafe sensörleri, sürücü ve güç bileşenlerini uyumluluk ve fiyatlarla seçmek. Kaçınma yaklaşımının gerektirdiği algılama kapsamını bu seçimle birlikte kararlaştırmak.
-2. Deney yeri ve bağımsız ölçüm imkânını doğrulamak; engel koşullarını, tekrar sayılarını ve sayısal başarı ölçütlerini gerekçeleriyle belirlemek. Bunlar gelecek deneyler için planlanan ölçütler olacak.
+2. Deney yeri ve bağımsız ölçüm imkânını doğrulamak; [hazırlanan protokol önerisini](DENEY_PROTOKOLU_ONERISI.md) kullanıcı/danışmanla gözden geçirmek ve kalibrasyona bağlı parametrelerle birlikte kesinleştirmek. Bunlar gelecek deneyler için planlanan ölçütler olacak.
 3. Proje süresini ve ay bazında çalışma takvimini belirlemek; risk, bütçe ve çıktı taslaklarını aynı kapsamda sonlandırmak.
 4. Başlık, bilimsel katkı, amaç ve yöntem metinlerini birlikte gözden geçirmek; kaynakçayı birleştirmek ve özeti yazmak.
 5. Yürütücü ve danışman incelemesinden sonra metin, tablo ve PNG görselleri güncel TYBS alanlarına aktarmak; önizlemeyi, kaynakları ve gerekli ÜYZ beyanını kontrol ederek başvuru/onay adımlarını tamamlamak.

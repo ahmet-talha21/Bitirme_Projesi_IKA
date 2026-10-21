@@ -33,6 +33,7 @@ Kullanıcı Haziran 2027 hedefinin bitirme projesi teslimi olduğunu, kesin gün
 - [2026 başvuru kuralları ve resmî kaynaklar](docs/2209-A/2026_BASVURU_KURALLARI.md)
 - [Proje kararları ve açık bilgiler](docs/2209-A/PROJE_NOTLARI.md)
 - [Teknik yöntem ve deney planı](docs/2209-A/YONTEM_VE_DENEY_PLANI.md)
+- [Sayısal deney protokolü önerisi ve boş kayıt şablonu](docs/2209-A/DENEY_PROTOKOLU_ONERISI.md)
 - [Malzeme ve bütçe ön listesi](docs/2209-A/MALZEME_VE_BUTCE_ON_LISTESI.md)
 - [Fiyatlı bütçe taslağı ve para birimi başına ara toplamlar](docs/2209-A/FIYATLI_BUTCE_TASLAGI.md)
 - [Batarya–şarj–güç dağıtımı taslağı](docs/2209-A/BATARYA_VE_SARJ_PLANI.md)

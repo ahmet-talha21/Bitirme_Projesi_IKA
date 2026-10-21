@@ -1,6 +1,6 @@
 # 2. Yöntem — ilk bölüm taslağı
 
-Durum: Kullanıcının ve danışmanın incelemesine açık çalışma taslağı. İki motorlu enkoderli şasi kullanıcı tarafından seçildi; Bug 2 tabanlı yaklaşım öneri durumunda. Sayısal hedefler, sensör modelleri ve referans ölçüm düzeni seçilmeden bu metin nihai TYBS içeriği olarak aktarılmayacak. Deney gerçekleştirilmiş değildir.
+Durum: Kullanıcının ve danışmanın incelemesine açık çalışma taslağı. İki motorlu enkoderli şasi kullanıcı tarafından seçildi; Bug 2 tabanlı yaklaşım öneri durumunda. [Sayısal deney protokolü önerisi](DENEY_PROTOKOLU_ONERISI.md) hazırlandı; hedefler, sensör modelleri ve referans ölçüm düzeni kesinleştirilmeden bu metin nihai TYBS içeriği olarak aktarılmayacak. Deney gerçekleştirilmiş değildir.
 
 ## 2.1. Araştırma tasarımı
 
@@ -28,7 +28,9 @@ Rotaya katılma için aracın hedef doğrultusuna belirlenen tolerans içinde ul
 
 ## 2.5. Deney koşulları ve değişkenler
 
-Önce engelsiz referans parkuru çalıştırılacak; ardından aynı rota farklı sabit engel yerleşimleriyle tekrarlanacaktır. Engel boyutları ve yüzeyleri, sensörlerin doğrulanmış algılama koşullarına göre tanımlanacak; geçişler araç geometrisine uygun seçilecektir. Her deney koşulu birden çok kez uygulanacaktır. Başlangıç pozu, rota, hız ayarı, zemin ve kontrol parametreleri mümkün olduğunca sabit tutulacak; pil durumu ve değişen koşullar kaydedilecektir.
+Geliştirme aşamasında önce engelsiz rota takibi, ardından sabit engelli kaçınma davranışı kontrol edilecektir. Nihai değerlendirmede ise engelsiz referans ve farklı sabit engel yerleşimleri aynı protokolle, aşağıdaki blok düzeninde karşılaştırılacaktır. Engel boyutları ve yüzeyleri, sensörlerin doğrulanmış algılama koşullarına göre tanımlanacak; geçişler araç geometrisine uygun seçilecektir. Her deney koşulu birden çok kez uygulanacaktır. Başlangıç pozu, rota, hız ayarı, zemin ve kontrol parametreleri mümkün olduğunca sabit tutulacak; pil durumu ve değişen koşullar kaydedilecektir.
+
+İncelemeye sunulan sayısal öneri, aynı L biçimli 3 m rotada engelsiz referans ile düz bölüm, dönüş öncesi ve dönüş sonrası tek engel yerleşiminden oluşan dört koşuldur. Her koşulda 10, toplam 40 geçerli değerlendirme denemesi önerilmektedir. Geliştirme/ayar denemeleri bu sayıya dahil edilmeyecek; koşullar 10 blokta, her blokta dördü de birer kez ve önceden rastgeleleştirilmiş sırayla uygulanacaktır. Koordinatlar, kabul ölçütleri ve uygulama ayrıntıları [protokol taslağında](DENEY_PROTOKOLU_ONERISI.md) verilmiştir. Bu sayılar henüz kullanıcı/danışman tarafından kesinleştirilmemiştir.
 
 - **Temel bağımsız değişken:** Sabit engellerin parkurdaki yerleşimi. Engel sayısı/boyutu da değiştirilecekse bunlar ayrı deney faktörleri olarak tanımlanacaktır.
 - **Bağımlı değişkenler:** Temas öncesi algılama, çarpışmasız kaçınma, rotaya dönüş ve görev tamamlama sonuçları; tamamlanma süresi ve tanımlı referansa göre rota hatası.
@@ -38,7 +40,7 @@ Rotaya katılma için aracın hedef doğrultusuna belirlenen tolerans içinde ul
 
 Her deneme için engelin temas öncesinde algılanıp algılanmadığı, kaçınmanın temas olmadan tamamlanıp tamamlanmadığı, rotaya yeniden katılım ve hedefe varış ayrı ayrı kaydedilecektir. Engelsiz referans koşulunda oluşan yanlış engel uyarıları da kaydedilecektir. Bu ayrım, algılama hatası ile kaçınma veya konum kestirimi sorunlarının birbirinden ayrılmasını amaçlamaktadır. Geçerli denemelerin tamamı ilgili koşulun paydasında tutulacak; başarısız denemeler sonuçları iyileştirmek için çıkarılmayacaktır. Yalnızca önceden tanımlanmış kayıt/düzenek hataları geçersiz sayılacak ve gerekçeleri ayrıca bildirilecektir.
 
-Başarı oranları başarılı deneme sayısının ilgili koşuldaki geçerli deneme sayısına bölünmesiyle hesaplanacaktır. Süreler ve rota sapması için uygun özet istatistikler verilecek; tamamlanamayan denemeler süre sınırı/başarısızlık kaydıyla ayrıca gösterilecektir. Rota izleme sırasında referans doğru parçasına uzaklık, kaçınma sırasındaki geçici sapma ve rotaya katılma sonrası izleme hatası ayrı değerlendirilecektir. Böylece engelden dolaşmanın gerektirdiği geçici rota değişimi doğrudan başarısız izleme olarak etiketlenmeyecektir. Bu aşamada istatistiksel anlamlılık veya belirli bir başarı yüzdesi vaat edilmemektedir. Tekrar sayıları ve karşılaştırma yöntemi son deney planında belirlenecektir.
+Başarı oranları başarılı deneme sayısının ilgili koşuldaki geçerli deneme sayısına bölünmesiyle hesaplanacaktır. Süreler ve rota sapması için uygun özet istatistikler verilecek; tamamlanamayan denemeler süre sınırı/başarısızlık kaydıyla ayrıca gösterilecektir. Rota izleme sırasında referans doğru parçasına uzaklık, kaçınma sırasındaki geçici sapma ve rotaya katılma sonrası izleme hatası ayrı değerlendirilecektir. Böylece engelden dolaşmanın gerektirdiği geçici rota değişimi doğrudan başarısız izleme olarak etiketlenmeyecektir. İncelemeye sunulan hedefler, her engelli koşulda en az 9/10 temas öncesi algılama ve en az 8/10 birleşik otonom görev başarısıdır; bunlar elde edilmiş sonuç veya başarı vaadi değildir. Engelsiz görev başarısı için 9/10, waypoint/rotaya dönüş bandı için 10 cm, süre sınırı için 120 saniye önerilmiştir. Bunların uygulanabilirliği bağımsız ölçüm ve donanımla kontrol edilip başvurudan önce kararlaştırılacaktır. Bu tekrar sayısından istatistiksel anlamlılık veya tüm ortamlara genellenen başarı sonucu çıkarılmayacaktır.
 
 Rota sapması için, işaretlenmiş deney alanını gören sabit bir kameradan bağımsız referans yol ölçümü değerlendirilmektedir. Kullanıcı deneylerde kullanabileceği telefonunun olduğunu bildirmiştir; alanın tamamını gören yerleşim, sabitleme ve görüntü kalibrasyonu henüz doğrulanmamıştır. Ölçümün güvenilir referansla ilişkilendirilmesi ve kalibrasyon gereksinimi Hauser'in kalibrasyon çerçevesiyle uyumludur (Hauser, t.y.-b). Rota hatası, yalnızca aracın kendi konum tahmini yine kendisiyle karşılaştırılarak doğrulanmayacaktır.
 
@@ -48,9 +50,9 @@ Rota sapması için, işaretlenmiş deney alanını gören sabit bir kameradan b
 | --- | --- |
 | Şasi, motor/enkoder ve sensör modelleri | Enkoderli iki motorlu hareket ve beş sabit mesafe sensörü düzeni seçildi; ölçüler, kesin açılar ve ürünler seçilmedi. |
 | Hız, algılama/durma ve yan açıklık mesafeleri | Donanım/kalibrasyonla gerekçelendirilecek. |
-| Waypoint ve rotaya katılma toleransları | Konum ölçümü doğruluğuyla birlikte seçilecek. |
-| Engel düzenleri ve tekrar sayıları | İlk tasarım belirlendi; sayısal deney planı hazırlanacak. |
-| Başarı eşikleri ve süre sınırı | Henüz seçilmedi. |
+| Waypoint ve rotaya katılma toleransları | 10 cm bant ve rotaya dönüş için süre/ilerleme koşulları önerildi; ölçüm doğruluğuyla birlikte kesinleştirilecek. |
+| Engel düzenleri ve tekrar sayıları | Dört koşul × 10 tekrar = 40 değerlendirme denemesi önerildi; geometri ve kullanıcı/danışman incelemesi bekliyor. |
+| Başarı eşikleri ve süre sınırı | Protokolde koşul başına hedefler ve 120 saniye önerildi; kesinleştirilmedi. |
 | Bağımsız referans ölçümü | Kullanıcının telefonu mevcut; alanı gören sabitleme düzeni ve ölçüm doğruluğu doğrulanacak. |
 
 ## Kaynaklar

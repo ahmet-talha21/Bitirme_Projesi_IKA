@@ -49,6 +49,8 @@ Başvuru sahibinin bildirdiği kurum, bölüm, sınıf, danışman ve tek yürü
 
 [Yöntem bölümünün ilk metin taslağı](YONTEM_TASLAGI.md) hazırlandı. Enkoderli iki motorlu şasi kullanıcı tarafından seçildi. Bug 2 mantığıyla durum makinesi öneri durumunda; algoritma, ürün seçimi ve sayısal deney parametreleri henüz kesinleşmedi.
 
+22 Ekim'de [sayısal deney protokolü önerisi](DENEY_PROTOKOLU_ONERISI.md) hazırlandı: aynı 3 m L rotasında engelsiz ve üç tek-engelli yerleşim, koşul başına 10 tekrar, toplam 40 geçerli değerlendirme denemesi. Her engelli koşulda en az 9/10 temas öncesi algılama ve en az 8/10 birleşik otonom görev başarısı; 10 cm tolerans ve 120 saniye süre önerildi. Sayılar gerçek sonuç veya kullanıcı/danışman tarafından kesinleştirilmiş karar değil. Tekrar sayısı ve ana hedef için kullanıcı değerlendirmesi istendi; deney alanı sorusunun yanıtı da bekleniyor. [Kayıt şablonu](DENEY_KAYIT_SABLONU.csv) yalnız başlıklardan oluşuyor; uydurma/sentetik deney satırı eklenmedi. Bağımsız görüntü ölçümü, perspektif/işaret yüksekliği, kontrol noktaları, zaman eşleme, başarısızlık paydası ve ayar/son değerlendirme ayrımı açıklandı.
+
 [Risk yönetimi](RISK_YONETIMI_TASLAGI.md) ve [yaygın etki](YAYGIN_ETKI_TASLAGI.md) için ilk taslaklar hazırlandı. Önlemler ve çıktı miktarları plan önerileridir; kullanıcı tarafından kesinleştirilmiş donanım, yeni ekipman erişimi veya gerçekleşmiş başarı olarak sunulmayacak. [Başvuru durumu ve kalan işler](BASVURU_DURUMU_VE_EKSIKLER.md) bölüm bazında izleniyor.
 
 [Araştırma olanakları taslağı](ARASTIRMA_OLANAKLARI_TASLAGI.md) mevcut kişisel lehim ekipmanı ve telefonla hazırlandı. Kurum laboratuvarı, kesin deney yeri ve diğer ölçüm araçları mevcut sayılmadı; multimetre ve metre/cetvel erişimi soruldu.

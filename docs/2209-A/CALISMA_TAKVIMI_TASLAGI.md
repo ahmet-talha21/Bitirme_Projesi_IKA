@@ -1,6 +1,6 @@
 # 3.1. Çalışma takvimi — Haziran hedefi için taslak
 
-Güncelleme: 21 Ekim 2026. Kullanıcı Haziran 2027 hedefinin okulun bitirme projesi teslimi olduğunu, kesin günün henüz belli olmadığını açıkladı. Önceden önerilen altı aylık süre kullanıcı tarafından onaylanmış sayılmayacak. Aşağıdaki Kasım–Haziran planı akademik teslim hedefi için öneridir; resmî TÜBİTAK başlangıcı/süresi değildir.
+Güncelleme: 22 Ekim 2026. Kullanıcı Haziran 2027 hedefinin okulun bitirme projesi teslimi olduğunu, kesin günün henüz belli olmadığını açıkladı. Önceden önerilen altı aylık süre kullanıcı tarafından onaylanmış sayılmayacak. Aşağıdaki Kasım–Haziran planı akademik teslim hedefi için öneridir; resmî TÜBİTAK başlangıcı/süresi değildir.
 
 ## Süreyi belirleme dayanağı
 
@@ -33,7 +33,7 @@ Aşağıdaki katkı değerleri planlama önerisidir; toplamları %100'dür. Bunl
 | İP2 — Kullanıcı arayüzü ve haberleşme | Rota koordinatları ve komut biçimi tanımlanınca; ilk yazılım çalışmaları İP1'e kısmen paralel yapılabilir. | Bilgisayar öncelikli ve telefondan erişilebilir arayüzde waypoint rotası tanımlama, rota aktarımı, durum gösterimi ve başlatma/durdurma akışı doğrulanacak. | %15 |
 | İP3 — Rota izleme ve konum kestirimi | İP1'in hareket/enkoder kalibrasyonu ve İP2'nin rota aktarımı. | Engelsiz referans parkurunda rota takibi, başlangıç pozu ve waypoint sırası kontrol edilecek. Rota hatası seçilecek bağımsız referans yöntemiyle değerlendirilecek; sayısal kabul eşiği deney planında belirlenecek. | %20 |
 | İP4 — Engel algılama, kaçınma ve rotaya dönüş | İP1'in mesafe ölçümleri ve İP3'ün temel rota takibi. | Sabit engelin temas öncesinde algılanması, çarpışmasız kaçınma ve rotaya yeniden katılma ayrı sonuçlar olarak doğrulanacak. İlerleyememe/hata durumları kaydedilecek. | %30 |
-| İP5 — Kontrollü deneyler ve performans analizi | İP4 tamamlandıktan ve son değerlendirme sürümü sabitlendikten sonra. | Önceden tanımlanacak koşul ve tekrar sayılarıyla denemeler yürütülecek. Geçerli başarısız denemeler de dahil edilerek oranlar, süreler ve uygun referansla rota hatası değerlendirilecek. | %15 |
+| İP5 — Kontrollü deneyler ve performans analizi | İP4 tamamlandıktan ve son değerlendirme sürümü sabitlendikten sonra. | İncelemeye sunulan [protokol](DENEY_PROTOKOLU_ONERISI.md) dört koşul × 10 tekrar = 40 geçerli değerlendirme denemesi öneriyor. Plan kesinleşince geçerli başarısız denemeler de dahil edilerek oranlar, süreler ve uygun referansla rota hatası değerlendirilecek. | %15 |
 
 ## Haziran hedefine göre planlama ilkeleri
 
@@ -47,6 +47,6 @@ Aşağıdaki katkı değerleri planlama önerisidir; toplamları %100'dür. Bunl
 1. Haziran içindeki kesin teslim günü ve okulun ayrıntılı teslim takvimi.
 2. Çalışmaya ve donanıma erişime ilişkin gerçek başlangıç koşulları; resmî proje süresiyle ilişki.
 3. Beş iş paketinin ay aralıkları; birbirine bağımlı adımların sırası ve tek yürütücünün iş yükü.
-4. Deney tekrar sayıları, ölçüm doğruluğu, rota/katılma toleransları ve sayısal hedefler.
+4. Hazırlanan sayısal deney önerisinin kullanıcı/danışman değerlendirmesi; ölçüm doğruluğu, rota/katılma toleransları ve kalibrasyona bağlı parametrelerin kesinleştirilmesi.
 
 Bu belge, akademik hedef takvimi, başarı kontrolleri ve katkı dağılımı önerisini hazırlar. Resmî başlangıç/süre ve TYBS ay aralıkları tamamlanmadığı için nihai TYBS çalışma takvimi olarak aktarılmaya hazır değildir.

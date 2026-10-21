@@ -29,7 +29,14 @@ Bu soru bir öneridir. Sabit engeller ilk deney kapsamı olarak seçildi; hareke
 3. Kaçınma sonrasında tanımlı rotaya yeniden katılmayı ve hedefe ilerlemeyi sağlamak.
 4. Engel yerleşimleri değiştirilerek tekrarlanacak denemelerde algılama, çarpışmasız kaçınma ve rotaya dönüş oranlarını; görev tamamlama süresini ve uygun referans ölçümüyle rota sapmasını değerlendirmek.
 
-Başarı tanımları, kabul edilecek rota sapması, deneme sayıları ve sayısal hedefler henüz kararlaştırılmadı. Bu liste, nihai ölçülebilir hedefler bölümünün yerine geçmez.
+Başarı tanımları, kabul edilecek rota sapması, deneme sayıları ve sayısal hedefler henüz kesinleştirilmedi. [Deney protokolü önerisinde](DENEY_PROTOKOLU_ONERISI.md) şu ölçülebilir hedefler incelemeye sunuldu:
+
+- Engelsiz referans ve üç sabit engel yerleşiminde koşul başına 10, toplam 40 geçerli değerlendirme denemesi yapmak.
+- Engelsiz koşulda en az 9/10 görev tamamlama; engelli koşulların her birinde en az 9/10 temas öncesi algılama hedeflemek.
+- Engelli koşulların her birinde en az 8/10 denemede temas öncesi algılama, çarpışmasız kaçınma, rotaya dönüş ve süre içinde sıralı waypoint'ler/hedefe erişimi birlikte sağlamak.
+- 10 cm waypoint/rotaya dönüş bandını, 120 saniye süre sınırını ve bunların bağımsız ölçüm gereksinimlerini uygulanabilirlik incelemesiyle kararlaştırmak.
+
+Bunlar planlama önerileridir; kullanıcı/danışman onayı, donanım ve ölçüm düzeni netleşince amaç/hedefler metnine nihai biçimi verilecek. Gerçekleşmiş performans veya kabul garantisi değildir.
 
 ## Bu metnin tamamlanması için gerekenler
 
