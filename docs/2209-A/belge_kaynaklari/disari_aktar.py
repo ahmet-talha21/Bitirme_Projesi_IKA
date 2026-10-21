@@ -166,6 +166,8 @@ def main():
             raise RuntimeError("PDF çıktısı oluşmadı.")
         shutil.copy2(generated_pdf, ROOT / generated_pdf.name)
     pdf = ROOT / f"{STEM}.pdf"
+    output.chmod(0o644)
+    pdf.chmod(0o644)
     print(f"Word: {output.name}\nPDF: {pdf.name}")
 
 
