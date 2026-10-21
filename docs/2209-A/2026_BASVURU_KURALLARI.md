@@ -34,6 +34,7 @@ Kontrol tarihi: 21 Ekim 2026. Bu not, aşağıdaki resmî kaynaklardan hazırlan
 
 - Literatür taraması, sonuç raporu hazırlama, araştırma sonuçlarının paylaşımı ve malzeme alımı ayrı çalışma takvimi iş adımı olarak gösterilmeyecek.
 - Yöntem ve özgünlük iddiaları için gerçek kaynaklar okunup doğrulanacak; önceki örneklerdeki kaynaklar doğrudan aktarılmayacak. Henüz yapılmamış testler yapılmış gibi yazılmayacak.
+- Bilgi notu, Yöntem bölümünde ön çalışma/fizibilite için “yapıldıysa” ifadesini kullanıyor; tamamlanmış prototip veya ön deney şartı belirtmiyor. Planlanan çalışma gelecek zamanla anlatılacak; varsa gerçekten tamamlanmış ön çalışmalar ayrıca sunulacak. Ön çalışma yokken uygulanabilirlik gerekçesi, yöntem, kaynaklar ve risk planı yine hazırlanmalı.
 - 12. Kalkınma Planı ve 2030 Sanayi ve Teknoloji Stratejisi ile ilişki varsa gerekçelendirilecek; konuya sırf uyum iddiası eklenmeyecek.
 - Bilimsel değerlendirme ağırlıkları: bilimsel nitelik %35, yöntem %25, proje yönetimi %20, yaygın etki %20.
 

@@ -9,6 +9,7 @@ Güncelleme: 21 Ekim 2026. Bu belge başvuru metni değil, kullanıcı tarafınd
 - Kullanıcı arayüzü proje sahibi tarafından tasarlanacak; araç bu arayüz üzerinden kontrol edilecek.
 - Kullanıcı rotayı arayüzden tanımlayacak; araç rotayı otonom takip edecek.
 - Engel algılandığında engelden kaçınma davranışı devreye girecek; araç daha sonra rotasına dönerek ilerleyecek. Algoritma henüz seçilmedi.
+- Kullanıcı temel amacın engeli algılamak ve başarılı bir kaçınma hareketi gerçekleştirmek olduğunu netleştirdi. Rota takibi ve rotaya dönüş, bu davranışın görev içindeki değerlendirme çerçevesidir; eşya taşıma gibi ek görev belirlenmedi.
 - İlk sürüm için ölçülü kareli alan üzerinde waypoint (ara rota noktaları) seçimi kullanıcı tarafından uygun bulundu. Sonraki aşamada isteğe bağlı ölçekli mekân krokisi ekleme yaklaşımı da uygun bulundu; bu ek özellik ilk sürüm için zorunlu teslim olarak belirlenmedi.
 - Kullanıcı ev, okul ve iş yeri gibi farklı yerlerde kullanılabilirlik istiyor. Küçük Arduino/RC araçları boyutunda bir prototip ve düz zeminde kullanım belirtildi. İlk deneyler için yaklaşık 3 × 3 metre alan planlanıyor; bu, ölçülmüş veya üzerinde test yapılmış bir alan değil. Kesin araç ölçüleri ve kullanılacak fiziksel yer henüz belirlenmedi.
 - Arayüzde öncelik bilgisayar kullanımı; telefonda da çalışması isteniyor. Her iki cihazda açılabilen tarayıcı arayüzü teknik seçenek olarak değerlendiriliyor; yazılım teknolojisi ve haberleşme yöntemi seçilmedi.
@@ -17,6 +18,7 @@ Güncelleme: 21 Ekim 2026. Bu belge başvuru metni değil, kullanıcı tarafınd
 - TÜBİTAK 2209-A başvurusu hazırlanacak.
 - Teknik ayrıntılar kullanıcıya sorularak netleştirilecek; bilinmeyen özellikler ve sonuçlar yazılmayacak.
 - Kullanıcı projeye henüz başlamadığını belirtti. Şu an başvuru hazırlığı ve tasarım planlama aşamasındayız; çalışan araç, kurulmuş deney düzeneği veya tamamlanmış ön deney bulunmuş gibi yazılmayacak.
+- Kullanıcı deney kapsamının uygulanabilir ve güçlü bir başvuru sağlayacak şekilde seçilmesini istedi. Bu kapsamda ilk deneyler için sabit engeller seçildi: engeller denemeler sırasında hareketsiz olacak, yerleşimleri denemeler arasında değiştirilebilecek. Hareketli engeller ana başvuru kapsamına eklenmedi. Bu bir çalışma planıdır; deney sonucu değildir.
 
 ## Netleştirilecek konular
 
@@ -26,7 +28,7 @@ Güncelleme: 21 Ekim 2026. Bu belge başvuru metni değil, kullanıcı tarafınd
 - Konum/yön ölçümü, sensörler, motorlar, sürücü ve mevcut donanım.
 - Bilgisayar öncelikli ve telefonda da çalışan arayüzün uygulama teknolojisi, haberleşme yöntemi ve engelden kaçınma algoritması.
 - Araştırma sorusu, karşılaştırma yöntemi ve ölçülebilir başarı ölçütleri.
-- İlk deneylerde sabit engeller mi yoksa hareketli engeller de mi kullanılacağı; belirli bir uygulama görevi olup olmadığı.
+- Sabit engellerin boyutları, malzemeleri, geçiş açıklıkları ve yerleşimleri; algılama mesafesi, hız ve başarının sayısal eşikleri.
 - Ekip, danışman, kurum, olanaklar, süre ve bütçe.
 
 ## Belgeler ve doğrulama durumu
@@ -48,4 +50,10 @@ Güncelleme: 21 Ekim 2026. Bu belge başvuru metni değil, kullanıcı tarafınd
 - Mesafe sensörleriyle yerel engelden kaçınma ve ardından rotaya katılma değerlendirilecek. Sensör tipi, sayısı, görüş alanı ve algoritma seçilmedi; her engelin aşılabileceği iddia edilmeyecek.
 - Basit süreye bağlı hareket komutları ilk hareket deneyi için kullanılabilir; engel etrafından dolaştıktan sonra rotaya doğru dönüşü güvenilir biçimde göstermek için konum/yön geri bildirimi gerekir.
 - Rota sapması, hedefe ulaşma oranı, engelden sonra rotaya dönüş ve tamamlanma süresi olası ölçütlerdir. Karşılaştırma yöntemi, tekrar sayıları ve hedef değerler henüz belirlenmedi. Gerçek rota hatası, yalnızca aracın kendi kestiriminden hesaplanmayacak; bağımsız referans ölçüm yöntemi seçilecek.
-- Kullanıcının değerlendirmesine sunulacak öneri: ilk aşamada sabit engellerle, rota geometrisi ve engel yerleşiminin takip başarısına etkisini incelemek. Araştırma sorusu literatür kontrolü ve kullanıcı kararıyla kesinleştirilecek; özgünlük iddiası henüz yok.
+- Seçilen ilk deney kapsamı: sabit engellerle engel algılama, çarpışmasız kaçınma ve rotaya dönüş başarısını incelemek. Engel yerleşimleri denemeler arasında değiştirilerek performans değerlendirilecek. Algoritma, tekrar sayıları ve araştırma sorusunun son biçimi literatür ve uygulanabilirlik incelemesiyle belirlenecek; özgünlük iddiası henüz yok.
+
+## Başvuru dili ve ön çalışma
+
+- 2026 Başvuru İçeriği Bilgi Notu, Yöntem bölümünde “Araştırma önerisinde herhangi bir ön çalışma veya fizibilite yapıldıysa bunların sunulması beklenir.” diyor. Bu ifade, önceden tamamlanmış prototipi başvuru şartı olarak tanımlamıyor.
+- Yapılacak çalışma gelecek zamanla; gerçekten yapılmış hazırlık/deney varsa yalnızca kanıtlanabilir kısmı geçmiş zamanla anlatılacak. Denenmemiş bir tasarım için başarı oranı veya elde edilmiş sonuç yazılmayacak.
+- Ön deney yapılmış olması uygulanabilirliğe dayanak sağlayabilir; ön deney yoksa seçilen yaklaşımın gerekçesi, doğrulanmış kaynaklar, donanım gereksinimleri, bütçe, takvim ve risk planı başvurudan önce somutlaştırılacak.
