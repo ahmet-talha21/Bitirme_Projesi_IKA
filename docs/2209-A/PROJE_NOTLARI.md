@@ -22,6 +22,8 @@ Güncelleme: 21 Ekim 2026. Bu belge başvuru metni değil, kullanıcı tarafınd
 
 ## Netleştirilecek konular
 
+İlk donanım mimarisi, arayüz/haberleşme seçenekleri, kaçınma yaklaşımı ve deney önerileri [yöntem ve deney planında](YONTEM_VE_DENEY_PLANI.md) hazırlandı. Bu teknik öneriler parça satın alma kararı veya kullanıcı tarafından onaylanmış nihai yöntem değildir.
+
 - Ölçülü waypoint ekranının fiziksel alanla eşleştirilmesi ve başlangıç noktası/yönünün tanımlanması.
 - Planlanan 3 × 3 metre alanın fiziksel yeri, kesin araç ölçüleri ve donanım seçildikten sonra parkurun yeterliliğinin değerlendirilmesi.
 - Manuel kontrolün ayrıca gerekip gerekmediği.
