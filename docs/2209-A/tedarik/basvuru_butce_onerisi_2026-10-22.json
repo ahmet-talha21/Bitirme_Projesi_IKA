@@ -1,7 +1,7 @@
 {
   "date": "2026-10-22",
   "timezone": "Europe/Istanbul",
-  "status": "Assistant-proposed planning estimates; user and advisor have not selected the requested amount.",
+  "status": "User-selected planning budget; advisor review and current product/price checks remain pending. Amounts remain estimates, not supplier quotes.",
   "planning_currency": "TRY",
   "unit_amount_convention": "Estimated VAT-inclusive domestic expenditure allowances. No row is represented as a supplier quote.",
   "total_proposed_TRY": "11500",
@@ -342,5 +342,11 @@
     "Tools or apparatus already accessible can be removed before final application; free access is not assumed.",
     "No independent price for optional IMU, international shipping or import is included. This is a domestic-sourcing proposal."
   ],
-  "budget_decision": "User selection and advisor review of this proposal remain pending. The original observed-price CSV and historical native-currency basket remain unchanged."
+  "budget_decision": "The user selected 11500 TRY as the planned support request. Main report and budget documents are updated. Advisor review, technical model suitability and delivery-price checks remain pending. Original observed-price CSV and historical native-currency basket remain unchanged.",
+  "user_decision": {
+    "date": "2026-10-22",
+    "exact_answer": "11.500 TL bütçe önerisini kullanalım.",
+    "selected_requested_amount_TRY": "11500",
+    "scope": "Selection of the planning budget amount; no purchase, supplier agreement, application submission, or grant award."
+  }
 }

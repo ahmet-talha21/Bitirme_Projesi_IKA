@@ -164,3 +164,11 @@ Kullanıcının “tamam başlayalım” isteğiyle bütçe somutlaştırıldı.
 Öneri; kontrol/algılama 3.500 TL, hareket/şasi 2.850 TL, güç 2.850 TL, montaj/bağlantı 700 TL, deney düzeni 1.300 TL ve yurt içi teslim 300 TL olarak dağıtıldı. 500 TL üst sınır farkı bir gider kalemi yapılmadı. Telefon ve lehim ekipmanı yeniden bütçelenmedi; aksesuar ve gerekirse ölçüm araçları ayrıca planlandı. Hiçbir ödenek satıcı teklifi veya uyumu doğrulanmış satın alma seti olarak sunulmadı. Yerel motor ve sensör çerçevesinin uygun ürünlerle karşılanması hâlen kontrol edilecek.
 
 Kullanıcının toplam tutar seçimi ve danışman incelemesi bekleniyor; birleşik raporda talep tutarı henüz kesinleştirilmedi. Tarihli gerçek fiyat CSV'si korunarak planlama bedelleri ayrı CSV'ye yazıldı. Sipariş verilmedi, satıcıya mesaj gönderilmedi ve kişisel katkı varsayılmadı.
+
+## 22 Ekim — 11.500 TL planlama bütçesinin kullanıcı tarafından seçilmesi
+
+Kullanıcı açık bütçe sorusuna “11.500 TL bütçe önerisini kullanalım.” yanıtını verdi. Toplam tutar planlanan destek talebi olarak birleşik rapora, genel bilgilere ve bütçe belgelerine işlendi. 22 kalem, grup toplamları ve 500 TL destek sınırı farkı değişmedi. KDV dahil planlama tahminleri, gerçek fiyat gözlemleri ve kesin teklifler birbirinden ayrı tutuldu.
+
+Bu seçim satın alma, satıcıyla anlaşma, başvurunun gönderilmesi veya TÜBİTAK destek kararı olarak yorumlanmadı. Danışman incelemesi ve uygun model/teslim fiyatı kontrolü devam edecek; mevcut telefon ve lehim ekipmanı tekrar bütçelenmedi. Önceki “tutar seçilmedi” hazırlık kayıtları bu yanıtla sonuçlandı.
+
+Bütçe güncellemesi sonrasında ilk sayfa yerleşimi de gözden geçirildi. Hazırlık açıklaması ve özetteki tekrarlar kısaltıldı; özet 203 kelime oldu ve anahtar kelimelerle birlikte ilk sayfaya sığdı. Teknik kapsam, seçilen hedefler ve kaynaklar korundu.

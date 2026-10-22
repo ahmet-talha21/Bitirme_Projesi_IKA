@@ -1,12 +1,12 @@
 # TÜBİTAK 2209-A — Bütçe önerisi
 
-**22 Ekim 2026 · Kullanıcı ve danışman incelemesi için taslak**
+**22 Ekim 2026 · Kullanıcının seçtiği plan · Danışman incelemesi için taslak**
 
 **Proje:** Kullanıcı tarafından belirlenen rota bilgisine göre hareket eden otonom araç tasarımı
 
 **Yürütücü:** Ahmet Talha Arslan · **Danışman:** Prof. Dr. Murat Ceylan
 
-Önerilen toplam **11.500,00 TL**'dir. Aşağıdaki birim bedeller **KDV dahil tahmini planlama ödenekleridir; satıcı teklifleri veya doğrulanmış ürün fiyatları değildir.** Tarihli satış fiyatı gözlemleri, tahminlerin dayanağı olarak ayrı tutulmuştur. Talep edilecek tutar henüz kullanıcı tarafından seçilmemiştir.
+Kullanıcının seçtiği planlanan destek talebi **11.500,00 TL**'dir. Aşağıdaki birim bedeller **KDV dahil tahmini planlama ödenekleridir; satıcı teklifleri veya doğrulanmış ürün fiyatları değildir.** Tarihli satış fiyatı gözlemleri, tahminlerin dayanağı olarak ayrı tutulmuştur. Kullanıcı “11.500 TL bütçe önerisini kullanalım.” yanıtıyla bu toplamı seçmiştir. Bu seçim, başvurunun gönderildiği veya destek tutarının onaylandığı anlamına gelmez.
 
 ## Kapsam ve toplam
 
@@ -20,7 +20,7 @@ Plan; bir araç prototipi, iki enkoderli motor, beş sabit ToF öncelikli sensö
 | Montaj ve bağlantı | 700,00 TL |
 | Deney düzeni | 1.300,00 TL |
 | Yurt içi teslim | 300,00 TL |
-| **Toplam öneri** | **11.500,00 TL** |
+| **Planlanan toplam talep** | **11.500,00 TL** |
 
 Program sayfasındaki 12.000 TL üst sınırına göre talep dışındaki aritmetik fark **500,00 TL**'dir. Bütçeye “beklenmeyen gider” veya karşılıksız bir yedek tutar eklenmemiştir.
 
@@ -74,7 +74,7 @@ Batarya ile şarj cihazının akım, koruma ve soket eşleşmesi; motor ile sür
 
 Mevcut telefon ve lehim ekipmanı için yeniden alım yazılmamıştır. Ölçüm araçlarına veya sabitleme düzenine mevcut erişim yeterliyse ilgili alım kalemleri başvuru öncesinde çıkarılabilir. Kullanıcının kişisel katkı yapacağı veya araçlara ücretsiz erişiminin kesin olduğu varsayılmamıştır. İsteğe bağlı IMU ve yurt dışı ithalat giderleri bu yerel tedarik önerisine dahil değildir.
 
-Stokta bulunmak başvuru şartı olarak kullanılmamıştır. Esas olan gerekçeli maliyet ve uygulanabilir temin planıdır. Kullanıcı toplam tutarı seçtikten ve danışmanla değerlendirildikten sonra TYBS'nin ilgili bütçe alanları güncel gider türleriyle doldurulacaktır. Çağrının 2.2 maddesi gereği talep edilen bütçe tutarı başvurular sona erdikten sonra değiştirilemez.
+Stokta bulunmak başvuru şartı olarak kullanılmamıştır. Esas olan gerekçeli maliyet ve uygulanabilir temin planıdır. Kullanıcı toplam tutarı seçmiştir. Danışman değerlendirmesi ve güncel ürün/fiyat kontrolünden sonra TYBS'nin ilgili bütçe alanları uygun gider türleriyle doldurulacaktır. Çağrının 2.2 maddesi gereği talep edilen bütçe tutarı başvurular sona erdikten sonra değiştirilemez.
 
 **Kaynak ve hesap kaydı:** [Planlama CSV'si](https://raw.githubusercontent.com/ahmet-talha21/Bitirme_Projesi_IKA/main/docs/2209-A/BASVURU_BUTCE_ONERISI.csv) · [Fiyat gözlemleri ve tahmin gerekçeleri](https://github.com/ahmet-talha21/Bitirme_Projesi_IKA/blob/main/docs/2209-A/tedarik/basvuru_butce_onerisi_2026-10-22.json)
 

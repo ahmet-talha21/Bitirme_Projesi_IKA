@@ -12,13 +12,13 @@ Proje, arayüzde tanımlanan waypoint rotasını izleyen küçük bir ESP32 taba
 
 ## Çalışma durumu
 
-Şu an 2026 yılı 2209-A araştırma önerisi hazırlanıyor. Belgeler çalışma taslağıdır. Enkoderli iki motorlu hareket mimarisi ve beş sabit mesafe sensörü düzeni seçildi: ön orta, iki ön çapraz ve iki yan. Kullanıcı dört koşulda 10'ar tekrar, toplam 40 değerlendirme denemesini ve her engelli koşulda en az 8/10 birleşik görev başarısı hedefini uygun buldu. Bug 2 mantığından yararlanan kaçınma yaklaşımı, ToF önceliği, 6 aylık plan, 10 cm waypoint/rotaya dönüş hedefleri ve 120 saniye deneme sınırı seçildi. Kesin ürün modelleri, montaj açıları ve kalan parametreler açık; bütçe önerisi inceleme aşamasında. Fiziksel prototip geliştirme ve deneyler henüz yapılmadı.
+Şu an 2026 yılı 2209-A araştırma önerisi hazırlanıyor. Belgeler çalışma taslağıdır. Enkoderli iki motorlu hareket mimarisi ve beş sabit mesafe sensörü düzeni seçildi: ön orta, iki ön çapraz ve iki yan. Kullanıcı dört koşulda 10'ar tekrar, toplam 40 değerlendirme denemesini ve her engelli koşulda en az 8/10 birleşik görev başarısı hedefini uygun buldu. Bug 2 mantığından yararlanan kaçınma yaklaşımı, ToF önceliği, 6 aylık plan, 10 cm waypoint/rotaya dönüş hedefleri ve 120 saniye deneme sınırı seçildi. Kullanıcı 11.500 TL planlama bütçesini de seçti. Kesin ürün modelleri, montaj açıları, kalan parametreler ve danışman incelemesi açık. Fiziksel prototip geliştirme ve deneyler henüz yapılmadı.
 
 Kullanıcı Haziran 2027 hedefinin bitirme projesi teslimi olduğunu, kesin günün henüz belli olmadığını açıkladı. Mayısta deney/analiz, Haziranda inceleme/teslim hedefi önerildi. Kullanıcı daha sonra 6 aylık planı açıkça seçti; 1–6. ay dağılımı rapora işlendi. Resmî başlangıç günü sonuç ilanına göre belli olacak.
 
 **Bütçe önerisini incele:** [11.500 TL planlama tablosu](docs/2209-A/BASVURU_BUTCE_ONERISI.md) · [PDF](docs/2209-A/BASVURU_BUTCE_ONERISI.pdf) · [Word](docs/2209-A/BASVURU_BUTCE_ONERISI.docx) · [CSV](docs/2209-A/BASVURU_BUTCE_ONERISI.csv)
 
-Birim bedeller KDV dahil planlama tahminleridir; toplam tutar henüz kullanıcı tarafından seçilmedi. Kaynaklı satış fiyatı gözlemleri ayrı tutulmuştur.
+Kullanıcı toplam 11.500 TL planlanan destek talebini seçti. Birim bedeller KDV dahil planlama tahminleridir; teklif veya onaylanmış destek tutarı değildir. Kaynaklı satış fiyatı gözlemleri ayrı tutulmuştur.
 
 ## Başvuru bölümleri
 

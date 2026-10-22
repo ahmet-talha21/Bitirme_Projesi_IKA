@@ -1,10 +1,10 @@
 # TÜBİTAK 2209-A — Araştırma Önerisi
 
-**Birleşik metin taslağı · 22 Ekim 2026 · Deney hedefleri güncellemesi**
+**Birleşik metin taslağı · 22 Ekim 2026 · Seçilen bütçe güncellemesi**
 
 **Proje adı:** Kullanıcı tarafından belirlenen rota bilgisine göre hareket eden otonom araç tasarımı
 
-Bu belge, planlanan araştırmanın inceleme taslağıdır. Başvuru öncesinde tamamlanacak bilgiler ve belge hazırlama kayıtları [ayrı hazırlık notunda](https://github.com/ahmet-talha21/Bitirme_Projesi_IKA/blob/main/docs/2209-A/BASVURU_METNI_HAZIRLIK_NOTLARI.md) tutulmaktadır.
+İnceleme taslağıdır; açık bilgiler [hazırlık notlarında](https://github.com/ahmet-talha21/Bitirme_Projesi_IKA/blob/main/docs/2209-A/BASVURU_METNI_HAZIRLIK_NOTLARI.md) tutulmaktadır.
 
 ## Genel bilgiler
 
@@ -17,17 +17,17 @@ Bu belge, planlanan araştırmanın inceleme taslağıdır. Başvuru öncesinde 
 | Proje ekibi | Tek öğrenci yürütücü |
 | Akademik teslim hedefi | Haziran 2027; kesin gün henüz belli değil. |
 | Planlanan proje süresi | 6 ay; resmî takvim sonuçların ilanına göre başlayacaktır. |
-| Talep edilecek destek | Nihai bütçe henüz belirlenmedi. |
+| Planlanan destek talebi | 11.500 TL; KDV dahil tahmini bütçe. |
 
 ## Özet
 
-Bu araştırmada, kullanıcı tarafından arayüzde tanımlanan bir rotayı izleyen, karşılaştığı sabit engelleri algılayarak çarpışmadan kaçınan ve ardından rotasına yeniden katılan küçük ölçekli bir otonom kara aracı geliştirilmesi amaçlanmaktadır. Araştırma, farklı engel yerleşimlerinin algılama, kaçınma, rotaya dönüş ve görev tamamlama davranışına etkisini kontrollü deneylerle inceleyecektir.
+Bu araştırmada, kullanıcı tarafından arayüzde tanımlanan rotayı izleyen, sabit engelleri algılayıp çarpışmadan kaçınarak rotasına dönen küçük ölçekli bir otonom kara aracı geliştirilmesi amaçlanmaktadır. Farklı engel yerleşimlerinin algılama, kaçınma, rotaya dönüş ve görev tamamlama başarısına etkisi kontrollü deneylerle incelenecektir.
 
-Prototip; ESP32 kontrol birimi, bağımsız sürülen iki enkoderli motor ve ön orta, iki ön çapraz ve iki yan yönde yerleştirilecek beş sabit mesafe sensöründen oluşacaktır. Kullanıcı, bilgisayar öncelikli ve telefondan erişimi de hedeflenen arayüzde yerel koordinatlarla ara rota noktaları (waypoint) belirleyecektir. Enkoder verilerinden hesaplanan göreli konum bilgisi, mesafe ölçümlerine dayalı hareket kararlarıyla birlikte kullanılacaktır. Engel çevresini takip etme ve rotaya dönüş davranışları, Bug 2 yaklaşımından yararlanan bir durum makinesiyle gerçekleştirilecektir.
+Prototip; ESP32 kontrol birimi, bağımsız sürülen iki enkoderli motor ve beş sabit mesafe sensöründen oluşacaktır. Kullanıcı, bilgisayar öncelikli ve telefondan erişimi de hedeflenen arayüzde yerel koordinatlarla ara rota noktaları (waypoint) belirleyecektir. Enkoder verilerinden hesaplanan göreli konum bilgisi, mesafe ölçümlerine dayalı hareket kararlarıyla birlikte kullanılacaktır. Engel çevresini takip etme ve rotaya dönüş davranışları, Bug 2 yaklaşımından yararlanan bir durum makinesiyle gerçekleştirilecektir.
 
 Düz zeminde yaklaşık 3 × 3 metre olarak planlanan alanda engelsiz referans ve üç sabit engel yerleşimi karşılaştırılacaktır. Her koşul 10 kez tekrarlanarak toplam 40 geçerli değerlendirme denemesi yapılacaktır. Her engelli koşulda en az 8/10 denemede temas öncesi algılama, çarpışmasız kaçınma, rotaya dönüş ve hedefe ulaşmanın birlikte sağlanması hedeflenmektedir. Waypoint erişimi ve rotaya dönüş için en çok 10 cm uzaklık, deneme başına en çok 120 saniye hedeflenmektedir. Aracın hareketinin bağımsız değerlendirilmesinde, mevcut telefonla sabit görüntü kaydı ve kalibrasyon düzeni kurulması planlanmaktadır.
 
-Çalışma, altı ay içinde donanım ve sensör entegrasyonu, arayüz ve haberleşme, rota izleme, kaçınma ve kontrollü deneyler olmak üzere beş iş paketinde yürütülecektir. Beklenen çıktılar bir araç prototipi, rota arayüzü, deney kayıt kümesi ve performans değerlendirmesiyle birlikte sürümlenmiş teknik dokümantasyondur.
+Çalışma, altı aylık beş iş paketinde yürütülecektir. Beklenen çıktılar bir araç prototipi, rota arayüzü, deney kayıt kümesi ve performans değerlendirmesiyle birlikte sürümlenmiş teknik dokümantasyondur.
 
 **Anahtar kelimeler:** Otonom kara aracı, rota takibi, engelden kaçınma, enkoder, gömülü kontrol.
 

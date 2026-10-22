@@ -15,7 +15,7 @@ Durum: Kullanıcının 21 Ekim 2026 tarihinde bildirdiği bilgilerle hazırlanm�
 | Akademik danışman | Prof. Dr. Murat Ceylan |
 | Proje başlığı | Kullanıcı tarafından belirlenen rota bilgisine göre hareket eden otonom araç tasarımı — kullanıcı tarafından 22 Ekim 2026 tarihinde seçildi. |
 | Süre | Bitirme projesi teslim hedefi Haziran 2027; kesin gün henüz belli değil. Planlanan resmî proje süresi kullanıcı tarafından 6 ay olarak seçildi; başlangıç günü sonuç ilanına göre belli olacak. |
-| Talep edilecek bütçe | Henüz belirlenmedi; fiyatlar doğrulanacak. |
+| Planlanan destek talebi | 11.500 TL; kullanıcı tarafından seçildi. Birim tutarlar KDV dahil planlama tahminidir; danışman ve güncel fiyat/ürün kontrolü yapılacak. |
 
 Kullanıcının doğruladığı kişisel lehim ekipmanı ve telefon, [araştırma olanakları taslağında](ARASTIRMA_OLANAKLARI_TASLAGI.md) tutuluyor. Üniversite ve bölüm bilgisi, belirli bir laboratuvara veya ekipmana erişim olduğu anlamına gelmez. Kesin deney yeri ve kurum olanakları ayrıca netleştirilecek. Bu belgede kayıt durumu, danışman onayı veya TYBS işlemlerinin tamamlandığı iddia edilmiyor.
 
@@ -41,5 +41,5 @@ Akademik danışmanın bilimsel yönlendirme ve kontrolü çalışma boyunca sü
 ## Tamamlanacak bilgiler
 
 - Seçilen altı aylık süre, ay dağılımı ve katkı yüzdelerinin danışmanla değerlendirilmesi; akademik teslim hedefiyle ilişki.
-- Deney yeri, doğrulanmış altyapı, bütçe ve sayısal başarı ölçütleri.
+- Deney yeri, doğrulanmış altyapı, seçilen 11.500 TL bütçenin fiyat/ürün kontrolü ve kalan sayısal parametreler.
 - Danışmanın taslak yöntem ve kapsam hakkındaki görüşü.

@@ -11,7 +11,7 @@ Güncelleme: 22 Ekim 2026. Bu dosya çalışma takibi içindir; başvurunun bili
 - Deney yerinin seçimi ve gerçekten kullanılacak kurum olanakları. Deney yeri şu anda bilinmiyor.
 - Ürün modelleri, sensör açıları, ağ/arayüz ayrıntıları ve seçilen Bug 2 uyarlamasının uygulama parametreleri.
 - Bağımsız görüntü ölçümünün uygulanabilirliği; seçilen 10 cm waypoint/rotaya dönüş ve 120 saniye hedeflerinin değerlendirilmesi, açıklıklar ve kalan durum geçişi parametreleri.
-- Kullanıcı ve danışmanla [11.500 TL tahmini bütçe önerisini](BASVURU_BUTCE_ONERISI.md) değerlendirmek; ürün/teknik uyum ve teslim fiyatlarını kontrol ederek nihai TL talebini seçmek. Önceki 11.986,24 TL hesabı eksik giderli referans sepetidir; yeni planlama toplamı değildir.
+- Kullanıcının seçtiği [11.500 TL planlama bütçesini](BASVURU_BUTCE_ONERISI.md) danışmanla değerlendirmek; ürün/teknik uyum ve teslim fiyatlarını kontrol etmek. Önceki 11.986,24 TL hesabı eksik giderli referans sepetidir; yeni planlama toplamı değildir.
 - Son kararlar sonrası özet, atıflar, görsel etiketleri ve TYBS önizlemesi.
 
 Kullanıcı [deney protokolündeki](DENEY_PROTOKOLU_ONERISI.md) 10 cm waypoint erişimi, 10 cm rotaya dönüş bandı ve 120 saniye deneme sınırını planlanan hedefler olarak seçti. Bu değerler ölçülmüş performans değildir. Ek 9/10 hedefleri, 0,10 m/s hız, son hedefte 2 saniye durma, bantta 1 saniye kalma, 10 cm ileri hareket ve 2 cm ölçüm kontrol hedefi kullanıcı tarafından seçilmedi. L biçimli 3 metre rota ve rastgeleleştirilmiş 10 blok uygulaması da ayrıntıları kesinleşecek önerilerdir.
