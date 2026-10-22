@@ -31,32 +31,37 @@ def make_reference(path, sunum=False):
     section.left_margin = section.right_margin = Cm(2)
     section.header_distance = section.footer_distance = Cm(0.8)
     normal = document.styles["Normal"]
-    normal.font.name = "Times New Roman"
-    normal.font.size = Pt(11)
-    normal.paragraph_format.line_spacing = 1.12
-    normal.paragraph_format.space_after = Pt(6)
+    normal.font.name = "Arial" if sunum else "Times New Roman"
+    normal.font.size = Pt(10 if sunum else 11)
+    normal.paragraph_format.line_spacing = 1.05 if sunum else 1.12
+    normal.paragraph_format.space_after = Pt(4 if sunum else 6)
     normal.paragraph_format.widow_control = True
-    for name, size in [("Heading 1", 17), ("Heading 2", 14), ("Heading 3", 11.5)]:
+    for name, size in [("Heading 1", 22 if sunum else 17), ("Heading 2", 12 if sunum else 14), ("Heading 3", 10.5 if sunum else 11.5)]:
         style = document.styles[name]
         style.font.name = "Arial"
         style.font.size = Pt(size)
         style.font.bold = True
         style.font.color.rgb = RGBColor.from_string("183A57")
-        style.paragraph_format.space_before = Pt(12)
-        style.paragraph_format.space_after = Pt(6)
+        style.paragraph_format.space_before = Pt(9 if sunum else 12)
+        style.paragraph_format.space_after = Pt(4 if sunum else 6)
         style.paragraph_format.keep_with_next = True
     caption = document.styles["Caption"]
-    caption.font.name = "Times New Roman"
-    caption.font.size = Pt(9)
+    caption.font.name = "Arial" if sunum else "Times New Roman"
+    caption.font.size = Pt(8.5 if sunum else 9)
     caption.font.italic = False
     caption.font.color.rgb = RGBColor.from_string("475569")
     header = section.header.paragraphs[0]
     header.text = "TÜBİTAK 2209-A  |  Araştırma önerisi" + ("" if sunum else " taslağı")
+    if sunum:
+        header.text = "2209-A ÜNİVERSİTE ÖĞRENCİLERİ ARAŞTIRMA PROJELERİ DESTEKLEME PROGRAMI\nARAŞTIRMA ÖNERİSİ"
+        header.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        header.runs[0].font.bold = True
     header.runs[0].font.size = Pt(8)
     header.runs[0].font.color.rgb = RGBColor.from_string("64748B")
     footer = section.footer.paragraphs[0]
-    footer.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    footer.add_run("Ahmet Talha Arslan  ·  ").font.size = Pt(8)
+    footer.alignment = WD_ALIGN_PARAGRAPH.RIGHT if sunum else WD_ALIGN_PARAGRAPH.CENTER
+    if not sunum:
+        footer.add_run("Ahmet Talha Arslan  ·  ").font.size = Pt(8)
     field = OxmlElement("w:fldSimple")
     field.set(qn("w:instr"), "PAGE")
     footer._p.append(field)
@@ -71,8 +76,19 @@ def finish_layout(path, title=None, sunum=False):
     properties.subject = "Planlanan araştırma; deney sonuçları içermez"
     properties.modified = datetime.now(timezone.utc)
 
+    def paragraph_rule(paragraph, edge, color):
+        borders = OxmlElement("w:pBdr")
+        rule = OxmlElement("w:" + edge)
+        for key, value in [("val", "single"), ("sz", "5"), ("space", "10"), ("color", color)]:
+            rule.set(qn("w:" + key), value)
+        borders.append(rule)
+        paragraph._p.get_or_add_pPr().append(borders)
+
     if sunum:
         document.sections[0].different_first_page_header_footer = True
+        paragraph_rule(document.sections[0].header.paragraphs[0], "bottom", "879CAE")
+        paragraph_rule(document.paragraphs[0], "top", "203E5C")
+        document.paragraphs[0].paragraph_format.space_before = Pt(20)
         cover = True
         for paragraph in document.paragraphs:
             if paragraph.text == "A. GENEL BİLGİLER":
@@ -81,22 +97,37 @@ def finish_layout(path, title=None, sunum=False):
             if cover and paragraph.text.strip():
                 paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
                 paragraph.paragraph_format.keep_with_next = True
-                paragraph.paragraph_format.space_after = Pt(18)
+                paragraph.paragraph_format.space_after = Pt(14)
+                for run in paragraph.runs:
+                    run.font.name = "Arial"
+                    run.font.color.rgb = RGBColor.from_string("203E5C")
                 if paragraph.text == "TÜBİTAK 2209-A":
-                    paragraph.paragraph_format.space_before = Pt(60)
+                    paragraph.paragraph_format.space_before = Pt(15)
                     for run in paragraph.runs:
                         run.font.size = Pt(22)
                 elif paragraph.text.startswith("Kullanıcı tarafından"):
-                    paragraph.paragraph_format.space_before = Pt(24)
-                    paragraph.paragraph_format.space_after = Pt(32)
+                    paragraph.paragraph_format.space_before = Pt(30)
+                    paragraph.paragraph_format.space_after = Pt(28)
                     for run in paragraph.runs:
-                        run.font.size = Pt(17)
+                        run.font.size = Pt(14)
+                elif paragraph.text.startswith("ÜNİVERSİTE ÖĞRENCİLERİ"):
+                    for run in paragraph.runs:
+                        run.font.size = Pt(15)
+                elif paragraph.text == "ARAŞTIRMA ÖNERİSİ":
+                    paragraph.paragraph_format.space_before = Pt(18)
+                    for run in paragraph.runs:
+                        run.font.size = Pt(19)
                 elif paragraph.text == "2026 YILI":
-                    paragraph.paragraph_format.space_before = Pt(24)
+                    paragraph.paragraph_format.space_before = Pt(30)
                     paragraph.paragraph_format.keep_with_next = False
+                    for run in paragraph.runs:
+                        run.font.size = Pt(14)
+                    paragraph_rule(paragraph, "bottom", "CBD7E0")
 
     for paragraph in document.paragraphs:
-        if paragraph.text in {
+        if sunum and paragraph.text == "KAYNAKLAR":
+            paragraph.paragraph_format.page_break_before = True
+        if not sunum and paragraph.text in {
             "1. Bilimsel nitelik", "2. Yöntem", "3. Proje yönetimi",
             "4. Araştırma önerisinin yaygın etkisi", "Kaynakça",
             "Son düzenlemede tamamlanacak alanlar — hazırlık notu",
@@ -118,6 +149,24 @@ def finish_layout(path, title=None, sunum=False):
         factor = min(Cm(16.8) / shape.width, Cm(17.6) / shape.height, 1)
         shape.width = int(shape.width * factor)
         shape.height = int(shape.height * factor)
+
+    if sunum:
+        logo = document.inline_shapes[0]
+        ratio = logo.height / logo.width
+        logo.width = Cm(2.6)
+        logo.height = int(logo.width * ratio)
+        # Özetin tamamını tek, düzenlenebilir kutuda tut.
+        paragraphs = list(document.paragraphs)
+        start = next(i for i, p in enumerate(paragraphs) if p.text == "ÖZET")
+        end = next(i for i, p in enumerate(paragraphs) if p.text.startswith("1. ARAŞTIRMA"))
+        summary = document.add_table(rows=1, cols=1)
+        paragraphs[start]._p.addnext(summary._tbl)
+        cell = summary.cell(0, 0)
+        for paragraph in paragraphs[start + 1:end]:
+            cell._tc.append(paragraph._p)
+        empty = cell.paragraphs[0]
+        if not empty.text:
+            cell._tc.remove(empty._p)
 
     for table in document.tables:
         table.style = "Table Grid"
@@ -154,15 +203,25 @@ def finish_layout(path, title=None, sunum=False):
             widths = [17 / count] * count
         for column, width in zip(table.columns, widths):
             column.width = Cm(width)
-        repeat = OxmlElement("w:tblHeader")
-        table.rows[0]._tr.get_or_add_trPr().append(repeat)
+        summary_table = sunum and count == 1
+        borders = OxmlElement("w:tblBorders")
+        for edge in ["top", "left", "bottom", "right", "insideH", "insideV"]:
+            rule = OxmlElement("w:" + edge)
+            rule.set(qn("w:val"), "single")
+            rule.set(qn("w:sz"), "4")
+            rule.set(qn("w:color"), "879CAE")
+            borders.append(rule)
+        table._tbl.tblPr.append(borders)
+        if not summary_table:
+            repeat = OxmlElement("w:tblHeader")
+            table.rows[0]._tr.get_or_add_trPr().append(repeat)
         for row_index, row in enumerate(table.rows):
             no_split = OxmlElement("w:cantSplit")
             row._tr.get_or_add_trPr().append(no_split)
             for cell, width in zip(row.cells, widths):
                 cell.width = Cm(width)
                 cell.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.TOP
-                if row_index == 0:
+                if row_index == 0 and not summary_table:
                     shade = OxmlElement("w:shd")
                     shade.set(qn("w:fill"), "EAF1F7")
                     cell._tc.get_or_add_tcPr().append(shade)
@@ -170,8 +229,8 @@ def finish_layout(path, title=None, sunum=False):
                     paragraph.paragraph_format.space_after = Pt(3)
                     paragraph.paragraph_format.line_spacing = 1.05
                     for run in paragraph.runs:
-                        run.font.size = Pt(9.5)
-                        if row_index == 0:
+                        run.font.size = Pt(10 if summary_table else 9.5)
+                        if row_index == 0 and not summary_table:
                             run.font.bold = True
     document.save(path)
 
@@ -198,10 +257,10 @@ def main(stem=STEM, title=None, sunum=False):
             "--pdf-engine=xelatex", f"--resource-path={ROOT}",
             f"--lua-filter={ROOT / 'belge_kaynaklari/pdf_yerlesim.lua'}",
             f"--include-in-header={ROOT / ('belge_kaynaklari/pdf_sunum_baslik.tex' if sunum else 'belge_kaynaklari/pdf_baslik.tex')}",
-            "-V", "mainfont=" + ("Liberation Serif" if sunum else "DejaVu Serif"),
+            "-V", "mainfont=" + ("Liberation Sans" if sunum else "DejaVu Serif"),
             "-V", "sansfont=" + ("Liberation Sans" if sunum else "DejaVu Sans"),
             "-V", "papersize=a4",
-            "-V", "geometry=margin=20mm", "-V", "fontsize=11pt",
+            "-V", "geometry=margin=20mm", "-V", "fontsize=" + ("10pt" if sunum else "11pt"),
             "-V", "linestretch=" + ("1.05" if sunum else "1.08"), "-V", "colorlinks=true",
             "--output", str(generated_pdf),
         ], check=True, cwd=ROOT, env={**os.environ, "XDG_CACHE_HOME": str(cache_directory)})

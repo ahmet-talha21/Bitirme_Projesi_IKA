@@ -2,12 +2,28 @@
 \usepackage{etoolbox}
 \usepackage{xurl}
 \usepackage{needspace}
+\usepackage{titlesec}
+\usepackage{colortbl}
+\usepackage{longtable,array,booktabs}
+\usepackage[most]{tcolorbox}
+\definecolor{BrandNavy}{HTML}{203E5C}
+\definecolor{TableRule}{HTML}{879CAE}
+\definecolor{TableHead}{HTML}{EDF2F6}
+\definecolor{CaptionInk}{HTML}{485B6B}
 \pagestyle{fancy}
 \fancyhf{}
 \setlength{\headheight}{24pt}
-\fancyhead[C]{\scriptsize 2209-A ÜNİVERSİTE ÖĞRENCİLERİ ARAŞTIRMA PROJELERİ DESTEKLEME PROGRAMI\\ARAŞTIRMA ÖNERİSİ}
-\fancyfoot[C]{\footnotesize Ahmet Talha Arslan · \thepage}
-\renewcommand{\headrulewidth}{0.3pt}
+\fancyhead[C]{\color{BrandNavy}\fontsize{8}{9}\selectfont\bfseries 2209-A ÜNİVERSİTE ÖĞRENCİLERİ ARAŞTIRMA PROJELERİ DESTEKLEME PROGRAMI\\ARAŞTIRMA ÖNERİSİ}
+\fancyfoot[R]{\color{CaptionInk}\footnotesize\thepage}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{TableRule}\leaders\hrule height \headrulewidth\hfill}}
 \renewcommand{\footrulewidth}{0pt}
-\AtBeginEnvironment{longtable}{\small}
+\titleformat{\section}{\color{BrandNavy}\fontsize{12}{14}\selectfont\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\color{BrandNavy}\fontsize{10.5}{12}\selectfont\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\color{BrandNavy}\fontsize{10}{12}\selectfont\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{10pt}{5pt}
+\titlespacing*{\subsection}{0pt}{8pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{6pt}{3pt}
+\setlength{\parskip}{4pt}
 \setlength{\emergencystretch}{2em}
+\AtBeginDocument{\hypersetup{linkcolor=BrandNavy,urlcolor=BrandNavy}}

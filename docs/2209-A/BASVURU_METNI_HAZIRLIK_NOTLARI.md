@@ -79,3 +79,7 @@ Sunum belgesinden “taslak”, hazırlık bağlantıları, kesinleşmedi/henüz
 2026 çağrı duyurusu ve başvuru içeriği bilgi notu yeniden indirildi; HTTP 200 ve önceden incelenen belgelerle aynı SHA-256 doğrulandı. Danışmana sunum için kapaklı A4 PDF ve Word üretildi; bu çıktı TYBS başvurusunun kendisi değildir. Eski taslaklar silinmedi. Ana kaynakça yedi doğrulanmış kaynakla korundu; örnek raporların kaynakları kopyalanmadı.
 
 Üç sunum şeması image_gen ile güncellendi: eski bekleyen-seçim notları temizlendi, ToF algısı ve sabit sağa kaçınma yönü raporla uyumlandırıldı. Deney alanı şekli ölçeksiz şema olarak etiketlendi; kesin koordinatlar metindeki tablodadır. Görseller gorseller/danisman_sunumu klasöründedir; eski kabul edilen çizimler korunmuştur. ÜYZ kullanım kapsamı danışmana verilen raporda da belirtildi.
+
+## Güncel başvuru görünümü — 22 Ekim
+
+Kullanıcının son görsel düzen talebi ve TÜBİTAK üslubu uyarısı doğrultusunda güncel ARASTIRMA_ONERISI belgesi yeniden üretildi. Kapak ve iç sayfa tasarımı son paylaşılan örnekle karşılaştırıldı; aynı proje kararları resmî başvuru diliyle korundu. Özet 232 kelimedir. Bilimsel nitelik bölümünde gerekçe, ilgili çalışmalar ve araştırma sorusu daha doğrudan anlatıldı; yeni performans iddiası eklenmedi. Yeni çizimler gorseller/akademik_duzen klasöründedir. Bu kayıt önceki 15 sayfalık yerleşim notlarının devamındaki güncel sürümü açıklar.

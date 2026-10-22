@@ -1,6 +1,9 @@
 -- Yalnız PDF yerleşimini düzenler; metni ve kaynak görselleri değiştirmez.
 function Image(image)
-  image.attributes.width = image.src:match("sekil_2") and "13cm" or "16cm"
+  image.attributes.width = "16cm"
+  if image.src:match("akademik_duzen/sekil_3") then
+    image.src = image.src:gsub("%.png$", ".pdf")
+  end
   return image
 end
 
@@ -38,7 +41,42 @@ function Table(tbl)
   if widths then
     for i, width in ipairs(widths) do tbl.colspecs[i][2] = width end
   end
-  return tbl
+  if not widths then return tbl end
+  local specs = {}
+  for i, width in ipairs(widths) do
+    local align = label == "Kalem" and i >= 3 and "\\raggedleft" or "\\raggedright"
+    specs[i] = ">{" .. align .. "\\arraybackslash}p{\\dimexpr" .. width .. "\\linewidth-2\\tabcolsep-2\\arrayrulewidth\\relax}"
+  end
+  local function row_text(row, heading)
+    local cells = {}
+    for i, cell in ipairs(row.cells) do
+      local value = pandoc.write(pandoc.Pandoc(cell.contents), "latex"):gsub("^%s+", ""):gsub("%s+$", "")
+      cells[i] = heading and "\\textbf{" .. value .. "}" or value
+    end
+    return (heading and "\\rowcolor{TableHead}" or "") .. table.concat(cells, " & ") .. " \\\\ \\hline\n"
+  end
+  local lines = {"\\begingroup\\fontsize{9}{10.5}\\selectfont\\setlength{\\tabcolsep}{4pt}\\renewcommand{\\arraystretch}{1.12}",
+    "\\arrayrulecolor{TableRule}\\begin{longtable}{|" .. table.concat(specs,"|") .. "|}\\hline"}
+  local head = ""
+  for _, row in ipairs(tbl.head.rows) do head = head .. row_text(row,true) end
+  table.insert(lines, head .. "\\endfirsthead")
+  table.insert(lines, head .. "\\endhead")
+  for _, body in ipairs(tbl.bodies) do
+    for _, row in ipairs(body.head) do table.insert(lines,row_text(row,false)) end
+    for _, row in ipairs(body.body) do table.insert(lines,row_text(row,false)) end
+  end
+  table.insert(lines,"\\end{longtable}\\endgroup")
+  return pandoc.RawBlock("latex",table.concat(lines,"\n"))
+end
+
+function Div(div)
+  if div.classes:includes("ozet") then
+    local result = pandoc.List({pandoc.RawBlock("latex","\\begin{tcolorbox}[colback=white,colframe=TableRule,boxrule=0.45pt,arc=0pt,left=5pt,right=5pt,top=4pt,bottom=4pt,breakable]")})
+    result:extend(div.content)
+    result:insert(pandoc.RawBlock("latex","\\end{tcolorbox}"))
+    return result
+  end
+  return div
 end
 
 function Blocks(blocks)
@@ -47,39 +85,41 @@ function Blocks(blocks)
   for j, block in ipairs(blocks) do
     if block.t == "RawBlock" and block.text:match("KAPAK SONU") then cover_end = j end
   end
-  if cover_end then
-    result:insert(pandoc.RawBlock("latex", "\\begin{titlepage}\\centering\\vspace*{15mm}"))
-  end
   local i = 1
+  if cover_end then
+    result:insert(pandoc.RawBlock("latex", [[
+\begin{titlepage}\sffamily\centering
+\color{BrandNavy}\noindent\rule{\linewidth}{0.65pt}\par
+\vspace*{12mm}
+\includegraphics[height=32mm]{belge_kaynaklari/varliklar/tubitak_logo.pdf}\par
+\vspace{14mm}
+{\fontsize{23}{28}\selectfont\bfseries TÜBİTAK 2209-A\par}
+\vspace{3mm}
+{\fontsize{16}{23}\selectfont\bfseries ÜNİVERSİTE ÖĞRENCİLERİ ARAŞTIRMA\\PROJELERİ DESTEKLEME PROGRAMI\par}
+\vspace{10mm}
+{\color{TableRule}\rule{0.80\linewidth}{0.5pt}\par}
+\vspace{10mm}
+{\fontsize{20}{25}\selectfont\bfseries ARAŞTIRMA ÖNERİSİ\par}
+\vspace{19mm}
+{\fontsize{14}{21}\selectfont Kullanıcı tarafından belirlenen rota bilgisine göre\\hareket eden otonom araç tasarımı\par}
+\vspace{14mm}
+{\fontsize{10.5}{16}\selectfont\textbf{Proje yürütücüsü:} Ahmet Talha Arslan\\
+\textbf{Akademik danışman:} Prof. Dr. Murat Ceylan\\
+Konya Teknik Üniversitesi · Elektrik-Elektronik Mühendisliği\par}
+\vfill
+{\fontsize{14}{18}\selectfont 2026 Yılı\par}
+\vspace{10mm}
+{\color{TableRule}\rule{\linewidth}{0.5pt}\par}
+\end{titlepage}\setcounter{page}{2}
+]]))
+    i = cover_end + 1
+  end
   while i <= #blocks do
     local block = blocks[i]
     local caption = blocks[i + 1]
-    if cover_end and i == cover_end then
-      result:insert(pandoc.RawBlock("latex", "\\end{titlepage}\\setcounter{page}{2}"))
-      i = i + 1
-    elseif cover_end and i < cover_end then
-      local label = pandoc.utils.stringify(block)
-      if block.t == "Header" then
-        result:insert(pandoc.RawBlock("latex", "{\\LARGE\\bfseries TÜBİTAK 2209-A\\par}\\vspace{10mm}"))
-      else
-        if label:match("^Kullanıcı tarafından") then
-          result:insert(pandoc.RawBlock("latex", "\\vspace{8mm}\\begingroup\\Large"))
-        end
-        result:insert(block)
-        if label:match("^Kullanıcı tarafından") then
-          result:insert(pandoc.RawBlock("latex", "\\par\\endgroup\\vspace{12mm}"))
-        else
-          result:insert(pandoc.RawBlock("latex", "\\vspace{6mm}"))
-        end
-      end
-      i = i + 1
-    elseif block.t == "Header" and cover_end then
-      if block.level == 2 and (pandoc.utils.stringify(block):match("^[123]%.") or pandoc.utils.stringify(block) == "KAYNAKLAR") then
-        result:insert(pandoc.RawBlock("latex", "\\clearpage"))
-      else
-        result:insert(pandoc.RawBlock("latex", caption and caption.t == "Table"
-          and "\\Needspace{18\\baselineskip}" or "\\Needspace{6\\baselineskip}"))
-      end
+    if block.t == "Header" and cover_end then
+      result:insert(pandoc.RawBlock("latex", pandoc.utils.stringify(block) == "KAYNAKLAR"
+        and "\\clearpage" or "\\Needspace{6\\baselineskip}"))
       result:insert(block)
       i = i + 1
     elseif block.t == "Para" and #block.content == 1
@@ -87,7 +127,9 @@ function Blocks(blocks)
       and pandoc.utils.stringify(caption):match("^Şekil [123]%.") then
       result:insert(pandoc.RawBlock("latex", "\\begin{minipage}{\\linewidth}\\centering"))
       result:insert(block)
+      result:insert(pandoc.RawBlock("latex", "\\begingroup\\footnotesize\\color{CaptionInk}"))
       result:insert(caption)
+      result:insert(pandoc.RawBlock("latex", "\\endgroup"))
       result:insert(pandoc.RawBlock("latex", "\\end{minipage}\\par\\medskip"))
       i = i + 2
     else

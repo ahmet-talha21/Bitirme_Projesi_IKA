@@ -1,3 +1,5 @@
+![TÜBİTAK logosu](belge_kaynaklari/varliklar/tubitak_logo.png)
+
 # TÜBİTAK 2209-A
 
 **ÜNİVERSİTE ÖĞRENCİLERİ ARAŞTIRMA PROJELERİ DESTEKLEME PROGRAMI**
@@ -34,6 +36,8 @@ Elektrik-Elektronik Mühendisliği
 
 ## ÖZET
 
+::: {.ozet}
+
 Bu araştırmada, kullanıcı tarafından tanımlanan rotayı izleyen, sabit engelleri algılayıp çarpışmadan kaçınarak rotasına dönen küçük ölçekli bir otonom kara aracı geliştirilecektir. Araştırmanın temel sorusu, aynı rota üzerindeki farklı engel yerleşimlerinin algılama, kaçınma, rotaya dönüş ve görev tamamlama başarısını nasıl etkilediğidir.
 
 Sistem; ESP32 kontrol birimi, bağımsız sürülen iki enkoderli motor ve beş sabit uçuş süresi (ToF) mesafe sensöründen oluşacaktır. Bilgisayar öncelikli, telefondan da erişilebilir web arayüzünde yerel koordinatlarla sıralı ara rota noktaları (waypoint) tanımlanacaktır. Enkoder tabanlı konum kestirimi ve mesafe ölçümleriyle hareket kontrol edilecek; engelden kaçınma ve rotaya yeniden katılma, Bug 2 yaklaşımından yararlanan bir durum makinesiyle gerçekleştirilecektir.
@@ -44,27 +48,29 @@ Altı aylık çalışma, donanım ve kalibrasyon, arayüz, rota takibi, engelden
 
 **Anahtar kelimeler:** Otonom kara aracı, rota takibi, engelden kaçınma, enkoder, gömülü kontrol.
 
+:::
+
 ## 1. ARAŞTIRMA ÖNERİSİNİN BİLİMSEL NİTELİĞİ
 
 ### 1.1. Konunun önemi ve araştırma önerisinin bilimsel niteliği
 
-**Araştırma problemi ve önemi**
+**Konunun önemi ve ele alınan problem**
 
-Otonom kara araçlarında rota takibi, aracın konum ve yön bilgisinin hareket kontrolüyle birlikte değerlendirilmesini gerektirir. İki tekeri bağımsız sürülen mobil robotların kinematik modeli, tekerleklerin hareketi ile aracın doğrusal ve açısal hareketi arasındaki ilişkiyi tanımlar. Bu nedenle kullanıcı tarafından belirlenen bir rotanın fiziksel ortamda izlenmesi, yalnızca hareket komutlarının gönderilmesine değil, aracın yöneliminin ve hareketinin uygun biçimde izlenmesine de bağlıdır (Dellaert ve Hutchinson, t.y.). Rota üzerinde engel bulunması durumunda ise aracın engeli algılaması, çarpışmadan kaçınacak bir hareket üretmesi ve hedefe ilerleyişini sürdürebilmesi gerekir.
+Kullanıcının bir arayüzde çizdiği rotanın gerçek bir araç tarafından izlenebilmesi için konum hesabı, motor kontrolü ve çevrenin algılanması birlikte çalışmalıdır. Araç rota üzerinde bir engelle karşılaştığında yalnızca durması görevi tamamlamaya yetmez. Engeli algılayıp uygun bir yönden dolaşması ve kullanıcı tarafından belirlenen rota üzerindeki görevine devam etmesi gerekir. Bu proje, söz konusu davranışı küçük ölçekli bir kara aracı üzerinde geliştirmeye ve kontrollü deneylerle değerlendirmeye odaklanmaktadır.
 
-**Literatürdeki yaklaşımlar ve projenin konumu**
+İki tekerleği bağımsız sürülen araçlarda, tekerlek hareketleri kullanılarak aracın doğrusal hareketi ve yönelimi hesaplanabilir (Dellaert ve Hutchinson, t.y.). Bununla birlikte tekerlek kayması ve dönüşlerdeki hatalar konum hesabını etkileyebilir. Yerel mesafe bilgisiyle çalışan Bug türü yöntemler ise tüm engellerin haritası önceden bilinmeden hedefe ilerleme ve engel çevresini izleme davranışlarını ele almaktadır. Bu yöntemlerin fiziksel bir araçta uygulanmasında araç boyutu, algılama kapsamı ve konum hatası dikkate alınmalıdır (Hauser, t.y.-a).
 
-Hareket planlama literatüründe yerel engel bilgisini kullanan Bug türü yöntemler, önceden tüm engellerin haritası bilinmeden hedefe yönelik hareketin ele alınabildiği yaklaşımlar arasındadır. Bu yöntemlerin incelenmesinde robotun konumuna, engel geometrisine ve algılama biçimine ilişkin varsayımlar önem taşır. Ayrıca robotun fiziksel boyutlarının dikkate alınması, noktasal bir modelle bulunan yolun gerçek bir araçta uygulanabilirliğinin değerlendirilmesi açısından gereklidir (Hauser, t.y.-a).
+**İlgili çalışmalar ve projenin yaklaşımı**
 
-Alajlan vd. (2017), FEZ Cerbot platformunda kızılötesi sensörler, ultrasonik sensör ve araç üzeri kamerayı birleştirerek sabit ve kısmen dinamik engelli senaryoları incelemiştir. Bu çalışma, algılama kapsamının hareket kararlarıyla birlikte tasarlanmasına örnek oluşturmaktadır. Bu araştırmada ise beş sabit mesafe sensörünün sağladığı yerel bilgiyle sabit engeller çevresinde kaçınma davranışı değerlendirilecektir. Telefonla yapılacak görüntü kaydı, aracın hareketini bağımsız olarak ölçmek amacıyla kullanılacaktır. Algılama altyapısı ve deney koşulları farklı olduğundan, ilgili yayındaki performans sonuçları bu prototip için öngörülen başarı değerleri olarak alınmayacaktır.
+Alajlan vd. (2017), farklı sensörlerden gelen bilgiyi birleştirerek mobil bir robotun engelli ortamdaki hareketini incelemiştir. Bu çalışma, engel algılama ile hareket kararlarının birlikte tasarlanması açısından yol göstericidir. Önerilen projede beş sabit mesafe sensörüyle sabit engeller üzerinde çalışılacaktır. Telefon kamerası ise aracın engel algılayıcısı olarak değil, deneylerde hareketi bağımsız ölçmek için kullanılacaktır.
 
-Koordinat tabanlı uygulamalarda Iqbal vd. (2023), yapı modelinden çıkarılan koordinatların masaüstü uygulaması ve bulut bağlantısı üzerinden ESP32 tabanlı bir mobil robota aktarılmasıyla zemin çizimi gerçekleştiren bir sistem sunmuştur. Rodrigues vd. (2026) ise enkoderler, dış kamera temelli konum bilgisi ve ESP32 gömülü kontrol katmanını içeren küçük bir diferansiyel sürüşlü robotta yörünge takibini deneysel olarak değerlendirmiştir. Bu örnekler, koordinat aktarımı, konum bilgisi ve motor kontrolünün farklı mimarilerle bütünleştirilebildiğini göstermektedir. Önerilen projede ele alınacak değerlendirme görevi, kullanıcının tanımladığı rota üzerinde yerel algıyla engelden kaçınma ve rotaya yeniden katılmadır. Çalışmanın bilimsel çerçevesi, bu davranışın seçilen donanım ve sınırlı deney koşullarında hangi aşamalarda başarılı veya başarısız olduğunun tekrarlı ölçümlerle incelenmesine dayanmaktadır.
+Iqbal vd. (2023), koordinatların bir uygulamadan ESP32 tabanlı mobil robota aktarılmasını içeren bir sistem sunmuştur. Rodrigues vd. (2026), enkoderler, dış kamera temelli konum bilgisi ve ESP32 kontrol katmanını içeren küçük bir robotta yörünge takibini değerlendirmiştir. Bu çalışmalar, rota bilgisinin aktarılması ve hareket kontrolünün kurulması için örnek oluşturmaktadır. Bu projede ise arayüzden verilen rota, enkoder tabanlı konum hesabı ve yerel engel algılama bir araya getirilecek; engelden sonra aynı rotaya dönme davranışı incelenecektir.
 
-**Araştırma sorusu, kapsam ve beklenen katkı**
+**Araştırma sorusu ve beklenen katkı**
 
-Araştırma problemi, mikrodenetleyici tabanlı bir aracın kullanıcı tanımlı rotada karşılaştığı sabit engelleri aşarak aynı rota üzerindeki görevini sürdürebilmesidir. Bu problem, düz zeminde yaklaşık 3 × 3 metre olarak planlanan kontrollü alanda incelenecektir. Aynı referans rota üzerinde engelin yeri değiştirilerek algılama, kaçınma, rotaya dönüş ve görevi tamamlama aşamalarındaki başarı ve başarısızlıklar karşılaştırılacaktır.
+Araştırma sorusu, “Sabit engelin rota üzerindeki yeri, kullanıcı tanımlı waypoint rotasını izleyen bir kara aracının engeli algılama, çarpışmadan kaçınma ve rotaya yeniden katılma başarısını nasıl etkiler?” biçiminde belirlenmiştir. Aynı araç ve rota kullanılarak engelin düz bölümde, dönüş öncesinde ve dönüş sonrasında bulunması karşılaştırılacaktır. Engelsiz koşul, temel rota takibini değerlendirmek için referans alınacaktır.
 
-Çalışmanın araştırma sorusu, “Sabit engellerin yerleşimi, kullanıcı tanımlı waypoint rotalarını izleyen küçük ölçekli bir kara aracında engel algılama, çarpışmasız kaçınma ve rotaya yeniden katılma başarısını nasıl etkiler?” biçiminde ele alınmaktadır. Geliştirilecek prototip üzerinde tekrarlanabilir deneyler gerçekleştirilmesi, başarılı ve başarısız durumların kaydedilmesi ve performansın ölçülebilir göstergelerle açıklanması amaçlanmaktadır. Kalibrasyon ve değerlendirmede güvenilir referans ölçümleri kullanılması, sensör çıktıları ile fiziksel hareket arasındaki ilişkinin incelenmesine dayanak sağlayacaktır (Hauser, t.y.-b). Bu kapsamda beklenen katkı; kullanıcı arayüzü, gömülü kontrol ve engelden kaçınma davranışının bütünleştirildiği bir prototip ile sınırları tanımlı deney koşullarına ait performans verilerinin oluşturulmasıdır.
+Beklenen katkı, kullanıcı arayüzü ile ESP32 tabanlı hareket kontrolünü bütünleştiren bir prototipin geliştirilmesi ve başarının tek bir genel oran yerine algılama, kaçınma, rotaya dönüş ve görev tamamlama aşamalarında değerlendirilmesidir. Başarılı ve başarısız denemelerin birlikte incelenmesi, sistemin hangi koşullarda yeterli olduğunu ve hangi noktalarda geliştirme gerektirdiğini gösterecektir. Ölçümlerin güvenilir referanslarla kontrol edilmesi kalibrasyon yaklaşımına dayanmaktadır (Hauser, t.y.-b). Çalışmanın sonuçları, düz zemindeki 3 × 3 metrelik alan ve seçilen sabit engel koşullarıyla sınırlandırılacaktır.
 
 ### 1.2. Amaç ve hedefler
 
@@ -108,9 +114,9 @@ Sensörlerin başlangıç yönleri ileri eksene göre 0°, ±45° ve ±90° olac
 
 Motorlar ve kontrol elektroniği ayrı güç kablo dallarından beslenecek, ortak toprak referansı kullanılacaktır. Bataryanın ham gerilimi motorlara veya ESP32 giriş/çıkışlarına uygulanmayacaktır. Motor sürücüsü, regülatör, kablo ve koruma elemanları iki motorun birlikte kalkış/yük akımı esas alınarak boyutlandırılacaktır. Ürünlerin gerilim, akım, bağlantı ve şarj uyumu, montajın giriş kontrolünde veri sayfaları ve elektriksel kontrollerle doğrulanacaktır.
 
-![Şekil 1 — Sistem mimarisi](gorseller/danisman_sunumu/sekil_1_sistem_mimarisi.png)
+![Şekil 1 — Sistem mimarisi](gorseller/akademik_duzen/sekil_1_sistem_mimarisi.png)
 
-**Şekil 1.** Kullanıcı arayüzü, algılama, ESP32 ve motor sürme birimleri arasındaki veri akışı. ÜYZ desteğiyle hazırlanmış tasarım şemasıdır; simgeler temsilidir.
+**Şekil 1.** Kullanıcı arayüzü, algılama, ESP32 ve motor sürme birimleri arasındaki veri akışı. ÜYZ desteğiyle hazırlanmış işlevsel tasarım şemasıdır.
 
 ### 2.3. Konum kestirimi ve rota takibi
 
@@ -128,7 +134,7 @@ Denetim döngüsü 20 Hz olarak kurulacak; beş sensörün tam taraması en az 5
 
 Arayüz HTML, CSS ve JavaScript ile hazırlanacak; ESP32'nin oluşturacağı yerel Wi-Fi ağı üzerinden bilgisayar ve telefon tarayıcısında açılacaktır. Kullanıcı, metre ölçekli kareli alan üzerinde başlangıç konumu/yönünü ve waypoint'leri sıralı belirleyecektir. Koordinatların yerel olması, çizilen rotanın deney alanıyla doğrudan ilişkilendirilmesini sağlayacaktır.
 
-Rota JSON biçiminde HTTP üzerinden aktarılacak, durum ve komutlar WebSocket bağlantısıyla iletilecektir. ESP-IDF HTTP sunucusunun WebSocket desteği, bu haberleşme düzeninin teknik dayanağıdır (Espressif Systems, t.y.). Alan dışındaki noktalar ve sıfır uzunluklu ardışık parçalar yükleme sırasında reddedilecektir. Başlatma için rota kabulü, geçerli sensör verisi ve uygun besleme durumu aranacaktır.
+Rota HTTP üzerinden araca aktarılacak; görev durumu ve komutlar WebSocket bağlantısıyla iletilecektir. ESP-IDF HTTP sunucusunun WebSocket desteği, bu haberleşme düzeninin teknik dayanağıdır (Espressif Systems, t.y.). Alan dışındaki noktalar ve sıfır uzunluklu ardışık parçalar yükleme sırasında reddedilecektir. Başlatma için rota kabulü, geçerli sensör verisi ve uygun besleme durumu aranacaktır.
 
 Arayüzde tahmini konum, etkin waypoint, mesafe ölçümleri, görev durumu ve hata nedeni gösterilecektir. Hareket kararları araç üzerinde verilecek; kullanıcı rota yüklendikten sonra aracı elle yönlendirmeyecektir. Arayüz 0,5 saniyede bir bağlantı canlılık mesajı gönderecek; 1 saniye boyunca bu mesaj alınamazsa motorlar durdurulacaktır. Durdurma komutu veya hata sonrasında hareket, kendiliğinden yeniden başlamayacaktır. Şasi üzerindeki erişilebilir ana güç anahtarı, gerektiğinde motor beslemesini fiziksel olarak kesmek için kullanılacaktır.
 
@@ -149,7 +155,7 @@ Rotaya yeniden katılma için aşağıdaki koşullar birlikte aranacaktır:
 
 İdeal Bug 2 algoritmasının tamlık özellikleri bu fiziksel uyarlama için garanti edilmeyecektir. Kaçınma başlangıç bölgesinden en az 20 cm uzaklaştıktan sonra bu konumun 10 cm çevresine hedefe ilerleme sağlayamadan geri dönme, döngü şüphesi olarak kaydedilecektir. Çarpışma, alan sınırına çıkma, geçersiz sensör verisi, haberleşme kaybı veya 120 saniye süre aşımında görev durdurulacaktır. Durdurma nedeni, deney sonucu ve günlük kaydıyla ilişkilendirilecektir; döngü kaydı ortamda hiçbir geçerli yol bulunmadığı biçiminde yorumlanmayacaktır.
 
-![Şekil 2 — Kontrol akışı](gorseller/danisman_sunumu/sekil_2_calisma_akisi.png)
+![Şekil 2 — Kontrol akışı](gorseller/akademik_duzen/sekil_2_calisma_akisi.png)
 
 **Şekil 2.** Rota izleme, engel algılama, kaçınma ve rotaya dönüş durumları arasındaki kontrol akışı. “A” bağlantıları kontrol döngüsüne dönüşü gösterir. ÜYZ desteğiyle hazırlanmış tasarım şemasıdır.
 
@@ -170,9 +176,9 @@ Geometri, araç gövdesi ve dönüşte taranan alanla birlikte kurulum aşaması
 
 Toplam 40 geçerli deneme, her blokta K0–K3 birer kez bulunacak şekilde 10 blokta uygulanacaktır. Blok içi sıra, önceden kaydedilen sabit bir rastgeleleştirme tohumu kullanılarak üretilecek ve deney kayıtlarıyla saklanacaktır. Her denemede başlangıç pozu yeniden kurulacak; batarya üreticisinin çalışma aralığı ve yük altındaki besleme kontrolü sağlanmadan görev başlatılmayacaktır. Koşullar son yazılım sürümü ve aynı parametrelerle karşılaştırılacaktır.
 
-![Şekil 3 — Deney düzeni](gorseller/danisman_sunumu/sekil_3_deney_alani.png)
+![Şekil 3 — Deney düzeni](gorseller/akademik_duzen/sekil_3_deney_alani.png)
 
-**Şekil 3.** Ölçeksiz şema: yerel koordinatlı deney alanı, waypoint rotası ve engelden kaçınmanın temsili gösterimi. Kesin deney koordinatları Bölüm 2.6'daki metin ve tabloda tanımlanmıştır. Çizilen kaçınma eğrisi ölçüm veya simülasyon sonucu değildir. Şema ÜYZ desteğiyle hazırlanmıştır.
+**Şekil 3.** Planlanan dört deney koşulunun koordinatlara göre çizilmiş geometrisi. Kesikli çizgi A–B–C referans rotasını; gri kare, 30 × 30 cm tabanlı engeli gösterir. Koordinatlar Bölüm 2.6 ile aynıdır. Bu çizim planlanan düzeneği gösterir; deney veya simülasyon sonucu değildir.
 
 ### 2.7. Bağımsız ölçüm ve başarı ölçütleri
 
@@ -272,7 +278,7 @@ Paylaşılabilir yazılım, bağlantı bilgileri ve deney düzeni, proje için k
 
 Araştırma düz zemindeki sabit engellerle sınırlandırılmıştır. Hareketli engeller, gerçek coğrafi harita/GPS kullanımı ve farklı zemin türleri ileride ele alınabilecek geliştirme alanlarıdır. Bu sınırlandırma, altı aylık sürede bütünleşik davranışın tekrarlı deneylerle incelenmesine odaklanmayı sağlayacaktır.
 
-Önerinin hazırlanmasında ChatGPT/Codex araçlarından kaynak inceleme desteği, metin düzenleme ve belge üretimi; image_gen aracından üç tasarım şemasının hazırlanması için yararlanılmıştır. Bilimsel içerik, kaynaklar ve proje kararlarının sorumluluğu yürütücüye aittir; akademik danışmanın kontrolüne sunulmaktadır. Görseller tasarım şemalarıdır; üretilmiş prototip veya elde edilmiş deney sonucu göstermez.
+Önerinin hazırlanmasında ChatGPT/Codex araçlarından kaynak inceleme desteği, metin düzenleme ve belge üretimi; image_gen aracından sistem ve kontrol akışı şemalarının hazırlanması; Matplotlib aracından planlanan deney geometrisinin koordinatlardan çizilmesi için yararlanılmıştır. Bilimsel içeriğin doğruluğu, kaynakların uygunluğu ve araştırma yönteminin uygulanmasına ilişkin sorumluluk proje yürütücüsüne ve akademik danışmana aittir. Görseller tasarım şemalarıdır; üretilmiş prototip veya elde edilmiş deney sonucu göstermez.
 
 ## 6. EKLER
 

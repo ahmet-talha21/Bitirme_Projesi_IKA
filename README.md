@@ -6,7 +6,7 @@
 
 Proje, arayüzde tanımlanan waypoint rotasını izleyen küçük bir ESP32 tabanlı kara aracının sabit engelleri algılama, çarpışmasız kaçınma ve rotaya yeniden katılma davranışlarını geliştirmeyi ve değerlendirmeyi amaçlar. İlk deney alanı düz zeminde yaklaşık 3 × 3 metre olarak planlanmaktadır.
 
-**Danışmana sunulacak araştırma önerisi:** [Rapor metni](docs/2209-A/ARASTIRMA_ONERISI.md) · [PDF](docs/2209-A/ARASTIRMA_ONERISI.pdf) · [Düzenlenebilir Word](docs/2209-A/ARASTIRMA_ONERISI.docx)
+**TÜBİTAK 2209-A araştırma önerisi:** [Rapor metni](docs/2209-A/ARASTIRMA_ONERISI.md) · [PDF](docs/2209-A/ARASTIRMA_ONERISI.pdf) · [Düzenlenebilir Word](docs/2209-A/ARASTIRMA_ONERISI.docx)
 
 Kapak, genel bilgiler, özet, bilimsel nitelik, hedefler, yöntem, takvim, risk yönetimi, olanaklar, yaygın etki, üç güncellenmiş şema, ayrıntılı 11.500 TL bütçe ve kaynakça aynı raporda birleştirildi. Başarı değerleri planlanan hedeflerdir; fiziksel prototip ve deneyler proje kapsamında gerçekleştirilecektir. Bu belge danışman kontrolüne sunulur; TYBS başvurusunun gönderildiği anlamına gelmez. Önceki birleşik taslaklar çalışma geçmişi olarak korunmuştur.
 
