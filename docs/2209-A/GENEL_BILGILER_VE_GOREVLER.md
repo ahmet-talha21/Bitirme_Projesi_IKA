@@ -13,7 +13,7 @@ Durum: Kullanıcının 21 Ekim 2026 tarihinde bildirdiği bilgilerle hazırlanm�
 | Bölüm | Elektrik-Elektronik Mühendisliği |
 | Sınıf | 4. sınıf |
 | Akademik danışman | Prof. Dr. Murat Ceylan |
-| Proje başlığı | Kullanıcı Tanımlı Rota Takibi ve Engelden Kaçınma Özellikli Otonom Kara Aracının Geliştirilmesi — öneri; son başlık henüz onaylanmadı. |
+| Proje başlığı | Kullanıcı tarafından belirlenen rota bilgisine göre hareket eden otonom araç tasarımı — kullanıcı tarafından 22 Ekim 2026 tarihinde seçildi. |
 | Süre | Bitirme projesi teslim hedefi Haziran 2027; kesin gün henüz belli değil. Resmî TÜBİTAK başlangıcı ve toplam ay sayısı ayrıca belirlenecek. |
 | Talep edilecek bütçe | Henüz belirlenmedi; fiyatlar doğrulanacak. |
 

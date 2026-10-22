@@ -6,7 +6,7 @@ Güncelleme: 22 Ekim 2026. Bu dosya çalışma takibi içindir; başvurunun bili
 
 ## Başvuru öncesinde tamamlanacak bilgiler
 
-- Son proje başlığı ve danışmanın metin değerlendirmesi.
+- Kullanıcının seçtiği proje başlığıyla birlikte danışmanın metin değerlendirmesi.
 - Resmî proje süresi ve TYBS'ye uygun ay aralıkları; Haziran 2027 bitirme hedefiyle uyumu.
 - Deney yerinin seçimi ve gerçekten kullanılacak kurum olanakları. Deney yeri şu anda bilinmiyor.
 - Ürün modelleri, sensör açıları, ağ/arayüz ayrıntıları ve seçilen Bug 2 uyarlamasının uygulama parametreleri.
@@ -18,7 +18,7 @@ Güncelleme: 22 Ekim 2026. Bu dosya çalışma takibi içindir; başvurunun bili
 
 ## Belgenin kullanımı
 
-2026 başvurusu TYBS alanlarına girilen bilgilerle oluşturulmaktadır. PDF ve Word dosyaları inceleme içindir; ayrı bir araştırma önerisi PDF'si yükleme şartı olarak sunulmamaktadır. Başlık, süre, kurum olanakları ve diğer eksik bilgiler tamamlanmadan bu sürüm son başvuru olarak kullanılmayacaktır.
+2026 başvurusu TYBS alanlarına girilen bilgilerle oluşturulmaktadır. PDF ve Word dosyaları inceleme içindir; ayrı bir araştırma önerisi PDF'si yükleme şartı olarak sunulmamaktadır. Süre, kurum olanakları ve diğer eksik bilgiler tamamlanmadan bu sürüm son başvuru olarak kullanılmayacaktır.
 
 Prototip üretilmemiş, sensör/motor kalibrasyonu veya performans deneyi yapılmamıştır. Metindeki başarı sayıları hedefleri belirtir. Üç görsel tasarım şemasıdır; deney veya simülasyon sonucu değildir.
 

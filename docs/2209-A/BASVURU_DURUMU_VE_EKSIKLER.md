@@ -8,7 +8,7 @@ Güncelleme: 22 Ekim 2026. Bu liste hazırlık durumunu gösterir; başvurunun g
 
 | Bölüm | Durum | Tamamlanması için gereken |
 | --- | --- | --- |
-| Genel bilgiler | Yürütücü, kurum/bölüm, danışman ve Haziran 2027 bitirme teslim hedefi alındı. | Son başlık, kesin teslim günü, resmî TÜBİTAK süresi ve bütçe. |
+| Genel bilgiler | Yürütücü, kurum/bölüm, danışman ve Haziran 2027 bitirme teslim hedefi alındı. Kullanıcı ilk proje başlığını korumayı seçti. | Kesin teslim günü, resmî TÜBİTAK süresi ve bütçe; danışman incelemesi. |
 | 1.1 Bilimsel nitelik | Kaynak destekli ilk metin ve ilgili çalışma karşılaştırması hazır. | Yöntemle tutarlılık, katkının son ifadesi ve danışman incelemesi. |
 | 1.2 Amaç ve hedefler | Kullanıcı dört koşul × 10 tekrar = 40 denemeyi ve her engelli koşulda en az 8/10 birleşik görev başarısı hedefini seçti. | Kalan ek hedefler, uygulanabilirlik gerekçesi ve danışman incelemesi. |
 | 2 Yöntem | Seçilen Bug 2 uyarlaması, tekrar planı ve ana hedef metne işlendi. Geometri, 10 cm bant, 120 saniye ve diğer sayısal değerler protokolde öneri olarak tutuluyor. Boş kayıt şablonu hazır. | Parça modelleri, sensör açıları, algoritma parametreleri, deney alanı, bağımsız ölçüm ve kalan parametrelerin kesinleştirilmesi; danışman incelemesi. |

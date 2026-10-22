@@ -4,7 +4,7 @@ Güncelleme: 22 Ekim 2026. Bu belge başvuru metni değil, kullanıcı tarafınd
 
 ## Kullanıcının belirttiği bilgiler
 
-- Geçici başlık: Kullanıcı tarafından belirlenen rota bilgisine göre hareket eden otonom araç tasarımı.
+- Kullanıcının seçtiği proje başlığı (22 Ekim 2026): Kullanıcı tarafından belirlenen rota bilgisine göre hareket eden otonom araç tasarımı.
 - Araç ESP32 ile geliştirilecek.
 - Kullanıcı, iki motoru bağımsız kontrol edilen küçük bir şasi ve her iki tahrik tekerinin dönüşünü ölçen enkoderlerle ilerlemeyi seçti. Şasi ölçüleri, motor/enkoder modelleri ve taşıyıcı teker düzeni henüz belirlenmedi.
 - Kullanıcı arayüzü proje sahibi tarafından tasarlanacak; araç bu arayüz üzerinden kontrol edilecek.
@@ -128,3 +128,7 @@ Beş sabit sensör için ToF ve ultrasonik alternatifler kaynaklı karşılaşt�
 Kullanıcı stokta olmanın rapor için zorunlu olup olmadığını sordu. Güncel çağrı ve bilgi notu yeniden okunarak başvuru anında bütün parçaların stokta olmasına ilişkin bir şart bulunmadığı açıklandı. Stok araştırmasının temin ve bütçe planı için yapıldığı, rapor yazımını durdurmayacağı belirtildi. Kullanıcının “tamam” yanıtı sonrasında bu ayrım hazırlık ve kural notlarına kaydedildi.
 
 Önceden seçilen ToF önceliği birleşik yöntem ve ilgili taslaklara işlendi. Belirli bir sensör modeli, yeni sayısal hedef veya deney sonucu eklenmedi. Beş sensör, iki enkoderli motor, 40 değerlendirme denemesi ve her engelli koşulda en az 8/10 birleşik başarı hedefi korundu. Başlık tercihi ayrıca kullanıcıya soruldu; yanıt gelene kadar öneri başlığı korunacak.
+
+## 22 Ekim — kullanıcının ilk proje başlığını koruma kararı
+
+Kullanıcı, önerilen yeni başlık yerine ilk başlığının aynen kalmasını seçti: “Kullanıcı tarafından belirlenen rota bilgisine göre hareket eden otonom araç tasarımı”. Seçim birleşik rapora, genel bilgilere, amaç/kapsam ve durum notlarına işlendi; başlığın öneri veya yanıt bekleyen alan olduğu yönündeki güncel işaretler kaldırıldı. Önceki başlık sorusu bu yanıtla sonuçlandı. Danışman incelemesi ve TYBS başvurusu tamamlanmış sayılmadı; teknik kapsam ve deney hedefleri değiştirilmedi.

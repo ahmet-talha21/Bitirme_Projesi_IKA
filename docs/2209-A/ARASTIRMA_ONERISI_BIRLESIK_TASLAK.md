@@ -1,8 +1,8 @@
 # TÜBİTAK 2209-A — Araştırma Önerisi
 
-**Birleşik metin taslağı · 22 Ekim 2026 · ToF önceliği güncellemesi**
+**Birleşik metin taslağı · 22 Ekim 2026 · Proje başlığı güncellemesi**
 
-**Proje adı önerisi:** Kullanıcı Tanımlı Rota Takibi ve Engelden Kaçınma Özellikli Otonom Kara Aracının Geliştirilmesi
+**Proje adı:** Kullanıcı tarafından belirlenen rota bilgisine göre hareket eden otonom araç tasarımı
 
 Bu belge, planlanan araştırmanın inceleme taslağıdır. Başvuru öncesinde tamamlanacak bilgiler ve belge hazırlama kayıtları [ayrı hazırlık notunda](https://github.com/ahmet-talha21/Bitirme_Projesi_IKA/blob/main/docs/2209-A/BASVURU_METNI_HAZIRLIK_NOTLARI.md) tutulmaktadır.
 

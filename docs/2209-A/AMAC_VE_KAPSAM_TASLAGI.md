@@ -2,9 +2,9 @@
 
 Durum: Kullanıcının ve danışmanın incelemesine açık çalışma taslağı. Nihai başvuru metni değildir. Kullanıcı 40 denemelik planı ve her engelli koşulda en az 8/10 birleşik görev başarısı hedefini uygun buldu. Bug 2 mantığından yararlanan kaçınma yaklaşımı ve ToF sensörlerini önceliklendirme kararı seçildi. Araştırma sorusunun son biçimi, kesin ürün modelleri ve kalan sayısal parametreler danışman incelemesiyle tamamlanacak.
 
-## Başlık önerisi — henüz onaylanmadı
+## Proje başlığı — kullanıcı tarafından seçildi
 
-Kullanıcı Tanımlı Rota Takibi ve Engelden Kaçınma Özellikli Otonom Kara Aracının Geliştirilmesi
+Kullanıcı tarafından belirlenen rota bilgisine göre hareket eden otonom araç tasarımı
 
 ## Kullanıcının belirttiği kapsamdan oluşturulan amaç taslağı
 
