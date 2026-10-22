@@ -108,3 +108,9 @@ Alajlan, Elleithy, Almasri ve Sobh'un (2017) engelden kaçınmaya ilişkin deney
 Yöntem ve birleşik metinde waypoint sırasının korunması, aynı etkin hedefe kaçınma sonrası ilerleme, sonlu rota parçasına dönüş ve belirsizlikten büyük ilerleme koşulu açıklandı. Bağımsız ölçülen rota hatası ve RMSE tanımı eklendi. Bug 2 mantığı ana yöntem önerisi olarak kullanıcıya soruldu; henüz yanıt alınmadı. Önceden seçilen 40 deneme ve koşul başına en az 8/10 ana hedef değişmedi; diğer sayısal değerler öneri olarak kaldı.
 
 Yerel motor ve sensör devam kontrolü kaynak URL/özetleriyle ayrı tedarik kaydına işlendi. GY-53 kılavuzunun UART/I²C mod seçimi okundu; kartın I²C gerilimi, motor akımları ve kesin KDV/teslim bilgileri tamamlanmış sayılmadı. Referans bütçe ara toplamları bu adaylarla değiştirilmedi; satıcıya ileti gönderilmedi.
+
+## 22 Ekim — kaçınma yaklaşımı seçimi ve metin düzenleme
+
+Kullanıcı, önceki mesajda önerilen Bug 2 mantığından yararlanan engel kenarı takibi ve rotaya dönüş yaklaşımını “tamam uygunudur” diyerek uygun buldu. Bu seçim ana yaklaşımı belirler; sensör modelleri, sayısal eşikler ve uygulamanın deneysel başarısı onaylanmış veya doğrulanmış sayılmaz. Önceki “henüz yanıt alınmadı” kaydı bu yanıtla güncellenmiştir.
+
+Kullanıcı, taslak cümlelerinin başvuru metninde nasıl düzenleneceğini sordu. Taslak son metnin temelidir; anlatım, tutarlılık, bölüm uyumu ve kaynak bağlantıları düzenlenecek. Yeni teknik kararlar veya hedefler kullanıcıya sorulacak; yapılmamış deneyler sonuç olarak yazılmayacaktır.
