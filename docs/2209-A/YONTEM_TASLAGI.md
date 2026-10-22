@@ -12,7 +12,7 @@ Yöntemin uygulanması [çalışma takvimi taslağındaki](CALISMA_TAKVIMI_TASLA
 
 ## 2.2. Donanım ve konum kestirimi önerisi
 
-Platform, iki tahrik tekerinin bağımsız kontrol edildiği küçük bir şasi ve enkoderli motorlar üzerine kurulacaktır. ESP32, motor sürücüsü, mesafe sensörleri ve uygun güç altyapısının bütünleştirilmesi planlanmaktadır. Tekerlek dönüşlerinden göreli hareketin hesaplanması için diferansiyel sürüş kinematiği kullanılabilecektir (Dellaert ve Hutchinson, t.y.). Motor, sürücü ve besleme modelleri elektriksel gereksinimler birlikte kontrol edilerek seçilecektir. Engel algılama için ön orta, iki ön çapraz ve iki yan yönünde beş sabit mesafe sensörü kullanılacak şekilde plan yapılmıştır. Sensör türü/modeli, montaj yüksekliği ve kesin açıları; algılama mesafesi, yüzey davranışı, güncelleme hızı ve kaçınma sırasında gerekli ön/yan kapsama göre seçilecektir. Algılama kapsaması gerçek düzenekte kontrol edilecek; sensör sayısından kesintisiz çevre taraması sonucu çıkarılmayacaktır.
+Platform, iki tahrik tekerinin bağımsız kontrol edildiği küçük bir şasi ve enkoderli motorlar üzerine kurulacaktır. ESP32, motor sürücüsü, mesafe sensörleri ve uygun güç altyapısının bütünleştirilmesi planlanmaktadır. Tekerlek dönüşlerinden göreli hareketin hesaplanması için diferansiyel sürüş kinematiği kullanılabilecektir (Dellaert ve Hutchinson, t.y.). Motor, sürücü ve besleme modelleri elektriksel gereksinimler birlikte kontrol edilerek seçilecektir. Engel algılama için ön orta, iki ön çapraz ve iki yan yönünde beş sabit mesafe sensörü kullanılacak şekilde plan yapılmıştır. Mesafe sensörü seçiminde uçuş süresi (ToF) tabanlı taşıyıcılar önceliklendirilecektir. Kesin taşıyıcı modeli, montaj yüksekliği ve açıları; algılama mesafesi, yüzey davranışı, güncelleme hızı ve kaçınma sırasında gerekli ön/yan kapsama göre seçilecektir. Algılama kapsaması gerçek düzenekte kontrol edilecek; sensör sayısından kesintisiz çevre taraması sonucu çıkarılmayacaktır.
 
 Başlangıç konumu ve yönü tanımlanacak; enkoder verileriyle göreli konum/yön kestirimi yapılması değerlendirilecektir. Gerekirse IMU desteği kullanılacaktır. Tekerlek ölçekleri ve dönüş davranışı kalibre edilecek; kayma ve ölçüm hatalarının rota takibine etkisi incelenecektir. Seçilen yaklaşım yeterli doğruluğu sağlamazsa ek konum düzeltme yöntemi, hedefleri değiştirmeyen bir B planı olarak ayrıca tanımlanacaktır. Bağımsız ölçümde kullanılan kameranın konum kestirimine de veri sağlaması seçilirse, bu değişiklik açıkça belirtilecektir.
 
@@ -58,7 +58,7 @@ Burada $e_i$ bağımsız ölçülen konumun referans parçaya uzaklığı, $N$ d
 
 | Parametre | Mevcut durum |
 | --- | --- |
-| Şasi, motor/enkoder ve sensör modelleri | Enkoderli iki motorlu hareket ve beş sabit mesafe sensörü düzeni seçildi; ölçüler, kesin açılar ve ürünler seçilmedi. |
+| Şasi, motor/enkoder ve sensör modelleri | Enkoderli iki motorlu hareket ve beş sabit mesafe sensörü düzeni seçildi; ToF taşıyıcıları öncelikli. Ölçüler, kesin açılar ve ürünler seçilmedi. |
 | Hız, algılama/durma ve yan açıklık mesafeleri | Donanım/kalibrasyonla gerekçelendirilecek. |
 | Waypoint ve rotaya katılma toleransları | 10 cm bant ve rotaya dönüş için süre/ilerleme koşulları önerildi; ölçüm doğruluğuyla birlikte kesinleştirilecek. |
 | Engel düzenleri ve tekrar sayıları | Dört koşul × 10 tekrar = 40 değerlendirme denemesi kullanıcı tarafından uygun bulundu; kesin geometri ve danışman incelemesi açık. |

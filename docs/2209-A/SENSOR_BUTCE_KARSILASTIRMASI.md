@@ -24,7 +24,7 @@ Robotistan siyah sensörün önceki kısa fiyat özetinde, ikinci “KDV Dahil F
 | Engel kenarını izleme | Ölçüm alanı, köşeler ve yüzey davranışı gerçek kartla sınanacak. | Yüzey açısı ve yansımalar ölçümü etkileyebilir. Engel kenarında doğru yüzeyin ölçüldüğü deneyle kontrol edilecek. |
 | ESP32 bağlantısı | I²C taşıyıcısının regülatör/seviye devresi ve çekme gerilimleri gerekli. Aynı adresli sensörler için çoklayıcı veya sıralı adres atama değerlendiriliyor. | 5 V besleme ve Trig/Echo arayüzü. Echo için ESP32'ye uygun seviye uyarlama, tetik giriş eşiği ve GPIO planı gerekli. Doğrudan bağlantı uyumu varsayılmayacak. |
 | Beşli ölçüm zamanlaması | Ardışık okuma süresi ve olası optik etkileşim kontrol edilecek. | Bir modülün sesinin diğerinde ölçüm oluşturmasını önleyen sıralama ve bekleme gerekir. |
-| Maliyet | Taşıyıcı modeline göre değişiyor; stokta bulunmayan fiyat veya tutarsız etiket nihai toplam yapılamaz. | Sensörlerin görünen fiyatı daha düşük; bağlantı ve mekanik ekler toplamda ayrıca hesaplanmalı. |
+| Maliyet | Taşıyıcı modeline göre değişiyor. Stokta olmayan ürünün fiyatı durumuyla birlikte referans tutulabilir; temin planı ve tutarlı fiyat gerekçesi ayrıca hazırlanmalı. | Sensörlerin görünen fiyatı daha düşük; bağlantı ve mekanik ekler toplamda ayrıca hesaplanmalı. |
 
 Robotistan'ın bağladığı [HC-SR04 veri sayfasının](https://www.robotistan.com/Data/EditorFiles/HCSR04-datasheet-version-1.pdf) üç sayfası okundu. Belgede 5 V, 15 mA, en az 10 µs tetik, 2–400 cm aralık ve 15° nominal ölçüm açısı belirtiliyor. Zaman diyagramında 40 kHz ses darbesi ve 60 ms'den uzun ölçüm çevrimi öneriliyor. Bazı ürün açıklamalarındaki “40 Hz” alanı ses taşıyıcı frekansı olarak aktarılmadı.
 
@@ -39,3 +39,7 @@ Belgenin 3. sayfasında düzgün yüzey ve en az 0,5 m² hedef alanı koşulu an
 [Mevcut referans bütçe](FIYATLI_BUTCE_TASLAGI.md) değiştirilmedi: yerel ara toplam 3.189,41 TL, yabancı referanslar 177,35 USD. Önceki kurla 11.986,24 TL karşılık, şasi ve diğer eksik giderleri içermiyor. Bu dosyadaki alternatifler aynı anda alınacak kalemler olarak CSV'ye eklenmedi; mükerrer sensör maliyeti oluşturulmadı. Yerel motorun eksik sıkışma akımı/enkoder bilgileri de giderilmiş sayılmadı.
 
 Kaynak URL'leri, HTML özetleri, stok verisi ve doküman okuma kapsamı [22 Ekim sensör kaydında](tedarik/sensor_secenekleri_2026-10-22.json) tutulmaktadır. Satıcıya mesaj gönderilmedi, sipariş oluşturulmadı.
+
+## Başvuruda stok zorunluluğu
+
+Güncel çağrı ve bilgi notunda, başvuru anında tüm ürünlerin stokta olmasına ilişkin bir şart bulunmadı. Stokta olmayan ToF adayı teknik/fiyat karşılaştırmasında kalabilir; bu durum rapor yazımını durdurmaz. Temin araştırması, eşdeğer alternatif ve gerçekçi bütçe hazırlamak içindir. Ayrıntılı ayrım [başvuru hazırlık notlarında](BASVURU_METNI_HAZIRLIK_NOTLARI.md) kayıtlıdır.

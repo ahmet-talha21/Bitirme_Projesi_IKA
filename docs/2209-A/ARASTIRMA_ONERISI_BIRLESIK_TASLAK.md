@@ -1,6 +1,6 @@
 # TÜBİTAK 2209-A — Araştırma Önerisi
 
-**Birleşik metin taslağı · 22 Ekim 2026 · Dil ve anlatım düzenlemesi**
+**Birleşik metin taslağı · 22 Ekim 2026 · ToF önceliği güncellemesi**
 
 **Proje adı önerisi:** Kullanıcı Tanımlı Rota Takibi ve Engelden Kaçınma Özellikli Otonom Kara Aracının Geliştirilmesi
 
@@ -74,7 +74,7 @@ Başlangıç konumu ve yönü, referans rota, zemin, hız ayarı ve kontrol para
 
 Araç, iki tahrik tekerinin bağımsız kontrol edildiği enkoderli bir diferansiyel sürüş mimarisine sahip olacaktır. ESP32; motor sürücüsü, enkoderler ve mesafe sensörleriyle bütünleştirilecektir. Tekerlek dönüşlerinden göreli doğrusal/açısal hareketin hesaplanmasında diferansiyel sürüş kinematiğinden yararlanılacaktır (Dellaert ve Hutchinson, t.y.). Başlangıç pozu tanımlanacak; tekerlek ölçekleri ve dönüş davranışı kalibre edilecektir. Kayma ve biriken konum hatası ayrıca incelenecek, gerekirse IMU desteği veya ek konum düzeltmesi değerlendirilecektir.
 
-Engel algılamada ön orta, iki ön çapraz ve iki yan yönde beş sabit mesafe sensörü kullanılacaktır. Sensör modeli, montaj yüksekliği ve açıları; ölçüm aralığı, engel yüzeyine bağlı ölçüm davranışı, güncelleme hızı ve kaçınma için gerekli algılama kapsamına göre seçilecektir. Sensörlerin algıladığı bölgeler ve aralarında kalan kör alanlar gerçek düzenekte kontrol edilecektir. Motor, sürücü, batarya ve gerilim düzenleme bileşenleri elektriksel ve mekanik uyumları birlikte değerlendirilerek belirlenecektir.
+Engel algılamada ön orta, iki ön çapraz ve iki yan yönde beş sabit mesafe sensörü kullanılacaktır. Mesafe sensörü seçiminde uçuş süresi (ToF) tabanlı taşıyıcılar önceliklendirilecektir. Kesin taşıyıcı modeli, montaj yüksekliği ve açıları; ölçüm aralığı, engel yüzeyine bağlı ölçüm davranışı, güncelleme hızı ve kaçınma için gerekli algılama kapsamına göre seçilecektir. Sensörlerin algıladığı bölgeler ve aralarında kalan kör alanlar gerçek düzenekte kontrol edilecektir. Motor, sürücü, batarya ve gerilim düzenleme bileşenleri elektriksel ve mekanik uyumları birlikte değerlendirilerek belirlenecektir.
 
 ![Şekil 1 — Sistem mimarisi](gorseller/sekil_1_sistem_mimarisi.png)
 
@@ -168,7 +168,7 @@ Başvuru hazırlığında güncel program belgeleri, ilgili yayınlar ve teknik 
 | Kaçınmada döngüye girme veya rotaya katılamama. | Durum geçişlerini, ilerlemeyi ve kaçınma başlangıç noktasını kaydetmek. | Sınır izleme/katılma koşullarını ayar denemelerinde düzeltip son sürümle değerlendirmeyi yenilemek; kabul eşiklerini sonuçtan sonra gevşetmemek. | 4, 5 |
 | Besleme düşümü veya motor akımı nedeniyle kontrol kesintisi. | Motor–sürücü–pil uyumu, kalkış/dönüş ve güç dağıtımı kontrolü. | Uygun besleme ve bağlantıları yeniden seçmek; değişiklik sonrası durdurma davranışını doğrulamak. | 1, 4 |
 | Bağımsız görüntü ölçümünün kurulamaması veya yetersizliği. | Alan görüşü, sabitleme ve kalibrasyonun uygulanabilirliğini kontrol etmek. | Başka erişilebilir sabit görüntüleme düzeni veya açıkça tanımlanmış bağımsız kontrol noktası ölçümü seçmek; sürekli yörünge ölçülmüş gibi sonuç vermemek. | 1, 5 |
-| Temin sorunu veya bütçenin yetersizliği. | Kaynaklı fiyat, stok ve teknik uyumu birlikte incelemek. | İki motorun enkoderini ve beş sensörlü temel düzeni koruyan alternatifleri değerlendirmek; zorunlu olmayan ekleri ertelemek. | 1–5 |
+| Temin sorunu veya bütçenin yetersizliği. | Tarihli fiyatları, teknik uyumu ve öngörülen temin süresini birlikte incelemek. | İki motorun enkoderini ve beş sensörlü temel düzeni koruyan alternatifleri değerlendirmek; zorunlu olmayan ekleri ertelemek. | 1–5 |
 
 B planlarının uygulanmasında engeli algılama, otonom kaçınma ve rotaya dönüş işlevleri korunacaktır. Hata nedeniyle durdurulan veya elle yönlendirme gerektiren denemeler başarılı otonom görev olarak değerlendirilmeyecektir.
 

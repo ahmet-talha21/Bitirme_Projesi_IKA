@@ -1,6 +1,6 @@
 # Amaç ve kapsam — ilk çalışma taslağı
 
-Durum: Kullanıcının ve danışmanın incelemesine açık çalışma taslağı. Nihai başvuru metni değildir. Kullanıcı 40 denemelik planı ve her engelli koşulda en az 8/10 birleşik görev başarısı hedefini uygun buldu. Teknik yöntem, araştırma sorusunun son biçimi ve diğer sayısal parametreler henüz kesinleşmedi.
+Durum: Kullanıcının ve danışmanın incelemesine açık çalışma taslağı. Nihai başvuru metni değildir. Kullanıcı 40 denemelik planı ve her engelli koşulda en az 8/10 birleşik görev başarısı hedefini uygun buldu. Bug 2 mantığından yararlanan kaçınma yaklaşımı ve ToF sensörlerini önceliklendirme kararı seçildi. Araştırma sorusunun son biçimi, kesin ürün modelleri ve kalan sayısal parametreler danışman incelemesiyle tamamlanacak.
 
 ## Başlık önerisi — henüz onaylanmadı
 
@@ -8,7 +8,7 @@ Kullanıcı Tanımlı Rota Takibi ve Engelden Kaçınma Özellikli Otonom Kara A
 
 ## Kullanıcının belirttiği kapsamdan oluşturulan amaç taslağı
 
-Bu projenin amacı, kullanıcı tarafından belirlenen bir rotada ilerlerken sabit engelleri algılayıp çarpışmadan kaçınma hareketi gerçekleştirmesi ve ardından rotasına dönmesi hedeflenen mikrodenetleyici tabanlı bir kara aracı prototipi geliştirmek ve bu davranışın başarısını kontrollü deneylerle değerlendirmektir. Rota, kullanıcı arayüzünde ölçülü kareli alan üzerinde seçilen ara noktalarla tanımlanacaktır. Çalışma kapsamında kullanıcı arayüzü, araç kontrol yazılımı ve gerekli donanım birlikte tasarlanacak; engel yerleşimlerinin değiştirildiği deneylerde algılama, kaçınma ve rotaya dönüş performansı incelenecektir. Arayüzün tasarımı proje sahibi tarafından gerçekleştirilecek; konum takibi ve engelden kaçınma yaklaşımı teknik seçenekler değerlendirilerek belirlenecektir.
+Bu projenin amacı, kullanıcı tarafından belirlenen bir rotada ilerlerken sabit engelleri algılayıp çarpışmadan kaçınma hareketi gerçekleştirmesi ve ardından rotasına dönmesi hedeflenen mikrodenetleyici tabanlı bir kara aracı prototipi geliştirmek ve bu davranışın başarısını kontrollü deneylerle değerlendirmektir. Rota, kullanıcı arayüzünde ölçülü kareli alan üzerinde seçilen ara noktalarla tanımlanacaktır. Çalışma kapsamında kullanıcı arayüzü, araç kontrol yazılımı ve gerekli donanım birlikte tasarlanacak; engel yerleşimlerinin değiştirildiği deneylerde algılama, kaçınma ve rotaya dönüş performansı incelenecektir. Arayüzün tasarımı proje sahibi tarafından gerçekleştirilecek; konum kestirimi için enkoder geri bildirimi, engelden kaçınmada ise seçilen Bug 2 uyarlaması esas alınacaktır.
 
 Kullanıcı arayüzünde bilgisayardan kullanım öncelikli olacak, telefondan erişim de hedeflenecektir. Prototipin küçük RC araç ölçeğinde ve düz zeminde kullanılması planlanmaktadır. İlk deneyler için yaklaşık 3 × 3 metre alan düşünülmektedir; alanın uygunluğu araç ölçüleri ve hareket kabiliyeti belirlendikten sonra değerlendirilecektir. İlk rota ekranı ölçülü ızgara olacak; ölçekli mekân krokisi sonraki aşamada isteğe bağlı olarak değerlendirilebilecektir.
 

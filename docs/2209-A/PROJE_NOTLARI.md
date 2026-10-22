@@ -122,3 +122,9 @@ Birleşik araştırma önerisinde tekrarlar azaltıldı; özet, bilimsel gerekç
 ## 22 Ekim — sensör maliyeti ve yerel seçenekler
 
 Beş sabit sensör için ToF ve ultrasonik alternatifler kaynaklı karşılaştırma dosyasında toplandı. GY-VL53L0XV2 için 435,88 TL/adet görülüyor ancak yapılandırılmış stok verisi OutOfStock; satın alınabilir set olarak sunulmadı. HC-SR04 için iki yerel satıcı fiyatı ve üç sayfalık veri sayfası incelendi; seviye uyarlama, sıralı ölçüm, yüzey ve montaj gereksinimleri kaydedildi. Robotistan siyah sensörünün önceki özetinde yer almayan ikinci güncel KDV dahil fiyat alanı da not edildi; sayfadaki çelişkili +KDV etiketi nedeniyle bağlayıcı teslim fiyatı çıkarılmadı. Kullanıcı “ToF sensörlerini önceliklendirelim.” yanıtıyla ToF önceliğini seçti. Kesin sensör taşıyıcısı/modeli, motor bilgileri ve nihai bütçe tamamlanmış sayılmadı; CSV ve ana rapor değiştirilmedi.
+
+## 22 Ekim — stok şartının açıklanması ve yönteme ToF önceliğinin işlenmesi
+
+Kullanıcı stokta olmanın rapor için zorunlu olup olmadığını sordu. Güncel çağrı ve bilgi notu yeniden okunarak başvuru anında bütün parçaların stokta olmasına ilişkin bir şart bulunmadığı açıklandı. Stok araştırmasının temin ve bütçe planı için yapıldığı, rapor yazımını durdurmayacağı belirtildi. Kullanıcının “tamam” yanıtı sonrasında bu ayrım hazırlık ve kural notlarına kaydedildi.
+
+Önceden seçilen ToF önceliği birleşik yöntem ve ilgili taslaklara işlendi. Belirli bir sensör modeli, yeni sayısal hedef veya deney sonucu eklenmedi. Beş sensör, iki enkoderli motor, 40 değerlendirme denemesi ve her engelli koşulda en az 8/10 birleşik başarı hedefi korundu. Başlık tercihi ayrıca kullanıcıya soruldu; yanıt gelene kadar öneri başlığı korunacak.

@@ -51,3 +51,9 @@ Kontrol tarihi: 21 Ekim 2026. Bu not, aşağıdaki resmî kaynaklardan hazırlan
 - Rehberin 1.2 bölümüne göre taslak oluşturma gibi önemli ölçüde kullanım, başvuru sistemindeki ilgili alanda araç/versiyon, kullanım yeri ve kapsamıyla beyan edilecek. Görünmeyen bir model sürümü tahmin edilmeyecek.
 - Bu çalışma sürecinde ChatGPT/Codex; resmî belgelerin incelenmesi, hazırlık notlarının düzenlenmesi, teknik seçeneklerin tartışılması, literatür karşılaştırması, bölüm taslakları ve ilk Graphviz/Python şekil kaynaklarının hazırlanmasında kullanıldı. Sonraki görsel revizyonda image_gen aracıyla üç tasarım şeması yenilendi; bu önemli ölçüde görsel üretim desteği de beyana dahil edilecek. Sonraki kullanımlar gerçeğe uygun olarak kaydedilecek. Güncel şekil açıklamalarında ÜYZ desteği belirtildi.
 - Taslak nihai metin sayılmayacak; kullanıcı ve akademik danışman doğruluk, kaynaklar, özgün katkı ve güncelliği kontrol edecek. Kişisel, gizli veya üçüncü kişilere ait özel bilgiler paylaşılmayacak.
+
+## 22 Ekim — malzeme stoğu ve bütçe ayrımı
+
+İncelenen 2026 çağrı duyurusu ve başvuru içeriği bilgi notunda, başvuru sırasında bütün parçaların stokta bulunmasına veya satıcı stoklarının tek tek kontrol edilmesine ilişkin bir şart bulunmadı. Stok araştırması başvuruya eklenmesi zorunlu bir stok belgesi olarak sunulmayacak; temin ve maliyet riskini yönetmek için kullanılacaktır. Stokta olmayan ürün fiyatı, durumu belirtilerek referans karşılaştırmasında tutulabilir; metin yazımı stok gerekçesiyle durdurulmayacaktır.
+
+Çağrı 2.2: talep edilen bütçe tutarı başvurular sona erdikten sonra değiştirilemez. Çağrı 6.2: uygulama sırasında yapılan harcamalar fatura ile belgelendirilir. Bu hükümler başvuru anında ürün stoğu şartı olarak yorumlanmayacaktır.

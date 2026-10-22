@@ -33,3 +33,13 @@ ChatGPT/Codex; kaynak inceleme desteği, taslak hazırlama/düzenleme ve belge o
 Kullanıcı, metin içi parantezli atıfların gerekli olup olmadığını ve örneklerdeki düzeni sordu. Gönderilen atış performansı önerisinin 3. sayfasında “(Khaleghi vd., 2013)”, mikrobiyota önerisinin 3. sayfasında “(Hou et al., 2022)” biçiminde atıflar bulunuyor. Her iki belgenin 10. sayfasında ayrıca “EK-1: KAYNAKLAR” listesi var. Bu tespit kaynak gösterme biçimiyle ilgilidir; örneklerdeki yayınların içerik veya künyelerini doğruladığımız anlamına gelmez.
 
 TÜBİTAK'ın [Bibliyografik Verilerin Düzenlenmesi](https://tubitak.gov.tr/tr/duyuru/bibliyografik-verilerin-duzenlenmesi) yönergesi, metin içindeki yazar–yıl atıflarını ve soyada göre alfabetik tam kaynak listesini tarif ediyor. Bu araştırma önerisinde metin içinde “Alajlan vd. (2017)” veya “(Hauser, t.y.-a)” gibi kısa atıflar; sonda tam künyeler kullanılacaktır. Üç ve daha çok yazarlı kaynaklarda Türkçe “vd.” yazımı korunacaktır. DOI bulunan kaynakların DOI'leri tam künyenin sonunda verilecektir.
+
+## Stok durumu ile başvuru şartının ayrımı
+
+Kullanıcının sorusu üzerine 2026 çağrı duyurusu ve başvuru içeriği bilgi notu yeniden incelendi. Bu belgelerde başvuru anında bütün parçaların stokta olmasına veya satıcı stoklarının tek tek kontrol edilmesine ilişkin bir şart bulunmadı. Bu, hakemlerin hangi ek incelemeleri yapacağını garanti eden bir ifade değildir.
+
+Stok ve temin bilgileri teknik uygulanabilirlik ve maliyet planı için tutulacaktır; stok bulunmaması metin yazımını durdurmayacaktır. Stokta olmayan ürüne ait tarihli fiyat, güncel temin koşulu açıkça belirtilerek karşılaştırma verisi olarak saklanabilir. Böyle bir fiyat bağlayıcı teslim teklifi veya tek tedarik güvencesi olarak sunulmayacaktır. Gerekli işlev ve teknik özellikler üzerinden eşdeğer ürünler ile temin süresi değerlendirilecektir.
+
+Çağrı duyurusunun 2.2 maddesine göre başvuru sırasında talep edilen bütçe tutarı başvurular sona erdikten sonra değiştirilemez; bu nedenle gerçekçi toplamın hazırlanması önemlidir. Harcamaların fatura ile belgelendirilmesi şartı ise 6.2 maddede açıklanan uygulama/harcama aşamasına aittir. Stok belgesi ile harcama faturası birbirine karıştırılmayacaktır.
+
+Kullanıcı ToF sensörlerini önceliklendirmeyi seçti. Bu öncelik birleşik yöntem metnine işlendi; belirli bir model seçilmiş veya performansı doğrulanmış sayılmadı.
