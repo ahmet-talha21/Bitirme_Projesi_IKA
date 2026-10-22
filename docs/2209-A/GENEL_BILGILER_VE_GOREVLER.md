@@ -43,3 +43,7 @@ Akademik danışmanın bilimsel yönlendirme ve kontrolü çalışma boyunca sü
 - Seçilen altı aylık süre, ay dağılımı ve katkı yüzdelerinin danışmanla değerlendirilmesi; akademik teslim hedefiyle ilişki.
 - Deney yeri, doğrulanmış altyapı, seçilen 11.500 TL bütçenin fiyat/ürün kontrolü ve kalan sayısal parametreler.
 - Danışmanın taslak yöntem ve kapsam hakkındaki görüşü.
+
+## Güncel araştırma başlığı
+
+Kullanıcının araştırma vurgusunu güçlendirme talebiyle başlık şu şekilde güncellendi: **Kullanıcı tanımlı rotada sabit engelden kaçınma ve rotaya yeniden katılma: küçük ölçekli bir kara aracında deneysel değerlendirme**. Önceki başlık seçimi çalışma geçmişidir.

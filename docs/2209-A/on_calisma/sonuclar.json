@@ -1,0 +1,57 @@
+{
+  "tanim": "Sentetik girdilerle mantıksal ön doğrulama; fiziksel deney değildir.",
+  "kontrol_adimi_ms": 50,
+  "eski_veri_siniri_ms": 250,
+  "senaryo_sayisi": 6,
+  "saglanan_kontrol": 6,
+  "sonuclar": [
+    {
+      "kod": "S1",
+      "senaryo": "Engelsiz görev",
+      "beklenen_durum": "TAMAMLANDI",
+      "gozlenen_durum": "TAMAMLANDI",
+      "neden": "",
+      "kontrol_saglandi": true
+    },
+    {
+      "kod": "S2",
+      "senaryo": "Kaçınma ve rotaya dönüş",
+      "beklenen_durum": "TAMAMLANDI",
+      "gozlenen_durum": "TAMAMLANDI",
+      "neden": "",
+      "kontrol_saglandi": true
+    },
+    {
+      "kod": "S3",
+      "senaryo": "İlerlemesiz çizgi kesişimi",
+      "beklenen_durum": "KENAR",
+      "gozlenen_durum": "KENAR",
+      "neden": "",
+      "kontrol_saglandi": true
+    },
+    {
+      "kod": "S4",
+      "senaryo": "Eski sensör verisi",
+      "beklenen_durum": "DURDURULDU",
+      "gozlenen_durum": "DURDURULDU",
+      "neden": "ESKI_SENSOR_VERISI",
+      "kontrol_saglandi": true
+    },
+    {
+      "kod": "S5",
+      "senaryo": "Bağlantı kaybı",
+      "beklenen_durum": "DURDURULDU",
+      "gozlenen_durum": "DURDURULDU",
+      "neden": "BAGLANTI_KAYBI",
+      "kontrol_saglandi": true
+    },
+    {
+      "kod": "S6",
+      "senaryo": "Görev süre sınırı",
+      "beklenen_durum": "DURDURULDU",
+      "gozlenen_durum": "DURDURULDU",
+      "neden": "SURE_ASIMI",
+      "kontrol_saglandi": true
+    }
+  ]
+}

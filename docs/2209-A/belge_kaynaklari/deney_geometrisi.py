@@ -11,7 +11,7 @@ import numpy as np
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'gorseller/akademik_duzen'
 OUT.mkdir(exist_ok=True)
-plt.rcParams.update({'font.family':'DejaVu Sans','font.size':11,'axes.titlesize':12,'axes.labelsize':11,'svg.fonttype':'none'})
+plt.rcParams.update({'font.family':'DejaVu Sans','font.size':11,'axes.titlesize':12,'axes.labelsize':11,'svg.fonttype':'none','pdf.fonttype':42,'ps.fonttype':42})
 navy='#203e5c';blue='#315c83';gray='#dce2e7'
 fig,axs=plt.subplots(2,2,figsize=(8.2,7.5),layout='constrained')
 route=np.array([[.75,.75],[2.25,.75],[2.25,2.25]])
@@ -34,5 +34,7 @@ for ax,(title,obstacle) in zip(axs.flat,conditions):
 fig.savefig(OUT/'sekil_3_deney_alani.png',dpi=300,facecolor='white')
 fig.savefig(OUT/'sekil_3_deney_alani.pdf',facecolor='white')
 fig.savefig(OUT/'sekil_3_deney_alani.svg',facecolor='white')
+svg = OUT/'sekil_3_deney_alani.svg'
+svg.write_text('\n'.join(line.rstrip() for line in svg.read_text().splitlines())+'\n')
 plt.close(fig)
 print('Dört koşulun geometrisi üretildi.')

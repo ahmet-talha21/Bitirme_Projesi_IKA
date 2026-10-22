@@ -1,7 +1,7 @@
 -- Yalnız PDF yerleşimini düzenler; metni ve kaynak görselleri değiştirmez.
 function Image(image)
   image.attributes.width = "16cm"
-  if image.src:match("akademik_duzen/sekil_3") then
+  if image.src:match("akademik_duzen/sekil_[34]") then
     image.src = image.src:gsub("%.png$", ".pdf")
   end
   return image
@@ -35,6 +35,8 @@ function Table(tbl)
     widths = {0.22, 0.43, 0.35}
   elseif count == 3 and label == "Çıktı kategorisi" then
     widths = {0.20, 0.37, 0.43}
+  elseif count == 3 and label == "Senaryo" then
+    widths = {0.10, 0.46, 0.44}
   elseif count == 3 then
     widths = {0.18, 0.34, 0.48}
   end
@@ -87,7 +89,15 @@ function Blocks(blocks)
   end
   local i = 1
   if cover_end then
-    result:insert(pandoc.RawBlock("latex", [[
+    local project_title = ""
+    for j = 1, cover_end - 1 do
+      local block = blocks[j]
+      if block.t == "Para" and pandoc.utils.stringify(block):match("^Kullanıcı ") then
+        project_title = pandoc.write(pandoc.Pandoc({block}), "latex")
+      end
+    end
+    assert(project_title ~= "", "Kapakta proje başlığı bulunamadı")
+    local cover = [[
 \begin{titlepage}\sffamily\centering
 \color{BrandNavy}\noindent\rule{\linewidth}{0.65pt}\par
 \vspace*{12mm}
@@ -101,7 +111,7 @@ function Blocks(blocks)
 \vspace{10mm}
 {\fontsize{20}{25}\selectfont\bfseries ARAŞTIRMA ÖNERİSİ\par}
 \vspace{19mm}
-{\fontsize{14}{21}\selectfont Kullanıcı tarafından belirlenen rota bilgisine göre\\hareket eden otonom araç tasarımı\par}
+{\fontsize{14}{21}\selectfont ]] .. project_title .. [[\par}
 \vspace{14mm}
 {\fontsize{10.5}{16}\selectfont\textbf{Proje yürütücüsü:} Ahmet Talha Arslan\\
 \textbf{Akademik danışman:} Prof. Dr. Murat Ceylan\\
@@ -111,20 +121,22 @@ Konya Teknik Üniversitesi · Elektrik-Elektronik Mühendisliği\par}
 \vspace{10mm}
 {\color{TableRule}\rule{\linewidth}{0.5pt}\par}
 \end{titlepage}\setcounter{page}{2}
-]]))
+]]
+    result:insert(pandoc.RawBlock("latex", cover))
     i = cover_end + 1
   end
   while i <= #blocks do
     local block = blocks[i]
     local caption = blocks[i + 1]
     if block.t == "Header" and cover_end then
-      result:insert(pandoc.RawBlock("latex", pandoc.utils.stringify(block) == "KAYNAKLAR"
+      local label = pandoc.utils.stringify(block)
+      result:insert(pandoc.RawBlock("latex", (label == "KAYNAKLAR" or label == "3. PROJE YÖNETİMİ" or label == "6. EKLER")
         and "\\clearpage" or "\\Needspace{6\\baselineskip}"))
       result:insert(block)
       i = i + 1
     elseif block.t == "Para" and #block.content == 1
       and block.content[1].t == "Image" and caption and caption.t == "Para"
-      and pandoc.utils.stringify(caption):match("^Şekil [123]%.") then
+      and pandoc.utils.stringify(caption):match("^Şekil [1234]%.") then
       result:insert(pandoc.RawBlock("latex", "\\begin{minipage}{\\linewidth}\\centering"))
       result:insert(block)
       result:insert(pandoc.RawBlock("latex", "\\begingroup\\footnotesize\\color{CaptionInk}"))

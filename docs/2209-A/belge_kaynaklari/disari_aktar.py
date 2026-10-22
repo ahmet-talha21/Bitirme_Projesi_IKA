@@ -73,7 +73,7 @@ def finish_layout(path, title=None, sunum=False):
     properties = document.core_properties
     properties.title = title or "İKA — TÜBİTAK 2209-A Araştırma Önerisi, Birleşik Taslak"
     properties.author = "Ahmet Talha Arslan"
-    properties.subject = "Planlanan araştırma; deney sonuçları içermez"
+    properties.subject = "Araştırma önerisi; yöntem, ön çalışma ve deney planı" if sunum else "Planlanan araştırma; deney sonuçları içermez"
     properties.modified = datetime.now(timezone.utc)
 
     def paragraph_rule(paragraph, edge, color):
@@ -105,7 +105,7 @@ def finish_layout(path, title=None, sunum=False):
                     paragraph.paragraph_format.space_before = Pt(15)
                     for run in paragraph.runs:
                         run.font.size = Pt(22)
-                elif paragraph.text.startswith("Kullanıcı tarafından"):
+                elif paragraph.text.startswith("Kullanıcı "):
                     paragraph.paragraph_format.space_before = Pt(30)
                     paragraph.paragraph_format.space_after = Pt(28)
                     for run in paragraph.runs:
@@ -125,7 +125,7 @@ def finish_layout(path, title=None, sunum=False):
                     paragraph_rule(paragraph, "bottom", "CBD7E0")
 
     for paragraph in document.paragraphs:
-        if sunum and paragraph.text == "KAYNAKLAR":
+        if sunum and paragraph.text in {"KAYNAKLAR", "3. PROJE YÖNETİMİ", "6. EKLER"}:
             paragraph.paragraph_format.page_break_before = True
         if not sunum and paragraph.text in {
             "1. Bilimsel nitelik", "2. Yöntem", "3. Proje yönetimi",
@@ -140,7 +140,7 @@ def finish_layout(path, title=None, sunum=False):
             paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
             paragraph.paragraph_format.keep_with_next = True
             paragraph.paragraph_format.space_after = Pt(2)
-        if paragraph.text.startswith(("Şekil 1.", "Şekil 2.", "Şekil 3.")):
+        if paragraph.text.startswith(("Şekil 1.", "Şekil 2.", "Şekil 3.", "Şekil 4.")):
             paragraph.style = document.styles["Caption"]
             paragraph.paragraph_format.keep_together = True
             paragraph.paragraph_format.keep_with_next = False
@@ -187,6 +187,8 @@ def finish_layout(path, title=None, sunum=False):
             widths = [3.7, 7.3, 6.0]
         elif count == 3 and label == "Çıktı kategorisi":
             widths = [3.4, 6.3, 7.3]
+        elif count == 3 and label == "Senaryo":
+            widths = [1.7, 7.8, 7.5]
         elif count == 3:
             widths = [3.0, 5.6, 8.4]
         elif count == 4 and label == "İP":

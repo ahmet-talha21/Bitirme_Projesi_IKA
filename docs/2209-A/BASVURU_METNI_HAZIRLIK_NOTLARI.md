@@ -83,3 +83,7 @@ Sunum belgesinden “taslak”, hazırlık bağlantıları, kesinleşmedi/henüz
 ## Güncel başvuru görünümü — 22 Ekim
 
 Kullanıcının son görsel düzen talebi ve TÜBİTAK üslubu uyarısı doğrultusunda güncel ARASTIRMA_ONERISI belgesi yeniden üretildi. Kapak ve iç sayfa tasarımı son paylaşılan örnekle karşılaştırıldı; aynı proje kararları resmî başvuru diliyle korundu. Özet 232 kelimedir. Bilimsel nitelik bölümünde gerekçe, ilgili çalışmalar ve araştırma sorusu daha doğrudan anlatıldı; yeni performans iddiası eklenmedi. Yeni çizimler gorseller/akademik_duzen klasöründedir. Bu kayıt önceki 15 sayfalık yerleşim notlarının devamındaki güncel sürümü açıklar.
+
+## On bir maddelik güncel revizyon
+
+Kullanıcının son düzeltme listesi uygulandı; ayrıntılı eşleştirme REVIZYON_KONTROLU_2026-10-22.md dosyasındadır. Önceki başlık seçimi yeni deneysel değerlendirme başlığıyla güncellendi. Üniversitede bir derslik kullanım planı kullanıcıdan alındı; fiziksel konum veya izin onaylanmış sayılmadı. Mantıksal ön çalışma gerçek kod çalıştırmasıyla üretildi. Kaynakça/DOI doğrulaması ve özel ÜYZ beyanı ayrı kayıtlandı. Yeni raporda fiziksel ölçüm sonucu uydurulmadı.

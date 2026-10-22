@@ -8,11 +8,11 @@ Proje, arayüzde tanımlanan waypoint rotasını izleyen küçük bir ESP32 taba
 
 **TÜBİTAK 2209-A araştırma önerisi:** [Rapor metni](docs/2209-A/ARASTIRMA_ONERISI.md) · [PDF](docs/2209-A/ARASTIRMA_ONERISI.pdf) · [Düzenlenebilir Word](docs/2209-A/ARASTIRMA_ONERISI.docx)
 
-Kapak, genel bilgiler, özet, bilimsel nitelik, hedefler, yöntem, takvim, risk yönetimi, olanaklar, yaygın etki, üç güncellenmiş şema, ayrıntılı 11.500 TL bütçe ve kaynakça aynı raporda birleştirildi. Başarı değerleri planlanan hedeflerdir; fiziksel prototip ve deneyler proje kapsamında gerçekleştirilecektir. Bu belge danışman kontrolüne sunulur; TYBS başvurusunun gönderildiği anlamına gelmez. Önceki birleşik taslaklar çalışma geçmişi olarak korunmuştur.
+Kapak, genel bilgiler, özet, bilimsel nitelik, hedefler, yöntem, takvim, risk yönetimi, olanaklar, yaygın etki, üç tasarım/deney planı şekli ve bir mantıksal ön çalışma grafiği, ayrıntılı 11.500 TL bütçe ve kaynakça aynı raporda birleştirildi. Başarı değerleri planlanan hedeflerdir; fiziksel prototip ve deneyler proje kapsamında gerçekleştirilecektir. Bu belge danışman kontrolüne sunulur; TYBS başvurusunun gönderildiği anlamına gelmez. Önceki birleşik taslaklar çalışma geçmişi olarak korunmuştur.
 
 ## Çalışma durumu
 
-2026 yılı 2209-A araştırma önerisinin danışmana sunulacak sürümü hazırlandı. Önceki bölüm taslakları ve kaynak/fiyat araştırma kayıtları çalışma geçmişi olarak tutulmaktadır. Enkoderli iki motorlu hareket mimarisi ve beş sabit mesafe sensörü düzeni seçildi: ön orta, iki ön çapraz ve iki yan. Kullanıcı dört koşulda 10'ar tekrar, toplam 40 değerlendirme denemesini ve her engelli koşulda en az 8/10 birleşik görev başarısı hedefini uygun buldu. Bug 2 mantığından yararlanan kaçınma yaklaşımı, ToF önceliği, 6 aylık plan, 10 cm waypoint/rotaya dönüş hedefleri ve 120 saniye deneme sınırı seçildi. Kullanıcı 11.500 TL planlama bütçesini de seçti. Rapor, işlevsel donanım gereksinimleri, sensör yerleşimi, arayüz/ağ düzeni ve sayısal deney protokolüyle tamamlandı. Satın alınan ürünlerin giriş kontrolü ve fiziksel kalibrasyon proje faaliyetleridir; sonuçları elde edilmiş gibi sunulmaz. Fiziksel prototip geliştirme ve deneyler henüz yapılmadı.
+2026 yılı 2209-A araştırma önerisinin danışmana sunulacak sürümü hazırlandı. Önceki bölüm taslakları ve kaynak/fiyat araştırma kayıtları çalışma geçmişi olarak tutulmaktadır. Enkoderli iki motorlu hareket mimarisi ve beş sabit mesafe sensörü düzeni seçildi: ön orta, iki ön çapraz ve iki yan. Kullanıcı dört koşulda 10'ar tekrar, toplam 40 değerlendirme denemesini ve her engelli koşulda en az 8/10 birleşik görev başarısı hedefini uygun buldu. Bug 2 mantığından yararlanan kaçınma yaklaşımı, ToF önceliği, 6 aylık plan, 10 cm waypoint/rotaya dönüş hedefleri ve 120 saniye deneme sınırı seçildi. Kullanıcı 11.500 TL planlama bütçesini de seçti. Rapor, işlevsel donanım gereksinimleri, sensör yerleşimi, arayüz/ağ düzeni ve sayısal deney protokolüyle tamamlandı. Satın alınan ürünlerin giriş kontrolü ve fiziksel kalibrasyon proje faaliyetleridir; sonuçları elde edilmiş gibi sunulmaz. Fiziksel prototip geliştirme ve deneyler henüz yapılmadı. Altı sentetik senaryoyla durum makinesinin mantıksal ön doğrulaması çalıştırıldı; kod ve kayıtlar ayrı bir ön çalışma klasöründedir.
 
 Kullanıcı Haziran 2027 hedefinin bitirme projesi teslimi olduğunu, kesin günün henüz belli olmadığını açıkladı. Mayısta deney/analiz, Haziranda inceleme/teslim hedefi önerildi. Kullanıcı daha sonra 6 aylık planı açıkça seçti; 1–6. ay dağılımı rapora işlendi. Resmî başlangıç günü sonuç ilanına göre belli olacak.
 
@@ -52,3 +52,9 @@ Kullanıcı toplam 11.500 TL planlanan destek talebini seçti. Birim bedeller KD
 - [Ürün ve fiyat teklifi tablosu (CSV)](docs/2209-A/MALZEME_TEKLIF_FORMU.csv)
 
 Nihai metin, güncel TYBS alanlarına aktarılmadan önce yürütücü ve akademik danışman tarafından kontrol edilecek. Kaynaklar, deney sonuçları ve mevcut olanaklar doğrulanmış bilgilere dayanacak.
+
+## Araştırma gerekçesi ve ön çalışma revizyonu
+
+Güncel başlık: **Kullanıcı tanımlı rotada sabit engelden kaçınma ve rotaya yeniden katılma: küçük ölçekli bir kara aracında deneysel değerlendirme**. Ana kaynakça, özgün Bug çalışması, robotik ders kitabı, ToF veri sayfası ve Wilson skor aralığı kaynağıyla yenilendi. Deney yeri üniversitede bölüm kullanımına izin verilecek bir derslik olarak planlandı; varsayımsal oda numarası veya tahsis bilgisi eklenmedi. İP5, 5–6. ayda analiz ve sonuç raporlamasını kapsıyor.
+
+[Çalıştırılmış mantıksal ön çalışma](docs/2209-A/on_calisma/README.md) · [DOI ve okuma kapsamı](docs/2209-A/KAYNAK_DOGRULAMA_KAYDI.md) · [Revizyon kontrol listesi](docs/2209-A/REVIZYON_KONTROLU_2026-10-22.md)
