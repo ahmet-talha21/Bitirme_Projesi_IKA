@@ -1,12 +1,12 @@
 # Deney protokolü — sayısal plan önerisi
 
-Sürüm: 0.3 — 22 Ekim 2026. **Kullanıcı dört koşulda 10'ar tekrar, toplam 40 değerlendirme denemesini ve her engelli koşulda en az 8/10 birleşik otonom görev başarısı hedefini uygun buldu.** Bu seçim, diğer sayısal önerilerin veya tüm protokolün kesinleştiği anlamına gelmez. Sayılar yapılmış deney veya kanıtlanmış araç performansı değildir. Donanım seçimi, deney alanına erişim ve ölçüm uygulanabilirliği henüz tamamlanmadı. Danışman incelemesi ve kalan parametreler sonrasında, nihai değerlendirmeden önce protokol ve yazılım sürümü sabitlenecek.
+Sürüm: 0.4 — 22 Ekim 2026. **Kullanıcı dört koşulda 10'ar tekrar, toplam 40 değerlendirme denemesini ve her engelli koşulda en az 8/10 birleşik otonom görev başarısı hedefini uygun buldu.** Bu seçim, diğer sayısal önerilerin veya tüm protokolün kesinleştiği anlamına gelmez. Sayılar yapılmış deney veya kanıtlanmış araç performansı değildir. Donanım seçimi, deney alanına erişim ve ölçüm uygulanabilirliği henüz tamamlanmadı. Danışman incelemesi ve kalan parametreler sonrasında, nihai değerlendirmeden önce protokol ve yazılım sürümü sabitlenecek.
 
 ## 1. Araştırma sorusu ve karşılaştırma
 
 Sabit bir waypoint rotasında engelin bulunduğu bölüm, aracın temas öncesi algılama, çarpışmasız kaçınma, rotaya yeniden katılma ve görevi tamamlama başarısını nasıl etkiler?
 
-Tek bir kaçınma yaklaşımının farklı engel yerleşimlerindeki davranışı değerlendirilecek. Engelsiz koşul rota takibinin referansıdır; engelden kaçınma yöntemleri arasında üstünlük karşılaştırması yapılmış sayılmaz. İki enkoderli motor ve beş sabit mesafe sensörü korunacak. Bug 2 temelli durum makinesi hâlen algoritma adayıdır.
+Tek bir kaçınma yaklaşımının farklı engel yerleşimlerindeki davranışı değerlendirilecek. Engelsiz koşul rota takibinin referansıdır; engelden kaçınma yöntemleri arasında üstünlük karşılaştırması yapılmış sayılmaz. İki enkoderli motor ve beş sabit mesafe sensörü korunacak. Kullanıcının seçtiği Bug 2 mantığından yararlanan durum makinesi esas alınacak; sensör seçiminde ToF taşıyıcıları önceliklendirilecek. Kesin taşıyıcı/model ve uygulama parametreleri henüz seçilmedi. Deneyler, seçilen altı aylık planda kaçınma entegrasyonundan sonra 6. ayda yürütülecek.
 
 ## 2. Alan ve rota geometrisi önerisi
 
@@ -89,7 +89,7 @@ Engelsiz ve kaçınma dışındaki rota izleme bölümleri için sonlu referans 
 
 1. Kullanıcı deney yerinin henüz belli olmadığını bildirdi. Yer/erişim seçilecek ve telefonun tüm alanı sabit görebilmesi kontrol edilecek.
 2. Nihai gövde ölçüleri, engel ve sensör geometrisi; önerilen parkurda serbest yolun doğrulanması.
-3. Algoritma, başlangıç/rotaya dönüş kuralları ve bağlantı/sensör hatası davranışı.
+3. Seçilen Bug 2 uyarlamasının uygulama parametreleri, başlangıç/rotaya dönüş kuralları ve bağlantı/sensör hatası davranışı.
 4. Seçilen tekrar planı ve ana hedefin danışman incelemesi; kalan sayısal önerilerin değerlendirilmesi, kalibrasyona bağlı eksik parametreler ve resmî takvimle uyum.
 
 Yöntemin literatür dayanağı [yöntem taslağı](YONTEM_TASLAGI.md) ve [literatür karşılaştırmasında](LITERATUR_KARSILASTIRMASI.md) kayıtlıdır. Buradaki koşullar ve sayısal eşikler bu proje için tasarım önerisidir; anılan kaynakların elde ettiği sonuçlar olarak sunulmaz.

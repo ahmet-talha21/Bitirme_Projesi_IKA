@@ -40,3 +40,18 @@ Son tarih ve biçim kuralları [2026 başvuru kuralları notunda](2026_BASVURU_K
 Sensör maliyeti devam incelemesi: [beşli ToF/ultrasonik karşılaştırması](SENSOR_BUTCE_KARSILASTIRMASI.md) hazırlandı. Kullanıcı ToF sensörlerini önceliklendirmeyi seçti. Kesin ürün ve nihai bütçe henüz belirlenmedi; ana bütçe korunurken ToF önceliği birleşik yöntem metnine işlendi. Stok durumu başvuru şartı veya rapor yazımına engel olarak kullanılmayacak.
 
 Kullanıcı [altı aylık iş paketi planını](ALTI_AYLIK_RESMI_TAKVIM_ONERISI.md) seçti. Süre ve ay dağılımı birleşik rapora işlendi. Mevcut akademik hedef takvimi ayrı tutuldu; danışman incelemesi ve kesin takvim günleri hâlen açık.
+
+## TYBS metin uzunluğu ve içerik kontrolü — 22 Ekim
+
+Düzyazı çıktısında, boşluklar dahil karakterler sayıldı. Bu kontrol başvuru editöründeki son önizlemenin yerine geçmez; metin değişirse sayımlar yenilenecektir.
+
+| Alan | Hazırlık kontrolü |
+| --- | --- |
+| Özet | 217 kelime; 25–450 kelime aralığında. |
+| 1.1 Bilimsel nitelik | 4053 karakter; en az 350 karakter koşulunun üzerinde. |
+| 1.2 Amaç ve hedefler | 1649 karakter; en az 350 karakter koşulunun üzerinde. |
+| 2 Yöntem | 10905 karakter; en az 350 karakter koşulunun üzerinde. |
+| Çalışma takvimi | Kullanıcının seçtiği 6 ay, beş iş paketi, toplam %100 katkı. |
+| Deney kayıtları | CSV yalnız başlık içeriyor; sonuç satırı yok. |
+
+Waypoint ve rotaya dönüş toleransı ile deneme süre sınırı kullanıcıya ayrıca soruldu. Yanıt alınana kadar 10 cm ve 120 saniye kesinleşmiş değer olarak birleşik rapora eklenmedi. Danışman incelemesi, gerçek kurum olanakları ve nihai bütçe açık tutuldu.

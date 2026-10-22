@@ -142,3 +142,7 @@ Beş iş paketi 1–6. ay aralıklarına yerleştirilerek somut süre önerisi h
 Kullanıcı açık süre sorusuna “6 aylık planı kullanalım.” yanıtını verdi. Planlanan toplam süre 6 ay olarak birleşik rapora ve genel bilgilere işlendi. İP1/İP2 1–2. ay, İP3 3. ay, İP4 4–5. ay ve İP5 6. ay dağılımı kullanıldı; %20/%15/%20/%30/%15 katkılar korundu. Özet ve yöntem içindeki takvim açıklamaları bu seçime göre güncellendi.
 
 Önceki “süre seçilmedi” kayıtları tarihsel hazırlık aşamasını gösterir; bu yanıtla süre tercihi tamamlandı. Haziran 2027 akademik teslim hedefi korunur. Sonuç ilan tarihi bilinmediği için Ocak başlangıcı veya Haziran resmî bitişi varsayılmadı. Danışman incelemesi, bütçe, deney yeri ve kalan teknik eşikler tamamlanmış sayılmadı. Donanım kapsamı, 40 deneme ve koşul başına en az 8/10 ana başarı hedefi değiştirilmedi.
+
+## 22 Ekim — deney ölçütleri sorusu ve TYBS hazırlık kontrolü
+
+Waypoint erişimi için 10 cm, rotaya dönüş bandı için 10 cm ve her deneme için 120 saniye sınırı planlanan hedefler olarak kullanıcıya soruldu. Yanıt gelene kadar bu değerler seçilmiş sayılmadı; ek 9/10 hedefleri, 0,10 m/s hız, 1/2 saniyelik süreler ve 2 cm ölçüm kontrol hedefi ayrıca öneri olarak kaldı. Protokol 0.4 sürümünde önceden seçilen Bug 2, ToF önceliği ve altı aylık planla uyumlandırıldı. Birleşik raporun özet kelime sayısı, üç bölümün karakter sayıları ve deney CSV dosyasının sonuç içermemesi kontrol edilerek durum notuna kaydedildi.
