@@ -1,6 +1,6 @@
 # TÜBİTAK 2209-A — Araştırma Önerisi
 
-**Birleşik metin taslağı · 22 Ekim 2026 · Altı aylık çalışma planı**
+**Birleşik metin taslağı · 22 Ekim 2026 · Deney hedefleri güncellemesi**
 
 **Proje adı:** Kullanıcı tarafından belirlenen rota bilgisine göre hareket eden otonom araç tasarımı
 
@@ -25,7 +25,7 @@ Bu araştırmada, kullanıcı tarafından arayüzde tanımlanan bir rotayı izle
 
 Prototip; ESP32 kontrol birimi, bağımsız sürülen iki enkoderli motor ve ön orta, iki ön çapraz ve iki yan yönde yerleştirilecek beş sabit mesafe sensöründen oluşacaktır. Kullanıcı, bilgisayar öncelikli ve telefondan erişimi de hedeflenen arayüzde yerel koordinatlarla ara rota noktaları (waypoint) belirleyecektir. Enkoder verilerinden hesaplanan göreli konum bilgisi, mesafe ölçümlerine dayalı hareket kararlarıyla birlikte kullanılacaktır. Engel çevresini takip etme ve rotaya dönüş davranışları, Bug 2 yaklaşımından yararlanan bir durum makinesiyle gerçekleştirilecektir.
 
-Düz zeminde yaklaşık 3 × 3 metre olarak planlanan alanda engelsiz referans ve üç sabit engel yerleşimi karşılaştırılacaktır. Her koşul 10 kez tekrarlanarak toplam 40 geçerli değerlendirme denemesi yapılacaktır. Her engelli koşulda en az 8/10 denemede temas öncesi algılama, çarpışmasız kaçınma, rotaya dönüş ve hedefe ulaşmanın birlikte sağlanması hedeflenmektedir. Aracın hareketinin bağımsız değerlendirilmesinde, mevcut telefonla sabit görüntü kaydı ve kalibrasyon düzeni kurulması planlanmaktadır.
+Düz zeminde yaklaşık 3 × 3 metre olarak planlanan alanda engelsiz referans ve üç sabit engel yerleşimi karşılaştırılacaktır. Her koşul 10 kez tekrarlanarak toplam 40 geçerli değerlendirme denemesi yapılacaktır. Her engelli koşulda en az 8/10 denemede temas öncesi algılama, çarpışmasız kaçınma, rotaya dönüş ve hedefe ulaşmanın birlikte sağlanması hedeflenmektedir. Waypoint erişimi ve rotaya dönüş için en çok 10 cm uzaklık, deneme başına en çok 120 saniye hedeflenmektedir. Aracın hareketinin bağımsız değerlendirilmesinde, mevcut telefonla sabit görüntü kaydı ve kalibrasyon düzeni kurulması planlanmaktadır.
 
 Çalışma, altı ay içinde donanım ve sensör entegrasyonu, arayüz ve haberleşme, rota izleme, kaçınma ve kontrollü deneyler olmak üzere beş iş paketinde yürütülecektir. Beklenen çıktılar bir araç prototipi, rota arayüzü, deney kayıt kümesi ve performans değerlendirmesiyle birlikte sürümlenmiş teknik dokümantasyondur.
 
@@ -57,10 +57,10 @@ Bu amaç doğrultusunda aşağıdaki hedefler izlenecektir:
 2. İki enkoderli motorun geri bildirimiyle rota izleme altyapısını kurmak; beş sabit mesafe sensörünün ön ve yan kapsamasını kalibrasyonla değerlendirmek.
 3. Engel algılama, çarpışmasız kaçınma ve rotaya dönüşü açık durum/geçiş kurallarıyla bütünleştirmek.
 4. Engelsiz referans ve üç sabit engel yerleşiminde koşul başına 10, toplam 40 geçerli değerlendirme denemesi yürütmek.
-5. Her engelli koşulda en az 8/10 denemede temas öncesi algılama, çarpışmasız kaçınma, rotaya dönüş ve hedefe ulaşmayı birlikte sağlamak; tüm geçerli başarısızlıkları da değerlendirmeye katmak.
+5. Her engelli koşulda en az 8/10 denemede temas öncesi algılama, çarpışmasız kaçınma, rotaya dönüş ve hedefe ulaşmayı 120 saniye içinde birlikte sağlamak; tüm geçerli başarısızlıkları da değerlendirmeye katmak.
 6. Algılama, kaçınma, rotaya dönüş ve görev sonuçlarını ayrı kaydetmek; tamamlanma süresi ve bağımsız referansla ölçülebilen rota hatasını raporlamak.
 
-Waypoint erişim toleransı, rotaya dönüş ölçütleri ve deneme süre sınırı; ölçüm düzeninin duyarlılığı, donanım özellikleri ve danışman değerlendirmesiyle başvuru öncesinde kesinleştirilecektir.
+Waypoint erişimi ve rotaya dönüş için 10 cm tolerans, her deneme için 120 saniye üst sınırı planlanmıştır. Bu hedeflerin uygulanabilirliği, donanım özellikleri ve bağımsız ölçüm düzeniyle değerlendirilecek; kalan durum geçişi ve kalibrasyon parametreleri başvuru öncesinde danışmanla gözden geçirilecektir.
 
 ## 2. Yöntem
 
@@ -123,7 +123,15 @@ Aracın hareketi, yürütücünün mevcut telefonuyla alınacak sabit görüntü
 
 Sensör günlüğü ve kamera kaydı ortak bir başlangıç olayıyla zaman bakımından eşleştirilecektir. Temas öncesi algılama, çarpışmasız kaçınma, rotaya dönüş ve hedefe varış ayrı ayrı işaretlenecektir. Her engelli koşulda en az 8/10 geçerli denemede bu aşamaların birlikte tamamlanması ana başarı hedefidir. Yalnızca engel önünde durmak veya insan müdahalesiyle devam etmek başarılı otonom görev sayılmayacaktır.
 
-Waypoint erişimi ve rotaya dönüş için kullanılacak toleranslar ile deneme süre sınırı, ölçüm duyarlılığı ve donanım özellikleriyle gerekçelendirilecektir. Başvuruda kullanılacak sayısal değerler, ölçüm düzeninin uygulanabilirliği ve danışman değerlendirmesiyle kesinleştirilecektir.
+Planlanan sayısal değerlendirme ölçütleri aşağıdadır. Bunlar prototipte elde edilmiş performans değerleri değildir.
+
+| Ölçüt | Planlanan hedef | Değerlendirme tanımı |
+| --- | --- | --- |
+| Waypoint erişimi | En çok 10 cm | Araç referans noktasının sıradaki waypoint veya son hedef noktasına Öklid uzaklığı. |
+| Rotaya dönüş | En çok 10 cm | Araç referans noktasının etkin sonlu rota parçasına uzaklığı. Engel geride bırakılmış, gövde için geçiş açık ve hedef yönünde ilerleme sürüyor olacak. |
+| Deneme süresi | En çok 120 saniye | Hareketin başlamasından sıralı waypoint'ler üzerinden son hedefe erişilerek görevin tamamlanmasına kadar geçen süre. |
+
+10 cm değeri waypoint erişimi ve rotaya dönüş için kullanılacaktır; tüm hareket boyunca rota hatasının bu değerin altında kaldığı varsayılmayacaktır. Ölçüm belirsizliği kaydedilecek ve eşik çevresindeki kararlar bu belirsizlikle değerlendirilecektir. Bantta kalma ve son hedefte durma süreleri, ilerleme kontrolü ve diğer kalibrasyon parametreleri ayrıca tanımlanacaktır. Seçilen hedeflerin uygulanabilirliği, bağımsız ölçüm düzeni ve danışman incelemesiyle değerlendirilecektir.
 
 ### 2.7. Veri analizi ve başarısız denemeler
 

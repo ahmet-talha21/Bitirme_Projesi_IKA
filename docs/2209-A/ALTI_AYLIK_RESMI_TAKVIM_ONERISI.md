@@ -39,6 +39,6 @@ Literatür incelemesi, malzeme alımı, sonuç raporu hazırlığı ve paylaşı
 - Seçilen altı aylık sürenin ve iş yükü dağılımının danışman tarafından değerlendirilmesi.
 - Haziran 2027 tesliminin kesin günü ve destek takvimiyle ilişkisinin değerlendirilmesi.
 - Donanıma erişim, nihai bütçe, deney yeri ve bağımsız ölçüm düzeni.
-- Başvuru öncesinde seçilecek toleranslar, süre sınırı ve kalan teknik parametreler.
+- Kullanıcının seçtiği 10 cm waypoint/rotaya dönüş hedefleri ve 120 saniye deneme sınırının uygulanabilirliği; kalan teknik parametreler.
 
 Kullanıcının seçtiği süre ve ay dağılımı [birleşik rapora](ARASTIRMA_ONERISI_BIRLESIK_TASLAK.md) işlendi. Mevcut [Kasım–Haziran akademik hedef planı](CALISMA_TAKVIMI_TASLAGI.md) ayrıca korunmuştur. Bu seçim başvurunun gönderildiği veya danışman tarafından onaylandığı anlamına gelmez.

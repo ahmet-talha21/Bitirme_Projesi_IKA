@@ -146,3 +146,9 @@ Kullanıcı açık süre sorusuna “6 aylık planı kullanalım.” yanıtını
 ## 22 Ekim — deney ölçütleri sorusu ve TYBS hazırlık kontrolü
 
 Waypoint erişimi için 10 cm, rotaya dönüş bandı için 10 cm ve her deneme için 120 saniye sınırı planlanan hedefler olarak kullanıcıya soruldu. Yanıt gelene kadar bu değerler seçilmiş sayılmadı; ek 9/10 hedefleri, 0,10 m/s hız, 1/2 saniyelik süreler ve 2 cm ölçüm kontrol hedefi ayrıca öneri olarak kaldı. Protokol 0.4 sürümünde önceden seçilen Bug 2, ToF önceliği ve altı aylık planla uyumlandırıldı. Birleşik raporun özet kelime sayısı, üç bölümün karakter sayıları ve deney CSV dosyasının sonuç içermemesi kontrol edilerek durum notuna kaydedildi.
+
+## 22 Ekim — mesafe ve deneme süresi hedeflerinin seçilmesi
+
+Kullanıcı açık ölçüt sorusuna “Bu planlanan hedefleri kullanalım.” yanıtını verdi. Waypoint/hedef erişimi için en çok 10 cm, kaçınma sonrası etkin sonlu rota parçasına dönüş için en çok 10 cm ve her deneme için hareket başlangıcından itibaren en çok 120 saniye planlanan değerlendirme hedefleri olarak rapora işlendi. Protokol 0.5 sürümüne güncellendi.
+
+Bu seçim, 10 cm'nin tüm hareket boyunca azami izleme hatası olduğu veya ölçülmüş doğruluk sağlandığı anlamına gelmez. Son hedefte 2 saniye durma, bantta 1 saniye kalma, hedef yönünde 10 cm ek ilerleme, 0,10 m/s hız, 2 cm bağımsız ölçüm kontrol hedefi ve ek 9/10 başarı hedefleri seçilmiş sayılmadı. Başarısız denemelerin paydada tutulması, 40 değerlendirme denemesi ve koşul başına en az 8/10 ana hedef korundu. Ölçüm/donanım uygulanabilirliği, danışman incelemesi ve bütçe tamamlanmış sayılmadı.

@@ -53,19 +53,19 @@ Kesin algoritma henüz seçilmedi. İdeal noktasal robot veya hatasız konum var
 2. Geliştirme aşamasında aynı rota engelsiz durumda çalıştırılarak temel hareket ve rota takibi kontrol edilecek. Son değerlendirmedeki engelsiz referans denemeleri geliştirme denemelerinden ayrı tutulacak.
 3. Rotaya sabit engeller farklı yerleşimlerle konulacak. Engel çevresinde araç için geçiş alanı bırakılacak; açıklıklar şasi ve sensör seçimine göre belirlenecek.
 4. Her koşul birden çok kez tekrarlanacak. Başlangıç pozu, rota, hız ayarı ve zemin mümkün olduğunca aynı tutulacak; pil durumu ve başarısız denemeler kaydedilecek.
-5. Algılama, çarpışmasız kaçınma, rotaya dönüş ve görev tamamlama ayrı sonuçlar olarak raporlanacak. Tamamlanamayan denemeler analizden çıkarılmayacak; süre sınırı ve başarısızlık tanımı deneyden önce belirlenecek.
+5. Algılama, çarpışmasız kaçınma, rotaya dönüş ve görev tamamlama ayrı sonuçlar olarak raporlanacak. Tamamlanamayan denemeler analizden çıkarılmayacak; seçilen 120 saniye sınırı kullanılacak ve başarısızlık kayıtları deney öncesinde tanımlanacak.
 
 | Ölçüt | Planlanan tanım |
 | --- | --- |
 | Engel algılama | Engel bulunan denemelerde temas öncesi tespit sayısı / geçerli engelli deneme sayısı. Uygun sensör kayıtları ve gözlemle kontrol edilecek. |
 | Çarpışmasız kaçınma | Temas olmadan kaçınma manevrasını tamamlayan denemelerin oranı. |
-| Rotaya dönüş | Kaçınma sonrasında önceden belirlenecek rota toleransına katılan denemelerin oranı. |
-| Görev tamamlama | Süre sınırı içinde tanımlı hedefe ulaşan denemelerin oranı. |
+| Rotaya dönüş | Kaçınma sonrasında etkin sonlu rota parçasına en çok 10 cm uzaklıktaki banda, diğer katılma koşullarını da sağlayarak dönen denemelerin oranı. |
+| Görev tamamlama | 120 saniye içinde sıralı waypoint'lere ve son hedefe en çok 10 cm uzaklığa ulaşarak görevi tamamlayan denemelerin oranı. |
 | Süre ve rota sapması | Tamamlanma süresi ve bağımsız referans ölçümüne göre izlenen yolun tanımlı rotadan sapması. |
 
 Rota sapması aracın kendi enkoder tahminini yine kendisiyle karşılaştırarak doğrulanmayacak. İşaretlenmiş alanı gören harici bir kamerayla referans yol ölçümü aday yöntemdir. Kullanıcı telefonunu deneylerde kullanabileceğini bildirdi; görüş alanı, sabitleme, ölçek kalibrasyonu ve ölçüm doğruluğu henüz doğrulanmadı. Bu telefon araç üstü algılama kamerası olarak seçilmedi.
 
-Kullanıcı [deney protokolündeki](DENEY_PROTOKOLU_ONERISI.md) dört koşulda 10'ar tekrar, toplam 40 deneme ve her engelli koşulda en az 8/10 birleşik görev başarısı hedefini uygun buldu. Aynı 3 m L rotası, 10 cm tolerans, 120 saniye süre ve bağımsız ölçüm kontrol değerleri hâlen öneridir. Donanım/alan, kalibrasyon gerektiren parametreler ve danışman incelemesi açık. [Deneme kayıt CSV'si](DENEY_KAYIT_SABLONU.csv) yalnız sütun başlıklarını içeriyor, deney sonucu yok. Mevcut kaynak incelemesi literatürde özgünlük veya üstünlük iddiası kurmak için yeterli değildir; ilgili akademik çalışmalar ayrıca incelenecek.
+Kullanıcı [deney protokolündeki](DENEY_PROTOKOLU_ONERISI.md) dört koşulda 10'ar tekrar, toplam 40 deneme ve her engelli koşulda en az 8/10 birleşik görev başarısı hedefini uygun buldu. Kullanıcı 10 cm waypoint erişimi, 10 cm rotaya dönüş bandı ve 120 saniye deneme sınırını da planlanan hedefler olarak seçti. Aynı 3 m L rotası ve bağımsız ölçüm kontrol değerleri hâlen öneridir. Donanım/alan, kalibrasyon gerektiren parametreler ve danışman incelemesi açık. [Deneme kayıt CSV'si](DENEY_KAYIT_SABLONU.csv) yalnız sütun başlıklarını içeriyor, deney sonucu yok. Mevcut kaynak incelemesi literatürde özgünlük veya üstünlük iddiası kurmak için yeterli değildir; ilgili akademik çalışmalar ayrıca incelenecek.
 
 ## 6. Açık bilgiler
 

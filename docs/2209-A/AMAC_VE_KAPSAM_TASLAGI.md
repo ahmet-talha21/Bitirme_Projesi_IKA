@@ -37,9 +37,15 @@ Kullanıcı [deney protokolündeki](DENEY_PROTOKOLU_ONERISI.md) şu tekrar plan�
 Ek sayısal öneriler henüz kesinleşmedi:
 
 - Engelsiz koşulda en az 9/10 görev tamamlama; engelli koşulların her birinde en az 9/10 temas öncesi algılama hedeflemek.
-- 10 cm waypoint/rotaya dönüş bandını, 120 saniye süre sınırını ve bunların bağımsız ölçüm gereksinimlerini uygulanabilirlik incelemesiyle kararlaştırmak.
+Kullanıcı ayrıca aşağıdaki planlanan değerlendirme hedeflerini seçti:
 
-Bunlar gelecekteki çalışma için planlanan hedeflerdir; gerçekleşmiş performans veya kabul garantisi değildir. Seçilen iki karar korunarak kalan parametreler, donanım ve ölçüm düzeni netleştirilecek; danışman incelemesiyle amaç/hedefler metnine nihai biçimi verilecek.
+- Waypoint/hedefe en fazla 10 cm yaklaşmak.
+- Kaçınma sonrasında etkin sonlu rota parçasının en fazla 10 cm çevresindeki banda dönmek.
+- Her denemede görevi hareket başlangıcından itibaren en fazla 120 saniyede tamamlamak.
+
+Bu mesafe ve süre hedeflerinin uygulanabilirliği bağımsız ölçüm düzeniyle ve danışman incelemesinde değerlendirilecek; elde edilmiş sonuç olarak sunulmayacaktır.
+
+Bunlar gelecekteki çalışma için planlanan hedeflerdir; gerçekleşmiş performans veya kabul garantisi değildir. Seçilen tekrar, ana başarı, mesafe ve süre hedefleri korunarak kalan parametreler, donanım ve ölçüm düzeni netleştirilecek; danışman incelemesiyle amaç/hedefler metnine nihai biçimi verilecek.
 
 ## Bu metnin tamamlanması için gerekenler
 

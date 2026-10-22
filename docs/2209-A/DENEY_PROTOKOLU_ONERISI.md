@@ -1,6 +1,6 @@
 # Deney protokolü — sayısal plan önerisi
 
-Sürüm: 0.4 — 22 Ekim 2026. **Kullanıcı dört koşulda 10'ar tekrar, toplam 40 değerlendirme denemesini ve her engelli koşulda en az 8/10 birleşik otonom görev başarısı hedefini uygun buldu.** Bu seçim, diğer sayısal önerilerin veya tüm protokolün kesinleştiği anlamına gelmez. Sayılar yapılmış deney veya kanıtlanmış araç performansı değildir. Donanım seçimi, deney alanına erişim ve ölçüm uygulanabilirliği henüz tamamlanmadı. Danışman incelemesi ve kalan parametreler sonrasında, nihai değerlendirmeden önce protokol ve yazılım sürümü sabitlenecek.
+Sürüm: 0.5 — 22 Ekim 2026. **Kullanıcı dört koşulda 10'ar tekrar, toplam 40 değerlendirme denemesini ve her engelli koşulda en az 8/10 birleşik otonom görev başarısı hedefini uygun buldu.** Kullanıcı ayrıca waypoint/hedef erişimi için 10 cm, rotaya dönüş bandı için 10 cm ve deneme başına 120 saniye sınırını planlanan hedefler olarak seçti. Bu seçimler diğer sayısal önerilerin veya tüm protokolün kesinleştiği anlamına gelmez. Sayılar yapılmış deney veya kanıtlanmış araç performansı değildir. Donanım seçimi, deney alanına erişim ve ölçüm uygulanabilirliği henüz tamamlanmadı. Danışman incelemesi ve kalan parametreler sonrasında, nihai değerlendirmeden önce protokol ve yazılım sürümü sabitlenecek.
 
 ## 1. Araştırma sorusu ve karşılaştırma
 
@@ -34,20 +34,22 @@ Bu koordinatlar alanı hazırlamak için öneridir; nihai şasiyle geometrik kon
 
 Son değerlendirmede algoritma, rota, hız hedefi, sensör eşikleri ve yazılım sürümü koşullar arasında değiştirilmeyecek. Değişiklik gerekirse eski kayıtlar korunacak, yeni sürüm açıkça ayrılacak ve karşılaştırılan koşullar yeni sürümle tamamlanacak. Başarısızlığı gördükten sonra kabul eşiği veya deney koşulu gevşetilmeyecek.
 
-## 4. Seçilen ana hedef ve ek sayısal öneriler
+## 4. Seçilen hedefler ve ek sayısal öneriler
 
-| Parametre / ölçüt | Öneri | Gerekçe ve sınırlama |
+| Parametre / ölçüt | Planlanan değer | Gerekçe ve sınırlama |
 | --- | --- | --- |
 | İlerleme hızı hedefi | **0,10 m/s**; dönüş ve kaçınmada daha düşük hız kullanılabilecek. | Küçük alanda gözlem ve kontrol için başlangıç ayarı. Seçilen motorların bu hızda kararlı çalıştığı henüz gösterilmedi. |
-| Waypoint/hedefe erişim toleransı | Araç referans noktasının ilgili noktaya uzaklığı **en çok 10 cm**. Son hedefte araç **2 saniye** bu bölge içinde durmuş olacak. | Mühendislik hedefi; literatürden alınmış veya ölçülmüş doğruluk değildir. Noktalar A–B–C sırasıyla değerlendirilecek. |
-| Rotaya yeniden katılma | Aktif sonlu rota parçasına dik uzaklık **en çok 10 cm** olacak; kaçınma tamamlandıktan sonra bu bantta **en az 1 saniye** kalınacak ve hedef yönünde **en az 10 cm** ilerleme görülecek. | Tek seferlik çizgi kesişimini kalıcı dönüşten ayırmak için öneri. Engel geride bırakılmış, gövde için geçiş açık ve hedefe uzaklık kaçınmaya başlanan noktadan daha az olacak. |
-| Deneme süre sınırı | Hareket başlangıcından itibaren **120 saniye**. | 3 m rota, önerilen hızda kesintisiz düz ilerleme için yaklaşık 30 saniye eder; dönüş/kaçınmaya ek süre ayıran başlangıç önerisidir. Süre başarısı henüz bilinmiyor. |
+| Waypoint/hedefe erişim toleransı | Araç referans noktasının sıradaki noktaya Öklid uzaklığı **en çok 10 cm**. | Kullanıcı tarafından planlanan hedef olarak seçildi. Literatürden alınmış veya ölçülmüş doğruluk değildir. Noktalar A–B–C sırasıyla değerlendirilecek. |
+| Son hedefte durma süresi | Son hedef bandında **2 saniye** durmuş olma önerisi. | Bu süre henüz seçilmedi; 10 cm erişim toleransının seçilmesi 2 saniyelik süreyi onaylamaz. |
+| Rotaya yeniden katılma bandı | Aktif sonlu rota parçasına uzaklık **en çok 10 cm**. | Kullanıcı tarafından planlanan hedef olarak seçildi. Engel geride bırakılmış, gövde için geçiş açık ve hedefe uzaklık kaçınma başlangıcına göre azalmış olacak. Yalnızca çizgi kesişimi yeterli olmayacak. |
+| Rotaya dönüşün süre/ilerleme kontrolü | Bantta **en az 1 saniye** kalma ve hedef yönünde **en az 10 cm** ilerleme önerisi. | Bu iki ek değer henüz seçilmedi. İlerleme mesafesi, seçilmiş olan 10 cm enine dönüş bandından farklı bir parametredir. |
+| Deneme süre sınırı | Hareket başlangıcından görevin tamamlanmasına kadar **en çok 120 saniye**. | Kullanıcı tarafından planlanan hedef olarak seçildi. Önerilen 3 m rota ve 0,10 m/s hız için ideal düz ilerleme hesabı 30 saniyedir; hız ve gerçek tamamlama süresi doğrulanmış değildir. |
 | Engelsiz görev başarısı | K0'da **en az 9/10** geçerli denemede sıralı waypoint'ler ve son hedef tamamlanacak. | Temel rota takibinin ayrı değerlendirilmesini sağlar. |
 | Temas öncesi engel algılama | K1, K2 ve K3'ün **her birinde en az 9/10** geçerli denemede. | Bir yerleşimdeki düşük performansın toplam oran içinde gizlenmemesi amaçlanır. |
 | Birleşik otonom görev başarısı | K1, K2 ve K3'ün **her birinde en az 8/10** geçerli denemede: temas öncesi algılama **ve** çarpışmasız kaçınma **ve** rotaya dönüş **ve** süre içinde sıralı waypoint'ler ve hedefe varış. | Kullanıcı bu ana hedefi uygun buldu. En az 24/30 engelli denemeye karşılık gelir; yalnız toplam 24/30 olması koşul başına hedefi karşılamaya yetmez. Algılama ve kaçınma aşamaları ayrıca raporlanacak. |
 | Bağımsız konum ölçümü kontrolü | Değerlendirmede kullanılan alanı kapsayan, dönüşüm hesabında kullanılmamış kontrol noktalarında mutlak konum hatası hedefi **en çok 2 cm**. | 10 cm kabul bandına göre beşte bir kontrol hedefidir; sağlandığı henüz bilinmiyor. Tek başına tüm hareketli ölçümlerin belirsizliğini kanıtlamaz. |
 
-40 denemelik tekrar planı ve her engelli koşulda en az 8/10 birleşik başarı hedefi kullanıcı tarafından seçildi. Diğer satırlardaki hız, 9/10 ek hedefleri, mesafe, süre ve ölçüm kontrol değerleri öneri durumunda. Tüm planın uygulanabilirliği ve danışman değerlendirmesi başvurudan önce tamamlanacak; bunlar kabul garantisi veya istatistiksel güç hesabı değildir. Kalibrasyonla seçilecek algılama/durma mesafesi, yan açıklık, örnekleme aralığı ve zaman eşleme doğruluğu ayrıca sayısallaştırılacak; şimdilik doğrulanmamış değer yazılmadı.
+40 denemelik tekrar planı, her engelli koşulda en az 8/10 birleşik başarı hedefi, 10 cm waypoint/hedef erişimi, 10 cm rotaya dönüş bandı ve 120 saniye deneme sınırı kullanıcı tarafından seçildi. Hız, 9/10 ek hedefleri, son hedefte 2 saniye durma, bantta 1 saniye kalma, 10 cm ileri hareket ve 2 cm bağımsız ölçüm kontrol değeri öneri durumunda. Tüm planın uygulanabilirliği ve danışman değerlendirmesi başvurudan önce tamamlanacak; bunlar kabul garantisi veya istatistiksel güç hesabı değildir. Kalibrasyonla seçilecek algılama/durma mesafesi, yan açıklık, örnekleme aralığı ve zaman eşleme doğruluğu ayrıca sayısallaştırılacak; şimdilik doğrulanmamış değer yazılmadı.
 
 Algılama eşiğinde sensörün gövdeye göre konumu, toplam algılama/karar gecikmesindeki ilerleme, ölçülmüş durma mesafesi ve açıklık payı birlikte dikkate alınacak. Sensörün kendi referansından verdiği mesafe doğrudan araç gövdesinin açıklığı sayılmayacak.
 

@@ -11,7 +11,7 @@ Güncelleme: 22 Ekim 2026. Bu liste hazırlık durumunu gösterir; başvurunun g
 | Genel bilgiler | Yürütücü, kurum/bölüm, danışman ve Haziran 2027 bitirme teslim hedefi alındı. Kullanıcı ilk proje başlığını korumayı seçti. | Kesin teslim günü ve bütçe; seçilen 6 aylık sürenin danışman incelemesi. |
 | 1.1 Bilimsel nitelik | Kaynak destekli ilk metin ve ilgili çalışma karşılaştırması hazır. | Yöntemle tutarlılık, katkının son ifadesi ve danışman incelemesi. |
 | 1.2 Amaç ve hedefler | Kullanıcı dört koşul × 10 tekrar = 40 denemeyi ve her engelli koşulda en az 8/10 birleşik görev başarısı hedefini seçti. | Kalan ek hedefler, uygulanabilirlik gerekçesi ve danışman incelemesi. |
-| 2 Yöntem | Seçilen Bug 2 uyarlaması, tekrar planı ve ana hedef metne işlendi. Geometri, 10 cm bant, 120 saniye ve diğer sayısal değerler protokolde öneri olarak tutuluyor. Boş kayıt şablonu hazır. | Parça modelleri, sensör açıları, algoritma parametreleri, deney alanı, bağımsız ölçüm ve kalan parametrelerin kesinleştirilmesi; danışman incelemesi. |
+| 2 Yöntem | Seçilen Bug 2 uyarlaması, tekrar planı ve ana hedef metne işlendi. Kullanıcı 10 cm waypoint erişimi, 10 cm rotaya dönüş bandı ve 120 saniye deneme sınırını da seçti; birleşik rapora işlendi. Geometri ve diğer sayısal öneriler açık. Boş kayıt şablonu hazır. | Parça modelleri, sensör açıları, algoritma parametreleri, deney alanı, bağımsız ölçüm ve kalan parametrelerin kesinleştirilmesi; danışman incelemesi. |
 | Görseller | Üç yenilenmiş şema PNG ve PDF olarak hazır. | Son yöntem ve parça seçiminden sonra etiket kontrolü; TYBS önizlemesinde okunabilirlik. |
 | 3.1 Çalışma takvimi | Kullanıcı 6 aylık toplam süreyi seçti. Beş iş paketi 1–6. ay aralıklarıyla birleşik rapora işlendi; katkılar toplamı %100. Akademik hedef planı ayrı tutuldu. | Danışman incelemesi, akademik hedefle ilişki, kesin teslim günü ve kalan sayısal deney eşikleri. |
 | 3.2 Risk yönetimi | Temel hedefleri koruyan önlem ve B planları taslak olarak hazır. | Nihai donanım, algoritma ve ölçüm düzenine göre somutlaştırma. |
@@ -47,11 +47,11 @@ Düzyazı çıktısında, boşluklar dahil karakterler sayıldı. Bu kontrol ba�
 
 | Alan | Hazırlık kontrolü |
 | --- | --- |
-| Özet | 217 kelime; 25–450 kelime aralığında. |
+| Özet | 235 kelime; 25–450 kelime aralığında. |
 | 1.1 Bilimsel nitelik | 4053 karakter; en az 350 karakter koşulunun üzerinde. |
-| 1.2 Amaç ve hedefler | 1649 karakter; en az 350 karakter koşulunun üzerinde. |
-| 2 Yöntem | 10905 karakter; en az 350 karakter koşulunun üzerinde. |
+| 1.2 Amaç ve hedefler | 1781 karakter; en az 350 karakter koşulunun üzerinde. |
+| 2 Yöntem | 12404 karakter; en az 350 karakter koşulunun üzerinde. |
 | Çalışma takvimi | Kullanıcının seçtiği 6 ay, beş iş paketi, toplam %100 katkı. |
 | Deney kayıtları | CSV yalnız başlık içeriyor; sonuç satırı yok. |
 
-Waypoint ve rotaya dönüş toleransı ile deneme süre sınırı kullanıcıya ayrıca soruldu. Yanıt alınana kadar 10 cm ve 120 saniye kesinleşmiş değer olarak birleşik rapora eklenmedi. Danışman incelemesi, gerçek kurum olanakları ve nihai bütçe açık tutuldu.
+Kullanıcı 10 cm waypoint erişimi, 10 cm rotaya dönüş bandı ve 120 saniye deneme sınırını planlanan hedefler olarak seçti; birleşik rapora işlendi. Ek sayısal öneriler seçilmiş sayılmadı. Danışman incelemesi, gerçek kurum olanakları ve nihai bütçe açık tutuldu.

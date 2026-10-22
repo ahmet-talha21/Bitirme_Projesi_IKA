@@ -10,11 +10,11 @@ Güncelleme: 22 Ekim 2026. Bu dosya çalışma takibi içindir; başvurunun bili
 - Kullanıcının seçtiği 6 aylık süre ve 1–6. ay dağılımının danışmanla değerlendirilmesi; Haziran 2027 bitirme hedefiyle ilişkisi.
 - Deney yerinin seçimi ve gerçekten kullanılacak kurum olanakları. Deney yeri şu anda bilinmiyor.
 - Ürün modelleri, sensör açıları, ağ/arayüz ayrıntıları ve seçilen Bug 2 uyarlamasının uygulama parametreleri.
-- Bağımsız görüntü ölçümünün uygulanabilirliği, waypoint/rotaya dönüş toleransları, açıklıklar ve süre sınırı.
+- Bağımsız görüntü ölçümünün uygulanabilirliği; seçilen 10 cm waypoint/rotaya dönüş ve 120 saniye hedeflerinin değerlendirilmesi, açıklıklar ve kalan durum geçişi parametreleri.
 - Türkiye teslim giderleri ve eksik kalemlerle tamamlanmış nihai TL bütçesi. Mevcut kaynaklı referans hesabı 11.986,24 TL'dir; şasi ve diğer eksikler dahil değildir. Bu tutar talep edilecek bütçe olarak yazılmamıştır.
 - Son kararlar sonrası özet, atıflar, görsel etiketleri ve TYBS önizlemesi.
 
-10 cm bant, 120 saniye süre ve ek 9/10 hedefleri [deney protokolünde](DENEY_PROTOKOLU_ONERISI.md) yalnızca öneridir. Kullanıcı tarafından seçilmiş veya deneyle doğrulanmış değerler değildir. Bu nedenle başvuru anlatımına kesin değer olarak alınmadılar. L biçimli 3 metre rota ve rastgeleleştirilmiş 10 blok uygulaması da ayrıntıları kesinleşecek önerilerdir.
+Kullanıcı [deney protokolündeki](DENEY_PROTOKOLU_ONERISI.md) 10 cm waypoint erişimi, 10 cm rotaya dönüş bandı ve 120 saniye deneme sınırını planlanan hedefler olarak seçti. Bu değerler ölçülmüş performans değildir. Ek 9/10 hedefleri, 0,10 m/s hız, son hedefte 2 saniye durma, bantta 1 saniye kalma, 10 cm ileri hareket ve 2 cm ölçüm kontrol hedefi kullanıcı tarafından seçilmedi. L biçimli 3 metre rota ve rastgeleleştirilmiş 10 blok uygulaması da ayrıntıları kesinleşecek önerilerdir.
 
 ## Belgenin kullanımı
 
