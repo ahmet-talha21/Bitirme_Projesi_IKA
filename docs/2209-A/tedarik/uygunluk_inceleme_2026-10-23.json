@@ -1,0 +1,219 @@
+{
+  "kontrol_tarihi": "2026-10-23",
+  "saat_dilimi": "Europe/Istanbul",
+  "resmi_erisim": [
+    {
+      "url": "https://tubitak.gov.tr/sites/default/files/2026-10/2209-A_2026_Yili_Cagri_Duyurusu.pdf",
+      "local": "2209-A_2026_Yili_Cagri_Duyurusu.pdf",
+      "http": 200,
+      "bytes": 731866,
+      "sha256": "baa725c095dee35462529f2359e7c15e8a92c1d669413ae56ec9f462fdaa01bb"
+    },
+    {
+      "url": "https://tubitak.gov.tr/sites/default/files/2026-10/2209-A_Basvuru_Icerigi_Bilgi_Notu.pdf",
+      "local": "2209-A_Basvuru_Icerigi_Bilgi_Notu.pdf",
+      "http": 200,
+      "bytes": 321786,
+      "sha256": "d5bf5477971b5924fe079970bab156057378afa1c2bff07df0a0d78614aba0e6"
+    },
+    {
+      "url": "https://tubitak.gov.tr/sites/default/files/2026-01/UYZ_Rehberi_v04_TR.pdf",
+      "local": "UYZ_Rehberi_v04_TR.pdf",
+      "http": 200,
+      "bytes": 484601,
+      "sha256": "fdfe5238dd7c773e0413c4c5be62ce7d2c9324116aa326ee8ae552ee6e5ae61b"
+    },
+    {
+      "url": "https://tubitak.gov.tr/tr/duyuru/bibliyografik-verilerin-duzenlenmesi",
+      "local": "bibliyografya.html",
+      "http": 200,
+      "bytes": 68676,
+      "sha256": "927e33e33118cb9836dc1eccdca0fb27b6522fa61b029ffc5bb6379f51e85d48"
+    }
+  ],
+  "doi_kontrol": [
+    {
+      "doi": "10.1007/BF01840369",
+      "doi_http": 302,
+      "yonlendirme": "http://link.springer.com/10.1007/BF01840369",
+      "crossref_http": 200,
+      "baslik": [
+        "Path-planning strategies for a point mobile automaton moving amidst unknown obstacles of arbitrary shape"
+      ],
+      "yil": [
+        [
+          1987,
+          11
+        ]
+      ],
+      "yazar_soyadlari": [
+        "Lumelsky",
+        "Stepanov"
+      ],
+      "yayinci": "Springer Science and Business Media LLC",
+      "basim_yeri": null,
+      "onceki_baslikla_eslesme": true
+    },
+    {
+      "doi": "10.1007/978-3-319-54413-7",
+      "doi_http": 302,
+      "yonlendirme": "http://link.springer.com/10.1007/978-3-319-54413-7",
+      "crossref_http": 200,
+      "baslik": [
+        "Robotics, Vision and Control"
+      ],
+      "yil": [
+        [
+          2017
+        ]
+      ],
+      "yazar_soyadlari": [
+        "Corke"
+      ],
+      "yayinci": "Springer International Publishing",
+      "basim_yeri": "Cham",
+      "onceki_baslikla_eslesme": true
+    },
+    {
+      "doi": "10.1080/01621459.1927.10502953",
+      "doi_http": 302,
+      "yonlendirme": "http://www.tandfonline.com/doi/abs/10.1080/01621459.1927.10502953",
+      "crossref_http": 200,
+      "baslik": [
+        "Probable Inference, the Law of Succession, and Statistical Inference"
+      ],
+      "yil": [
+        [
+          1927,
+          6
+        ]
+      ],
+      "yazar_soyadlari": [
+        "Wilson"
+      ],
+      "yayinci": "Informa UK Limited",
+      "basim_yeri": null,
+      "onceki_baslikla_eslesme": true
+    },
+    {
+      "doi": "10.3390/robotics6020007",
+      "doi_http": 302,
+      "yonlendirme": "https://www.mdpi.com/2218-6581/6/2/7",
+      "crossref_http": 200,
+      "baslik": [
+        "An Optimal and Energy Efficient Multi-Sensor Collision-Free Path Planning Algorithm for a Mobile Robot in Dynamic Environments"
+      ],
+      "yil": [
+        [
+          2017,
+          3,
+          31
+        ]
+      ],
+      "yazar_soyadlari": [
+        "Alajlan",
+        "Elleithy",
+        "Almasri",
+        "Sobh"
+      ],
+      "yayinci": "MDPI AG",
+      "basim_yeri": null,
+      "onceki_baslikla_eslesme": true
+    },
+    {
+      "doi": "10.3390/buildings13092212",
+      "doi_http": 302,
+      "yonlendirme": "https://www.mdpi.com/2075-5309/13/9/2212",
+      "crossref_http": 200,
+      "baslik": [
+        "Integrating BIM–IoT and Autonomous Mobile Robots for Construction Site Layout Printing"
+      ],
+      "yil": [
+        [
+          2023,
+          8,
+          30
+        ]
+      ],
+      "yazar_soyadlari": [
+        "Iqbal",
+        "Ahmed",
+        "Amin",
+        "Qayyum",
+        "Ullah"
+      ],
+      "yayinci": "MDPI AG",
+      "basim_yeri": null,
+      "onceki_baslikla_eslesme": true
+    },
+    {
+      "doi": "10.3390/robotics15090171",
+      "doi_http": 302,
+      "yonlendirme": "https://www.mdpi.com/2218-6581/15/9/171",
+      "crossref_http": 200,
+      "baslik": [
+        "Hierarchical Control Architecture for Trajectory Tracking of Differential-Drive Nonholonomic Robots Using LQG-Based Velocity Control"
+      ],
+      "yil": [
+        [
+          2026,
+          9,
+          15
+        ]
+      ],
+      "yazar_soyadlari": [
+        "Rodrigues",
+        "Silva",
+        "Pugliese",
+        "Silva",
+        "Monte-Mor",
+        "Karolak",
+        "Gomides",
+        "Braga"
+      ],
+      "yayinci": "MDPI AG",
+      "basim_yeri": null,
+      "onceki_baslikla_eslesme": true
+    }
+  ],
+  "belge_kontrol": {
+    "tarih": "2026-10-23",
+    "incelenen_surumu": "fe9357a228b2ecd43da0c7dd72fa7d449c9c1132",
+    "pdf_sayfa": 14,
+    "pdf_sha256": "c4f221aa3616bc4be11c96e19d2d30225162f6ea58e0b5d795616f601a9244f6",
+    "ozet_kelime": 249,
+    "bolum_karakter": {
+      "1.1": 5018,
+      "1.2": 1723,
+      "Yöntem": 24957
+    },
+    "kaynak_sayisi": 7,
+    "butce_kalem": 22,
+    "butce_toplam_TL": 11500.0,
+    "pdf_sayfa_disina_tasan_metin": [],
+    "pdf_donus_basliklari_dogru": true,
+    "pdf_doi_baglantilari": [
+      "https://doi.org/10.1007/978-3-319-54413-7",
+      "https://doi.org/10.1007/BF01840369",
+      "https://doi.org/10.1080/01621459.1927.10502953",
+      "https://doi.org/10.3390/buildings13092212",
+      "https://doi.org/10.3390/robotics15090171",
+      "https://doi.org/10.3390/robotics6020007"
+    ],
+    "fiziksel_deney_kaydi_yalniz_baslik": true,
+    "syntetik_senaryo_sayisi": 6
+  },
+  "oncelikli_alanlar": {
+    "url": "https://tubitak.gov.tr/sites/default/files/2025-07/Oncelikli_Alanlar_2025-2.pdf",
+    "http": 200,
+    "sha256": "037957aae5dcca4a3879539d92e1bfa2c62570519d728911eeba6bb895830d0c",
+    "ilgili_alan": "Robotik-mekatronik"
+  },
+  "alajlan_yayinci_erisim": {
+    "url": "https://www.mdpi.com/2218-6581/6/2/7",
+    "http": 200,
+    "bytes": 475745,
+    "incelenen_kisim": "Özet ve sensör kullanımını açıklayan giriş bölümü"
+  },
+  "ana_rapor_degistirildi": false
+}
