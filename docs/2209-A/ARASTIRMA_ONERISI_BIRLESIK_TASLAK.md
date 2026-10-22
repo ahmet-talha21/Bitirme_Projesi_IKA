@@ -1,6 +1,6 @@
 # TÜBİTAK 2209-A — Araştırma Önerisi
 
-**Birleşik metin taslağı · 22 Ekim 2026 · Seçilen bütçe güncellemesi**
+**Birleşik metin taslağı · 22 Ekim 2026 · Anlatım ve bölüm düzeni güncellemesi**
 
 **Proje adı:** Kullanıcı tarafından belirlenen rota bilgisine göre hareket eden otonom araç tasarımı
 
@@ -35,13 +35,19 @@ Düz zeminde yaklaşık 3 × 3 metre olarak planlanan alanda engelsiz referans v
 
 ### 1.1. Konunun önemi ve araştırma önerisinin bilimsel niteliği
 
+**Araştırma problemi ve önemi**
+
 Otonom kara araçlarında rota takibi, aracın konum ve yön bilgisinin hareket kontrolüyle birlikte değerlendirilmesini gerektirir. İki tekeri bağımsız sürülen mobil robotların kinematik modeli, tekerleklerin hareketi ile aracın doğrusal ve açısal hareketi arasındaki ilişkiyi tanımlar. Bu nedenle kullanıcı tarafından belirlenen bir rotanın fiziksel ortamda izlenmesi, yalnızca hareket komutlarının gönderilmesine değil, aracın yöneliminin ve hareketinin uygun biçimde izlenmesine de bağlıdır (Dellaert ve Hutchinson, t.y.). Rota üzerinde engel bulunması durumunda ise aracın engeli algılaması, çarpışmadan kaçınacak bir hareket üretmesi ve hedefe ilerleyişini sürdürebilmesi gerekir.
+
+**Literatürdeki yaklaşımlar ve projenin konumu**
 
 Hareket planlama literatüründe yerel engel bilgisini kullanan Bug türü yöntemler, önceden tüm engellerin haritası bilinmeden hedefe yönelik hareketin ele alınabildiği yaklaşımlar arasındadır. Bu yöntemlerin incelenmesinde robotun konumuna, engel geometrisine ve algılama biçimine ilişkin varsayımlar önem taşır. Ayrıca robotun fiziksel boyutlarının dikkate alınması, noktasal bir modelle bulunan yolun gerçek bir araçta uygulanabilirliğinin değerlendirilmesi açısından gereklidir (Hauser, t.y.-a).
 
 Alajlan vd. (2017), FEZ Cerbot platformunda kızılötesi sensörler, ultrasonik sensör ve araç üzeri kamerayı birleştirerek sabit ve kısmen dinamik engelli senaryoları incelemiştir. Bu çalışma, algılama kapsamının hareket kararlarıyla birlikte tasarlanmasına örnek oluşturmaktadır. Bu araştırmada ise beş sabit mesafe sensörünün sağladığı yerel bilgiyle sabit engeller çevresinde kaçınma davranışı değerlendirilecektir. Telefonla yapılacak görüntü kaydı, aracın hareketini bağımsız olarak ölçmek amacıyla kullanılacaktır. Algılama altyapısı ve deney koşulları farklı olduğundan, ilgili yayındaki performans sonuçları bu prototip için öngörülen başarı değerleri olarak alınmayacaktır.
 
 Koordinat tabanlı uygulamalarda Iqbal vd. (2023), yapı modelinden çıkarılan koordinatların masaüstü uygulaması ve bulut bağlantısı üzerinden ESP32 tabanlı bir mobil robota aktarılmasıyla zemin çizimi gerçekleştiren bir sistem sunmuştur. Rodrigues vd. (2026) ise enkoderler, dış kamera temelli konum bilgisi ve ESP32 gömülü kontrol katmanını içeren küçük bir diferansiyel sürüşlü robotta yörünge takibini deneysel olarak değerlendirmiştir. Bu örnekler, koordinat aktarımı, konum bilgisi ve motor kontrolünün farklı mimarilerle bütünleştirilebildiğini göstermektedir. Önerilen projede ele alınacak değerlendirme görevi, kullanıcının tanımladığı rota üzerinde yerel algıyla engelden kaçınma ve rotaya yeniden katılmadır. Çalışmanın bilimsel çerçevesi, bu davranışın seçilen donanım ve sınırlı deney koşullarında hangi aşamalarda başarılı veya başarısız olduğunun tekrarlı ölçümlerle incelenmesine dayanmaktadır.
+
+**Araştırma sorusu, kapsam ve beklenen katkı**
 
 Araştırma problemi, mikrodenetleyici tabanlı bir aracın kullanıcı tanımlı rotada karşılaştığı sabit engelleri aşarak aynı rota üzerindeki görevini sürdürebilmesidir. Bu problem, düz zeminde yaklaşık 3 × 3 metre olarak planlanan kontrollü alanda incelenecektir. Aynı referans rota üzerinde engelin yeri değiştirilerek algılama, kaçınma, rotaya dönüş ve görevi tamamlama aşamalarındaki başarı ve başarısızlıklar karşılaştırılacaktır.
 
@@ -69,6 +75,8 @@ Waypoint erişimi ve rotaya dönüş için 10 cm tolerans, her deneme için 120 
 Araştırma, bir kara aracı prototipinin geliştirilmesi ve kontrollü koşullarda tekrarlı deneylerle değerlendirilmesi biçiminde yürütülecektir. Temel bağımsız değişken, aynı referans rota üzerindeki sabit engelin yerleşimidir. Engel boyutu, yüzeyi ve sayısı engelli koşullar arasında sabit tutulacak; birden çok değişkenin etkisi tek bir etki gibi yorumlanmayacaktır. Bağımlı değişkenler temas öncesi algılama, çarpışmasız kaçınma, rotaya dönüş ve görev tamamlama sonuçları ile süre ve rota sapmasıdır.
 
 Başlangıç konumu ve yönü, referans rota, zemin, hız ayarı ve kontrol parametreleri koşullar arasında sabit tutulacak; pil gerilimi, aydınlatma ve kontrol edilemeyen değişimler kaydedilecektir. Yaklaşık 3 × 3 metre olarak planlanan alanın fiziksel yeri henüz belirlenmemiştir. Alanın yeterliliği, şasi boyutları ve engel çevresindeki geçiş açıklıkları birlikte değerlendirilerek kontrol edilecektir.
+
+Hedeflere ulaşmak için arayüz ve rota aktarımı İP2, motor/enkoder ve sensör kalibrasyonu İP1, konum kestirimi ve rota takibi İP3, kaçınma ve rotaya dönüş İP4 kapsamında geliştirilecektir. Bu bileşenlerin birlikte çalışması, İP5 kapsamında dört koşuldaki toplam 40 denemeyle değerlendirilecektir. Böylece donanımın kurulması ile otonom görevin başarıyla tamamlanması ayrı aşamalarda kontrol edilecek; sonuçlar Bölüm 2.6–2.7’de tanımlanan ölçütlerle raporlanacaktır.
 
 ### 2.2. Donanım ve konum kestirimi
 

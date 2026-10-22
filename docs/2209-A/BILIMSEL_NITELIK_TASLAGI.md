@@ -4,13 +4,19 @@ Durum: Kullanıcının ve danışmanın incelemesine açık çalışma metni. Ni
 
 ## Bölüm metni
 
+**Araştırma problemi ve önemi**
+
 Otonom kara araçlarında rota takibi, aracın konum ve yön bilgisinin hareket kontrolüyle birlikte değerlendirilmesini gerektirir. İki tekeri bağımsız sürülen mobil robotların kinematik modeli, tekerleklerin hareketi ile aracın doğrusal ve açısal hareketi arasındaki ilişkiyi tanımlar. Bu nedenle kullanıcı tarafından belirlenen bir rotanın fiziksel ortamda izlenmesi, yalnızca hareket komutlarının gönderilmesine değil, aracın yöneliminin ve hareketinin uygun biçimde izlenmesine de bağlıdır (Dellaert ve Hutchinson, t.y.). Rota üzerinde engel bulunması durumunda ise aracın engeli algılaması, çarpışmadan kaçınacak bir hareket üretmesi ve hedefe ilerleyişini sürdürebilmesi gerekir.
+
+**Literatürdeki yaklaşımlar ve projenin konumu**
 
 Hareket planlama literatüründe yerel engel bilgisini kullanan Bug türü yöntemler, önceden tüm engellerin haritası bilinmeden hedefe yönelik hareketin ele alınabildiği yaklaşımlar arasındadır. Bu yöntemlerin incelenmesinde robotun konumuna, engel geometrisine ve algılama biçimine ilişkin varsayımlar önem taşır. Ayrıca robotun fiziksel boyutlarının dikkate alınması, noktasal bir modelle bulunan yolun gerçek bir araçta uygulanabilirliğinin değerlendirilmesi açısından gereklidir (Hauser, t.y.-a).
 
 Engelden kaçınmaya ilişkin deneysel bir uygulamada Alajlan vd. (2017), FEZ Cerbot platformunda kızılötesi sensörler, ultrasonik sensör ve araç üzeri kamerayı birleştirerek sabit ve kısmen dinamik engelli senaryoları incelemiştir. Bu çalışma, algılama kapsamının ve birden çok sensörden gelen bilginin hareket kararlarıyla birlikte ele alınmasına örnektir. Önerilen projede beş sabit mesafe sensörüyle sınırlı algılama düzeni ve sabit engeller üzerinde çalışılacak; mevcut telefon araç üzerinde engel algılayan kamera olarak değil, hareketi bağımsız değerlendiren ölçüm aracı olarak planlanacaktır. Anılan çalışmanın yol/enerji performansı ve farklı algılama altyapısı bu araca aktarılmış sonuç olarak kullanılmayacaktır.
 
 Koordinat tabanlı uygulamalarda Iqbal vd. (2023), yapı modelinden çıkarılan koordinatların masaüstü uygulaması ve bulut bağlantısı üzerinden ESP32 tabanlı bir mobil robota aktarılmasıyla zemin çizimi gerçekleştiren bir sistem sunmuştur. Rodrigues vd. (2026) ise enkoderler, dış kamera temelli konum bilgisi ve ESP32 gömülü kontrol katmanını içeren küçük bir diferansiyel sürüşlü robotta yörünge takibini deneysel olarak değerlendirmiştir. Bu örnekler, koordinat aktarımı, konum bilgisi ve motor kontrolünün farklı mimarilerle bütünleştirilebildiğini göstermektedir. Önerilen projede ele alınacak değerlendirme görevi, kullanıcının tanımladığı rota üzerinde yerel algıyla engelden kaçınma ve rotaya yeniden katılmadır. Çalışmanın bilimsel çerçevesi, bu davranışın seçilen donanım ve sınırlı deney koşullarında hangi aşamalarda başarılı veya başarısız olduğunun tekrarlı ölçümlerle incelenmesine dayanmaktadır.
+
+**Araştırma sorusu, kapsam ve beklenen katkı**
 
 Bu projede ele alınacak problem, kullanıcı tarafından belirlenen waypoint rotasında ilerleyen mikrodenetleyici tabanlı bir kara aracının, farklı yerleşimlerdeki sabit engelleri algılayarak çarpışmasız kaçınma hareketi gerçekleştirmesi ve ardından rotasına yeniden katılmasıdır. Çalışma, düz zeminde yaklaşık 3 × 3 metre olarak planlanan kontrollü bir deney alanıyla sınırlandırılacaktır. Rota, bilgisayar öncelikli ve telefondan erişimi de hedeflenen kullanıcı arayüzündeki ölçülü kareli alan üzerinde tanımlanacaktır. Deneylerde engellerin yerleşimleri değiştirilecek; algılama, çarpışmasız kaçınma, rotaya dönüş ve görev tamamlama davranışları ayrı ayrı değerlendirilecektir.
 

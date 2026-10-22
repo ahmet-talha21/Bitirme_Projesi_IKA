@@ -9,7 +9,7 @@ Güncelleme: 22 Ekim 2026. Bu liste hazırlık durumunu gösterir; başvurunun g
 | Bölüm | Durum | Tamamlanması için gereken |
 | --- | --- | --- |
 | Genel bilgiler | Yürütücü, kurum/bölüm, danışman ve Haziran 2027 bitirme teslim hedefi alındı. Kullanıcı ilk proje başlığını korumayı seçti. | Kesin teslim günü; seçilen 6 ay ve 11.500 TL bütçenin danışman incelemesi ve güncel fiyat kontrolü. |
-| 1.1 Bilimsel nitelik | Kaynak destekli ilk metin ve ilgili çalışma karşılaştırması hazır. | Yöntemle tutarlılık, katkının son ifadesi ve danışman incelemesi. |
+| 1.1 Bilimsel nitelik | Kaynak destekli metin ve ilgili çalışma karşılaştırması hazır; üçüncü örnek incelenerek problem/literatür/katkı ara başlıkları eklendi. | Yöntemle tutarlılık, katkının son ifadesi ve danışman incelemesi. |
 | 1.2 Amaç ve hedefler | Kullanıcı dört koşul × 10 tekrar = 40 denemeyi ve her engelli koşulda en az 8/10 birleşik görev başarısı hedefini seçti. | Kalan ek hedefler, uygulanabilirlik gerekçesi ve danışman incelemesi. |
 | 2 Yöntem | Seçilen Bug 2 uyarlaması, tekrar planı ve ana hedef metne işlendi. Kullanıcı 10 cm waypoint erişimi, 10 cm rotaya dönüş bandı ve 120 saniye deneme sınırını da seçti; birleşik rapora işlendi. Geometri ve diğer sayısal öneriler açık. Boş kayıt şablonu hazır. | Parça modelleri, sensör açıları, algoritma parametreleri, deney alanı, bağımsız ölçüm ve kalan parametrelerin kesinleştirilmesi; danışman incelemesi. |
 | Görseller | Üç yenilenmiş şema PNG ve PDF olarak hazır. | Son yöntem ve parça seçiminden sonra etiket kontrolü; TYBS önizlemesinde okunabilirlik. |
@@ -48,9 +48,9 @@ Düzyazı çıktısında, boşluklar dahil karakterler sayıldı. Bu kontrol ba�
 | Alan | Hazırlık kontrolü |
 | --- | --- |
 | Özet | 203 kelime; 25–450 kelime aralığında. |
-| 1.1 Bilimsel nitelik | 4053 karakter; en az 350 karakter koşulunun üzerinde. |
+| 1.1 Bilimsel nitelik | 4172 karakter; en az 350 karakter koşulunun üzerinde. |
 | 1.2 Amaç ve hedefler | 1781 karakter; en az 350 karakter koşulunun üzerinde. |
-| 2 Yöntem | 12404 karakter; en az 350 karakter koşulunun üzerinde. |
+| 2 Yöntem | 12870 karakter; en az 350 karakter koşulunun üzerinde. |
 | Çalışma takvimi | Kullanıcının seçtiği 6 ay, beş iş paketi, toplam %100 katkı. |
 | Deney kayıtları | CSV yalnız başlık içeriyor; sonuç satırı yok. |
 
@@ -59,3 +59,5 @@ Kullanıcı 10 cm waypoint erişimi, 10 cm rotaya dönüş bandı ve 120 saniye 
 Ekipman erişimi: Kullanıcı bu ayrıntıların düzenlenebileceğini belirterek yazımın sürmesini istedi. Ölçüm ve telefon sabitleme ekipmanına erişim çalışma hazırlığında planlanacak; mevcut sahiplik, kurum envanteri veya bedelsiz temin varsayılmadı. Başvuru yazımı için fiziksel ön ölçüm beklenmeyecek.
 
 Güncel bütçe önerisi: [11.500 TL planlama tablosu](BASVURU_BUTCE_ONERISI.md) · [PDF](BASVURU_BUTCE_ONERISI.pdf) · [Word](BASVURU_BUTCE_ONERISI.docx). Bütçe 12.000 TL üst sınırının 500 TL altında; mevcut telefon ve lehim ekipmanı yeniden bütçelenmedi. Önceki kaynaklı fiyat CSV'si korunarak tahmini ödenekler ayrı CSV'ye yazıldı. Kullanıcı toplam tutarı seçti; 11.500 TL planlanan destek talebi birleşik rapora işlendi. Resmî gider türlerine aktarım öncesinde danışman ve güncel fiyat/ürün kontrolü yapılacak.
+
+Üçüncü örnek: Kullanıcının sunduğu 2025 tarihli otonom yük taşıma robotu önerisi incelendi; inceleme kapsamı ve anlatıma uyarlanan noktalar [hazırlık notlarına](BASVURU_METNI_HAZIRLIK_NOTLARI.md) kaydedildi. Birleşik metinde bilimsel nitelik bölümünün okunabilirliği ve yöntem–iş paketi bağlantısı geliştirildi. Proje kapsamı, sayısal hedefler, seçilen süre ve tahmini bütçe korundu.
