@@ -1,5 +1,7 @@
 # Fiyatlı bütçe taslağı — 22 Ekim 2026
 
+**Güncel başvuru bütçesi önerisi:** Tüm ihtiyaç gruplarını kapsayan [11.500 TL tahmini plan](BASVURU_BUTCE_ONERISI.md) · [PDF](BASVURU_BUTCE_ONERISI.pdf) · [CSV](BASVURU_BUTCE_ONERISI.csv) hazırlandı. Bu planın bedelleri teklif değil, planlama tahminidir ve tutar henüz kullanıcı tarafından seçilmedi. Aşağıdaki 11.986,24 TL hesabı, eksik giderler içeren eski referans sepetinin tarihli kaydıdır; yeni önerinin toplamı değildir.
+
 Bu belge, önerilen parçaların kaynaklı fiyat gözlemlerini toplar. Model seçimi, ürün uyumu ve tedarik henüz tamamlanmadığından nihai TYBS bütçesi değildir. Fiyatlar satın alma/rezervasyon veya bağlayıcı teklif anlamına gelmez. Kullanıcının iki enkoderli motor ve beş sabit sensör kararı korunmuştur.
 
 ## Fiyatı bulunan yerel adaylar

@@ -63,10 +63,10 @@ def make_reference(path):
     document.save(path)
 
 
-def finish_layout(path):
+def finish_layout(path, title=None):
     document = Document(path)
     properties = document.core_properties
-    properties.title = "İKA — TÜBİTAK 2209-A Araştırma Önerisi, Birleşik Taslak"
+    properties.title = title or "İKA — TÜBİTAK 2209-A Araştırma Önerisi, Birleşik Taslak"
     properties.author = "Ahmet Talha Arslan"
     properties.subject = "Planlanan araştırma; deney sonuçları içermez"
     properties.modified = datetime.now(timezone.utc)
@@ -107,6 +107,8 @@ def finish_layout(path):
             widths = [3.0, 5.6, 8.4]
         elif count == 4 and label == "İP":
             widths = [0.8, 10.0, 4.6, 1.6]
+        elif count == 4 and label == "Kalem":
+            widths = [8.5, 1.7, 3.4, 3.4]
         elif count == 4:
             widths = [3.2, 4.1, 8.1, 1.6]
         else:
@@ -135,9 +137,9 @@ def finish_layout(path):
     document.save(path)
 
 
-def main():
-    source = ROOT / f"{STEM}.md"
-    output = ROOT / f"{STEM}.docx"
+def main(stem=STEM, title=None):
+    source = ROOT / f"{stem}.md"
+    output = ROOT / f"{stem}.docx"
     with tempfile.TemporaryDirectory(prefix="ika-belge-") as temporary:
         reference = Path(temporary) / "reference.docx"
         make_reference(reference)
@@ -146,12 +148,12 @@ def main():
             "--metadata=lang:tr-TR", f"--resource-path={ROOT}",
             f"--reference-doc={reference}", "--output", str(output),
         ], check=True, cwd=ROOT)
-        finish_layout(output)
+        finish_layout(output, title)
         pdf_directory = Path(temporary) / "pdf"
         pdf_directory.mkdir()
         cache_directory = Path(temporary) / "cache"
         cache_directory.mkdir()
-        generated_pdf = pdf_directory / f"{STEM}.pdf"
+        generated_pdf = pdf_directory / f"{stem}.pdf"
         subprocess.run([
             "pandoc", str(source), "--from=markdown-implicit_figures+autolink_bare_uris", "--standalone",
             "--pdf-engine=xelatex", f"--resource-path={ROOT}",
@@ -165,11 +167,17 @@ def main():
         if not generated_pdf.is_file() or not generated_pdf.stat().st_size:
             raise RuntimeError("PDF çıktısı oluşmadı.")
         shutil.copy2(generated_pdf, ROOT / generated_pdf.name)
-    pdf = ROOT / f"{STEM}.pdf"
+    pdf = ROOT / f"{stem}.pdf"
     output.chmod(0o644)
     pdf.chmod(0o644)
     print(f"Word: {output.name}\nPDF: {pdf.name}")
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--stem", default=STEM, help="Kaynak Markdown dosyasının uzantısız adı")
+    parser.add_argument("--title", help="Word belgesinin özelliklerindeki başlık")
+    arguments = parser.parse_args()
+    main(arguments.stem, arguments.title)

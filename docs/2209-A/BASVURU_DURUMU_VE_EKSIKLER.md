@@ -17,7 +17,7 @@ Güncelleme: 22 Ekim 2026. Bu liste hazırlık durumunu gösterir; başvurunun g
 | 3.2 Risk yönetimi | Temel hedefleri koruyan önlem ve B planları taslak olarak hazır. | Nihai donanım, algoritma ve ölçüm düzenine göre somutlaştırma. |
 | 3.3 Araştırma olanakları | Kişisel lehim ekipmanı ve deneyde kullanılabilecek telefon doğrulandı; taslak hazır. | Kurum altyapısı, deney yeri, sabitleme/kalibrasyon ve diğer ölçüm araçları doğrulanacak. |
 | 4 Yaygın etki | Prototip, arayüz, deney kayıtları ve dokümantasyon çıktıları önerildi. | Süre ve kapsamla son uyum; danışman incelemesi. |
-| Malzeme / bütçe | TL ve USD ara toplamlar, kaynak kayıtları ve güncel CSV hazır. 21 Ekim TCMB kuru ile eksik giderler hariç referans karşılık 11.986,24 TL; destek sınırına yalnızca 13,76 TL fark kalıyor. Pil fotoğrafındaki dört bağlantılı soket ayrıca kaydedildi. | Daha uygun fiyatlı belgeli tedarik; pil–şarj pin/akım uyumu, eksik mekanik/bağlantı/ölçüm fiyatları ve Türkiye teslim TL teklifleri. Tam proje bütçesi henüz yok. |
+| Malzeme / bütçe | Tüm ihtiyaç gruplarını kapsayan 22 kalemli **11.500 TL tahmini bütçe önerisi** Markdown, PDF, Word ve ayrı CSV olarak hazırlandı. Güncel fiyat dayanakları ile tahmini ödenekler ayrıldı. | Kullanıcının tutar tercihi, danışman incelemesi, teknik model/uyum ve teslim fiyatı kontrolü. Tutar henüz seçilmedi. |
 | Kaynakça | Mevcut bilimsel nitelik/yöntem metinlerinde kullanılan yedi kaynak tek alfabetik listede birleştirildi; atıf eşleştirmesi ve DOI'ler kaydedildi. | Nihai metin değişikliklerinde listeyi ve atıfları güncellemek; danışman incelemesi. |
 | Özet | Birleşik metnin diğer bölümleri toplandıktan sonra ilk özet yazıldı; dil düzenlemesinde seçilen Bug 2 yaklaşımına göre güncellendi. | Son yöntem, kapsam ve süre kararlarıyla yeniden eşleştirmek. |
 
@@ -57,3 +57,5 @@ Düzyazı çıktısında, boşluklar dahil karakterler sayıldı. Bu kontrol ba�
 Kullanıcı 10 cm waypoint erişimi, 10 cm rotaya dönüş bandı ve 120 saniye deneme sınırını planlanan hedefler olarak seçti; birleşik rapora işlendi. Ek sayısal öneriler seçilmiş sayılmadı. Danışman incelemesi, gerçek kurum olanakları ve nihai bütçe açık tutuldu.
 
 Ekipman erişimi: Kullanıcı bu ayrıntıların düzenlenebileceğini belirterek yazımın sürmesini istedi. Ölçüm ve telefon sabitleme ekipmanına erişim çalışma hazırlığında planlanacak; mevcut sahiplik, kurum envanteri veya bedelsiz temin varsayılmadı. Başvuru yazımı için fiziksel ön ölçüm beklenmeyecek.
+
+Güncel bütçe önerisi: [11.500 TL planlama tablosu](BASVURU_BUTCE_ONERISI.md) · [PDF](BASVURU_BUTCE_ONERISI.pdf) · [Word](BASVURU_BUTCE_ONERISI.docx). Bütçe 12.000 TL üst sınırının 500 TL altında; mevcut telefon ve lehim ekipmanı yeniden bütçelenmedi. Önceki kaynaklı fiyat CSV'si korunarak tahmini ödenekler ayrı CSV'ye yazıldı. Resmî gider türlerine aktarım ve nihai talep, kullanıcı/danışman değerlendirmesinden sonra tamamlanacak.

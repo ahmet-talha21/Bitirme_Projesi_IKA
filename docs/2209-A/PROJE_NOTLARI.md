@@ -156,3 +156,11 @@ Bu seçim, 10 cm'nin tüm hareket boyunca azami izleme hatası olduğu veya öl�
 ## 22 Ekim — ekipman erişimini çalışma hazırlığına bırakma
 
 Kullanıcı “onlar hallolur biz değer yazalım yine ölçmeyle uğraşmayalım” diyerek ekipman ayrıntıları yerine rapor yazımının sürmesini istedi. Başvuru aşamasında fiziksel ölçüm gerekmeyeceği, 10 cm ve 120 saniyenin planlanan hedefler olarak kullanılacağı açıklandı. Araştırma olanakları bölümünde multimetre, uzunluk ölçüm aracı ve telefon sabitleme aparatına erişim çalışma hazırlığında düzenlenecek biçimde yazıldı. Sahiplik/kurum envanteri, ücretsiz erişim veya gerçekleşmiş deney sonucu varsayılmadı. Deney aşamasındaki bağımsız değerlendirme yöntemi ve seçilen ana hedefler korundu.
+
+## 22 Ekim — tüm ihtiyaç gruplarını kapsayan bütçe önerisi
+
+Kullanıcının “tamam başlayalım” isteğiyle bütçe somutlaştırıldı. Yerel fiyatlar için ESP32, enkoderli motor, ToF ve temel multimetre sayfaları yeniden okundu; kaynak URL/HTML özetleri kaydedildi. ESP32 için önceki 628,50 TL yerine yeni kontrolde 630,00 TL görüldü. Fiyat gözlemleri ile tahmini ödenekler ayrılarak 22 kalemli 11.500 TL bütçe önerisi hazırlandı.
+
+Öneri; kontrol/algılama 3.500 TL, hareket/şasi 2.850 TL, güç 2.850 TL, montaj/bağlantı 700 TL, deney düzeni 1.300 TL ve yurt içi teslim 300 TL olarak dağıtıldı. 500 TL üst sınır farkı bir gider kalemi yapılmadı. Telefon ve lehim ekipmanı yeniden bütçelenmedi; aksesuar ve gerekirse ölçüm araçları ayrıca planlandı. Hiçbir ödenek satıcı teklifi veya uyumu doğrulanmış satın alma seti olarak sunulmadı. Yerel motor ve sensör çerçevesinin uygun ürünlerle karşılanması hâlen kontrol edilecek.
+
+Kullanıcının toplam tutar seçimi ve danışman incelemesi bekleniyor; birleşik raporda talep tutarı henüz kesinleştirilmedi. Tarihli gerçek fiyat CSV'si korunarak planlama bedelleri ayrı CSV'ye yazıldı. Sipariş verilmedi, satıcıya mesaj gönderilmedi ve kişisel katkı varsayılmadı.

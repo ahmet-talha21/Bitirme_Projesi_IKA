@@ -12,6 +12,8 @@ function Table(tbl)
     widths = {0.30, 0.70}
   elseif count == 4 and label == "İP" then
     widths = {0.05, 0.54, 0.30, 0.11}
+  elseif count == 4 and label == "Kalem" then
+    widths = {0.50, 0.10, 0.20, 0.20}
   elseif count == 4 then
     widths = {0.20, 0.25, 0.47, 0.08}
   elseif count == 3 and label == "Koşul" then

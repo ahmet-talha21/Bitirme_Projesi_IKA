@@ -1,0 +1,346 @@
+{
+  "date": "2026-10-22",
+  "timezone": "Europe/Istanbul",
+  "status": "Assistant-proposed planning estimates; user and advisor have not selected the requested amount.",
+  "planning_currency": "TRY",
+  "unit_amount_convention": "Estimated VAT-inclusive domestic expenditure allowances. No row is represented as a supplier quote.",
+  "total_proposed_TRY": "11500",
+  "support_cap_TRY": "12000",
+  "unrequested_difference_TRY": "500",
+  "current_source_observations": [
+    {
+      "key": "control",
+      "name": "ESP32-WROOM CP2102 Wifi ve Bluetooth Modülü - Type C",
+      "url": "https://www.robolinkmarket.com/esp32-wroom-cp2102-wifi-ve-bluetooth-modulu-type-c",
+      "html_sha256": "1732a81d40a59cdfe7fd178ac0c510c65c30e6421efdf616e9caa6511c5e0fb2",
+      "structured_offer": {
+        "@type": "Offer",
+        "url": "https://www.robolinkmarket.com/esp32-wroom-cp2102-wifi-ve-bluetooth-modulu-type-c",
+        "priceCurrency": "TRY",
+        "price": "630.00",
+        "priceValidUntil": "2026-11-22",
+        "validFrom": "2025-08-01T11:58:17+03:00",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 30,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn",
+          "applicableCountry": "TR",
+          "merchantReturnLink": "https://www.robolinkmarket.com/garanti-ve-iade-kosullari"
+        }
+      },
+      "displayed_vat_included_TRY": "630.00",
+      "scope": "Observed page price, not a quote, reservation, or confirmed electrical match."
+    },
+    {
+      "key": "motor",
+      "name": "JGA12-N20B - 6V 300RPM Enkoderli Motor",
+      "url": "https://www.direnc.net/6v-300rpm-enkoderli-motor",
+      "html_sha256": "e4cf1a295eb38174fd3e7a0ddea1c0bdc3116b711fc543255321eb8f003fc4a6",
+      "structured_offer": {
+        "@type": "Offer",
+        "url": "https://www.direnc.net/6v-300rpm-enkoderli-motor",
+        "priceCurrency": "TRY",
+        "price": "339.02",
+        "priceValidUntil": "2026-11-22",
+        "validFrom": "2024-12-05T09:06:35+03:00",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      },
+      "displayed_vat_included_TRY": "406.82",
+      "scope": "Observed page price, not a quote, reservation, or confirmed electrical match."
+    },
+    {
+      "key": "tof",
+      "name": "GY-VL53L0XV2 Lazer Mesafe Modülü",
+      "url": "https://www.direnc.net/gy-vl53l0xv2-lazer-mesafe-modulu",
+      "html_sha256": "9272c51a84176ed282c10ed1a10f15520c0ff233b58f01b77830837a14f9a56e",
+      "structured_offer": {
+        "@type": "Offer",
+        "url": "https://www.direnc.net/gy-vl53l0xv2-lazer-mesafe-modulu",
+        "priceCurrency": "TRY",
+        "price": "363.23",
+        "priceValidUntil": "2026-11-22",
+        "validFrom": "2018-12-31T19:42:10+03:00",
+        "availability": "https://schema.org/OutOfStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      },
+      "displayed_vat_included_TRY": "435.88",
+      "scope": "Observed page price, not a quote, reservation, or confirmed electrical match."
+    },
+    {
+      "key": "multimeter",
+      "name": "ANENG XL830L Dijital Kademeli Multimetre",
+      "url": "https://www.direnc.net/aneng-xl830l-dijital-kademeli-multimetre",
+      "html_sha256": "1091494e8560a5e7eb8a5b5224128c9a02d15238689743ec0b04caac5a37cc49",
+      "structured_offer": {
+        "@type": "Offer",
+        "url": "https://www.direnc.net/aneng-xl830l-dijital-kademeli-multimetre",
+        "priceCurrency": "TRY",
+        "price": "230.05",
+        "priceValidUntil": "2026-11-22",
+        "validFrom": "2021-02-19T17:07:57+03:00",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      },
+      "displayed_vat_included_TRY": "276.06",
+      "scope": "Observed page price, not a quote, reservation, or confirmed electrical match."
+    }
+  ],
+  "items": [
+    {
+      "code": "K01",
+      "group": "Kontrol ve algılama",
+      "name": "ESP32 geliştirme kartı",
+      "quantity": 1,
+      "unit": "adet",
+      "planning_unit_allowance_TRY": "700",
+      "planning_subtotal_TRY": "700",
+      "amount_type": "planning_estimate_not_supplier_price",
+      "basis": "Güncel yerel kart fiyatı 630,00 TL; kart sürümü seçimi açık."
+    },
+    {
+      "code": "K02",
+      "group": "Kontrol ve algılama",
+      "name": "Sabit ToF mesafe sensörü",
+      "quantity": 5,
+      "unit": "adet",
+      "planning_unit_allowance_TRY": "500",
+      "planning_subtotal_TRY": "2500",
+      "amount_type": "planning_estimate_not_supplier_price",
+      "basis": "Yerel ToF fiyat gözlemi 435,88 TL; stok ve kart arayüzü ayrıca değerlendirilecek."
+    },
+    {
+      "code": "K03",
+      "group": "Kontrol ve algılama",
+      "name": "I²C çoklayıcı",
+      "quantity": 1,
+      "unit": "adet",
+      "planning_unit_allowance_TRY": "100",
+      "planning_subtotal_TRY": "100",
+      "amount_type": "planning_estimate_not_supplier_price",
+      "basis": "Önceki yerel referans 76,50 TL; kesin bağlantı düzenine bağlı."
+    },
+    {
+      "code": "K04",
+      "group": "Kontrol ve algılama",
+      "name": "Gerekli sinyal seviye uyarlama ve bağlantı parçaları",
+      "quantity": 1,
+      "unit": "takım",
+      "planning_unit_allowance_TRY": "200",
+      "planning_subtotal_TRY": "200",
+      "amount_type": "planning_estimate_not_supplier_price",
+      "basis": "Seçilecek sensör/enkoder kartına bağlı tahmini tamamlayıcı parçalar; teklif alınmadı."
+    },
+    {
+      "code": "K05",
+      "group": "Hareket ve şasi",
+      "name": "Enkoderli DC motor",
+      "quantity": 2,
+      "unit": "adet",
+      "planning_unit_allowance_TRY": "600",
+      "planning_subtotal_TRY": "1200",
+      "amount_type": "planning_estimate_not_supplier_price",
+      "basis": "Yerel fiyat adayı 406,82 TL; elektriksel/tork özellikleri belgeli uygun model aranacak."
+    },
+    {
+      "code": "K06",
+      "group": "Hareket ve şasi",
+      "name": "İki motor için uygun sürücü düzeni",
+      "quantity": 1,
+      "unit": "takım",
+      "planning_unit_allowance_TRY": "400",
+      "planning_subtotal_TRY": "400",
+      "amount_type": "planning_estimate_not_supplier_price",
+      "basis": "Motor akımı seçimine bağlı tahmin; TB6612FNG veya uygun alternatif için planlama bedeli."
+    },
+    {
+      "code": "K07",
+      "group": "Hareket ve şasi",
+      "name": "İki tekerlek ve iki motor bağlantı aparatı",
+      "quantity": 1,
+      "unit": "takım",
+      "planning_unit_allowance_TRY": "400",
+      "planning_subtotal_TRY": "400",
+      "amount_type": "planning_estimate_not_supplier_price",
+      "basis": "Yerel mekanik parçalar için tahmin; ithal Pololu setinin teslim fiyatı değildir."
+    },
+    {
+      "code": "K08",
+      "group": "Hareket ve şasi",
+      "name": "Boş şasi veya şasi imalatı",
+      "quantity": 1,
+      "unit": "adet",
+      "planning_unit_allowance_TRY": "750",
+      "planning_subtotal_TRY": "750",
+      "amount_type": "planning_estimate_not_supplier_price",
+      "basis": "N20/nihai motor montajına uygun mekanik gövde için tahmin; imalat teklifi alınmadı."
+    },
+    {
+      "code": "K09",
+      "group": "Hareket ve şasi",
+      "name": "Serbest taşıyıcı tekerlek paketi",
+      "quantity": 1,
+      "unit": "paket",
+      "planning_unit_allowance_TRY": "100",
+      "planning_subtotal_TRY": "100",
+      "amount_type": "planning_estimate_not_supplier_price",
+      "basis": "Önceki iki adetlik yerel paket referansı 56,58 TL; paket bedeli bölünmedi."
+    },
+    {
+      "code": "K10",
+      "group": "Güç sistemi",
+      "name": "Uygun hazır batarya paketi",
+      "quantity": 1,
+      "unit": "adet",
+      "planning_unit_allowance_TRY": "1200",
+      "planning_subtotal_TRY": "1200",
+      "amount_type": "planning_estimate_not_supplier_price",
+      "basis": "Önceki 2S paket fiyat referansı 1.019,96 TL; uygun koruma/şarj özellikleriyle seçilecek."
+    },
+    {
+      "code": "K11",
+      "group": "Güç sistemi",
+      "name": "Bataryayla uyumlu şarj cihazı",
+      "quantity": 1,
+      "unit": "adet",
+      "planning_unit_allowance_TRY": "1000",
+      "planning_subtotal_TRY": "1000",
+      "amount_type": "planning_estimate_not_supplier_price",
+      "basis": "Önceki 2S/3S cihaz fiyat referansı 870,00 TL; paketle eşleşmesi ayrıca kontrol edilecek."
+    },
+    {
+      "code": "K12",
+      "group": "Güç sistemi",
+      "name": "5 V ve 3,3 V gerilim düzenleme",
+      "quantity": 1,
+      "unit": "takım",
+      "planning_unit_allowance_TRY": "350",
+      "planning_subtotal_TRY": "350",
+      "amount_type": "planning_estimate_not_supplier_price",
+      "basis": "Önceki referanslar 214,50 + 27,00 TL; gerçek akım ve ısıl gereksinime göre seçilecek."
+    },
+    {
+      "code": "K13",
+      "group": "Güç sistemi",
+      "name": "Güç kablosu, anahtar, sigorta, konnektör ve gerekli paket koruması",
+      "quantity": 1,
+      "unit": "takım",
+      "planning_unit_allowance_TRY": "300",
+      "planning_subtotal_TRY": "300",
+      "amount_type": "planning_estimate_not_supplier_price",
+      "basis": "Toplu ihtiyaç tahmini; paket koruması varsa ikinci koruma modülü zorunlu alınmayacak."
+    },
+    {
+      "code": "K14",
+      "group": "Montaj ve bağlantı",
+      "name": "Pertinaks, USB ve sinyal kabloları",
+      "quantity": 1,
+      "unit": "takım",
+      "planning_unit_allowance_TRY": "150",
+      "planning_subtotal_TRY": "150",
+      "amount_type": "planning_estimate_not_supplier_price",
+      "basis": "Önceki pertinaks/USB/jumper referansları toplamı 126,00 TL; güç kablosu K13 satırında."
+    },
+    {
+      "code": "K15",
+      "group": "Montaj ve bağlantı",
+      "name": "Dahil olmayan vida, distans ve bağlantı elemanları",
+      "quantity": 1,
+      "unit": "takım",
+      "planning_unit_allowance_TRY": "250",
+      "planning_subtotal_TRY": "250",
+      "amount_type": "planning_estimate_not_supplier_price",
+      "basis": "Son yerleşime bağlı tahmin; kit içeriğinde bulunan parçalar tekrar alınmayacak."
+    },
+    {
+      "code": "K16",
+      "group": "Montaj ve bağlantı",
+      "name": "Sensör sabitleme aparatı/malzemesi",
+      "quantity": 5,
+      "unit": "adet",
+      "planning_unit_allowance_TRY": "60",
+      "planning_subtotal_TRY": "300",
+      "amount_type": "planning_estimate_not_supplier_price",
+      "basis": "Her sabit sensör için montaj tahmini; ürün/imalat teklifi alınmadı."
+    },
+    {
+      "code": "K17",
+      "group": "Deney düzeni",
+      "name": "Alan ve kalibrasyon işaretleme malzemesi",
+      "quantity": 1,
+      "unit": "takım",
+      "planning_unit_allowance_TRY": "150",
+      "planning_subtotal_TRY": "150",
+      "amount_type": "planning_estimate_not_supplier_price",
+      "basis": "Ölçekli alan işaretleme, baskı ve bant için tahmin."
+    },
+    {
+      "code": "K18",
+      "group": "Deney düzeni",
+      "name": "Sabit deney engeli malzemesi",
+      "quantity": 1,
+      "unit": "adet",
+      "planning_unit_allowance_TRY": "150",
+      "planning_subtotal_TRY": "150",
+      "amount_type": "planning_estimate_not_supplier_price",
+      "basis": "Tek sabit engelin hazırlanması için tahmin; boyut/malzeme sensör geometrisiyle seçilecek."
+    },
+    {
+      "code": "K19",
+      "group": "Deney düzeni",
+      "name": "Mevcut telefon için sabitleme düzeni",
+      "quantity": 1,
+      "unit": "takım",
+      "planning_unit_allowance_TRY": "500",
+      "planning_subtotal_TRY": "500",
+      "amount_type": "planning_estimate_not_supplier_price",
+      "basis": "Telefon alımı değil; alanı gören sabit kayıt için aparat/malzeme tahmini."
+    },
+    {
+      "code": "K20",
+      "group": "Deney düzeni",
+      "name": "Temel elektriksel kontroller için multimetre",
+      "quantity": 1,
+      "unit": "adet",
+      "planning_unit_allowance_TRY": "400",
+      "planning_subtotal_TRY": "400",
+      "amount_type": "planning_estimate_not_supplier_price",
+      "basis": "Güncel temel multimetre referansı 276,06 TL; mevcut erişim yeterliyse alım çıkarılabilir."
+    },
+    {
+      "code": "K21",
+      "group": "Deney düzeni",
+      "name": "Uzunluk ölçüm aracı",
+      "quantity": 1,
+      "unit": "adet",
+      "planning_unit_allowance_TRY": "100",
+      "planning_subtotal_TRY": "100",
+      "amount_type": "planning_estimate_not_supplier_price",
+      "basis": "Metre/mezura için tahmin; mevcut erişim yeterliyse alım çıkarılabilir."
+    },
+    {
+      "code": "K22",
+      "group": "Yurt içi teslim",
+      "name": "Yurt içi ürün teslim/kargo gideri",
+      "quantity": 1,
+      "unit": "takım",
+      "planning_unit_allowance_TRY": "300",
+      "planning_subtotal_TRY": "300",
+      "amount_type": "planning_estimate_not_supplier_price",
+      "basis": "Satıcı ve sipariş dağılımına bağlı tahmin; bağlayıcı kargo teklifi alınmadı."
+    }
+  ],
+  "assumptions": [
+    "Domestic sourcing of functionally suitable products; local reference candidates are not automatically equivalent to Pololu products.",
+    "Two encoder motors and five fixed ToF-priority sensors are retained.",
+    "Battery, charger and interface compatibility will be checked at model selection.",
+    "No new phone or soldering equipment is budgeted.",
+    "Tools or apparatus already accessible can be removed before final application; free access is not assumed.",
+    "No independent price for optional IMU, international shipping or import is included. This is a domestic-sourcing proposal."
+  ],
+  "budget_decision": "User selection and advisor review of this proposal remain pending. The original observed-price CSV and historical native-currency basket remain unchanged."
+}
