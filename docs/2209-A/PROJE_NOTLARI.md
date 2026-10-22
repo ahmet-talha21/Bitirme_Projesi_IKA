@@ -118,3 +118,7 @@ Kullanıcı, taslak cümlelerinin başvuru metninde nasıl düzenleneceğini sor
 ## 22 Ekim — birleşik metnin dil ve anlatım düzenlemesi
 
 Birleşik araştırma önerisinde tekrarlar azaltıldı; özet, bilimsel gerekçe, kaçınma ve bağımsız ölçüm anlatımı düzenlendi. Kullanıcının seçtiği Bug 2 uyarlaması özet ve yönteme işlendi. Başvuruya aktarılmayacak çalışma açıklamaları, seçilmemiş sayısal öneriler ve ÜYZ hazırlık kaydı ayrı hazırlık notuna taşındı. Donanım mimarisi, dört koşulda toplam 40 deneme ve her engelli koşulda en az 8/10 birleşik görev hedefi korundu. Yeni teknik karar, kaynak veya deney sonucu eklenmedi. Eksik süre, bütçe, deney yeri ve toleranslar tamamlanmış sayılmadı.
+
+## 22 Ekim — sensör maliyeti ve yerel seçenekler
+
+Beş sabit sensör için ToF ve ultrasonik alternatifler kaynaklı karşılaştırma dosyasında toplandı. GY-VL53L0XV2 için 435,88 TL/adet görülüyor ancak yapılandırılmış stok verisi OutOfStock; satın alınabilir set olarak sunulmadı. HC-SR04 için iki yerel satıcı fiyatı ve üç sayfalık veri sayfası incelendi; seviye uyarlama, sıralı ölçüm, yüzey ve montaj gereksinimleri kaydedildi. Robotistan siyah sensörünün önceki özetinde yer almayan ikinci güncel KDV dahil fiyat alanı da not edildi; sayfadaki çelişkili +KDV etiketi nedeniyle bağlayıcı teslim fiyatı çıkarılmadı. Kullanıcı “ToF sensörlerini önceliklendirelim.” yanıtıyla ToF önceliğini seçti. Kesin sensör taşıyıcısı/modeli, motor bilgileri ve nihai bütçe tamamlanmış sayılmadı; CSV ve ana rapor değiştirilmedi.

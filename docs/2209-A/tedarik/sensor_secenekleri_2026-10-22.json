@@ -1,0 +1,143 @@
+{
+  "checked_on": "2026-10-22",
+  "timezone": "Europe/Istanbul",
+  "scope": "Sensor alternatives only. No purchase, supplier outreach, model selection, or change to base budget.",
+  "products": [
+    {
+      "name": "GY-VL53L0XV2 Lazer Mesafe Modülü",
+      "url": "https://www.direnc.net/gy-vl53l0xv2-lazer-mesafe-modulu",
+      "html_sha256": "3918c4617f14e113568a62bf50019bb0d024acd2b5db5b596ed883730a9bf017",
+      "structured_offer": {
+        "@type": "Offer",
+        "url": "https://www.direnc.net/gy-vl53l0xv2-lazer-mesafe-modulu",
+        "priceCurrency": "TRY",
+        "price": "363.23",
+        "priceValidUntil": "2026-11-22",
+        "validFrom": "2018-12-31T19:42:10+03:00",
+        "availability": "https://schema.org/OutOfStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      },
+      "displayed_vat_included_TRY": "435.88",
+      "quantity_for_comparison": 5,
+      "five_units_TRY": "2179.40",
+      "stock_note": "Structured site status; quantity and delivery not confirmed."
+    },
+    {
+      "name": "HC-SR04 Arduino Ultrasonik Mesafe Sensörü",
+      "url": "https://www.direnc.net/arduino-ultrasonic-sensor-hc-sr04",
+      "html_sha256": "8c01acb040038f16eaf54029a97974fd26ef27fdfb6deab430352d8f2966ad20",
+      "structured_offer": {
+        "@type": "Offer",
+        "url": "https://www.direnc.net/arduino-ultrasonic-sensor-hc-sr04",
+        "priceCurrency": "TRY",
+        "price": "58.12",
+        "priceValidUntil": "2026-11-22",
+        "validFrom": "2016-07-01T15:45:50+03:00",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      },
+      "displayed_vat_included_TRY": "58.12",
+      "quantity_for_comparison": 5,
+      "five_units_TRY": "290.60",
+      "stock_note": "Structured site status; quantity and delivery not confirmed."
+    },
+    {
+      "name": "HC-SR04 Arduino Ultrasonic Mesafe Sensörü",
+      "url": "https://www.robolinkmarket.com/hc-sr04-arduino-ultrasonic-mesafe-sensoru",
+      "html_sha256": "82f4c05a92e0f881bdfe8cc1315f97048bf4bf2fd4d63c8498b5cf247bd6c9d9",
+      "structured_offer": {
+        "@type": "Offer",
+        "url": "https://www.robolinkmarket.com/hc-sr04-arduino-ultrasonic-mesafe-sensoru",
+        "priceCurrency": "TRY",
+        "price": "54.00",
+        "priceValidUntil": "2026-11-22",
+        "validFrom": "2025-08-01T11:58:32+03:00",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 30,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn",
+          "applicableCountry": "TR",
+          "merchantReturnLink": "https://www.robolinkmarket.com/garanti-ve-iade-kosullari"
+        }
+      },
+      "displayed_vat_included_TRY": "54.00",
+      "quantity_for_comparison": 5,
+      "five_units_TRY": "270.00",
+      "stock_note": "Structured site status; quantity and delivery not confirmed."
+    },
+    {
+      "name": "HCSR-04 Ultrasonic Sensör Tutucu",
+      "url": "https://www.direnc.net/hcsr-04-ultrasonic-sensor-tutucu",
+      "html_sha256": "ccaa928afce467d76d771701cd9d9189acb7e92f7db97e0a2212cf4de20f1a89",
+      "structured_offer": {
+        "@type": "Offer",
+        "url": "https://www.direnc.net/hcsr-04-ultrasonic-sensor-tutucu",
+        "priceCurrency": "TRY",
+        "price": "23.25",
+        "priceValidUntil": "2026-11-22",
+        "validFrom": "2016-07-01T15:45:50+03:00",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      },
+      "displayed_vat_included_TRY": "23.25",
+      "quantity_for_comparison": 5,
+      "five_units_TRY": "116.25",
+      "stock_note": "Structured site status; quantity and delivery not confirmed."
+    }
+  ],
+  "manual": {
+    "url": "https://www.robotistan.com/Data/EditorFiles/HCSR04-datasheet-version-1.pdf",
+    "title": "Ultrasonic Ranging Module HC-SR04",
+    "attribution": "ElecFreaks support details printed in the document; copy linked by Robotistan.",
+    "sha256": "4ebdc3e1f70d84a1ca856d8fcd7f8b1f9e548a94e4012cd86d14ca0b30543b06",
+    "pages_read": [
+      1,
+      2,
+      3
+    ],
+    "documented_features": {
+      "supply_V": 5,
+      "current_mA": 15,
+      "trigger_us_min": 10,
+      "range_cm": [
+        2,
+        400
+      ],
+      "nominal_measuring_angle_deg": 15,
+      "dimensions_mm": [
+        45,
+        20,
+        15
+      ]
+    },
+    "timing_note": "Waveform description: eight cycles at 40 kHz. Suggested measurement cycle over 60 ms. A five-sensor conservative sequential schedule over 300 ms is our design illustration, not a manufacturer-proven scan rate.",
+    "target_condition_note": "Page 3 mentions target area at least 0.5 square meters and a smooth plane. Small obstacle measurements are not validated by this document.",
+    "not_proved": [
+      "Direct 3.3 V ESP32 GPIO compatibility",
+      "Five-module interference performance",
+      "Accuracy in this project or on small obstacles"
+    ]
+  },
+  "robotistan_black_price_reinspection": {
+    "source_url": "https://www.robotistan.com/vl53l0x-lazer-tof-sensor-modul-i2c-pwm-serial-siyah",
+    "html_sha256": "d7dad3390826a62b628af78ce652bbb4548b6f260638745d680c07fe830367bb",
+    "cached_source_checked_on": "2026-10-22",
+    "additional_observation": "A second KDV Dahil Fiyat block explicitly shows current product-price 352.42 TRY; the earlier summary captured only crossed-out 491.88 TRY and the +KDV display.",
+    "price_labels_remain_inconsistent": true,
+    "resolved_binding_vat_included_delivery_quote_TRY": null
+  },
+  "base_budget_native_subtotals_unchanged": {
+    "TRY": "3189.41",
+    "USD": "177.35"
+  },
+  "user_decision": {
+    "date": "2026-10-22",
+    "confirmed_preference": "Prioritize ToF sensors.",
+    "exact_answer": "ToF sensörlerini önceliklendirelim.",
+    "not_selected": "Exact carrier/model, supplier, final price, or purchase."
+  }
+}

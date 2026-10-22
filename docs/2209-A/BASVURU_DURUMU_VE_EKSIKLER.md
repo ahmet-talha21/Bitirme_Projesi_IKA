@@ -36,3 +36,5 @@ Güncel görsel düzeni korunabilir. Teknik seçimler değişirse etiketler veya
 5. Yürütücü ve danışman incelemesinden sonra metin, tablo ve PNG görselleri güncel TYBS alanlarına aktarmak; önizlemeyi, kaynakları ve gerekli ÜYZ beyanını kontrol ederek başvuru/onay adımlarını tamamlamak.
 
 Son tarih ve biçim kuralları [2026 başvuru kuralları notunda](2026_BASVURU_KURALLARI.md) tutuluyor. Görsellerin hazır olması, yöntem ve bütçe kararlarının da tamamlandığı anlamına gelmiyor.
+
+Sensör maliyeti devam incelemesi: [beşli ToF/ultrasonik karşılaştırması](SENSOR_BUTCE_KARSILASTIRMASI.md) hazırlandı. Kullanıcı ToF sensörlerini önceliklendirmeyi seçti. Kesin ürün ve nihai bütçe henüz belirlenmedi; ana bütçe ve birleşik rapor değiştirilmedi.

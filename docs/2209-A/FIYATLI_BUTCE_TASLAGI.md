@@ -77,3 +77,7 @@ Fiyatı bulunan kalemler için para birimi başına ara toplam ve resmî kurla p
 Batarya–şarj–koruma taslağı [ayrı planda](BATARYA_VE_SARJ_PLANI.md); tüm fiyat, para birimi, stok etiketi ve değerlendirme notları [22 Ekim kaynak kaydında](tedarik/fiyat_kayitlari_2026-10-22.json). [CSV teklif formu](MALZEME_TEKLIF_FORMU.csv) aynı fiyatlarla güncellendi.
 
 Önceki 403 hatalarının ardından 22 Ekim'deki yeni kontrolde `www.power-xtra.com` ana sayfası ve TCMB'nin 21 Ekim XML bülteni HTTP 200 ile indirildi. Erişim durumu bu gerçek yanıtlarla doğrulandı; ortamın yayımlanma durumu hakkında çıkarım yapılmadı. Üreticinin ana sayfasının ürünler için bağlantı verdiği `www.birikimpilleri.net` adresinde ise ağ aracısı 403 döndürdü. Pilin izin verilen şarj akımı ve pin bağlantıları henüz doğrulanmadı. Fiyat kayıtlarında kaynak para birimleri korundu; CSV'nin USD satırlarına gerçek TL teklifmiş gibi dönüştürülmüş fiyat yazılmadı.
+
+## Beş sensör için devam karşılaştırması
+
+ToF ve ultrasonik seçeneklerinin güncel yerel fiyatları, stok kayıtları ve kontrol gereksinimleri [sensör bütçe karşılaştırmasında](SENSOR_BUTCE_KARSILASTIRMASI.md) toplandı. GY-VL53L0XV2 için beş adet 2.179,40 TL görülse de ürün OutOfStock. HC-SR04 için beş adet sensörün fiyat gözlemi satıcıya göre 270,00–290,60 TL; ek arayüz/montaj giderleri dahil değil. Kullanıcı ToF önceliğini seçti; kesin taşıyıcı/model henüz seçilmediğinden ana bütçe ve CSV ara toplamları değiştirilmedi.
