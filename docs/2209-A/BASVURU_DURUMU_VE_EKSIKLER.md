@@ -38,3 +38,5 @@ Güncel görsel düzeni korunabilir. Teknik seçimler değişirse etiketler veya
 Son tarih ve biçim kuralları [2026 başvuru kuralları notunda](2026_BASVURU_KURALLARI.md) tutuluyor. Görsellerin hazır olması, yöntem ve bütçe kararlarının da tamamlandığı anlamına gelmiyor.
 
 Sensör maliyeti devam incelemesi: [beşli ToF/ultrasonik karşılaştırması](SENSOR_BUTCE_KARSILASTIRMASI.md) hazırlandı. Kullanıcı ToF sensörlerini önceliklendirmeyi seçti. Kesin ürün ve nihai bütçe henüz belirlenmedi; ana bütçe korunurken ToF önceliği birleşik yöntem metnine işlendi. Stok durumu başvuru şartı veya rapor yazımına engel olarak kullanılmayacak.
+
+Resmî süreyi seçebilmek için [altı aylık iş paketi önerisi](ALTI_AYLIK_RESMI_TAKVIM_ONERISI.md) hazırlandı. Mevcut akademik hedef takviminden ayrı tutuldu; kullanıcı/danışman değerlendirmesi bekleniyor ve birleşik raporda süre seçilmiş sayılmadı.

@@ -132,3 +132,7 @@ Kullanıcı stokta olmanın rapor için zorunlu olup olmadığını sordu. Günc
 ## 22 Ekim — kullanıcının ilk proje başlığını koruma kararı
 
 Kullanıcı, önerilen yeni başlık yerine ilk başlığının aynen kalmasını seçti: “Kullanıcı tarafından belirlenen rota bilgisine göre hareket eden otonom araç tasarımı”. Seçim birleşik rapora, genel bilgilere, amaç/kapsam ve durum notlarına işlendi; başlığın öneri veya yanıt bekleyen alan olduğu yönündeki güncel işaretler kaldırıldı. Önceki başlık sorusu bu yanıtla sonuçlandı. Danışman incelemesi ve TYBS başvurusu tamamlanmış sayılmadı; teknik kapsam ve deney hedefleri değiştirilmedi.
+
+## 22 Ekim — altı aylık resmî takvim önerisi
+
+Beş iş paketi 1–6. ay aralıklarına yerleştirilerek somut süre önerisi hazırlandı: donanım ve arayüz 1–2. ay, engelsiz rota takibi 3. ay, kaçınma/rotaya dönüş 4–5. ay, nihai deney/analiz 6. ay. Mevcut %20/%15/%20/%30/%15 katkılar, 40 deneme ve koşul başına en az 8/10 ana hedef korundu. Haziran 2027 akademik teslim hedefi ile sonuç ilanından başlayan resmî sürenin ilişkisi açıklandı; Ocak başlangıcı, kesin Haziran resmî bitişi veya kullanıcı süre seçimi varsayılmadı. Birleşik rapor ve bütçe değiştirilmedi.

@@ -50,3 +50,7 @@ Aşağıdaki katkı değerleri planlama önerisidir; toplamları %100'dür. Bunl
 4. Seçilen 40 deneme ve koşul başına en az 8/10 ana hedefin danışman incelemesi; kalan sayısal öneriler, ölçüm doğruluğu, rota/katılma toleransları ve kalibrasyona bağlı parametrelerin kesinleştirilmesi.
 
 Bu belge, akademik hedef takvimi, başarı kontrolleri ve katkı dağılımı önerisini hazırlar. Resmî başlangıç/süre ve TYBS ay aralıkları tamamlanmadığı için nihai TYBS çalışma takvimi olarak aktarılmaya hazır değildir.
+
+## Başvuru süresi için somut alternatif
+
+[Altı aylık resmî takvim önerisi](ALTI_AYLIK_RESMI_TAKVIM_ONERISI.md), aynı beş iş paketi ve toplam %100 katkı korunarak 1–6. ay aralıklarıyla hazırlandı. Bu, kullanıcı tarafından seçilmiş süre değildir. Haziran 2027 akademik hedefi korunur; sonuç ilanı bilinmeden altı aylık resmî sürenin Haziran ayında biteceği varsayılmamaktadır.
