@@ -152,3 +152,7 @@ Waypoint erişimi için 10 cm, rotaya dönüş bandı için 10 cm ve her deneme 
 Kullanıcı açık ölçüt sorusuna “Bu planlanan hedefleri kullanalım.” yanıtını verdi. Waypoint/hedef erişimi için en çok 10 cm, kaçınma sonrası etkin sonlu rota parçasına dönüş için en çok 10 cm ve her deneme için hareket başlangıcından itibaren en çok 120 saniye planlanan değerlendirme hedefleri olarak rapora işlendi. Protokol 0.5 sürümüne güncellendi.
 
 Bu seçim, 10 cm'nin tüm hareket boyunca azami izleme hatası olduğu veya ölçülmüş doğruluk sağlandığı anlamına gelmez. Son hedefte 2 saniye durma, bantta 1 saniye kalma, hedef yönünde 10 cm ek ilerleme, 0,10 m/s hız, 2 cm bağımsız ölçüm kontrol hedefi ve ek 9/10 başarı hedefleri seçilmiş sayılmadı. Başarısız denemelerin paydada tutulması, 40 değerlendirme denemesi ve koşul başına en az 8/10 ana hedef korundu. Ölçüm/donanım uygulanabilirliği, danışman incelemesi ve bütçe tamamlanmış sayılmadı.
+
+## 22 Ekim — ekipman erişimini çalışma hazırlığına bırakma
+
+Kullanıcı “onlar hallolur biz değer yazalım yine ölçmeyle uğraşmayalım” diyerek ekipman ayrıntıları yerine rapor yazımının sürmesini istedi. Başvuru aşamasında fiziksel ölçüm gerekmeyeceği, 10 cm ve 120 saniyenin planlanan hedefler olarak kullanılacağı açıklandı. Araştırma olanakları bölümünde multimetre, uzunluk ölçüm aracı ve telefon sabitleme aparatına erişim çalışma hazırlığında düzenlenecek biçimde yazıldı. Sahiplik/kurum envanteri, ücretsiz erişim veya gerçekleşmiş deney sonucu varsayılmadı. Deney aşamasındaki bağımsız değerlendirme yöntemi ve seçilen ana hedefler korundu.

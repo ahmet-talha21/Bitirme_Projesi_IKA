@@ -15,7 +15,7 @@ Mevcut telefon ve lehim ekipmanı için yeni alım bedeli yazılmayacak. Telefon
 
 - Kurumda kullanılabilecek çalışma alanı/laboratuvar ve erişim koşulları; kullanıcı veya danışman tarafından doğrulanacak.
 - Kullanıcı 22 Ekim 2026 tarihinde deney yerinin henüz belli olmadığını bildirdi. Yaklaşık 3 × 3 metre düz alan seçilecek; sabit görüntülemeye elverişliliği kontrol edilecek. Yer bilgisi ilk metnin yazılması için bekletici koşul yapılmadı.
-- Multimetre ve metre/cetvel erişimi; kullanıcıya soruldu, henüz yanıtlanmadı.
-- Gerekirse şasi delme/imalat ve telefon sabitleme olanakları; mevcut sayılmadı.
+- Kullanıcı ölçüm ve telefon sabitleme ekipmanlarının erişiminin düzenlenebileceğini belirterek başvuru metni üzerinde ilerlemeyi istedi. Multimetre, uzunluk ölçüm aracı ve telefon sabitleme aparatına erişim çalışma hazırlığında düzenlenecek; belirli ürünlerin sahipliği veya kurum envanterinde bulunması doğrulanmış sayılmadı.
+- Gerekirse şasi delme/imalat olanakları seçilen mekanik tasarıma göre belirlenecek.
 
 ESP32, motor, sensör ve diğer planlanan alımlar mevcut kurum ekipmanı gibi yazılmayacak. Kurum olanakları doğrulanınca resmî alana uygun tablo hazırlanacak; bu belge kişisel kaynak kaydı ve eksik bilgi listesidir.

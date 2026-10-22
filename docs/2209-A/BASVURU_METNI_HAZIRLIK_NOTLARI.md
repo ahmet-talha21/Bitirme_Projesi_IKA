@@ -47,3 +47,9 @@ Kullanıcı ToF sensörlerini önceliklendirmeyi seçti. Bu öncelik birleşik y
 ## Seçilen toplam süre
 
 Kullanıcı “6 aylık planı kullanalım.” yanıtıyla altı aylık planı seçti. İP1/İP2 1–2. ay, İP3 3. ay, İP4 4–5. ay ve İP5 6. ay dağılımı birleşik rapora işlendi. Haziran 2027 akademik teslim hedefi korunuyor; sonuç ilanı bilinmediği için resmî bitişin Haziran olduğu söylenmiyor. Kalan danışman incelemesi, bütçe ve deney/ölçüm ayrıntıları açık tutuldu.
+
+## Ekipman ayrıntılarını yazımı durdurmadan planlama
+
+Kullanıcı, ölçüm ve telefon sabitleme ekipmanlarının erişiminin düzenlenebileceğini belirterek mevcut hedef değerleriyle rapor üzerinde ilerlemeyi istedi. Başvuru yazımı için şu anda fiziksel ölçüm yapılması beklenmeyecek; ekipman sahipliği hakkında ek soru yazımı durduran bir koşul yapılmayacak. Ekipmana erişim çalışma hazırlığı için planlanacak. Belirli ürünlerin mevcut olduğu, kurum ekipmanı olduğu veya bedelsiz sağlandığı varsayılmadı; nihai bütçede ihtiyaçlar ayrıca değerlendirilecek.
+
+Seçilen 10 cm waypoint erişimi, 10 cm rotaya dönüş bandı ve 120 saniye deneme sınırı planlanan hedefler olarak korunur. Gerçek başarı, süre ve konum sonuçlarının ölçülmesi araç tamamlandıktan sonraki deney aşamasında yapılacaktır. Bu açıklama deney/kalibrasyon sonuçlarının elde edildiği veya ölçümün araştırma yönteminden çıkarıldığı anlamına gelmez.

@@ -55,3 +55,5 @@ Düzyazı çıktısında, boşluklar dahil karakterler sayıldı. Bu kontrol ba�
 | Deney kayıtları | CSV yalnız başlık içeriyor; sonuç satırı yok. |
 
 Kullanıcı 10 cm waypoint erişimi, 10 cm rotaya dönüş bandı ve 120 saniye deneme sınırını planlanan hedefler olarak seçti; birleşik rapora işlendi. Ek sayısal öneriler seçilmiş sayılmadı. Danışman incelemesi, gerçek kurum olanakları ve nihai bütçe açık tutuldu.
+
+Ekipman erişimi: Kullanıcı bu ayrıntıların düzenlenebileceğini belirterek yazımın sürmesini istedi. Ölçüm ve telefon sabitleme ekipmanına erişim çalışma hazırlığında planlanacak; mevcut sahiplik, kurum envanteri veya bedelsiz temin varsayılmadı. Başvuru yazımı için fiziksel ön ölçüm beklenmeyecek.

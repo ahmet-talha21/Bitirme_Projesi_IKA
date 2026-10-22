@@ -191,7 +191,7 @@ Deney alanının fiziksel yeri henüz belirlenmemiştir. Üniversitede kullanıl
 | Mevcut lehim ekipmanı | Elektronik bağlantılar ve montaj. | Son bağlantı/imalat ihtiyaçları. |
 | Mevcut telefon | Deney hareketinin bağımsız görüntü kaydı. | Tüm alanı görme, sabitleme, kalibrasyon ve kayıt kalitesi. |
 
-Mevcut telefon ve lehim ekipmanı için yeniden alım planlanmamaktadır. Multimetre, uzunluk ölçümü, şasi imalatı ve telefon sabitleme olanakları ayrıca doğrulanacaktır. Planlanan ESP32, motor ve sensörler mevcut kurum ekipmanı gibi gösterilmeyecektir.
+Mevcut telefon ve lehim ekipmanı için yeniden alım planlanmamaktadır. Elektriksel kontroller için multimetre, alan ölçüleri için uzunluk ölçüm aracı ve görüntü kaydı için telefon sabitleme aparatına erişimin çalışma hazırlığında yürütücü tarafından düzenlenmesi planlanmaktadır. Şasi imalatının gerektirdiği olanaklar seçilen mekanik tasarıma göre belirlenecektir. Planlanan ESP32, motor ve sensörler mevcut kurum ekipmanı gibi gösterilmeyecektir.
 
 ## 4. Araştırma önerisinin yaygın etkisi
 
