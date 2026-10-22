@@ -22,3 +22,5 @@ Teşekkür ederim.
 ---
 
 Gelen bilgiler [CSV teklif formuna](MALZEME_TEKLIF_FORMU.csv) işlenecek. Referans motor, beş sensör ve iki motor geri bildirimi korunacak; farklı bir ürüne geçildiğinde sürücü, güç ve mekanik uyum birlikte kontrol edilecek.
+
+22 Ekim ek kontrolü: Yerel JGA12-N20B için özellikle sıkışma akımı, enkoder Vcc/A-B seviyeleri ve sayım tanımı eksik. Robotistan 18969/25505 adaylarının bağlı GY-53 kılavuzunda `PS=0` ile doğrudan I²C modu belirtiliyor; gerçek kart sürümü, SDA/SCL çekme gerilimleri ve 3,3 V uyumu ayrıca sorulmalı. Net fiyat, KDV dahil indirimli fiyat ve beş adet için teslim bedeli birbirinden ayrılmalı. Bu taslak hazırlanmıştır; satıcıya mesaj gönderilmemiştir.

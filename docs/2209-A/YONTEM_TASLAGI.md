@@ -24,7 +24,11 @@ Bilgisayar öncelikli, telefondan da erişilebilir bir web arayüzünde alan öl
 
 Algoritma adayı, Bug 2 yaklaşımının rota izleme, engel çevresini takip etme ve hedef doğrultusuna yeniden katılma mantığını durum makinesiyle uygulamaktır (Hauser, t.y.-a). Her iki ardışık waypoint arasında bir başlangıç–hedef doğrultusu tanımlanacaktır. Engel tespit edildiğinde araç, algılama ve durma mesafesine uygun biçimde yavaşlatılacak veya durdurulacak; temas gerçekleşmeden kaçınma durumuna geçilecektir. Yerel mesafe ölçümlerine göre engel çevresi izlenirken seçilen izleme yönü ve açıklık korunmaya çalışılacaktır.
 
-Rotaya katılma için aracın hedef doğrultusuna belirlenen tolerans içinde ulaşması, hedefe uzaklığının kaçınmaya başladığı noktaya göre azalması ve ilerleme yönündeki algılanan açıklığın yeterli olması birlikte değerlendirilecektir. Aynı bölgede ilerleyememe, geçersiz sensör verisi, alan sınırına yaklaşma veya süre sınırının aşılması durumlarında deneme durdurulup nedeni kaydedilecektir. Teorik noktasal robot varsayımları yerine gerçek aracın genişliği, dönüş kabiliyeti ve ölçüm belirsizliği tasarımda dikkate alınacaktır. Bu nedenle teorik yöntemden gerçek araç için koşulsuz başarı garantisi çıkarılmayacaktır.
+Arayüzden yüklenen waypoint sırası korunacaktır. Engel görüldüğünde etkin hedef değiştirilmeden kaçınmaya başlama konumu ve hedefe uzaklık kaydedilecektir. Araç kaçınma sırasında en yakın waypoint'e atlatılmayacak; etkin hedefe tolerans içinde erişmeden sonraki waypoint'e geçilmeyecektir. Başlangıç konumu/yönü işaretli referansa göre kurulacak ve her deneme için enkoder başlangıcı kaydedilecektir.
+
+Rotaya katılma için aracın aktif **sonlu rota parçasına** belirlenen tolerans içinde ulaşması, hedefe uzaklığının kaçınmaya başladığı noktaya göre ölçüm belirsizliğinden büyük bir payla azalması, engelin geride bırakılması ve gövde için ilerleme açıklığının yeterli olması birlikte değerlendirilecektir. Kaçınma boyunca seçilen kenar izleme yönü, geçiş kuralı olmadan sürekli değiştirilerek salınım oluşturmayacaktır. Rota çizgisinin bir kez kesilmesi yeterli sayılmayacak; katılma bandında kalma ve hedef yönünde ilerlemeyi sürdürme kontrol edilecektir. Kesin açıklık, süre ve ilerleme payları kalibrasyondan önce ölçülmüş değer gibi yazılmayacaktır.
+
+Bu uygulama, Bug 2 mantığından yararlanan gerçek araç uyarlamasıdır; ideal algoritmanın eksiksiz uygulandığı veya teorik tamlık garantisinin sağlandığı iddia edilmeyecektir. Aynı bölgede ilerleyememe, döngü şüphesi, geçersiz sensör verisi, alan sınırına yaklaşma veya süre sınırının aşılması durumlarında deneme durdurulup nedeni kaydedilecektir. Durdurma kaydı “bu düzenekte tamamlanamadı” anlamındadır; ortamda hiçbir geçerli yol bulunmadığının kanıtı sayılmayacaktır. Gerçek aracın genişliği, dönüş kabiliyeti, kısıtlı sensör kapsaması ve konum hatası tasarımda dikkate alınacaktır.
 
 ## 2.5. Deney koşulları ve değişkenler
 
@@ -44,6 +48,12 @@ Başarı oranları başarılı deneme sayısının ilgili koşuldaki geçerli de
 
 Rota sapması için, işaretlenmiş deney alanını gören sabit bir kameradan bağımsız referans yol ölçümü değerlendirilmektedir. Kullanıcı deneylerde kullanabileceği telefonunun olduğunu bildirmiştir; alanın tamamını gören yerleşim, sabitleme ve görüntü kalibrasyonu henüz doğrulanmamıştır. Ölçümün güvenilir referansla ilişkilendirilmesi ve kalibrasyon gereksinimi Hauser'in kalibrasyon çerçevesiyle uyumludur (Hauser, t.y.-b). Rota hatası, yalnızca aracın kendi konum tahmini yine kendisiyle karşılaştırılarak doğrulanmayacaktır.
 
+Bağımsız değerlendirmede aktif rota parçası, waypoint'lere sıralı erişimin görüntüden doğrulanmasına göre belirlenecektir. Ölçülen araç referans noktasının bu sonlu parçadaki en yakın noktaya uzaklığı rota hatası olarak alınacaktır; parçanın sonsuz uzantısına uzaklık yeterli sayılmayacaktır. Geçerli ve eşit zaman aralığına getirilmiş izleme örneklerinde kök ortalama karesel hata (RMSE) hesaplanacaktır:
+
+$$\operatorname{RMSE}=\sqrt{\frac{1}{N}\sum_{i=1}^{N}e_i^2}$$
+
+Burada $e_i$ bağımsız ölçülen konumun referans parçaya uzaklığı, $N$ değerlendirilen konum örneği sayısıdır. Örnekleme aralığı ve veri kapsamı raporlanacak; kayıp görüntü aralıkları sonuç iyileştirmek için doldurulmayacaktır. Temas ve algılama olaylarının sırası zaman eşleme belirsizliği nedeniyle ayırt edilemiyorsa olay başarılı algılama diye işaretlenmeyecektir.
+
 ## Kesinleştirilecek parametreler
 
 | Parametre | Mevcut durum |
@@ -57,4 +67,4 @@ Rota sapması için, işaretlenmiş deney alanını gören sabit bir kameradan b
 
 ## Kaynaklar
 
-Bu bölümde ve bilimsel nitelik taslağında atıf yapılan altı kaynağın tam künyeleri [tek alfabetik kaynakçada](KAYNAKCA_TASLAGI.md) birleştirildi. Hauser'in planlama ve kalibrasyon bölümleri sırasıyla t.y.-a ve t.y.-b olarak korunmuştur. DOI bulunan iki makalenin DOI'leri künyelerinin sonundadır. Okuma kapsamı [literatür karşılaştırmasında](LITERATUR_KARSILASTIRMASI.md) kayıtlıdır. Nihai metinde kaynak eklenir veya çıkarılırsa atıf eşleştirmesi yeniden kontrol edilecek.
+Bu bölümde ve bilimsel nitelik taslağında atıf yapılan yedi kaynağın tam künyeleri [tek alfabetik kaynakçada](KAYNAKCA_TASLAGI.md) birleştirildi. Hauser'in planlama ve kalibrasyon bölümleri sırasıyla t.y.-a ve t.y.-b olarak korunmuştur. DOI bulunan üç makalenin DOI'leri künyelerinin sonundadır. Okuma kapsamı [literatür karşılaştırmasında](LITERATUR_KARSILASTIRMASI.md) kayıtlıdır. Nihai metinde kaynak eklenir veya çıkarılırsa atıf eşleştirmesi yeniden kontrol edilecek.

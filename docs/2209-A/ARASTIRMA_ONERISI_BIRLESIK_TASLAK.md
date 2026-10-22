@@ -1,6 +1,6 @@
 # TÜBİTAK 2209-A — Araştırma Önerisi
 
-**İlk birleşik metin taslağı · 22 Ekim 2026**
+**Birleşik metin taslağı · 22 Ekim 2026 · Yöntem ve kaynakça güncellemesi**
 
 **Proje adı önerisi:** Kullanıcı Tanımlı Rota Takibi ve Engelden Kaçınma Özellikli Otonom Kara Aracının Geliştirilmesi
 
@@ -39,7 +39,9 @@ Otonom kara araçlarında rota takibi, aracın konum ve yön bilgisinin hareket 
 
 Hareket planlama literatüründe yerel engel bilgisini kullanan Bug türü yöntemler, önceden tüm engellerin haritası bilinmeden hedefe yönelik hareketin ele alınabildiği yaklaşımlar arasındadır. Bu yöntemlerin incelenmesinde robotun konumuna, engel geometrisine ve algılama biçimine ilişkin varsayımlar önem taşır. Ayrıca robotun fiziksel boyutlarının dikkate alınması, noktasal bir modelle bulunan yolun gerçek bir araçta uygulanabilirliğinin değerlendirilmesi açısından gereklidir (Hauser, t.y.-a).
 
-İlgili uygulamalarda Iqbal vd. (2023), yapı modelinden çıkarılan koordinatların masaüstü uygulaması ve bulut bağlantısı üzerinden ESP32 tabanlı bir mobil robota aktarılmasıyla zemin çizimi gerçekleştiren bir sistem sunmuştur. Rodrigues vd. (2026) ise enkoderler, dış kamera temelli konum bilgisi ve ESP32 gömülü kontrol katmanını içeren küçük bir diferansiyel sürüşlü robotta yörünge takibini deneysel olarak değerlendirmiştir. Bu örnekler, koordinat aktarımı, konum bilgisi ve motor kontrolünün farklı mimarilerle bütünleştirilebildiğini göstermektedir. Önerilen projede ele alınacak değerlendirme görevi, kullanıcının tanımladığı rota üzerinde yerel algıyla engelden kaçınma ve rotaya yeniden katılmadır. Çalışmanın bilimsel çerçevesi, bu davranışın seçilen donanım ve sınırlı deney koşullarında hangi aşamalarda başarılı veya başarısız olduğunun tekrarlı ölçümlerle incelenmesine dayanmaktadır.
+Engelden kaçınmaya ilişkin deneysel bir uygulamada Alajlan vd. (2017), FEZ Cerbot platformunda kızılötesi sensörler, ultrasonik sensör ve araç üzeri kamerayı birleştirerek sabit ve kısmen dinamik engelli senaryoları incelemiştir. Bu çalışma, algılama kapsamının ve birden çok sensörden gelen bilginin hareket kararlarıyla birlikte ele alınmasına örnektir. Önerilen projede beş sabit mesafe sensörüyle sınırlı algılama düzeni ve sabit engeller üzerinde çalışılacak; mevcut telefon araç üzerinde engel algılayan kamera olarak değil, hareketi bağımsız değerlendiren ölçüm aracı olarak planlanacaktır. Anılan çalışmanın yol/enerji performansı ve farklı algılama altyapısı bu araca aktarılmış sonuç olarak kullanılmayacaktır.
+
+Koordinat tabanlı uygulamalarda Iqbal vd. (2023), yapı modelinden çıkarılan koordinatların masaüstü uygulaması ve bulut bağlantısı üzerinden ESP32 tabanlı bir mobil robota aktarılmasıyla zemin çizimi gerçekleştiren bir sistem sunmuştur. Rodrigues vd. (2026) ise enkoderler, dış kamera temelli konum bilgisi ve ESP32 gömülü kontrol katmanını içeren küçük bir diferansiyel sürüşlü robotta yörünge takibini deneysel olarak değerlendirmiştir. Bu örnekler, koordinat aktarımı, konum bilgisi ve motor kontrolünün farklı mimarilerle bütünleştirilebildiğini göstermektedir. Önerilen projede ele alınacak değerlendirme görevi, kullanıcının tanımladığı rota üzerinde yerel algıyla engelden kaçınma ve rotaya yeniden katılmadır. Çalışmanın bilimsel çerçevesi, bu davranışın seçilen donanım ve sınırlı deney koşullarında hangi aşamalarda başarılı veya başarısız olduğunun tekrarlı ölçümlerle incelenmesine dayanmaktadır.
 
 Bu projede ele alınacak problem, kullanıcı tarafından belirlenen waypoint rotasında ilerleyen mikrodenetleyici tabanlı bir kara aracının, farklı yerleşimlerdeki sabit engelleri algılayarak çarpışmasız kaçınma hareketi gerçekleştirmesi ve ardından rotasına yeniden katılmasıdır. Çalışma, düz zeminde yaklaşık 3 × 3 metre olarak planlanan kontrollü bir deney alanıyla sınırlandırılacaktır. Rota, bilgisayar öncelikli ve telefondan erişimi de hedeflenen kullanıcı arayüzündeki ölçülü kareli alan üzerinde tanımlanacaktır. Deneylerde engellerin yerleşimleri değiştirilecek; algılama, çarpışmasız kaçınma, rotaya dönüş ve görev tamamlama davranışları ayrı ayrı değerlendirilecektir.
 
@@ -82,15 +84,17 @@ Engel algılamada ön orta, iki ön çapraz ve iki yan yönünde beş sabit mesa
 
 Kullanıcı, ölçülü kareli bir ekran üzerinde başlangıç noktası/yönünü ve sıralı waypoint'leri belirleyecektir. Bilgisayardan kullanım öncelikli olacak, telefondan erişim de hedeflenecektir. Rota aktarımı ve telemetri için yerel Wi-Fi üzerinden HTTP/WebSocket bağlantısı değerlendirilmektedir. ESP-IDF HTTP sunucusunun WebSocket desteği, bu haberleşme seçeneğinin teknik dayanağını oluşturmaktadır (Espressif Systems, t.y.).
 
-Rota araca yüklendikten sonra algılama ve hareket kararlarının araç üzerinde yürütülmesi planlanmaktadır. Arayüzde tahmini konum, sensör geçerlilik bilgisi ve görev durumu gösterilecektir. Bağlantı kesilmesi, sensör hatası, durdurma komutu ve ilerleyememe durumlarının davranışları uygulama öncesinde tanımlanacak ve denenecektir. Kesin arayüz teknolojisi ve ağ çalışma modu henüz seçilmemiştir.
+Rota araca yüklendikten sonra algılama ve hareket kararlarının araç üzerinde yürütülmesi planlanmaktadır. Arayüzde tahmini konum, sensör geçerlilik bilgisi ve görev durumu gösterilecektir. Bağlantı kesilmesi, sensör hatası, durdurma komutu ve ilerleyememe durumlarının davranışları uygulama öncesinde tanımlanacak ve denenecektir. Rota yüklenirken alan dışındaki noktalar ve sıfır uzunluklu ardışık parçalar reddedilecektir. Kesin arayüz teknolojisi ve ağ çalışma modu henüz seçilmemiştir.
 
 ### 2.4. Engel kaçınma ve rotaya yeniden katılma
 
-Taslak yöntem önerisi, Bug 2 yaklaşımının hedef doğrultusunu izleme, engel çevresini takip etme ve uygun koşullarda doğrultuya yeniden katılma mantığını bir durum makinesine uyarlamaktır (Hauser, t.y.-a). Kesin algoritma kararı henüz verilmemiştir. Her ardışık waypoint çifti için aktif bir rota parçası tanımlanacak; rota izleme, engel tespiti, kaçınma ve rotaya katılma durumları ayrı yürütülecektir.
+Algoritma adayı, Bug 2 yaklaşımının rota izleme, engel çevresini takip etme ve hedef doğrultusuna yeniden katılma mantığını durum makinesiyle uygulamaktır (Hauser, t.y.-a). Her iki ardışık waypoint arasında bir başlangıç–hedef doğrultusu tanımlanacaktır. Engel tespit edildiğinde araç, algılama ve durma mesafesine uygun biçimde yavaşlatılacak veya durdurulacak; temas gerçekleşmeden kaçınma durumuna geçilecektir. Yerel mesafe ölçümlerine göre engel çevresi izlenirken seçilen izleme yönü ve açıklık korunmaya çalışılacaktır.
 
-Engel algılandığında araç, toplam algılama/karar gecikmesi ve ölçülmüş durma mesafesi dikkate alınarak yavaşlatılacak veya durdurulacaktır. Ardından mesafe ölçümleriyle engel çevresini takip ederek geçiş açıklığını korumaya çalışacaktır. Rotaya katılmada aktif rota parçasına uzaklık, hedefe yaklaşma, engelin geride bırakılması ve ilerleme yönündeki açıklık birlikte değerlendirilecektir. Rota çizgisinin bir kez kesilmesi tek başına başarılı dönüş sayılmayacaktır.
+Arayüzden yüklenen waypoint sırası korunacaktır. Engel görüldüğünde etkin hedef değiştirilmeden kaçınmaya başlama konumu ve hedefe uzaklık kaydedilecektir. Araç kaçınma sırasında en yakın waypoint'e atlatılmayacak; etkin hedefe tolerans içinde erişmeden sonraki waypoint'e geçilmeyecektir. Başlangıç konumu/yönü işaretli referansa göre kurulacak ve her deneme için enkoder başlangıcı kaydedilecektir.
 
-Aracın gövde boyutları, dönüşte kapladığı alan ve sensörlerin gövdeye göre konumu dikkate alınacaktır. Teorik noktasal robot varsayımlarından gerçek araç için koşulsuz başarı sonucu çıkarılmayacaktır. Aynı bölgede ilerleyememe, geçersiz veri, alan sınırına yaklaşma ve süre aşımı durdurma/başarısızlık nedeni olarak kaydedilecektir.
+Rotaya katılma için aracın aktif **sonlu rota parçasına** belirlenen tolerans içinde ulaşması, hedefe uzaklığının kaçınmaya başladığı noktaya göre ölçüm belirsizliğinden büyük bir payla azalması, engelin geride bırakılması ve gövde için ilerleme açıklığının yeterli olması birlikte değerlendirilecektir. Kaçınma boyunca seçilen kenar izleme yönü, geçiş kuralı olmadan sürekli değiştirilerek salınım oluşturmayacaktır. Rota çizgisinin bir kez kesilmesi yeterli sayılmayacak; katılma bandında kalma ve hedef yönünde ilerlemeyi sürdürme kontrol edilecektir. Kesin açıklık, süre ve ilerleme payları kalibrasyondan önce ölçülmüş değer gibi yazılmayacaktır.
+
+Bu uygulama, Bug 2 mantığından yararlanan gerçek araç uyarlamasıdır; ideal algoritmanın eksiksiz uygulandığı veya teorik tamlık garantisinin sağlandığı iddia edilmeyecektir. Aynı bölgede ilerleyememe, döngü şüphesi, geçersiz sensör verisi, alan sınırına yaklaşma veya süre sınırının aşılması durumlarında deneme durdurulup nedeni kaydedilecektir. Durdurma kaydı “bu düzenekte tamamlanamadı” anlamındadır; ortamda hiçbir geçerli yol bulunmadığının kanıtı sayılmayacaktır. Gerçek aracın genişliği, dönüş kabiliyeti, kısıtlı sensör kapsaması ve konum hatası tasarımda dikkate alınacaktır.
 
 ![Şekil 2 — Kontrol akışı](gorseller/sekil_2_calisma_akisi.png)
 
@@ -128,6 +132,12 @@ Her koşul için başarı oranları, ilgili aşamada başarılı deneme sayısı
 Tamamlanan denemelerin süreleri medyan ve en küçük–en büyük değerlerle özetlenecek; tamamlanamayan denemeler ve süre aşımları ayrıca gösterilecektir. Ölçüm kapsamı uygunsa rota izleme bölümlerinde RMSE ve en büyük sapma değerlendirilecektir. Kaçınma sırasındaki gerekli geçici sapma ile rotaya dönüşten sonraki izleme hatası ayrılacaktır. Görüntü kaybı ve ölçülemeyen aralıklar raporlanacaktır.
 
 Çarpışma, kontrol kesintisi, ilerleyememe ve süre aşımı gibi geçerli başarısızlıklar paydada tutulacaktır. Yalnızca önceden tanımlanmış, araç davranışından bağımsız kayıt/düzenek hataları nedeniyle değerlendirilemeyen denemeler gerekçeleriyle ayrılabilecektir. Yazılım veya donanım değişirse sürüm ve neden kaydedilecek; karşılaştırılan koşullar aynı son sürümle değerlendirilecektir. Bu tekrar planından bütün kullanım ortamlarına başarı veya istatistiksel anlamlılık sonucu çıkarılmayacaktır.
+
+Bağımsız değerlendirmede aktif rota parçası, waypoint'lere sıralı erişimin görüntüden doğrulanmasına göre belirlenecektir. Ölçülen araç referans noktasının bu sonlu parçadaki en yakın noktaya uzaklığı rota hatası olarak alınacaktır; parçanın sonsuz uzantısına uzaklık yeterli sayılmayacaktır. Geçerli ve eşit zaman aralığına getirilmiş izleme örneklerinde kök ortalama karesel hata (RMSE) hesaplanacaktır:
+
+$$\operatorname{RMSE}=\sqrt{\frac{1}{N}\sum_{i=1}^{N}e_i^2}$$
+
+Burada $e_i$ bağımsız ölçülen konumun referans parçaya uzaklığı, $N$ değerlendirilen konum örneği sayısıdır. Örnekleme aralığı ve veri kapsamı raporlanacak; kayıp görüntü aralıkları sonuç iyileştirmek için doldurulmayacaktır. Temas ve algılama olaylarının sırası zaman eşleme belirsizliği nedeniyle ayırt edilemiyorsa olay başarılı algılama diye işaretlenmeyecektir.
 
 ### 2.8. Ön hazırlık durumu
 
@@ -195,6 +205,8 @@ Projenin ilk kapsamı düz zemindeki sabit engellerle sınırlandırılmıştır
 Bu taslakta ayrı ölçek veya anket eki bulunmamaktadır. Üç tasarım şeması ilgili yöntem bölümlerinde yer almaktadır. Ayrıntılı deney protokolü, boş kayıt şablonu ve malzeme/fiyat kayıtları hazırlık dosyalarında tutulmaktadır; bunlar yapılmış deney sonucu değildir.
 
 ## Kaynakça
+
+- Alajlan, A., Elleithy, K., Almasri, M., Sobh, T. 2017. “An Optimal and Energy Efficient Multi-Sensor Collision-Free Path Planning Algorithm for a Mobile Robot in Dynamic Environments”, *Robotics*, 6(2), 7. DOI: https://doi.org/10.3390/robotics6020007.
 
 - Dellaert, F., Hutchinson, S. t.y. “Motion Model for the Differential Drive Robot”. *Introduction to Robotics and Perception*, Bölüm 5.2. İnternet adresi: https://github.com/gtbook/robotics/blob/main/S52_diffdrive_actions.ipynb. Son erişim tarihi: 21 Ekim 2026.
 

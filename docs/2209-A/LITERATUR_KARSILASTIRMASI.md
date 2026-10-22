@@ -1,25 +1,28 @@
 # Literatür karşılaştırması — ilk inceleme
 
-Kontrol tarihi: 21 Ekim 2026. Bu belge sınırlı bir ilk karşılaştırmadır; kapsamlı veya sistematik literatür taraması olduğu iddia edilmiyor. Kaynakların okunan kısmı ve doğrulama düzeyi ayrı belirtilmiştir.
+Güncelleme: 22 Ekim 2026; ilk inceleme 21 Ekim tarihinde yapıldı. Bu belge sınırlı bir ilk karşılaştırmadır; kapsamlı veya sistematik literatür taraması olduğu iddia edilmiyor. Kaynakların okunan kısmı ve doğrulama düzeyi ayrı belirtilmiştir.
 
 ## İçeriği incelenen ilgili çalışmalar
 
 | Kaynak | İncelenen sistem / yöntem | Projemiz açısından çıkarım ve fark |
 | --- | --- | --- |
+| Alajlan vd. (2017) | FEZ Cerbot üzerinde kızılötesi kenar/mesafe sensörleri, ultrasonik sensör ve araç üzeri kamera; sabit ve kısmen dinamik engelli deneyler. Yol, süre ve enerji açısından değerlendirme içerir. | Algılama altyapısının kaçınma davranışıyla birlikte seçilmesine doğrudan örnektir. Projemizde beş sabit mesafe sensörü ve sabit engel koşulları planlanıyor; telefon bağımsız ölçüm içindir. Bu yayının kısa yol/enerji sonuçları veya kamera olanakları bizim araca aktarılmayacak. |
 | Iqbal vd. (2023) | BIM verilerinden çıkarılan koordinatları, masaüstü uygulaması ve bulut bağlantısıyla ESP32 tabanlı bir zemin çizim robotuna aktarır. İki NEMA 17 adım motoru ve DRV8825 sürücüleri kullanılır. Deneysel değerlendirmede çizim konum/açı doğruluğu ele alınır. | Kullanıcı/uygulama koordinatlarının fiziksel mobil robot hareketine aktarılmasına ilişkin gerçek bir örnektir. Bizim planımızda temel değerlendirme görevi, sabit engelden kaçınma ve rotaya yeniden katılmadır. Bu çalışmanın çizim doğruluğu bizim aracımızın beklenen veya ölçülmüş doğruluğu olarak kullanılamaz. |
 | Rodrigues vd. (2026) | Küçük diferansiyel sürüşlü robotta yüksek düzey rota kontrolü ve düşük düzey LQG motor hız kontrolünü birleştirir. Enkoderler ve üstten kamera temelli konum bilgisi kullanılır; ESP32 gömülü kontrol katmanında yer alır. Dairesel ve sekiz biçimli yörüngelerde ileri/geri hareket deneyleri gerçekleştirilir. | Rota takibi, motor hız kontrolü ve konum bilgisinin ayrı ele alınmasının önemini gösterir. Bu mimarinin dış kamera/merkezi kontrol olanakları, yalnızca enkoder ve yerel sensörlerle yürütülmesi düşünülen bizim araca eşdeğer varsayılamaz. Engel kaçınma için bu makaleden doğrudan başarı garantisi çıkarılmaz. |
 | Hauser, Bölüm 9 | Yerel engel bilgisi kullanan Bug yöntemlerini ve robot geometrisinin planlamaya etkisini açıklayan akademik ders kitabı bölümüdür. | Bug 2 yaklaşımı, hedef doğrultusuna yeniden katılma mantığı nedeniyle algoritma adayıdır. Noktasal robot, konum bilgisi ve algılama varsayımları gerçek araçta ayrıca ele alınmalıdır. |
 | Dellaert ve Hutchinson, Bölüm 5.2 | Diferansiyel sürüşte tekerlek hareketleri ile doğrusal/açısal araç hareketi arasındaki kinematik ilişkiyi açıklar. | Enkoderli iki tahrik tekeri önerisinin modelleme temelidir. Kayma olmaması gibi model varsayımları, gerçek parkurda kontrol edilmelidir. |
 
-**Okuma durumu:** İki makalenin yayıncı üzerindeki tam metnine erişildi; özet, platform/mimari, ilgili deney ve sonuç bölümleri incelendi. Yazar, yıl, dergi, cilt/sayı ve DOI bilgileri Crossref kayıtlarıyla ayrıca kontrol edildi. Ders kitaplarının ilgili bölümleri yazarların GitHub depolarından okundu. Makale sonuçları bağımsız olarak yeniden üretilmedi.
+**Okuma durumu:** Iqbal ve Rodrigues çalışmalarının yayıncı üzerindeki tam metinlerine erişildi; özet, platform/mimari, ilgili deney ve sonuç bölümleri incelendi. Yazar, yıl, dergi, cilt/sayı ve DOI bilgileri Crossref kayıtlarıyla ayrıca kontrol edildi. Ders kitaplarının ilgili bölümleri yazarların GitHub depolarından okundu. Makale sonuçları bağımsız olarak yeniden üretilmedi.
 
 ## Taslakta kullanılabilecek bilimsel çerçeve
+
+- **22 Ekim ek okuması:** Alajlan vd. (2017) için yayıncıdaki özet, giriş/ilgili çalışmalar, sensör sistemi, önerilen yaklaşım, deney kurulumları ve sonuç bölümü okundu. Nicel sonuç tabloları bağımsız yeniden üretilmedi; çalışmanın evrensel optimalite/enerji iddiaları bu öneride benimsenmedi. DOI, yazarlar, yıl, dergi ve cilt/sayı Crossref kaydıyla karşılaştırıldı. [Okunan yayıncı metni](https://www.mdpi.com/2218-6581/6/2/7), DOI: [10.3390/robotics6020007](https://doi.org/10.3390/robotics6020007).
 
 - ESP32 kullanımı ve koordinat tabanlı mobil robot hareketi mevcut çalışmalarla gösterilmiş alanlardır. Projenin katkısı yalnızca kontrolcü seçimine dayandırılmayacak.
 - Önerilen çalışma, kullanıcı tanımlı rota ile yerel sabit engelden kaçınma ve rotaya dönüşün tek prototipte bütünleştirilmesini, sınırları tanımlı koşullarda tekrarlı deneylerle değerlendirecek.
 - Özellikle engel algılama, kaçınma ve rotaya yeniden katılma ayrı başarı ölçütleri olarak tutulacak. Böylece görev başarısızlığının hangi aşamada oluştuğu incelenebilecek.
 - Beklenen çıktı, belirli donanım ve deney koşullarına ait performans verisi ve yeniden uygulanabilir bir prototip tasarımıdır. Evrensel üstünlük, ilk kez yapılma, düşük maliyet veya yeni algoritma iddiası bu incelemeyle kurulmuş değildir.
-- Benzer engelden kaçınma uygulamalarıyla karşılaştırma genişletilerek özgün katkı danışmanla değerlendirilecek. İncelenen iki uygulamanın farklı amaçlara sahip olması tek başına literatür boşluğu kanıtı sayılmayacak.
+- Benzer engelden kaçınma uygulamalarıyla karşılaştırma genişletilerek özgün katkı danışmanla değerlendirilecek. İncelenen çalışmaların farklı kapsamlarının olması tek başına literatür boşluğu kanıtı sayılmayacak.
 
 ## Algoritma için gerekçeli öneri
 
@@ -28,6 +31,8 @@ Kontrol tarihi: 21 Ekim 2026. Bu belge sınırlı bir ilk karşılaştırmadır;
 Bu seçeneğin gerekçesi, yerel engel algısı ve rotaya dönüş davranışını açık durum/geçiş kurallarıyla ele alabilmesidir. Yeni bir algoritma olarak sunulmayacak. Enkoder tabanlı konum hatası, robot genişliği, sensör kapsaması, köşeler ve yeniden katılma toleransları tasarımda açıkça işlenecek. Algoritma, donanımın ve kullanıcı tercihinin değerlendirilmesi tamamlanmadan kesinleşmiş sayılmayacak.
 
 ## Kaynakça — içerik için kullanılanlar
+
+- Alajlan, A., Elleithy, K., Almasri, M., Sobh, T. 2017. “An Optimal and Energy Efficient Multi-Sensor Collision-Free Path Planning Algorithm for a Mobile Robot in Dynamic Environments”, *Robotics*, 6(2), 7. DOI: [10.3390/robotics6020007](https://doi.org/10.3390/robotics6020007).
 
 Alfabetik düzen, yazar adları ve DOI ekleri için [TÜBİTAK bibliyografik düzenleme açıklamaları](https://tubitak.gov.tr/tr/duyuru/bibliyografik-verilerin-duzenlenmesi) incelendi. Elektronik ders kitaplarının tarih bilgisi belirlenemediğinden tarih uydurulmadı.
 

@@ -1,0 +1,127 @@
+{
+  "checked_on": "2026-10-22",
+  "timezone": "Europe/Istanbul",
+  "scope": "Follow-up evidence only; existing reference subtotals remain unchanged. No purchase or supplier outreach.",
+  "product_observations": [
+    {
+      "source_url": "https://www.direnc.net/6v-300rpm-enkoderli-motor",
+      "html_sha256": "844bc83ee65d8d2ad569fdb99ec72e2315b633659b70a5f05d6d0772ba045f1a",
+      "name": "JGA12-N20B - 6V 300RPM Enkoderli Motor",
+      "sku": "T22429",
+      "structured_offer": {
+        "@type": "Offer",
+        "url": "https://www.direnc.net/6v-300rpm-enkoderli-motor",
+        "priceCurrency": "TRY",
+        "price": "339.02",
+        "priceValidUntil": "2026-11-22",
+        "validFrom": "2024-12-05T09:06:35+03:00",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      },
+      "observed_vat_included_TRY": "406.82",
+      "price_scope": "Explicit VAT-included displayed price; not a binding quote.",
+      "technical_gaps": [
+        "Stall/current-load curve",
+        "Encoder supply and A/B output levels",
+        "Encoder counts definition",
+        "Motor behavior at proposed regulated 5 V"
+      ],
+      "not_equivalent_by_appearance": true
+    },
+    {
+      "source_url": "https://www.robotistan.com/vl53l0x-lazer-tof-sensor-modul-i2c-pwm-serial",
+      "html_sha256": "419bd72b85896f9f018df3fd8017d329cd00dbb4d44461a88b8938c087bc48c4",
+      "name": "VL53L0X Lazer ToF Sensör Modül (I2C, PWM, Serial)",
+      "sku": "18969",
+      "structured_offer": {
+        "@type": "Offer",
+        "url": "https://www.robotistan.com/vl53l0x-lazer-tof-sensor-modul-i2c-pwm-serial",
+        "priceCurrency": "TRY",
+        "price": "491.88",
+        "priceValidUntil": "2026-11-22",
+        "validFrom": "2020-06-15T13:48:25+03:00",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 15,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn",
+          "applicableCountry": "TR",
+          "merchantReturnLink": "https://www.robotistan.com/garanti-ve-iade-kosullari"
+        }
+      },
+      "observed_price_strings": [
+        "491,88 TL + KDV",
+        "KDV Dahil Fiyat 491,88 TL"
+      ],
+      "resolved_vat_included_TRY": null,
+      "reason": "VAT labels do not establish a consistent net/gross distinction; no final gross quote inferred."
+    },
+    {
+      "source_url": "https://www.robotistan.com/vl53l0x-lazer-tof-sensor-modul-i2c-pwm-serial-siyah",
+      "html_sha256": "d7dad3390826a62b628af78ce652bbb4548b6f260638745d680c07fe830367bb",
+      "name": "VL53L0X Lazer ToF Sensör Modül (I2C, PWM, Serial) - siyah",
+      "sku": "25505",
+      "structured_offer": {
+        "@type": "Offer",
+        "url": "https://www.robotistan.com/vl53l0x-lazer-tof-sensor-modul-i2c-pwm-serial-siyah",
+        "priceCurrency": "TRY",
+        "price": "352.42",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "priceType": "https://schema.org/StrikethroughPrice",
+          "price": "491.88",
+          "priceCurrency": "TRY"
+        },
+        "priceValidUntil": "2026-11-22",
+        "validFrom": "2026-09-16T16:01:48+03:00",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 15,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn",
+          "applicableCountry": "TR",
+          "merchantReturnLink": "https://www.robotistan.com/garanti-ve-iade-kosullari"
+        }
+      },
+      "observed_price_strings": [
+        "352,42 TL + KDV",
+        "KDV Dahil Fiyat 491,88 TL",
+        "İndirimli Fiyat 352,42 TL"
+      ],
+      "resolved_vat_included_TRY": null,
+      "reason": "Discount and VAT labels need confirmation; no final gross quote inferred."
+    }
+  ],
+  "manual": {
+    "source_url": "https://www.robotistan.com/Data/EditorFiles/%C3%9Cr%C3%BCnler%20A%C3%A7%C4%B1klama/18969-manuel.pdf",
+    "sha256": "2b54675b003bfbdc1ddbbc87aece7c6263f0990bc54afb670806722751a19405",
+    "title": "GY-53 Infrared ranging module manual V1.0",
+    "pages_read": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "documented_supply_range_V": [
+      3,
+      5
+    ],
+    "default_mode": "PS=1: UART/TTL plus PWM",
+    "native_I2C_mode": "PS=0/GND: onboard MCU stops operating the sensor; external host operates the VL53L0X chip. PWM not active in this mode.",
+    "not_proved": [
+      "Exact PCB revision of black SKU 25505 matches the shared manual",
+      "I2C pull-up voltage or level-shifter implementation",
+      "Complete 3.3 V interface compatibility"
+    ],
+    "manual_says_schematics_not_provided": true
+  },
+  "stock_interpretation": "Structured pages report InStock; generic Tükendi/Gelince Haber Ver text also appears. Inventory quantity/availability was not confirmed from those template strings.",
+  "search_limitations": "Robolink search HTML was retrieved but did not expose product result links to this reader. This does not establish absence of matching stock.",
+  "budget_decision": "No local alternative is substituted into the definitive basket until electrical/current information and an unambiguous VAT-included delivery quote are available."
+}

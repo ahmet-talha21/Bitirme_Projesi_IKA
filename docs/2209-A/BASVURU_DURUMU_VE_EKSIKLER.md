@@ -18,7 +18,7 @@ Güncelleme: 22 Ekim 2026. Bu liste hazırlık durumunu gösterir; başvurunun g
 | 3.3 Araştırma olanakları | Kişisel lehim ekipmanı ve deneyde kullanılabilecek telefon doğrulandı; taslak hazır. | Kurum altyapısı, deney yeri, sabitleme/kalibrasyon ve diğer ölçüm araçları doğrulanacak. |
 | 4 Yaygın etki | Prototip, arayüz, deney kayıtları ve dokümantasyon çıktıları önerildi. | Süre ve kapsamla son uyum; danışman incelemesi. |
 | Malzeme / bütçe | TL ve USD ara toplamlar, kaynak kayıtları ve güncel CSV hazır. 21 Ekim TCMB kuru ile eksik giderler hariç referans karşılık 11.986,24 TL; destek sınırına yalnızca 13,76 TL fark kalıyor. Pil fotoğrafındaki dört bağlantılı soket ayrıca kaydedildi. | Daha uygun fiyatlı belgeli tedarik; pil–şarj pin/akım uyumu, eksik mekanik/bağlantı/ölçüm fiyatları ve Türkiye teslim TL teklifleri. Tam proje bütçesi henüz yok. |
-| Kaynakça | Mevcut bilimsel nitelik/yöntem metinlerinde kullanılan altı kaynak tek alfabetik listede birleştirildi; atıf eşleştirmesi ve DOI'ler kaydedildi. | Nihai metin değişikliklerinde listeyi ve atıfları güncellemek; danışman incelemesi. |
+| Kaynakça | Mevcut bilimsel nitelik/yöntem metinlerinde kullanılan yedi kaynak tek alfabetik listede birleştirildi; atıf eşleştirmesi ve DOI'ler kaydedildi. | Nihai metin değişikliklerinde listeyi ve atıfları güncellemek; danışman incelemesi. |
 | Özet | Birleşik metnin diğer bölümleri toplandıktan sonra 211 kelimelik ilk özet yazıldı. | Son yöntem, kapsam ve süre kararlarıyla yeniden eşleştirmek. |
 
 ## Görsellerin son durumu

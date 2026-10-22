@@ -1,6 +1,6 @@
 # Deney protokolü — sayısal plan önerisi
 
-Sürüm: 0.2 — 22 Ekim 2026. **Kullanıcı dört koşulda 10'ar tekrar, toplam 40 değerlendirme denemesini ve her engelli koşulda en az 8/10 birleşik otonom görev başarısı hedefini uygun buldu.** Bu seçim, diğer sayısal önerilerin veya tüm protokolün kesinleştiği anlamına gelmez. Sayılar yapılmış deney veya kanıtlanmış araç performansı değildir. Donanım seçimi, deney alanına erişim ve ölçüm uygulanabilirliği henüz tamamlanmadı. Danışman incelemesi ve kalan parametreler sonrasında, nihai değerlendirmeden önce protokol ve yazılım sürümü sabitlenecek.
+Sürüm: 0.3 — 22 Ekim 2026. **Kullanıcı dört koşulda 10'ar tekrar, toplam 40 değerlendirme denemesini ve her engelli koşulda en az 8/10 birleşik otonom görev başarısı hedefini uygun buldu.** Bu seçim, diğer sayısal önerilerin veya tüm protokolün kesinleştiği anlamına gelmez. Sayılar yapılmış deney veya kanıtlanmış araç performansı değildir. Donanım seçimi, deney alanına erişim ve ölçüm uygulanabilirliği henüz tamamlanmadı. Danışman incelemesi ve kalan parametreler sonrasında, nihai değerlendirmeden önce protokol ve yazılım sürümü sabitlenecek.
 
 ## 1. Araştırma sorusu ve karşılaştırma
 
@@ -63,6 +63,10 @@ Algılama eşiğinde sensörün gövdeye göre konumu, toplam algılama/karar ge
 Her koşul için payda **o koşuldaki tüm geçerli denemeler** olacak; örneğin rotaya dönüş oranı yalnız başarılı kaçınmalar üzerinden hesaplanmayacak. Bilinen araç başarısızlığı, eşzamanlı kayıt kaybı olduğu için veri setinden çıkarılmayacak. Yalnız önceden tanımlanan ve araç davranışından bağımsız düzeneğe/kayda ilişkin nedenlerle değerlendirilemeyen denemeler geçersiz olarak ayrılabilecek. Bu nedenler, yerine yapılan denemeler ve toplam başlatılan deneme sayısı raporda gösterilecek; sonuç belirsizse başarılı yazılmayacak.
 
 ## 6. Bağımsız görüntü ölçümü ve kayıt
+
+**Sonlu parça üzerinden hata:** Değerlendirme tarafındaki aktif rota parçası, sıralı waypoint'lere görüntüyle doğrulanan erişime göre seçilecek. Araç referans noktası $P$, parça uçları $A$ ve $B$ için $u=((P-A)\cdot(B-A))/\lVert B-A\rVert^2$ hesaplanıp $[0,1]$ aralığına sınırlandırılacak; $Q=A+\operatorname{clip}(u,0,1)(B-A)$ ve $e=\lVert P-Q\rVert$ kullanılacak. Böylece rota parçasının ilerisindeki/gerisindeki bir konum, yalnız sonsuz doğruya yakın olduğu için doğru izleme sayılmayacak. Aynı noktanın iki kez girilmesiyle oluşan sıfır uzunluklu parça rota yüklenirken reddedilecek.
+
+Kaçınma sırasında etkin hedef ve yüklenen waypoint sırası korunacak. Geri katılımda hedefe yaklaşma, engelin geride kalması ve açık geçiş de aranacak. Kayıtlardaki tek bir çizgi kesişimi yeterli olmayacak. Enkoder tabanlı kontrol kararı ile görüntüden verilen değerlendirme kararı ayrı kaydedilecek; uyuşmazlıklar ayrıca incelenecek.
 
 Kullanıcının mevcut telefonu sabit görüntü kaydı için kullanılabilecek; tüm alanı kesintisiz gören yerleşim, sabitleme ve uygun görüntü kalitesi henüz doğrulanmadı. Kamera, son değerlendirmede kontrolcüye konum geri bildirimi vermeyen bağımsız ölçüm aracı olarak öneriliyor. Bu tercih değişirse yöntem ve bağımsız doğrulama yeniden tanımlanacak.
 

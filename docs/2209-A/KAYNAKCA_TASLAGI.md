@@ -1,8 +1,10 @@
 # Kaynakça — başvuru metninde kullanılan kaynaklar
 
-Güncelleme: 22 Ekim 2026. Bu liste mevcut bilimsel nitelik ve yöntem taslaklarında atıf yapılan altı kaynağı birleştirir. Yazar soyadına/kurum adına göre alfabetik düzenlenmiştir. Metin veya kaynak seçimi değişirse liste de güncellenecek. Aşağıdaki kaynakların ilgili içerikleri önceki incelemede okunmuştur; yalnız bibliyografik kaydı görülen adaylar bu listeye alınmamıştır.
+Güncelleme: 22 Ekim 2026. Bu liste mevcut bilimsel nitelik ve yöntem taslaklarında atıf yapılan yedi kaynağı birleştirir. Yazar soyadına/kurum adına göre alfabetik düzenlenmiştir. Metin veya kaynak seçimi değişirse liste de güncellenecek. Aşağıdaki kaynakların ilgili içerikleri önceki incelemede okunmuştur; yalnız bibliyografik kaydı görülen adaylar bu listeye alınmamıştır.
 
 ## Kaynaklar
+
+- Alajlan, A., Elleithy, K., Almasri, M., Sobh, T. 2017. “An Optimal and Energy Efficient Multi-Sensor Collision-Free Path Planning Algorithm for a Mobile Robot in Dynamic Environments”, *Robotics*, 6(2), 7. DOI: https://doi.org/10.3390/robotics6020007.
 
 - Dellaert, F., Hutchinson, S. t.y. “Motion Model for the Differential Drive Robot”. *Introduction to Robotics and Perception*, Bölüm 5.2. İnternet adresi: https://github.com/gtbook/robotics/blob/main/S52_diffdrive_actions.ipynb. Son erişim tarihi: 21 Ekim 2026.
 
@@ -18,10 +20,11 @@ Güncelleme: 22 Ekim 2026. Bu liste mevcut bilimsel nitelik ve yöntem taslaklar
 
 ## Metin içi atıf eşleştirmesi — hazırlık kontrolü
 
-Bu tablo çalışma notudur; TYBS'nin kaynakça alanına aktarılacak altı künyenin parçası değildir.
+Bu tablo çalışma notudur; TYBS'nin kaynakça alanına aktarılacak yedi künyenin parçası değildir.
 
 | Metin içi gösterim | Kaynak / kullanıldığı yer |
 | --- | --- |
+| Alajlan vd. (2017) | Çoklu sensörle engel algılama/kaçınma ve gerçek araç deneyleri; bilimsel nitelik. |
 | Dellaert ve Hutchinson (t.y.) | Diferansiyel sürüş kinematiği; bilimsel nitelik ve yöntem. |
 | Espressif Systems (t.y.) | HTTP sunucusunda WebSocket desteği; yöntem. |
 | Hauser (t.y.-a) | Bug türü planlama ve geometri varsayımları; bilimsel nitelik ve yöntem. |
@@ -31,6 +34,6 @@ Bu tablo çalışma notudur; TYBS'nin kaynakça alanına aktarılacak altı kün
 
 `t.y.`, incelenen elektronik kaynakta kesin yayın tarihi belirlenemediğini gösterir. Hauser'in iki bölümü, mevcut metinlerdeki eşleşme korunarak `t.y.-a` ve `t.y.-b` olarak ayrıldı. Erişim tarihleri, içeriğin gerçekten incelendiği tarihi gösterir; bu liste birleştirildi diye 22 Ekim olarak değiştirilmedi. Makalelerin künyeleri ve DOI'leri önceki incelemede yayıncı ve Crossref kayıtlarıyla karşılaştırılmıştır; ders kitabı/dokümantasyon için doğrulanmamış yıl veya DOI eklenmedi.
 
-Biçim dayanağı: [TÜBİTAK — Bibliyografik Verilerin Düzenlenmesi](https://tubitak.gov.tr/tr/duyuru/bibliyografik-verilerin-duzenlenmesi). Açıklama; alfabetik sıra, üç veya daha fazla yazarda `vd.` kullanımı, aynı yıl eserlerinin harfle ayrımı ve DOI bulunan kaynaklarda DOI'nin künyenin sonuna eklenmesi için incelendi. Bu biçim kaynağı bilimsel literatür olarak altı künyeye eklenmedi.
+Biçim dayanağı: [TÜBİTAK — Bibliyografik Verilerin Düzenlenmesi](https://tubitak.gov.tr/tr/duyuru/bibliyografik-verilerin-duzenlenmesi). Açıklama; alfabetik sıra, üç veya daha fazla yazarda `vd.` kullanımı, aynı yıl eserlerinin harfle ayrımı ve DOI bulunan kaynaklarda DOI'nin künyenin sonuna eklenmesi için incelendi. Bu biçim kaynağı bilimsel literatür olarak yedi künyeye eklenmedi.
 
 Okuma kapsamı ve yalnız metadata düzeyinde doğrulanan adaylar [literatür notunda](LITERATUR_KARSILASTIRMASI.md) tutuluyor. Teknik ürün fiyatları, üretici parça verileri ve başvuru kuralları ilgili hazırlık belgelerinde kaynaklıdır; nihai başvuru metninde bunlara yeni atıf eklenirse kaynakça yeniden eşleştirilecek.

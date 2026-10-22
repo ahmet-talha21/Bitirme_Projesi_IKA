@@ -59,6 +59,8 @@ Yalnızca sensör fiyatını bu alternatifle değiştiren aritmetik kıyas **3.9
 
 ## Henüz toplamın dışında kalanlar
 
+22 Ekim devam kontrolünde yerel JGA12-N20B 6 V / 300 d/d motorun KDV dahil 406,82 TL fiyatı yeniden görüldü. Sıkışma akımı, enkoder gerilimleri ve sayım tanımı bulunmadığından belgeli motorun doğrudan eşdeğeri sayılmadı. Robotistan'ın 18969 ve 25505 sensör sayfalarına bağlı GY-53 kılavuzu okundu: varsayılan UART/PWM, `PS=0/GND` seçildiğinde doğrudan sensör çipinin I²C kullanımı açıklanıyor. Ancak bu bilgi I²C çekme gerilimlerini veya siyah kartın tam devre sürümünü doğrulamıyor. Sayfalardaki KDV/indirim etiketleri de kesin teslim fiyatı olarak çözümlenemedi. Bu nedenle ucuz görünen bir modülle ana toplam değiştirilmedi. [Devam kontrolünün kaynak ve bulgu kaydı](tedarik/yerel_motor_sensor_kontrolu_2026-10-22.json) hazırdır.
+
 - N20 motorların bağlantılarına uygun boş/özel şasi; standart TT motorlu kitler doğrudan eşdeğer alınmadı.
 - Ana güç kablosu, sigorta/yuva ve gerekli konnektörler; sinyal jumper seti motor güç kablosunun yerine sayılmadı.
 - Son yerleşime uygun vida/distanslar ve gerekirse ek besleme süzme parçaları.
