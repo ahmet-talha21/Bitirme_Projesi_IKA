@@ -114,3 +114,7 @@ Yerel motor ve sensör devam kontrolü kaynak URL/özetleriyle ayrı tedarik kay
 Kullanıcı, önceki mesajda önerilen Bug 2 mantığından yararlanan engel kenarı takibi ve rotaya dönüş yaklaşımını “tamam uygunudur” diyerek uygun buldu. Bu seçim ana yaklaşımı belirler; sensör modelleri, sayısal eşikler ve uygulamanın deneysel başarısı onaylanmış veya doğrulanmış sayılmaz. Önceki “henüz yanıt alınmadı” kaydı bu yanıtla güncellenmiştir.
 
 Kullanıcı, taslak cümlelerinin başvuru metninde nasıl düzenleneceğini sordu. Taslak son metnin temelidir; anlatım, tutarlılık, bölüm uyumu ve kaynak bağlantıları düzenlenecek. Yeni teknik kararlar veya hedefler kullanıcıya sorulacak; yapılmamış deneyler sonuç olarak yazılmayacaktır.
+
+## 22 Ekim — birleşik metnin dil ve anlatım düzenlemesi
+
+Birleşik araştırma önerisinde tekrarlar azaltıldı; özet, bilimsel gerekçe, kaçınma ve bağımsız ölçüm anlatımı düzenlendi. Kullanıcının seçtiği Bug 2 uyarlaması özet ve yönteme işlendi. Başvuruya aktarılmayacak çalışma açıklamaları, seçilmemiş sayısal öneriler ve ÜYZ hazırlık kaydı ayrı hazırlık notuna taşındı. Donanım mimarisi, dört koşulda toplam 40 deneme ve her engelli koşulda en az 8/10 birleşik görev hedefi korundu. Yeni teknik karar, kaynak veya deney sonucu eklenmedi. Eksik süre, bütçe, deney yeri ve toleranslar tamamlanmış sayılmadı.

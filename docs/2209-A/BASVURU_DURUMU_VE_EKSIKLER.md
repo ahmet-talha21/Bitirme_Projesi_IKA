@@ -2,7 +2,7 @@
 
 Güncelleme: 22 Ekim 2026. Bu liste hazırlık durumunu gösterir; başvurunun gönderildiği veya onaylandığı anlamına gelmez.
 
-[İlk birleşik başvuru metni](ARASTIRMA_ONERISI_BIRLESIK_TASLAK.md), [PDF](ARASTIRMA_ONERISI_BIRLESIK_TASLAK.pdf) ve [Word](ARASTIRMA_ONERISI_BIRLESIK_TASLAK.docx) biçiminde hazırlandı. Bölümler ve mevcut üç görsel aynı belgede okunabilir. Deney yerinin henüz belli olmaması, ilk metnin hazırlanmasını durdurmadı; eksikler son bölümde açıkça işaretlendi.
+[İlk birleşik başvuru metni](ARASTIRMA_ONERISI_BIRLESIK_TASLAK.md), [PDF](ARASTIRMA_ONERISI_BIRLESIK_TASLAK.pdf) ve [Word](ARASTIRMA_ONERISI_BIRLESIK_TASLAK.docx) biçiminde hazırlandı. Bölümler ve mevcut üç görsel aynı belgede okunabilir. Dil ve anlatım düzenlemesi tamamlandı; Bug 2 yaklaşımı için kullanıcı seçimi metne işlendi. Başvuru öncesinde tamamlanacak bilgiler [ayrı hazırlık notunda](BASVURU_METNI_HAZIRLIK_NOTLARI.md) tutuluyor.
 
 ## Hazırlanan bölümler
 
@@ -11,7 +11,7 @@ Güncelleme: 22 Ekim 2026. Bu liste hazırlık durumunu gösterir; başvurunun g
 | Genel bilgiler | Yürütücü, kurum/bölüm, danışman ve Haziran 2027 bitirme teslim hedefi alındı. | Son başlık, kesin teslim günü, resmî TÜBİTAK süresi ve bütçe. |
 | 1.1 Bilimsel nitelik | Kaynak destekli ilk metin ve ilgili çalışma karşılaştırması hazır. | Yöntemle tutarlılık, katkının son ifadesi ve danışman incelemesi. |
 | 1.2 Amaç ve hedefler | Kullanıcı dört koşul × 10 tekrar = 40 denemeyi ve her engelli koşulda en az 8/10 birleşik görev başarısı hedefini seçti. | Kalan ek hedefler, uygulanabilirlik gerekçesi ve danışman incelemesi. |
-| 2 Yöntem | Seçilen tekrar planı ve ana hedef metne işlendi. Geometri, 10 cm bant, 120 saniye ve diğer sayısal değerler protokolde öneri olarak tutuluyor. Boş kayıt şablonu hazır. | Parça modelleri, sensör açıları, algoritma, deney alanı, bağımsız ölçüm ve kalan parametrelerin kesinleştirilmesi; danışman incelemesi. |
+| 2 Yöntem | Seçilen Bug 2 uyarlaması, tekrar planı ve ana hedef metne işlendi. Geometri, 10 cm bant, 120 saniye ve diğer sayısal değerler protokolde öneri olarak tutuluyor. Boş kayıt şablonu hazır. | Parça modelleri, sensör açıları, algoritma parametreleri, deney alanı, bağımsız ölçüm ve kalan parametrelerin kesinleştirilmesi; danışman incelemesi. |
 | Görseller | Üç yenilenmiş şema PNG ve PDF olarak hazır. | Son yöntem ve parça seçiminden sonra etiket kontrolü; TYBS önizlemesinde okunabilirlik. |
 | 3.1 Çalışma takvimi | Kasım–Haziran akademik hedef planı, beş iş paketi, bağımlılıklar, başarı kontrolleri ve toplamı %100 olan katkı önerisi yazıldı. | Resmî başlangıç/süreyle uyumlu TYBS ay aralıkları, kesin teslim günü ve sayısal deney eşikleri. |
 | 3.2 Risk yönetimi | Temel hedefleri koruyan önlem ve B planları taslak olarak hazır. | Nihai donanım, algoritma ve ölçüm düzenine göre somutlaştırma. |
@@ -19,7 +19,7 @@ Güncelleme: 22 Ekim 2026. Bu liste hazırlık durumunu gösterir; başvurunun g
 | 4 Yaygın etki | Prototip, arayüz, deney kayıtları ve dokümantasyon çıktıları önerildi. | Süre ve kapsamla son uyum; danışman incelemesi. |
 | Malzeme / bütçe | TL ve USD ara toplamlar, kaynak kayıtları ve güncel CSV hazır. 21 Ekim TCMB kuru ile eksik giderler hariç referans karşılık 11.986,24 TL; destek sınırına yalnızca 13,76 TL fark kalıyor. Pil fotoğrafındaki dört bağlantılı soket ayrıca kaydedildi. | Daha uygun fiyatlı belgeli tedarik; pil–şarj pin/akım uyumu, eksik mekanik/bağlantı/ölçüm fiyatları ve Türkiye teslim TL teklifleri. Tam proje bütçesi henüz yok. |
 | Kaynakça | Mevcut bilimsel nitelik/yöntem metinlerinde kullanılan yedi kaynak tek alfabetik listede birleştirildi; atıf eşleştirmesi ve DOI'ler kaydedildi. | Nihai metin değişikliklerinde listeyi ve atıfları güncellemek; danışman incelemesi. |
-| Özet | Birleşik metnin diğer bölümleri toplandıktan sonra 211 kelimelik ilk özet yazıldı. | Son yöntem, kapsam ve süre kararlarıyla yeniden eşleştirmek. |
+| Özet | Birleşik metnin diğer bölümleri toplandıktan sonra ilk özet yazıldı; dil düzenlemesinde seçilen Bug 2 yaklaşımına göre güncellendi. | Son yöntem, kapsam ve süre kararlarıyla yeniden eşleştirmek. |
 
 ## Görsellerin son durumu
 
