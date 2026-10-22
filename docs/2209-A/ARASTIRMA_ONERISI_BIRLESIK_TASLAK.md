@@ -1,6 +1,6 @@
 # TÜBİTAK 2209-A — Araştırma Önerisi
 
-**Birleşik metin taslağı · 22 Ekim 2026 · Proje başlığı güncellemesi**
+**Birleşik metin taslağı · 22 Ekim 2026 · Altı aylık çalışma planı**
 
 **Proje adı:** Kullanıcı tarafından belirlenen rota bilgisine göre hareket eden otonom araç tasarımı
 
@@ -16,7 +16,7 @@ Bu belge, planlanan araştırmanın inceleme taslağıdır. Başvuru öncesinde 
 | Akademik danışman | Prof. Dr. Murat Ceylan |
 | Proje ekibi | Tek öğrenci yürütücü |
 | Akademik teslim hedefi | Haziran 2027; kesin gün henüz belli değil. |
-| Resmî proje süresi | Henüz belirlenmedi. |
+| Planlanan proje süresi | 6 ay; resmî takvim sonuçların ilanına göre başlayacaktır. |
 | Talep edilecek destek | Nihai bütçe henüz belirlenmedi. |
 
 ## Özet
@@ -27,7 +27,7 @@ Prototip; ESP32 kontrol birimi, bağımsız sürülen iki enkoderli motor ve ön
 
 Düz zeminde yaklaşık 3 × 3 metre olarak planlanan alanda engelsiz referans ve üç sabit engel yerleşimi karşılaştırılacaktır. Her koşul 10 kez tekrarlanarak toplam 40 geçerli değerlendirme denemesi yapılacaktır. Her engelli koşulda en az 8/10 denemede temas öncesi algılama, çarpışmasız kaçınma, rotaya dönüş ve hedefe ulaşmanın birlikte sağlanması hedeflenmektedir. Aracın hareketinin bağımsız değerlendirilmesinde, mevcut telefonla sabit görüntü kaydı ve kalibrasyon düzeni kurulması planlanmaktadır.
 
-Çalışma; donanım ve sensör entegrasyonu, arayüz ve haberleşme, rota izleme, kaçınma ve kontrollü deneyler olmak üzere beş iş paketinde yürütülecektir. Beklenen çıktılar bir araç prototipi, rota arayüzü, deney kayıt kümesi ve performans değerlendirmesiyle birlikte sürümlenmiş teknik dokümantasyondur.
+Çalışma, altı ay içinde donanım ve sensör entegrasyonu, arayüz ve haberleşme, rota izleme, kaçınma ve kontrollü deneyler olmak üzere beş iş paketinde yürütülecektir. Beklenen çıktılar bir araç prototipi, rota arayüzü, deney kayıt kümesi ve performans değerlendirmesiyle birlikte sürümlenmiş teknik dokümantasyondur.
 
 **Anahtar kelimeler:** Otonom kara aracı, rota takibi, engelden kaçınma, enkoder, gömülü kontrol.
 
@@ -147,17 +147,19 @@ Başvuru hazırlığında güncel program belgeleri, ilgili yayınlar ve teknik 
 
 ### 3.1. Çalışma takvimi
 
-Çalışma beş iş paketinde yürütülecektir. Aşağıdaki dönemler Haziran 2027 bitirme teslim hedefine göre hazırlanmış **akademik plan önerisidir**; resmî TÜBİTAK başlangıcı veya TYBS ay aralıkları değildir. Başvuruya girilecek toplam ay sayısı ve resmî iş paketi aralıkları başvuru öncesinde belirlenecektir. Her iş paketinin uygulama sorumlusu Ahmet Talha Arslan'dır.
+Projenin planlanan süresi altı aydır. Çalışmalar aşağıdaki beş iş paketinde yürütülecek; ay aralıkları değerlendirme sonuçlarının ilanına göre başlayan proje takvimini gösterecektir. Her iş paketinin uygulama sorumlusu Ahmet Talha Arslan'dır. Akademik danışmanın bilimsel yönlendirme ve incelemesi çalışma boyunca sürecektir.
 
-| İP | Faaliyet ve başarı kontrolü | Akademik hedef dönemi | Katkı |
+| İP | Faaliyet ve başarı kontrolü | Planlanan ay aralığı | Katkı |
 | --- | --- | --- | --- |
-| 1 | Donanım/sensör entegrasyonu ve kalibrasyon: iki motor, iki enkoder, beş sensör ve besleme davranışının kontrolü. | Kasım–Aralık 2026; donanıma erişime bağlı. | %20 |
-| 2 | Arayüz/haberleşme: rota tanımlama, aktarım, başlatma/durdurma ve durum izlemenin doğrulanması. | Ocak 2027 | %15 |
-| 3 | Konum kestirimi/rota izleme: engelsiz waypoint takibi ve bağımsız referansla hata değerlendirmesi. | Şubat 2027 | %20 |
-| 4 | Engel algılama, kaçınma ve rotaya dönüş: davranışların bütünleştirilmesi ve ayar denemeleri. | Mart–Nisan 2027 | %30 |
-| 5 | Kontrollü deney ve analiz: seçilen 40 deneme, koşul başına ana başarı hedefi ve başarısızlıklar dahil değerlendirme. | Mayıs 2027 | %15 |
+| 1 | Donanım/sensör entegrasyonu ve kalibrasyon: iki motor, iki enkoder, beş sensör ve besleme davranışının kontrolü. | 1–2. ay | %20 |
+| 2 | Arayüz/haberleşme: rota tanımlama, aktarım, başlatma/durdurma ve durum izlemenin doğrulanması. | 1–2. ay | %15 |
+| 3 | Konum kestirimi/rota izleme: engelsiz waypoint takibi ve bağımsız referansla hata değerlendirmesi. | 3. ay | %20 |
+| 4 | Engel algılama, kaçınma ve rotaya dönüş: davranışların bütünleştirilmesi ve ayar denemeleri. | 4–5. ay | %30 |
+| 5 | Kontrollü deney ve analiz: toplam 40 geçerli deneme, her engelli koşulda en az 8/10 birleşik başarı hedefi ve başarısızlıklar dahil değerlendirme. | 6. ay | %15 |
 
-İş paketlerinin başarıya katkıları toplamı %100'dür. Donanıma erişim beklenirken arayüz ve yazılım hazırlığı öne alınabilecektir. Deney ve analizlerin Mayıs ayında, danışman incelemesi ve bitirme tesliminin Haziran ayında tamamlanması hedeflenmektedir. Kesin teslim günü henüz belirlenmemiştir.
+İş paketlerinin araştırmanın başarısına katkıları toplamı %100'dür. İlk iki ayda donanım ve arayüz çalışmaları kısmen paralel ilerletilecek; donanıma erişim beklenirken arayüzün koordinat ve komut işlevleri üzerinde çalışılabilecektir. Üçüncü aydaki rota takibi, hareket/enkoder kalibrasyonu ve rota aktarımı tamamlandıktan sonra yürütülecektir. Kaçınma davranışının bütünleştirilmesini, son sürümün sabitlenmesi ve altıncı aydaki nihai deneyler izleyecektir. Tek yürütücünün iş yükü bu bağımlılıklar dikkate alınarak düzenlenecektir.
+
+Üniversite bitirme projesi için Haziran 2027 teslimi hedeflenmektedir; kesin gün henüz belirlenmemiştir. Sonuçların ilan tarihi bilinmediğinden altı aylık resmî sürenin takvim üzerindeki bitiş günü şu aşamada belirtilmemektedir. Akademik teslim hedefi ile resmî destek takviminin ilişkisi başvuru öncesinde danışmanla değerlendirilecektir.
 
 ### 3.2. Risk yönetimi
 

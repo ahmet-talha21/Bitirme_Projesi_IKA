@@ -8,7 +8,7 @@ Araştırma, küçük ölçekli bir kara aracı prototipinin geliştirilmesi ve 
 
 Koordinat tabanlı uygulama verilerinin ESP32 tabanlı mobil robota aktarılmasına ilişkin bir örnek Iqbal vd. (2023) tarafından sunulmuştur. Rodrigues vd. (2026) ise enkoder geri bildirimi, konum bilgisi ve gömülü motor kontrolünü bir araya getiren küçük ölçekli diferansiyel sürüşlü bir platformu deneysel olarak değerlendirmiştir. Bu çalışmalar, arayüz/rota tanımı, konum bilgisi ve hareket kontrolünün ayrı işlevler olarak tasarlanması için dayanak oluşturmaktadır; bu yayınların donanım ve başarı sonuçları geliştirilecek araç için doğrudan geçerli sayılmayacaktır.
 
-Yöntemin uygulanması [çalışma takvimi taslağındaki](CALISMA_TAKVIMI_TASLAGI.md) beş iş paketine bağlanmıştır: donanım/sensör kalibrasyonu İP1, arayüz/haberleşme İP2, konum kestirimi ve rota takibi İP3, kaçınma/rotaya dönüş İP4, kontrollü deney ve analiz İP5 kapsamında ele alınacaktır. Haziran 2027 akademik teslim hedefi için önerilen dönemler, başvuruda seçilecek resmî toplam süre ve ay aralıklarıyla ayrıca uyumlandırılacaktır.
+Yöntemin uygulanması [çalışma takvimi taslağındaki](CALISMA_TAKVIMI_TASLAGI.md) beş iş paketine bağlanmıştır: donanım/sensör kalibrasyonu İP1, arayüz/haberleşme İP2, konum kestirimi ve rota takibi İP3, kaçınma/rotaya dönüş İP4, kontrollü deney ve analiz İP5 kapsamında ele alınacaktır. Kullanıcı altı aylık süreyi seçti: İP1 ve İP2 1–2. ay, İP3 3. ay, İP4 4–5. ay, İP5 6. ay olarak planlandı. Haziran 2027 akademik teslim hedefiyle ilişkinin danışmanla değerlendirilmesi ve kesin başlangıç gününün sonuç ilanına göre belirlenmesi beklenmektedir.
 
 ## 2.2. Donanım ve konum kestirimi önerisi
 

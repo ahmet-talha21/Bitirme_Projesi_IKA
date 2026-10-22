@@ -1,14 +1,14 @@
 # 3.1. Çalışma takvimi — Haziran hedefi için taslak
 
-Güncelleme: 22 Ekim 2026. Kullanıcı Haziran 2027 hedefinin okulun bitirme projesi teslimi olduğunu, kesin günün henüz belli olmadığını açıkladı. Önceden önerilen altı aylık süre kullanıcı tarafından onaylanmış sayılmayacak. Aşağıdaki Kasım–Haziran planı akademik teslim hedefi için öneridir; resmî TÜBİTAK başlangıcı/süresi değildir.
+Güncelleme: 22 Ekim 2026. Kullanıcı Haziran 2027 hedefinin okulun bitirme projesi teslimi olduğunu, kesin günün henüz belli olmadığını açıkladı. Kullanıcı, 22 Ekim tarihindeki açık süre sorusuna “6 aylık planı kullanalım.” diyerek altı aylık toplam süreyi ve sunulan ay dağılımını seçti. Aşağıdaki Kasım–Haziran planı akademik teslim hedefi için öneridir; resmî TÜBİTAK başlangıcı/süresi değildir.
 
 ## Süreyi belirleme dayanağı
 
 [2026 çağrı duyurusunun 6.1 maddesi](https://tubitak.gov.tr/sites/default/files/2026-10/2209-A_2026_Yili_Cagri_Duyurusu.pdf), proje süresini değerlendirme sonuçlarının ilan edildiği tarihten itibaren en fazla 12 ay olarak tanımlıyor. İlan tarihi ve projenin fiilî çalışma başlangıcı henüz belli değil. Bu yüzden Ocak 2027'yi resmî başlangıç varsayıp “Ocak–Haziran, altı ay” yazılmayacak.
 
-Haziran hedefi çalışma planına kaydedildi. TYBS'ye girilecek toplam süre ve iş paketlerinin ay aralıkları, bu hedef ile resmî süre hesabı birlikte değerlendirilerek belirlenecek. Geliştirme için gerekli donanıma ne zaman erişilebileceği de dikkate alınacak; destek/ödeme tarihi veya kişisel harcama taahhüdü varsayılmadı.
+Haziran hedefi çalışma planına kaydedildi. Kullanıcının seçtiği TYBS toplam süresi 6 ay; iş paketi aralıkları İP1/İP2 için 1–2. ay, İP3 için 3. ay, İP4 için 4–5. ay ve İP5 için 6. aydır. Bu planın akademik hedefle ilişkisi danışmanla değerlendirilecek. Geliştirme için gerekli donanıma ne zaman erişilebileceği de dikkate alınacak; destek/ödeme tarihi veya kişisel harcama taahhüdü varsayılmadı.
 
-Başvurudaki toplam süre, başvuru tamamlanmadan önce planlanan ay sayısı olarak seçilmelidir; sonuç ilanı beklenerek süre alanı boş bırakılmayacak. Henüz bilinmeyen ilan tarihi, Haziran akademik teslimiyle resmî destek takviminin kesin olarak çakıştığı varsayımını kurmamıza izin vermiyor. Planlanan süre ve bu ilişki danışmanla başvuru öncesinde değerlendirilecek.
+Başvurudaki toplam süre için 6 ay seçildi; sonuç ilanı beklenerek süre alanı boş bırakılmayacak. Henüz bilinmeyen ilan tarihi, Haziran akademik teslimiyle resmî destek takviminin kesin olarak çakıştığı varsayımını kurmamıza izin vermiyor. Planlanan süre ve bu ilişki danışmanla başvuru öncesinde değerlendirilecek.
 
 ## Bitirme projesi hedef takvimi — öneri
 
@@ -23,11 +23,11 @@ Başvurudaki toplam süre, başvuru tamamlanmadan önce planlanan ay sayısı ol
 
 Kasım başlangıcı ve dönem dağılımı planlama önerisidir. Donanım alım tarihi veya bu dönemlerde yapılacak harcamaların destek kapsamında olduğu iddia edilmiyor. Donanım beklenirken arayüz ve yazılım hazırlığı öne alınabilir. Haziran satırı, resmî çalışma takvimine ayrı “rapor yazma/yaygınlaştırma” iş paketi olarak taşınmayacak. Akademik hedef takvimi, TYBS'nin resmî süre hesabının yerine kullanılmayacak.
 
-## İş paketleri, bağımlılıklar ve katkı önerisi
+## İş paketleri, bağımlılıklar ve planlanan katkılar
 
-Aşağıdaki katkı değerleri planlama önerisidir; toplamları %100'dür. Bunlar deney başarı yüzdeleri değildir. Her iş paketinin uygulama sorumlusu Ahmet Talha Arslan'dır; danışmanın bilimsel yönlendirmesi ve incelemesi süreç boyunca sürecektir.
+Seçilen altı aylık planda aşağıdaki katkı değerleri korundu; toplamları %100'dür. Bunlar deney başarı yüzdeleri değildir. Her iş paketinin uygulama sorumlusu Ahmet Talha Arslan'dır; danışmanın bilimsel yönlendirmesi ve incelemesi süreç boyunca sürecektir.
 
-| İş paketi | Ön koşul / sıra | Planlanan başarı kontrolü | Araştırmanın başarısına katkı önerisi |
+| İş paketi | Ön koşul / sıra | Planlanan başarı kontrolü | Araştırmanın başarısına katkı |
 | --- | --- | --- | --- |
 | İP1 — Donanım ve sensör entegrasyonu, kalibrasyon | Ürün uyumluluğu ve donanım erişimi netleşince. | İki motorun yön/hız komutları ve iki enkoderin sayımı doğrulanacak; beş sensörün ölçüm/geçerlilik bilgisi kaydedilecek. Besleme, tekerlek ölçeği ve durma davranışı kontrol edilecek. | %20 |
 | İP2 — Kullanıcı arayüzü ve haberleşme | Rota koordinatları ve komut biçimi tanımlanınca; ilk yazılım çalışmaları İP1'e kısmen paralel yapılabilir. | Bilgisayar öncelikli ve telefondan erişilebilir arayüzde waypoint rotası tanımlama, rota aktarımı, durum gösterimi ve başlatma/durdurma akışı doğrulanacak. | %15 |
@@ -46,11 +46,11 @@ Aşağıdaki katkı değerleri planlama önerisidir; toplamları %100'dür. Bunl
 
 1. Haziran içindeki kesin teslim günü ve okulun ayrıntılı teslim takvimi.
 2. Çalışmaya ve donanıma erişime ilişkin gerçek başlangıç koşulları; resmî proje süresiyle ilişki.
-3. Beş iş paketinin ay aralıkları; birbirine bağımlı adımların sırası ve tek yürütücünün iş yükü.
+3. Seçilen ay aralıkları, bağımlı adımların sırası ve tek yürütücünün iş yükünün danışmanla değerlendirilmesi.
 4. Seçilen 40 deneme ve koşul başına en az 8/10 ana hedefin danışman incelemesi; kalan sayısal öneriler, ölçüm doğruluğu, rota/katılma toleransları ve kalibrasyona bağlı parametrelerin kesinleştirilmesi.
 
-Bu belge, akademik hedef takvimi, başarı kontrolleri ve katkı dağılımı önerisini hazırlar. Resmî başlangıç/süre ve TYBS ay aralıkları tamamlanmadığı için nihai TYBS çalışma takvimi olarak aktarılmaya hazır değildir.
+Bu belge akademik hedef takvimini, başarı kontrollerini ve katkı dağılımını açıklar. Kullanıcının seçtiği altı aylık resmî plan ayrı dosyada ve birleşik raporda yer alır. Kesin başlangıç günü, akademik hedefle ilişki ve kalan uygulama ayrıntıları danışmanla değerlendirilecektir.
 
-## Başvuru süresi için somut alternatif
+## Kullanıcının seçtiği altı aylık plan
 
-[Altı aylık resmî takvim önerisi](ALTI_AYLIK_RESMI_TAKVIM_ONERISI.md), aynı beş iş paketi ve toplam %100 katkı korunarak 1–6. ay aralıklarıyla hazırlandı. Bu, kullanıcı tarafından seçilmiş süre değildir. Haziran 2027 akademik hedefi korunur; sonuç ilanı bilinmeden altı aylık resmî sürenin Haziran ayında biteceği varsayılmamaktadır.
+[Altı aylık resmî çalışma planı](ALTI_AYLIK_RESMI_TAKVIM_ONERISI.md), aynı beş iş paketi ve toplam %100 katkı korunarak 1–6. ay aralıklarıyla hazırlandı ve kullanıcı tarafından seçildi. Haziran 2027 akademik hedefi korunur; sonuç ilanı bilinmeden altı aylık resmî sürenin Haziran ayında biteceği varsayılmamaktadır.

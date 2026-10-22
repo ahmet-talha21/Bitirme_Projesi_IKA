@@ -14,7 +14,7 @@ Durum: Kullanıcının 21 Ekim 2026 tarihinde bildirdiği bilgilerle hazırlanm�
 | Sınıf | 4. sınıf |
 | Akademik danışman | Prof. Dr. Murat Ceylan |
 | Proje başlığı | Kullanıcı tarafından belirlenen rota bilgisine göre hareket eden otonom araç tasarımı — kullanıcı tarafından 22 Ekim 2026 tarihinde seçildi. |
-| Süre | Bitirme projesi teslim hedefi Haziran 2027; kesin gün henüz belli değil. Resmî TÜBİTAK başlangıcı ve toplam ay sayısı ayrıca belirlenecek. |
+| Süre | Bitirme projesi teslim hedefi Haziran 2027; kesin gün henüz belli değil. Planlanan resmî proje süresi kullanıcı tarafından 6 ay olarak seçildi; başlangıç günü sonuç ilanına göre belli olacak. |
 | Talep edilecek bütçe | Henüz belirlenmedi; fiyatlar doğrulanacak. |
 
 Kullanıcının doğruladığı kişisel lehim ekipmanı ve telefon, [araştırma olanakları taslağında](ARASTIRMA_OLANAKLARI_TASLAGI.md) tutuluyor. Üniversite ve bölüm bilgisi, belirli bir laboratuvara veya ekipmana erişim olduğu anlamına gelmez. Kesin deney yeri ve kurum olanakları ayrıca netleştirilecek. Bu belgede kayıt durumu, danışman onayı veya TYBS işlemlerinin tamamlandığı iddia edilmiyor.
@@ -26,7 +26,7 @@ Kullanıcının doğruladığı kişisel lehim ekipmanı ve telefon, [araştırm
 
 ## Çalışma takvimine temel olacak iş paketleri
 
-Bitirme projesi hedefi Haziran 2027. [Çalışma takvimi taslağında](CALISMA_TAKVIMI_TASLAGI.md) Kasım–Haziran akademik hedef planı, iş bağımlılıkları, başarı kontrolleri ve toplamı %100 olan katkı dağılımı önerildi. Resmî TÜBİTAK başlangıcı, toplam süre, TYBS ay aralıkları ve sayısal deney eşikleri henüz kesinleşmedi. Aşağıdaki yapı görev dağılımı önerisidir; nihai TYBS takvimi değildir.
+Bitirme projesi hedefi Haziran 2027. [Çalışma takvimi taslağında](CALISMA_TAKVIMI_TASLAGI.md) Kasım–Haziran akademik hedef planı, iş bağımlılıkları, başarı kontrolleri ve toplamı %100 olan katkı dağılımı önerildi. Kullanıcı altı aylık süre ve İP1/İP2 1–2, İP3 3, İP4 4–5, İP5 6. ay dağılımını seçti. Resmî başlangıç günü bilinmiyor; kalan sayısal deney eşikleri ve danışman incelemesi açık. Aşağıdaki yapı görev dağılımı önerisidir; nihai TYBS takvimi değildir.
 
 | İş paketi | Uygulama sorumlusu | Planlanan çıktı / kontrol |
 | --- | --- | --- |
@@ -40,6 +40,6 @@ Akademik danışmanın bilimsel yönlendirme ve kontrolü çalışma boyunca sü
 
 ## Tamamlanacak bilgiler
 
-- Proje süresi, başlangıca göre ay bazında iş planı ve iş paketlerinin katkı yüzdeleri.
+- Seçilen altı aylık süre, ay dağılımı ve katkı yüzdelerinin danışmanla değerlendirilmesi; akademik teslim hedefiyle ilişki.
 - Deney yeri, doğrulanmış altyapı, bütçe ve sayısal başarı ölçütleri.
 - Danışmanın taslak yöntem ve kapsam hakkındaki görüşü.

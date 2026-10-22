@@ -7,7 +7,7 @@ Güncelleme: 22 Ekim 2026. Bu dosya çalışma takibi içindir; başvurunun bili
 ## Başvuru öncesinde tamamlanacak bilgiler
 
 - Kullanıcının seçtiği proje başlığıyla birlikte danışmanın metin değerlendirmesi.
-- Resmî proje süresi ve TYBS'ye uygun ay aralıkları; Haziran 2027 bitirme hedefiyle uyumu.
+- Kullanıcının seçtiği 6 aylık süre ve 1–6. ay dağılımının danışmanla değerlendirilmesi; Haziran 2027 bitirme hedefiyle ilişkisi.
 - Deney yerinin seçimi ve gerçekten kullanılacak kurum olanakları. Deney yeri şu anda bilinmiyor.
 - Ürün modelleri, sensör açıları, ağ/arayüz ayrıntıları ve seçilen Bug 2 uyarlamasının uygulama parametreleri.
 - Bağımsız görüntü ölçümünün uygulanabilirliği, waypoint/rotaya dönüş toleransları, açıklıklar ve süre sınırı.
@@ -18,7 +18,7 @@ Güncelleme: 22 Ekim 2026. Bu dosya çalışma takibi içindir; başvurunun bili
 
 ## Belgenin kullanımı
 
-2026 başvurusu TYBS alanlarına girilen bilgilerle oluşturulmaktadır. PDF ve Word dosyaları inceleme içindir; ayrı bir araştırma önerisi PDF'si yükleme şartı olarak sunulmamaktadır. Süre, kurum olanakları ve diğer eksik bilgiler tamamlanmadan bu sürüm son başvuru olarak kullanılmayacaktır.
+2026 başvurusu TYBS alanlarına girilen bilgilerle oluşturulmaktadır. PDF ve Word dosyaları inceleme içindir; ayrı bir araştırma önerisi PDF'si yükleme şartı olarak sunulmamaktadır. Kurum olanakları, bütçe ve diğer eksik bilgiler tamamlanıp danışman incelemesi yapılmadan bu sürüm son başvuru olarak kullanılmayacaktır.
 
 Prototip üretilmemiş, sensör/motor kalibrasyonu veya performans deneyi yapılmamıştır. Metindeki başarı sayıları hedefleri belirtir. Üç görsel tasarım şemasıdır; deney veya simülasyon sonucu değildir.
 
@@ -43,3 +43,7 @@ Stok ve temin bilgileri teknik uygulanabilirlik ve maliyet planı için tutulaca
 Çağrı duyurusunun 2.2 maddesine göre başvuru sırasında talep edilen bütçe tutarı başvurular sona erdikten sonra değiştirilemez; bu nedenle gerçekçi toplamın hazırlanması önemlidir. Harcamaların fatura ile belgelendirilmesi şartı ise 6.2 maddede açıklanan uygulama/harcama aşamasına aittir. Stok belgesi ile harcama faturası birbirine karıştırılmayacaktır.
 
 Kullanıcı ToF sensörlerini önceliklendirmeyi seçti. Bu öncelik birleşik yöntem metnine işlendi; belirli bir model seçilmiş veya performansı doğrulanmış sayılmadı.
+
+## Seçilen toplam süre
+
+Kullanıcı “6 aylık planı kullanalım.” yanıtıyla altı aylık planı seçti. İP1/İP2 1–2. ay, İP3 3. ay, İP4 4–5. ay ve İP5 6. ay dağılımı birleşik rapora işlendi. Haziran 2027 akademik teslim hedefi korunuyor; sonuç ilanı bilinmediği için resmî bitişin Haziran olduğu söylenmiyor. Kalan danışman incelemesi, bütçe ve deney/ölçüm ayrıntıları açık tutuldu.

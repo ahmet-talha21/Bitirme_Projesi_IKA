@@ -136,3 +136,9 @@ Kullanıcı, önerilen yeni başlık yerine ilk başlığının aynen kalmasın�
 ## 22 Ekim — altı aylık resmî takvim önerisi
 
 Beş iş paketi 1–6. ay aralıklarına yerleştirilerek somut süre önerisi hazırlandı: donanım ve arayüz 1–2. ay, engelsiz rota takibi 3. ay, kaçınma/rotaya dönüş 4–5. ay, nihai deney/analiz 6. ay. Mevcut %20/%15/%20/%30/%15 katkılar, 40 deneme ve koşul başına en az 8/10 ana hedef korundu. Haziran 2027 akademik teslim hedefi ile sonuç ilanından başlayan resmî sürenin ilişkisi açıklandı; Ocak başlangıcı, kesin Haziran resmî bitişi veya kullanıcı süre seçimi varsayılmadı. Birleşik rapor ve bütçe değiştirilmedi.
+
+## 22 Ekim — altı aylık planın kullanıcı tarafından seçilmesi
+
+Kullanıcı açık süre sorusuna “6 aylık planı kullanalım.” yanıtını verdi. Planlanan toplam süre 6 ay olarak birleşik rapora ve genel bilgilere işlendi. İP1/İP2 1–2. ay, İP3 3. ay, İP4 4–5. ay ve İP5 6. ay dağılımı kullanıldı; %20/%15/%20/%30/%15 katkılar korundu. Özet ve yöntem içindeki takvim açıklamaları bu seçime göre güncellendi.
+
+Önceki “süre seçilmedi” kayıtları tarihsel hazırlık aşamasını gösterir; bu yanıtla süre tercihi tamamlandı. Haziran 2027 akademik teslim hedefi korunur. Sonuç ilan tarihi bilinmediği için Ocak başlangıcı veya Haziran resmî bitişi varsayılmadı. Danışman incelemesi, bütçe, deney yeri ve kalan teknik eşikler tamamlanmış sayılmadı. Donanım kapsamı, 40 deneme ve koşul başına en az 8/10 ana başarı hedefi değiştirilmedi.
