@@ -2,6 +2,8 @@
 
 Güncelleme: 22 Ekim 2026. Bu dosya çalışma takibi içindir; başvurunun bilimsel metnine aktarılmayacaktır.
 
+**Güncel belge:** [Danışmana sunulacak araştırma önerisi](ARASTIRMA_ONERISI.md) · [PDF](ARASTIRMA_ONERISI.pdf) · [Word](ARASTIRMA_ONERISI.docx). Kullanıcı raporun hazırlık ifadelerinden arındırılarak tamamlanmasını istedi. Aşağıdaki eski açık-parametre kayıtları çalışma geçmişidir; güncel rapordaki yöntem ve sayısal protokol esas alınır. Kurum/laboratuvar erişimi veya elde edilmiş ölçüm sonucu üretilmedi.
+
 [Birleşik araştırma önerisi](ARASTIRMA_ONERISI_BIRLESIK_TASLAK.md) dil ve anlatım bakımından düzenlendi. Kullanıcı Bug 2 mantığından yararlanan kaçınma yaklaşımını uygun buldu; bu karar özet ve yönteme işlendi. Donanım mimarisi, 40 denemelik plan ve her engelli koşulda en az 8/10 birleşik görev hedefi korundu. Yeni bir ürün, sayısal eşik veya elde edilmiş sonuç eklenmedi.
 
 ## Başvuru öncesinde tamamlanacak bilgiler
@@ -63,3 +65,17 @@ Kullanıcının kabul almış örnek olarak paylaştığı “Yapay Zeka Destekl
 - Örneğin 3–4. sayfalarında metin içi atıflar, 13–14. sayfalarında ayrı kaynak listesi bulunuyor. Örnekteki kaynakların içerikleri ve künyeleri bu incelemeyle doğrulanmış sayılmadı; bizim kaynakçamıza aktarılmadı. Bizim metinde güncel bibliyografya yönergesindeki yazar–yıl atıfları ve alfabetik kaynakça korunuyor.
 
 Örnekteki ROS 2, Jetson, STM32, LiDAR, sensör füzyonu, hareketli engel sınıflandırması, yarışma dereceleri ve laboratuvar erişimi bizim projemizin doğrulanmış özellikleri değildir; önerimize eklenmedi. Seçilen ESP32 mimarisi, beş sensör, iki enkoderli motor, 6 ay, 40 deneme, 10 cm/120 saniye hedefleri ve 11.500 TL tahmini bütçe değişmedi. Üçüncü kişilere ait PDF ve fotoğraflar GitHub deposuna yüklenmedi.
+
+## Danışman sunum sürümü — tamamlama kaydı
+
+Kullanıcı, son raporun hazırlanmasını ve sonraya bırakılan planlama ayrıntılarının tamamlanmasını istedi. Bu yetkiyle L biçimli A–B–C rota ve önceki K1–K3 geometri önerisi, 30 cm engel, 10 blokta rastgele sıra, nominal 0,10 m/s ve kaçınmada en çok 0,05 m/s, 20 Hz kontrol, en az 5 Hz tam sensör taraması ve 5 Hz telemetri proje planına bağlandı. Başlangıç sensör yönleri 0°, ±45°, ±90°; donanım işlevsel şartları, 3,3 V sinyal uyumu, 5 V motor dalı ve 2S güç planı belirtildi. Somut satıcı ürünü alınmış veya uyumlu olduğu denenmiş sayılmadı.
+
+Dönüş doğrulaması için 1 saniye ve 10 cm ilerleme, hedefte 2 saniye durma, kontrol noktalarında 2 cm görüntü kalibrasyon hedefi benimsendi. Bağlantı canlılığı 0,5 saniye, bağlantı kaybında durdurma 1 saniye ve eski sensör verisi sınırı 250 ms olarak planlandı. Bu değerler yeni planlama kararlarıdır; önceki tekil kullanıcı onayları veya ölçülmüş değerler olarak gösterilmedi. İlave 9/10 başarı hedefleri eklenmedi; her engelli koşulda 8/10 birleşik başarı ana hedefi korundu.
+
+Başarı eşikleri ile fiziksel kalibrasyondan türetilecek ayarlar ayrıldı: tekerlek ölçeği, açıklık ve durma mesafesi proje içindeki kalibrasyon faaliyetlerinde ölçülecektir. Donanımın henüz elde olmaması, bu sonuçları şimdi yazmak için gerekçe yapılmadı. Kayıt şablonuna sonuç eklenmedi.
+
+Sunum belgesinden “taslak”, hazırlık bağlantıları, kesinleşmedi/henüz seçilmedi notları çıkarıldı. Araştırma önerisi gelecek zamanla yazıldı. Kurumsal altyapı varsayılmadan kişisel telefon/lehim ve bütçeden sağlanacak kaynaklar açıklandı. Akademik Haziran 2027 hedefi genel proje kayıtlarında korundu; sonuç ilanına göre başlayacak 6 aylık destek süresi için kesin takvim günü uydurulmadı.
+
+2026 çağrı duyurusu ve başvuru içeriği bilgi notu yeniden indirildi; HTTP 200 ve önceden incelenen belgelerle aynı SHA-256 doğrulandı. Danışmana sunum için kapaklı A4 PDF ve Word üretildi; bu çıktı TYBS başvurusunun kendisi değildir. Eski taslaklar silinmedi. Ana kaynakça yedi doğrulanmış kaynakla korundu; örnek raporların kaynakları kopyalanmadı.
+
+Üç sunum şeması image_gen ile güncellendi: eski bekleyen-seçim notları temizlendi, ToF algısı ve sabit sağa kaçınma yönü raporla uyumlandırıldı. Deney alanı şekli ölçeksiz şema olarak etiketlendi; kesin koordinatlar metindeki tablodadır. Görseller gorseller/danisman_sunumu klasöründedir; eski kabul edilen çizimler korunmuştur. ÜYZ kullanım kapsamı danışmana verilen raporda da belirtildi.

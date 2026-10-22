@@ -1,5 +1,7 @@
 # Başvuru durumu ve kalan işler
 
+**Güncel durum:** Danışmana sunulacak [araştırma önerisi](ARASTIRMA_ONERISI.md), [PDF](ARASTIRMA_ONERISI.pdf) ve [Word](ARASTIRMA_ONERISI.docx) tamamlandı. Aşağıdaki liste önceki taslakların hazırlık geçmişidir. Güncel raporda yöntem parametreleri, geometri, ölçüm düzeni, hata/durdurma kuralları ve ayrıntılı bütçe açık bir plana bağlanmıştır. Satın alma giriş kontrolü, fiziksel kalibrasyon ve deneyler proje faaliyetleridir; mevcut sonuç gibi sunulmaz.
+
 Güncelleme: 22 Ekim 2026. Bu liste hazırlık durumunu gösterir; başvurunun gönderildiği veya onaylandığı anlamına gelmez.
 
 [İlk birleşik başvuru metni](ARASTIRMA_ONERISI_BIRLESIK_TASLAK.md), [PDF](ARASTIRMA_ONERISI_BIRLESIK_TASLAK.pdf) ve [Word](ARASTIRMA_ONERISI_BIRLESIK_TASLAK.docx) biçiminde hazırlandı. Bölümler ve mevcut üç görsel aynı belgede okunabilir. Dil ve anlatım düzenlemesi tamamlandı; Bug 2 yaklaşımı için kullanıcı seçimi metne işlendi. Başvuru öncesinde tamamlanacak bilgiler [ayrı hazırlık notunda](BASVURU_METNI_HAZIRLIK_NOTLARI.md) tutuluyor.

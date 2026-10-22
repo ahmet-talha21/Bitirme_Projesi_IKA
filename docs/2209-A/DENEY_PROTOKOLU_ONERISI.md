@@ -1,5 +1,7 @@
 # Deney protokolü — sayısal plan önerisi
 
+**Çalışma geçmişi:** Bu dosya önceki 0.5 önerisidir. Kullanıcının raporu tamamlama talebiyle sayısal yöntem güncellendi; uygulama ve danışman değerlendirmesi için [güncel araştırma önerisinin 2. bölümü](ARASTIRMA_ONERISI.md) esas alınacaktır.
+
 Sürüm: 0.5 — 22 Ekim 2026. **Kullanıcı dört koşulda 10'ar tekrar, toplam 40 değerlendirme denemesini ve her engelli koşulda en az 8/10 birleşik otonom görev başarısı hedefini uygun buldu.** Kullanıcı ayrıca waypoint/hedef erişimi için 10 cm, rotaya dönüş bandı için 10 cm ve deneme başına 120 saniye sınırını planlanan hedefler olarak seçti. Bu seçimler diğer sayısal önerilerin veya tüm protokolün kesinleştiği anlamına gelmez. Sayılar yapılmış deney veya kanıtlanmış araç performansı değildir. Donanım seçimi, deney alanına erişim ve ölçüm uygulanabilirliği henüz tamamlanmadı. Danışman incelemesi ve kalan parametreler sonrasında, nihai değerlendirmeden önce protokol ve yazılım sürümü sabitlenecek.
 
 ## 1. Araştırma sorusu ve karşılaştırma

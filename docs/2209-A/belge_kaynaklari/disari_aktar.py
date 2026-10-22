@@ -1,6 +1,6 @@
 """Birleşik Markdown taslağından görselleri içeren Word ve PDF üretir.
 
-Gereksinimler: Python 3, python-docx, pandoc, XeLaTeX ve DejaVu yazı tipleri.
+Gereksinimler: Python 3, python-docx, pandoc, XeLaTeX, DejaVu ve Liberation yazı tipleri.
 Görsel dosyalarının içeriği değiştirilmez; yalnız belge içindeki boyutu ayarlanır.
 """
 
@@ -23,7 +23,7 @@ ROOT = Path(__file__).resolve().parents[1]
 STEM = "ARASTIRMA_ONERISI_BIRLESIK_TASLAK"
 
 
-def make_reference(path):
+def make_reference(path, sunum=False):
     document = Document()
     section = document.sections[0]
     section.page_width, section.page_height = Cm(21), Cm(29.7)
@@ -51,7 +51,7 @@ def make_reference(path):
     caption.font.italic = False
     caption.font.color.rgb = RGBColor.from_string("475569")
     header = section.header.paragraphs[0]
-    header.text = "TÜBİTAK 2209-A  |  Araştırma önerisi taslağı"
+    header.text = "TÜBİTAK 2209-A  |  Araştırma önerisi" + ("" if sunum else " taslağı")
     header.runs[0].font.size = Pt(8)
     header.runs[0].font.color.rgb = RGBColor.from_string("64748B")
     footer = section.footer.paragraphs[0]
@@ -63,7 +63,7 @@ def make_reference(path):
     document.save(path)
 
 
-def finish_layout(path, title=None):
+def finish_layout(path, title=None, sunum=False):
     document = Document(path)
     properties = document.core_properties
     properties.title = title or "İKA — TÜBİTAK 2209-A Araştırma Önerisi, Birleşik Taslak"
@@ -71,11 +71,38 @@ def finish_layout(path, title=None):
     properties.subject = "Planlanan araştırma; deney sonuçları içermez"
     properties.modified = datetime.now(timezone.utc)
 
+    if sunum:
+        document.sections[0].different_first_page_header_footer = True
+        cover = True
+        for paragraph in document.paragraphs:
+            if paragraph.text == "A. GENEL BİLGİLER":
+                cover = False
+                paragraph.paragraph_format.page_break_before = True
+            if cover and paragraph.text.strip():
+                paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                paragraph.paragraph_format.keep_with_next = True
+                paragraph.paragraph_format.space_after = Pt(18)
+                if paragraph.text == "TÜBİTAK 2209-A":
+                    paragraph.paragraph_format.space_before = Pt(60)
+                    for run in paragraph.runs:
+                        run.font.size = Pt(22)
+                elif paragraph.text.startswith("Kullanıcı tarafından"):
+                    paragraph.paragraph_format.space_before = Pt(24)
+                    paragraph.paragraph_format.space_after = Pt(32)
+                    for run in paragraph.runs:
+                        run.font.size = Pt(17)
+                elif paragraph.text == "2026 YILI":
+                    paragraph.paragraph_format.space_before = Pt(24)
+                    paragraph.paragraph_format.keep_with_next = False
+
     for paragraph in document.paragraphs:
         if paragraph.text in {
             "1. Bilimsel nitelik", "2. Yöntem", "3. Proje yönetimi",
             "4. Araştırma önerisinin yaygın etkisi", "Kaynakça",
             "Son düzenlemede tamamlanacak alanlar — hazırlık notu",
+            "1. ARAŞTIRMA ÖNERİSİNİN BİLİMSEL NİTELİĞİ", "2. YÖNTEM",
+            "3. PROJE YÖNETİMİ", "4. ARAŞTIRMA ÖNERİSİNİN YAYGIN ETKİSİ",
+            "KAYNAKLAR",
         }:
             paragraph.paragraph_format.page_break_before = True
         if paragraph._p.xpath(".//w:drawing"):
@@ -103,12 +130,24 @@ def finish_layout(path, title=None):
             widths = [1.5, 12.8, 2.7]
         elif count == 3 and label == "Kişisel kaynak":
             widths = [3.3, 6.0, 7.7]
+        elif count == 3 and label == "Bileşen":
+            widths = [3.7, 1.4, 11.9]
+        elif count == 3 and label == "Risk":
+            widths = [4.1, 11.4, 1.5]
+        elif count == 3 and label == "Ölçüt":
+            widths = [3.7, 7.3, 6.0]
+        elif count == 3 and label == "Çıktı kategorisi":
+            widths = [3.4, 6.3, 7.3]
         elif count == 3:
             widths = [3.0, 5.6, 8.4]
         elif count == 4 and label == "İP":
             widths = [0.8, 10.0, 4.6, 1.6]
         elif count == 4 and label == "Kalem":
             widths = [8.5, 1.7, 3.4, 3.4]
+        elif count == 4 and label == "Koşul":
+            widths = [1.1, 3.3, 11.1, 1.5]
+        elif count == 5 and label == "Dönem":
+            widths = [1.5, 3.6, 2.4, 8.1, 1.4]
         elif count == 4:
             widths = [3.2, 4.1, 8.1, 1.6]
         else:
@@ -137,18 +176,18 @@ def finish_layout(path, title=None):
     document.save(path)
 
 
-def main(stem=STEM, title=None):
+def main(stem=STEM, title=None, sunum=False):
     source = ROOT / f"{stem}.md"
     output = ROOT / f"{stem}.docx"
     with tempfile.TemporaryDirectory(prefix="ika-belge-") as temporary:
         reference = Path(temporary) / "reference.docx"
-        make_reference(reference)
+        make_reference(reference, sunum)
         subprocess.run([
             "pandoc", str(source), "--from=markdown-implicit_figures+autolink_bare_uris", "--standalone",
             "--metadata=lang:tr-TR", f"--resource-path={ROOT}",
             f"--reference-doc={reference}", "--output", str(output),
         ], check=True, cwd=ROOT)
-        finish_layout(output, title)
+        finish_layout(output, title, sunum)
         pdf_directory = Path(temporary) / "pdf"
         pdf_directory.mkdir()
         cache_directory = Path(temporary) / "cache"
@@ -158,10 +197,12 @@ def main(stem=STEM, title=None):
             "pandoc", str(source), "--from=markdown-implicit_figures+autolink_bare_uris", "--standalone",
             "--pdf-engine=xelatex", f"--resource-path={ROOT}",
             f"--lua-filter={ROOT / 'belge_kaynaklari/pdf_yerlesim.lua'}",
-            f"--include-in-header={ROOT / 'belge_kaynaklari/pdf_baslik.tex'}",
-            "-V", "mainfont=DejaVu Serif", "-V", "sansfont=DejaVu Sans",
+            f"--include-in-header={ROOT / ('belge_kaynaklari/pdf_sunum_baslik.tex' if sunum else 'belge_kaynaklari/pdf_baslik.tex')}",
+            "-V", "mainfont=" + ("Liberation Serif" if sunum else "DejaVu Serif"),
+            "-V", "sansfont=" + ("Liberation Sans" if sunum else "DejaVu Sans"),
+            "-V", "papersize=a4",
             "-V", "geometry=margin=20mm", "-V", "fontsize=11pt",
-            "-V", "linestretch=1.08", "-V", "colorlinks=true",
+            "-V", "linestretch=" + ("1.05" if sunum else "1.08"), "-V", "colorlinks=true",
             "--output", str(generated_pdf),
         ], check=True, cwd=ROOT, env={**os.environ, "XDG_CACHE_HOME": str(cache_directory)})
         if not generated_pdf.is_file() or not generated_pdf.stat().st_size:
@@ -179,5 +220,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--stem", default=STEM, help="Kaynak Markdown dosyasının uzantısız adı")
     parser.add_argument("--title", help="Word belgesinin özelliklerindeki başlık")
+    parser.add_argument("--sunum", action="store_true", help="Kapaklı danışman sunum düzeni")
     arguments = parser.parse_args()
-    main(arguments.stem, arguments.title)
+    main(arguments.stem, arguments.title, arguments.sunum)
