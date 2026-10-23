@@ -62,3 +62,5 @@ Güncel başlık: **Kullanıcı tanımlı rotada sabit engelden kaçınma ve rot
 ## 23 Ekim son düzenlemeleri
 
 [On maddelik düzeltme ve güncel kontroller](docs/2209-A/SON_DUZELTMELER_2026-10-23.md) · [Güncel fiyat dayanakları](docs/2209-A/tedarik/fiyat_kayitlari_2026-10-23.json) · [Gönderilmemiş teknik/fiyat teyidi talebi](docs/2209-A/TEDARIK_FIYAT_TEYIDI_TALEBI.md). Dokuz bilimsel/teknik kaynak ve sekiz doğrulanmış DOI vardır. Ayrı kargo kalemi kaldırıldı; 300 TL kamera sabitlemesine aktarılıp toplam 11.500 TL korundu.
+
+[Planlanan bütçe ile kaydedilen 14 satış fiyatının karşılaştırması](docs/2209-A/BUTCE_FIYAT_KARSILASTIRMASI.md): 11 gider kaleminin referansı ve birim farkları; diğer 10 kalemin fiyat teyidi durumu açıkça gösterilir.

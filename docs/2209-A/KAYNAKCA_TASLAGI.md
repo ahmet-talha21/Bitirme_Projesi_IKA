@@ -14,7 +14,7 @@
 
 - Rodrigues, V. O. B., Silva, G. A. A., Pugliese, L. F., Silva, W. W. A. G., Monte-Mor, J. A., Karolak, D. B., Gomides, L. M., Braga, R. A. S. 2026. “Hierarchical Control Architecture for Trajectory Tracking of Differential-Drive Nonholonomic Robots Using LQG-Based Velocity Control”, *Robotics*, 15(9), 171. DOI: https://doi.org/10.3390/robotics15090171.
 
-- STMicroelectronics. 2024. *Time-of-Flight ranging sensor*. Teknik veri sayfası DS11555, Rev. 6, Haziran 2024, Bölüm 3.10 ve 6. İnternet adresi: [Resmî teknik veri sayfası](https://www.st.com/resource/en/datasheet/vl53l0x.pdf). Son erişim tarihi: 23 Ekim 2026.
+- STMicroelectronics. 2024. *Time-of-Flight ranging sensor*. Teknik veri sayfası DS11555, Rev. 6, Haziran 2024, Bölüm 3.10 ve 6. İnternet adresi: https://www.st.com/resource/en/datasheet/vl53l0x.pdf. Son erişim tarihi: 23 Ekim 2026.
 
 - Wilson, E. B. 1927. “Probable Inference, the Law of Succession, and Statistical Inference”, *Journal of the American Statistical Association*, 22(158), 209–212. DOI: https://doi.org/10.1080/01621459.1927.10502953.
 

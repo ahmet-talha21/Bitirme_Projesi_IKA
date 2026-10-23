@@ -120,7 +120,7 @@ Kontrol birimi için ESP32 ailesinden bir mikrodenetleyici kullanılacaktır. Bu
 
 Sensörlerin başlangıç yönleri ileri eksene göre 0°, ±45° ve ±90° olacaktır. Ön sensörler yaklaşan engeli, yan sensörler engel kenarındaki açıklığı izleyecektir. Montaj yüksekliği, ışınların deney engelini göreceği biçimde ayarlanacak; gerçek kapsama ve kör bölgeler kalibrasyon kaydına işlenecektir. Beş sensörün varlığı kesintisiz çevre algısı olarak yorumlanmayacaktır.
 
-ToF ölçümünün geçerliliği; hedef yüzeyi, ortam ışığı ve ölçüm süresine bağlı olarak kontrol edilecektir. Referans ToF bileşeninin veri sayfası, farklı yansıtıcılık ve aydınlatma koşulları için ayrı menzil ve doğruluk değerleri vermektedir (STMicroelectronics, 2024). Bu nedenle üretici tablosundaki bir değer doğrudan aracın doğruluğu kabul edilmeyecek; seçilen taşıyıcı ve deney engeli için tekrarlı mesafe kontrolleri yapılacaktır.
+ToF ölçümünün geçerliliği; hedef yüzeyi, ortam ışığı ve ölçüm süresine bağlı olarak kontrol edilecektir. Referans ToF bileşeninin veri sayfası, farklı yansıtıcılık ve aydınlatma koşulları için ayrı menzil/doğruluk değerleri ile 33 ms varsayılan ölçüm bütçesini vermektedir (STMicroelectronics, 2024). Bu nedenle üretici tablosundaki bir değer doğrudan aracın doğruluğu kabul edilmeyecek; seçilen taşıyıcı ve deney engeli için tekrarlı mesafe kontrolleri yapılacaktır.
 
 Motorlar ve kontrol elektroniği ayrı güç kablo dallarından beslenecek, ortak toprak referansı kullanılacaktır. Bataryanın ham gerilimi motorlara veya kontrol kartı giriş/çıkışlarına uygulanmayacaktır. Motor sürücüsü, regülatör, kablo ve koruma elemanları iki motorun birlikte kalkış/yük akımı esas alınarak boyutlandırılacaktır. Ürünlerin gerilim, akım, bağlantı ve şarj uyumu, montajın giriş kontrolünde veri sayfaları ve elektriksel kontrollerle doğrulanacaktır.
 
@@ -138,7 +138,7 @@ Burada $\Delta s_R$ ve $\Delta s_L$ sağ ve sol tekerleğin katettiği yolları;
 
 Sıradaki waypoint'e yönelim hatası üzerinden açısal hız komutu üretilecek; hedefe yaklaşırken doğrusal hız azaltılacaktır. Motor hızları enkoder geri bildirimiyle ayrı ayrı kapalı çevrim kontrol edilecektir. Köşe waypoint'inde erişim doğrulandıktan sonra sonraki parçaya yönelinecek; kaçınma sırasında etkin hedef ve yüklenen sıra korunacaktır. Nominal düz ilerleme hızı 0,10 m/s, kaçınma ilerleme hızı en çok 0,05 m/s olarak planlanmıştır. Yerinde yönelme hareketlerinde gövdenin taradığı alan dikkate alınacaktır.
 
-Denetim döngüsü 20 Hz, beş sensörün tam taraması en az 5 Hz ve görev telemetrisi 5 Hz olacak şekilde planlanmıştır. Sensör başına yaklaşık 33 ms ölçüm bütçesinde beşli tarama 165 ms tutacak; kanal seçimi ve veri işleme için 35 ms ayrılarak toplam tarama hedefi 200 ms olacaktır. Referans bileşende belirtilen 33 ms ölçüm bütçesi bu başlangıç planına dayanak oluşturmaktadır (STMicroelectronics, 2024). 250 ms veri yaşı sınırı, 200 ms taramaya 20 Hz denetimin bir periyodu olan 50 ms'nin eklenmesiyle belirlenmiştir. Bunlar ölçülmüş gecikmeler değil, zamanlama tasarım hedefleridir. Ölçüm başlangıcı zaman damgalanacak; veri yaşı her denetim adımında kontrol edilecektir. Eşik aşımı en geç sonraki 50 ms'lik adımda durdurmaya dönüşeceğinden, durma mesafesi hesabında 300 ms'lik toplam veri yaşı/tepki bütçesi dikkate alınacaktır.
+Denetim döngüsü 20 Hz, beş sensörün tam taraması en az 5 Hz ve görev telemetrisi 5 Hz olacak şekilde planlanmıştır. Sensör başına yaklaşık 33 ms ölçüm bütçesinde beşli tarama 165 ms tutacak; kanal seçimi ve veri işleme için 35 ms ayrılarak toplam tarama hedefi 200 ms olacaktır. Başlangıç zamanlamasında Bölüm 2.2'de belirtilen varsayılan ölçüm bütçesi esas alınacaktır. 250 ms veri yaşı sınırı, 200 ms taramaya 20 Hz denetimin bir periyodu olan 50 ms'nin eklenmesiyle belirlenmiştir. Bunlar ölçülmüş gecikmeler değil, zamanlama tasarım hedefleridir. Ölçüm başlangıcı zaman damgalanacak; veri yaşı her denetim adımında kontrol edilecektir. Eşik aşımı en geç sonraki 50 ms'lik adımda durdurmaya dönüşeceğinden, durma mesafesi hesabında 300 ms'lik toplam veri yaşı/tepki bütçesi dikkate alınacaktır.
 
 Sensörler ayrı kanallardan sıralı okunacaktır. Tamamlanan her sensör ölçümü, tam taramanın sonunu beklemeden denetleyiciye ayrı olarak aktarılacaktır. Üretici durum kodlarına göre ölçüm sonucu ve iletişim/ölçüm hatası ayrılacak; belirsiz veri boş yol kabul edilmeyecektir. Gerçek tarama ve tepki süreleri montaj sonrasında kaydedilecek; 200 ms tarama hedefi sağlanmadan nihai deneylere başlanmayacaktır. Hedef aşılırsa ölçüm alma ve veri aktarımı denetimi bloke etmeyen görevlerle düzenlenecek; üreticinin izin verdiği daha kısa ölçüm bütçesi, engel yüzeyindeki ölçüm geçerliliği yeniden sınanarak kullanılacaktır. Gerektiğinde aynı beşli düzeni ve zamanlama hedefini karşılayan eşdeğer bir ToF taşıyıcısı seçilecektir. Azalan ölçüm süresinin belirsizliği artırması halinde araç hızı da düşürülecek; bu işlem tek başına tarama süresini kısaltan bir çözüm sayılmayacaktır. Beş sensör, 250 ms veri yaşı sınırı ve 120 saniye görev hedefi korunacak; nihai parametreler tüm koşullar için deneylerden önce sabitlenecektir. Tekerlek kayması ve odometrik sürüklenme bağımsız ölçümle izlenecektir.
 
@@ -313,7 +313,7 @@ Metin hazırlama ve düzenleme, kaynak inceleme desteği ve ön çalışma kodu 
 
 ### Ek 1. Gerekçeli bütçe
 
-Toplam destek talebi **11.500 TL**'dir. Aşağıdaki birim ve toplam bedeller KDV dahil tahmini maliyetlerdir; bağlayıcı satıcı teklifi niteliği taşımaz. Kalemler bir araç prototipi, beş sensörlü algılama düzeni ve 40 denemelik değerlendirme için planlanmıştır.
+**Talep edilen destek: 11.500 TL**
 
 | Kalem | Miktar | Birim bedel | Toplam |
 | --- | --- | --- | --- |
@@ -335,14 +335,12 @@ Toplam destek talebi **11.500 TL**'dir. Aşağıdaki birim ve toplam bedeller KD
 | K16 — Sensör sabitleme aparatı/malzemesi | 5 adet | 60,00 TL | 300,00 TL |
 | K17 — Alan ve kalibrasyon işaretleme malzemesi | 1 takım | 150,00 TL | 150,00 TL |
 | K18 — Sabit deney engeli malzemesi | 1 adet | 150,00 TL | 150,00 TL |
-| K19 — Mevcut telefon için sabitleme düzeni | 1 takım | 800,00 TL | 800,00 TL |
+| K19 — Telefon için ayarlı montaj seti | 1 takım | 800,00 TL | 800,00 TL |
 | K20 — Temel elektriksel kontroller için multimetre | 1 adet | 400,00 TL | 400,00 TL |
 | K21 — Uzunluk ölçüm aracı | 1 adet | 100,00 TL | 100,00 TL |
 | **TOPLAM** | | | **11.500,00 TL** |
 
-Kontrol ve algılama için 3.500 TL, hareket/şasi için 2.850 TL, güç için 2.850 TL, montaj/bağlantı için 700 TL, deney düzeni için 1.600 TL ayrılmıştır. Ayrı bir kargo ödeneği talep edilmemektedir. Kontrol ve algılama bileşenleri İP1–3'ün; deney düzeni ve ölçüm araçları İP1 ve İP4'ün gereksinimlerini karşılayacaktır.
-
-K08, iki enkoderli motorun bağlantısına uygun, en çok 25 × 20 cm araç zarfını sağlayan tek gövde plakasını kapsar; motor, tekerlek, elektronik ve ayrıca bütçelenen bağlantı elemanlarını içermez. Başlıca elektronik bileşenler, her biri ücretsiz teslim eşiğini karşılayan toplu yurt içi siparişlerle; küçük mekanik ve montaj malzemeleri yerel teslimle temin edilecektir. İncelenen iki tedarikçinin 23 Ekim 2026 teslim koşullarında 1.500 TL ve üzeri siparişler ücretsizdir. Telefon için gerekli sabitleme düzeneği 800 TL olarak planlanmıştır. Bu dağılım satıcı teklifi değil maliyet planıdır; sipariş toplamı ve teslim koşulları satın almadan önce doğrulanacaktır. Başlıca elektronik kalemlerin 23 Ekim 2026 tarihli satış sayfası gözlemleri ayrı maliyet kaydında tutulmuş; doğrudan fiyatı teyit edilemeyen mekanik/montaj kalemleri tahmin olarak bırakılmıştır. Mevcut telefon ve lehim ekipmanı yeniden bütçelenmemiştir. Aynı parça iki kalemde alınmayacak; tedarik Bölüm 2.2’deki işlevsel uyuma göre yapılacaktır.
+Birim bedeller KDV dahil tahmini maliyetlerdir; satın alma öncesi güncel teklifle doğrulanacaktır. K19, uygun duvar/tavan sabitleme noktasına takılacak ayarlı taşıyıcı kol, telefon kelepçesi ve emniyet bağından oluşan montaj setini kapsamaktadır.
 
 ## KAYNAKLAR
 
@@ -358,7 +356,7 @@ K08, iki enkoderli motorun bağlantısına uygun, en çok 25 × 20 cm araç zarf
 
 - Rodrigues, V. O. B., Silva, G. A. A., Pugliese, L. F., Silva, W. W. A. G., Monte-Mor, J. A., Karolak, D. B., Gomides, L. M., Braga, R. A. S. 2026. “Hierarchical Control Architecture for Trajectory Tracking of Differential-Drive Nonholonomic Robots Using LQG-Based Velocity Control”, *Robotics*, 15(9), 171. DOI: https://doi.org/10.3390/robotics15090171.
 
-- STMicroelectronics. 2024. *Time-of-Flight ranging sensor*. Teknik veri sayfası DS11555, Rev. 6, Haziran 2024, Bölüm 3.10 ve 6. İnternet adresi: [Resmî teknik veri sayfası](https://www.st.com/resource/en/datasheet/vl53l0x.pdf). Son erişim tarihi: 23 Ekim 2026.
+- STMicroelectronics. 2024. *Time-of-Flight ranging sensor*. Teknik veri sayfası DS11555, Rev. 6, Haziran 2024, Bölüm 3.10 ve 6. İnternet adresi: https://www.st.com/resource/en/datasheet/vl53l0x.pdf. Son erişim tarihi: 23 Ekim 2026.
 
 - Wilson, E. B. 1927. “Probable Inference, the Law of Succession, and Statistical Inference”, *Journal of the American Statistical Association*, 22(158), 209–212. DOI: https://doi.org/10.1080/01621459.1927.10502953.
 

@@ -4,6 +4,8 @@
 
 Güncel sürüm dokuz kaynak, sekiz DOI, dört iş paketi, sekiz risk ve toplam 11.500 TL tutarında 21 gider kalemi içerir. Önceki sayısal kontroller aşağıda tarihsel kayıt olarak korunur; güncel sayfa/özet sayımları son düzeltmeler kaydında belirtilir.
 
+Son üç düzenlemede bütçe açıklaması kısaltıldı; K19 montaj kapsamı ve kaynakçadaki görünür gerçek URL netleştirildi. Fiyatların birim tahminlerle farkı [karşılaştırma tablosundadır](BUTCE_FIYAT_KARSILASTIRMASI.md).
+
 ## Önceki kontrol kaydı
 
 # Danışmana sunum kontrol kaydı

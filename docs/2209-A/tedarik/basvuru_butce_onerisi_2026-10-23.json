@@ -606,13 +606,13 @@
     {
       "code": "K19",
       "group": "Deney düzeni",
-      "name": "Mevcut telefon için sabitleme düzeni",
+      "name": "Telefon için ayarlı montaj seti",
       "quantity": 1,
       "unit": "takım",
       "planning_unit_allowance_TRY": "800",
       "planning_subtotal_TRY": "800",
       "amount_type": "planning_estimate_not_supplier_price",
-      "basis": "Mevcut telefon için tek sabitleme takımı; yeni kamera değil. Önceki 300 TL ayrı kargo karşılığı, ücretsiz toplu teslim planıyla bu kaleme aktarıldı. Tavan/yükseklik ve mercek modu yerinde doğrulanacak; kesin montaj teklifi alınmadı."
+      "basis": "Mevcut telefon için ayarlı taşıyıcı kol, telefon kelepçesi ve emniyet bağı; uygun duvar/tavan sabitleme noktasına kurulacak tek montaj seti. 800 TL KDV dahil planlama tahminidir; doğrulanmış ürün/satıcı teklifi değildir. Montaj noktası ve yükseklik yerinde kontrol edilecek; sete dahil bağlantılar K15 kapsamında tekrar alınmayacak."
     },
     {
       "code": "K20",
@@ -681,5 +681,6 @@
     "removed": "K22 — 300 TL ayrı kargo tahmini",
     "reallocated_to": "K19 — telefon sabitleme 500 TL yerine 800 TL",
     "basis": "İki satıcıda 1.500 TL ve üzeri siparişlerde ücretsiz teslim; kesin ve ücretli bir kargo tarifesi uydurulmadı."
-  }
+  },
+  "last_clarification": "Bütçe birim tahminleri gözlenen satış fiyatlarıyla birebir eşit değildir; farklar BUTCE_FIYAT_KARSILASTIRMASI.md dosyasında açıkça gösterilir. Toplam 11.500 TL korunur."
 }

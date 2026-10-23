@@ -35,3 +35,7 @@ Tarih: 22 Ekim 2026. Bu kayıt bilimsel metnin dışında tutulur. DOI doğrulam
 ## Doğrulamanın sınırı
 
 Bazı DOI adresleri HTTP 302 ile yayınevine yönlendirildi; yönlendirme sonrasındaki sayfalarda 403 veya boş HTTP 202 yanıtları görüldü. Bu yanıtlar başarılı tam metin erişimi olarak raporlanmadı. Kaynak künyeleri Crossref kayıtlarıyla karşılaştırıldı. Ham doğrulama özeti `tedarik/kaynak_dogrulama_2026-10-22.json` dosyasındadır.
+
+### Aynı günün son kaynakça düzenlemesi
+
+Veri sayfasının adresi yalnız bağlantı etiketiyle değil, görünür gerçek URL ile yazıldı. Kurumsal yazar STMicroelectronics korunurken metindeki yinelenen ikinci atıf Bölüm 2.2 gönderimiyle sadeleştirildi. Çağrı 4.1.8 bütün belgelerde ticari ürün/marka öne çıkarmamayı ister; veri sayfasına özel muafiyet içermez. Bibliyografik düzenlemedeki kurumsal yazar ve internet adresi bilgileri buna rağmen eksiltilmedi. Bu, gerekli atıf bilgisi ile ticari vurgunun ayrı değerlendirilmesidir.

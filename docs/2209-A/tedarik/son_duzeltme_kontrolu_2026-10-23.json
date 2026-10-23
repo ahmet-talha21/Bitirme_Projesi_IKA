@@ -17,10 +17,16 @@
   "risk": 8,
   "word_gorsel": 5,
   "word_tablo": 11,
-  "butce_pdf_sayfa": 3,
+  "butce_pdf_sayfa": 1,
   "fiziksel_sonuc_eklenmedi": true,
   "resmi_satici_teklifi_alindi": false,
   "derslik_teyidi": "Kullanıcı bölümden teyit aldığını bildirdi; yazılı belge veya oda numarası varsayılmadı.",
-  "pdf_sha256": "ddbe342eb9973462dc6cc1693e2ac1df7a5c6edd7681b5c0ffec4698e5dbf382",
-  "docx_sha256": "beb47b1907f570069211e4ea1c79225ccd054ac2b644b357a7ca88311a88dd0a"
+  "pdf_sha256": "077103cbb2f88a80815a7044b3186ceae7883f6a388aba84375b18bec16437ce",
+  "docx_sha256": "028444549efcda60f182a7b408b15aeda1d95513eccc519f0a1ff15c75eddc67",
+  "butce_aciklama_cumle": 2,
+  "ureticinin_adi_gecis_sayisi": 2,
+  "veri_sayfasi_url_gorunur": true,
+  "gozlem_ile_tahmin_ayni_fiyat_degil": true,
+  "fiyat_eslesen_butce_kalem": 11,
+  "fiyat_kaydi_olmayan_kalem": 10
 }
