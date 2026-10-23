@@ -21,12 +21,15 @@
   "fiziksel_sonuc_eklenmedi": true,
   "resmi_satici_teklifi_alindi": false,
   "derslik_teyidi": "Kullanıcı bölümden teyit aldığını bildirdi; yazılı belge veya oda numarası varsayılmadı.",
-  "pdf_sha256": "077103cbb2f88a80815a7044b3186ceae7883f6a388aba84375b18bec16437ce",
-  "docx_sha256": "028444549efcda60f182a7b408b15aeda1d95513eccc519f0a1ff15c75eddc67",
+  "pdf_sha256": "d7395541b68e9127b601ea5746083a242adccbab3ee15bca10f3237c00b4b1bb",
+  "docx_sha256": "a9363a209ce243e1481f7d882493d445cfd7e8f6b1d59c54bcd78fec477792f5",
   "butce_aciklama_cumle": 2,
   "ureticinin_adi_gecis_sayisi": 2,
   "veri_sayfasi_url_gorunur": true,
   "gozlem_ile_tahmin_ayni_fiyat_degil": true,
   "fiyat_eslesen_butce_kalem": 11,
-  "fiyat_kaydi_olmayan_kalem": 10
+  "fiyat_kaydi_olmayan_kalem": 10,
+  "calisma_takvimi_baslik_sayfa": 11,
+  "calisma_takvimi_tablo_sayfa": 11,
+  "sayfa_duzenlemesinde_icerik_degismedi": true
 }

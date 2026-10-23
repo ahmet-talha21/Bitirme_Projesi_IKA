@@ -131,7 +131,7 @@ Konya Teknik Üniversitesi · Elektrik-Elektronik Mühendisliği\par}
     local caption = blocks[i + 1]
     if block.t == "Header" and cover_end then
       local label = pandoc.utils.stringify(block)
-      result:insert(pandoc.RawBlock("latex", (label == "KAYNAKLAR" or label == "6. EKLER")
+      result:insert(pandoc.RawBlock("latex", (label == "KAYNAKLAR" or label == "3. PROJE YÖNETİMİ" or label == "6. EKLER")
         and "\\clearpage" or "\\Needspace{6\\baselineskip}"))
       result:insert(block)
       i = i + 1

@@ -127,7 +127,7 @@ def finish_layout(path, title=None, sunum=False):
                     paragraph_rule(paragraph, "bottom", "CBD7E0")
 
     for paragraph in document.paragraphs:
-        if sunum and paragraph.text in {"KAYNAKLAR", "6. EKLER"}:
+        if sunum and paragraph.text in {"KAYNAKLAR", "3. PROJE YÖNETİMİ", "6. EKLER"}:
             paragraph.paragraph_format.page_break_before = True
         if not sunum and paragraph.text in {
             "1. Bilimsel nitelik", "2. Yöntem", "3. Proje yönetimi",
@@ -138,6 +138,9 @@ def finish_layout(path, title=None, sunum=False):
             "KAYNAKLAR",
         }:
             paragraph.paragraph_format.page_break_before = True
+        if sunum and paragraph.text.startswith("Proje altı ayda yürütülecektir."):
+            paragraph.paragraph_format.keep_with_next = True
+            paragraph.paragraph_format.keep_together = True
         if paragraph._p.xpath(".//w:drawing"):
             paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
             paragraph.paragraph_format.keep_with_next = True
