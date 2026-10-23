@@ -11,3 +11,5 @@ TÜBİTAK ÜYZ rehberi 1.2.2, özel beyan alanında aracın adı ve versiyonunu,
 Kontrol makinesinin ön çalışma sonuçları gerçek kod çalıştırmasıyla üretilmiştir. Girdiler sentetiktir; kayıtlar fiziksel deney veya sensör ölçümü gibi sunulmamıştır. Nihai başvuruda özel beyan alanı gerçek araç/sürüm bilgileri ve kullanım kapsamıyla doldurulmalıdır.
 
 Resmî rehber: https://tubitak.gov.tr/sites/default/files/2026-01/UYZ_Rehberi_v04_TR.pdf
+
+23 Ekim ek kullanım: literatür ve resmî kural karşılaştırması, fiyat sayfası gözlemlerinin ayıklanması, risk/kalibrasyon yöntemlerinin ve belge yerleşiminin düzenlenmesi. Tedarikçiye mesaj gönderilmedi; satıcı teklifi veya ölçüm sonucu üretilmedi.

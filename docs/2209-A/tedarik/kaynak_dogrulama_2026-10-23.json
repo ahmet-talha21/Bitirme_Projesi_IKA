@@ -1,0 +1,569 @@
+[
+  {
+    "doi": "10.3390/robotics6020007",
+    "doi_http": 302,
+    "yonlendirme": "https://www.mdpi.com/2218-6581/6/2/7",
+    "crossref_http": 200,
+    "baslik": [
+      "An Optimal and Energy Efficient Multi-Sensor Collision-Free Path Planning Algorithm for a Mobile Robot in Dynamic Environments"
+    ],
+    "yil": [
+      [
+        2017,
+        3,
+        31
+      ]
+    ],
+    "yazarlar": [
+      {
+        "given": "Abrar",
+        "family": "Alajlan",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science, University of Bridgeport, 126 Park Avenue, Bridgeport, CT 06604, USA"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9239-5035",
+        "authenticated-orcid": false,
+        "given": "Khaled",
+        "family": "Elleithy",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science, University of Bridgeport, 126 Park Avenue, Bridgeport, CT 06604, USA"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Marwah",
+        "family": "Almasri",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science, University of Bridgeport, 126 Park Avenue, Bridgeport, CT 06604, USA"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7141-9990",
+        "authenticated-orcid": false,
+        "given": "Tarek",
+        "family": "Sobh",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science, University of Bridgeport, 126 Park Avenue, Bridgeport, CT 06604, USA"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "dergi": [
+      "Robotics"
+    ],
+    "cilt": "6",
+    "sayi": "2",
+    "sayfalar": "7",
+    "basim_yeri": null
+  },
+  {
+    "doi": "10.1109/70.544770",
+    "doi_http": 302,
+    "yonlendirme": "http://ieeexplore.ieee.org/document/544770/",
+    "crossref_http": 200,
+    "baslik": [
+      "Measurement and correction of systematic odometry errors in mobile robots"
+    ],
+    "yil": [
+      [
+        1996
+      ]
+    ],
+    "yazarlar": [
+      {
+        "given": "J.",
+        "family": "Borenstein",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "family": "Liqiang Feng",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "dergi": [
+      "IEEE Transactions on Robotics and Automation"
+    ],
+    "cilt": "12",
+    "sayi": "6",
+    "sayfalar": "869-880",
+    "basim_yeri": null
+  },
+  {
+    "doi": "10.1007/978-3-319-54413-7",
+    "doi_http": 302,
+    "yonlendirme": "http://link.springer.com/10.1007/978-3-319-54413-7",
+    "crossref_http": 200,
+    "baslik": [
+      "Robotics, Vision and Control"
+    ],
+    "yil": [
+      [
+        2017
+      ]
+    ],
+    "yazarlar": [
+      {
+        "given": "Peter",
+        "family": "Corke",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "dergi": [
+      "Springer Tracts in Advanced Robotics"
+    ],
+    "cilt": null,
+    "sayi": null,
+    "sayfalar": null,
+    "basim_yeri": "Cham"
+  },
+  {
+    "doi": "10.3390/buildings13092212",
+    "doi_http": 302,
+    "yonlendirme": "https://www.mdpi.com/2075-5309/13/9/2212",
+    "crossref_http": 200,
+    "baslik": [
+      "Integrating BIM–IoT and Autonomous Mobile Robots for Construction Site Layout Printing"
+    ],
+    "yil": [
+      [
+        2023,
+        8,
+        30
+      ]
+    ],
+    "yazarlar": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-1752-2329",
+        "authenticated-orcid": false,
+        "given": "Fahad",
+        "family": "Iqbal",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Civil Engineering, Ghulam Ishaq Khan Institute of Engineering Sciences & Technology, Topi 23640, Pakistan"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Shiraz",
+        "family": "Ahmed",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Civil Engineering, Ghulam Ishaq Khan Institute of Engineering Sciences & Technology, Topi 23640, Pakistan"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Fayiz",
+        "family": "Amin",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Civil Engineering, Ghulam Ishaq Khan Institute of Engineering Sciences & Technology, Topi 23640, Pakistan"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-0790-1798",
+        "authenticated-orcid": false,
+        "given": "Siddra",
+        "family": "Qayyum",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Surveying and Built Environment, University of Southern Queensland, Springfield Central, QLD 4300, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-6221-1175",
+        "authenticated-orcid": false,
+        "given": "Fahim",
+        "family": "Ullah",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Surveying and Built Environment, University of Southern Queensland, Springfield Central, QLD 4300, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "dergi": [
+      "Buildings"
+    ],
+    "cilt": "13",
+    "sayi": "9",
+    "sayfalar": "2212",
+    "basim_yeri": null
+  },
+  {
+    "doi": "10.1007/BF01840369",
+    "doi_http": 302,
+    "yonlendirme": "http://link.springer.com/10.1007/BF01840369",
+    "crossref_http": 200,
+    "baslik": [
+      "Path-planning strategies for a point mobile automaton moving amidst unknown obstacles of arbitrary shape"
+    ],
+    "yil": [
+      [
+        1987,
+        11
+      ]
+    ],
+    "yazarlar": [
+      {
+        "given": "Vladimir J.",
+        "family": "Lumelsky",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Alexander A.",
+        "family": "Stepanov",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "dergi": [
+      "Algorithmica"
+    ],
+    "cilt": "2",
+    "sayi": "1-4",
+    "sayfalar": "403-430",
+    "basim_yeri": null
+  },
+  {
+    "doi": "10.3390/robotics15090171",
+    "doi_http": 302,
+    "yonlendirme": "https://www.mdpi.com/2218-6581/15/9/171",
+    "crossref_http": 200,
+    "baslik": [
+      "Hierarchical Control Architecture for Trajectory Tracking of Differential-Drive Nonholonomic Robots Using LQG-Based Velocity Control"
+    ],
+    "yil": [
+      [
+        2026,
+        9,
+        15
+      ]
+    ],
+    "yazarlar": [
+      {
+        "given": "Vinícius Oliveira B.",
+        "family": "Rodrigues",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Institute of Technological Sciences, Federal University of Itajubá, Itabira 35903-087, Brazil"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Guilherme A. A.",
+        "family": "Silva",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Technological Sciences, Federal University of Itajubá, Itabira 35903-087, Brazil"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1185-0863",
+        "authenticated-orcid": false,
+        "given": "Luiz F.",
+        "family": "Pugliese",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Technological Sciences, Federal University of Itajubá, Itabira 35903-087, Brazil"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-6088-7764",
+        "authenticated-orcid": false,
+        "given": "Waner W. A. G.",
+        "family": "Silva",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Technological Sciences, Federal University of Itajubá, Itabira 35903-087, Brazil"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Juliano A.",
+        "family": "Monte-Mor",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Technological Sciences, Federal University of Itajubá, Itabira 35903-087, Brazil"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-9727-5486",
+        "authenticated-orcid": false,
+        "given": "Dean B.",
+        "family": "Karolak",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Technological Sciences, Federal University of Itajubá, Itabira 35903-087, Brazil"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4313-9518",
+        "authenticated-orcid": false,
+        "given": "Luciana M.",
+        "family": "Gomides",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Pure and Applied Sciences, Federal University of Itajubá, Itabira 35903-087, Brazil"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5490-9944",
+        "authenticated-orcid": false,
+        "given": "Rodrigo A. S.",
+        "family": "Braga",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Science, Technology, and Innovation, Federal University of Lavras, Paraíso 37950-000, Brazil"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "dergi": [
+      "Robotics"
+    ],
+    "cilt": "15",
+    "sayi": "9",
+    "sayfalar": "171",
+    "basim_yeri": null
+  },
+  {
+    "doi": "10.1080/01621459.1927.10502953",
+    "doi_http": 302,
+    "yonlendirme": "http://www.tandfonline.com/doi/abs/10.1080/01621459.1927.10502953",
+    "crossref_http": 200,
+    "baslik": [
+      "Probable Inference, the Law of Succession, and Statistical Inference"
+    ],
+    "yil": [
+      [
+        1927,
+        6
+      ]
+    ],
+    "yazarlar": [
+      {
+        "given": "Edwin B.",
+        "family": "Wilson",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "dergi": [
+      "Journal of the American Statistical Association"
+    ],
+    "cilt": "22",
+    "sayi": "158",
+    "sayfalar": "209-212",
+    "basim_yeri": null
+  },
+  {
+    "doi": "10.1109/34.888718",
+    "doi_http": 302,
+    "yonlendirme": "http://ieeexplore.ieee.org/document/888718/",
+    "crossref_http": 200,
+    "baslik": [
+      "A flexible new technique for camera calibration"
+    ],
+    "yil": [
+      [
+        2000
+      ]
+    ],
+    "yazarlar": [
+      {
+        "given": "Z.",
+        "family": "Zhang",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "dergi": [
+      "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+    ],
+    "cilt": "22",
+    "sayi": "11",
+    "sayfalar": "1330-1334",
+    "basim_yeri": null
+  }
+]

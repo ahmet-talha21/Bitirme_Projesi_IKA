@@ -1,0 +1,16 @@
+\usepackage{fancyhdr}
+\usepackage{etoolbox}
+\usepackage{xurl}
+\usepackage{longtable,array,colortbl}
+\definecolor{TableRule}{HTML}{879CAE}
+\definecolor{TableHead}{HTML}{EDF2F6}
+\definecolor{CaptionInk}{HTML}{485B6B}
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{14pt}
+\fancyhead[L]{\footnotesize TÜBİTAK 2209-A — Gerekçeli bütçe}
+\fancyfoot[C]{\footnotesize Ahmet Talha Arslan · \thepage}
+\renewcommand{\headrulewidth}{0.2pt}
+\renewcommand{\footrulewidth}{0pt}
+\AtBeginEnvironment{longtable}{\small}
+\setlength{\emergencystretch}{2em}

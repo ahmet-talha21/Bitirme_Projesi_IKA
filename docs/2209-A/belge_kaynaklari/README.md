@@ -1,6 +1,6 @@
 # Belge üretimi
 
-Danışmana sunulacak güncel raporun kaynak metni `../ARASTIRMA_ONERISI.md`, şekilleri `../gorseller/danisman_sunumu/` klasöründedir.
+Danışmana sunulacak güncel raporun kaynak metni `../ARASTIRMA_ONERISI.md`, şekilleri `../gorseller/akademik_duzen/` klasöründedir.
 
 Depo kökünden:
 
@@ -23,3 +23,5 @@ python docs/2209-A/belge_kaynaklari/deney_geometrisi.py
 Bu adım Matplotlib gerektirir ve PNG/PDF/SVG üretir. PDF raporu vektör çizimi, Word PNG kopyasını kullanır. Sistem/akış şemaları `gorseller/akademik_duzen/` içindedir. Logo kaynağı `varliklar/README.md` dosyasında kayıtlıdır.
 
 Durum makinesinin sentetik ön çalışması ve Şekil 4 için `python docs/2209-A/on_calisma/durum_simulasyonu.py` çalıştırılır. Şekil 3–4 PDF çıktılarında DejaVu Sans Type 42 gömülür; görüntü ve metin katmanı Türkçe karakterler bakımından birlikte kontrol edilir. Kapak başlığı kaynak Markdown'dan alınır.
+
+23 Ekim revizyonunda proje yönetiminden önceki zorunlu sayfa sonu kaldırıldı. Çalışma takvimi tablosu için PDF’de yeterli alan ayrılır; Word’de satırlar birlikte tutulur. Bütçe dosyası `--stem BASVURU_BUTCE_ONERISI --title "TÜBİTAK 2209-A — Gerekçeli bütçe"` ile ayrıca üretilir; bu dosyada hazırlık/taslak üstbilgisi kullanılmaz.

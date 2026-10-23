@@ -55,6 +55,10 @@ Nihai metin, güncel TYBS alanlarına aktarılmadan önce yürütücü ve akadem
 
 ## Araştırma gerekçesi ve ön çalışma revizyonu
 
-Güncel başlık: **Kullanıcı tanımlı rotada sabit engelden kaçınma ve rotaya yeniden katılma: küçük ölçekli bir kara aracında deneysel değerlendirme**. Ana kaynakça, özgün Bug çalışması, robotik ders kitabı, ToF veri sayfası ve Wilson skor aralığı kaynağıyla yenilendi. Deney yeri üniversitede bölüm kullanımına izin verilecek bir derslik olarak planlandı; varsayımsal oda numarası veya tahsis bilgisi eklenmedi. İP5, 5–6. ayda analiz ve sonuç raporlamasını kapsıyor.
+Güncel başlık: **Kullanıcı tanımlı rotada sabit engelden kaçınma ve rotaya yeniden katılma: küçük ölçekli bir kara aracında deneysel değerlendirme**. Ana kaynakça, özgün Bug çalışması, robotik ders kitabı, ToF veri sayfası ve Wilson skor aralığı kaynağıyla yenilendi. Kullanıcı 23 Ekim’de bölümden derslik kullanım teyidi aldığını bildirdi; oda numarası, yazılı izin veya tavan ölçüsü uydurulmadı. Güncel takvim dört pakettir; İP4 altıncı ayda deney, analiz ve sonuç raporlamasını kapsar.
 
 [Çalıştırılmış mantıksal ön çalışma](docs/2209-A/on_calisma/README.md) · [DOI ve okuma kapsamı](docs/2209-A/KAYNAK_DOGRULAMA_KAYDI.md) · [Revizyon kontrol listesi](docs/2209-A/REVIZYON_KONTROLU_2026-10-22.md)
+
+## 23 Ekim son düzenlemeleri
+
+[On maddelik düzeltme ve güncel kontroller](docs/2209-A/SON_DUZELTMELER_2026-10-23.md) · [Güncel fiyat dayanakları](docs/2209-A/tedarik/fiyat_kayitlari_2026-10-23.json) · [Gönderilmemiş teknik/fiyat teyidi talebi](docs/2209-A/TEDARIK_FIYAT_TEYIDI_TALEBI.md). Dokuz bilimsel/teknik kaynak ve sekiz doğrulanmış DOI vardır. Ayrı kargo kalemi kaldırıldı; 300 TL kamera sabitlemesine aktarılıp toplam 11.500 TL korundu.

@@ -57,7 +57,8 @@ function Table(tbl)
     end
     return (heading and "\\rowcolor{TableHead}" or "") .. table.concat(cells, " & ") .. " \\\\ \\hline\n"
   end
-  local lines = {"\\begingroup\\fontsize{9}{10.5}\\selectfont\\setlength{\\tabcolsep}{4pt}\\renewcommand{\\arraystretch}{1.12}",
+  local reserve = label == "Dönem" and "\\Needspace{7cm}" or ""
+  local lines = {reserve .. "\\begingroup\\fontsize{9}{10.5}\\selectfont\\setlength{\\tabcolsep}{4pt}\\renewcommand{\\arraystretch}{1.12}",
     "\\arrayrulecolor{TableRule}\\begin{longtable}{|" .. table.concat(specs,"|") .. "|}\\hline"}
   local head = ""
   for _, row in ipairs(tbl.head.rows) do head = head .. row_text(row,true) end
@@ -130,7 +131,7 @@ Konya Teknik Üniversitesi · Elektrik-Elektronik Mühendisliği\par}
     local caption = blocks[i + 1]
     if block.t == "Header" and cover_end then
       local label = pandoc.utils.stringify(block)
-      result:insert(pandoc.RawBlock("latex", (label == "KAYNAKLAR" or label == "3. PROJE YÖNETİMİ" or label == "6. EKLER")
+      result:insert(pandoc.RawBlock("latex", (label == "KAYNAKLAR" or label == "6. EKLER")
         and "\\clearpage" or "\\Needspace{6\\baselineskip}"))
       result:insert(block)
       i = i + 1

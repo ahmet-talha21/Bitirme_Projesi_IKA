@@ -47,3 +47,7 @@ Akademik danışmanın bilimsel yönlendirme ve kontrolü çalışma boyunca sü
 ## Güncel araştırma başlığı
 
 Kullanıcının araştırma vurgusunu güçlendirme talebiyle başlık şu şekilde güncellendi: **Kullanıcı tanımlı rotada sabit engelden kaçınma ve rotaya yeniden katılma: küçük ölçekli bir kara aracında deneysel değerlendirme**. Önceki başlık seçimi çalışma geçmişidir.
+
+## 23 Ekim 2026 güncellemesi
+
+Kullanıcı, bölümden derslik kullanım teyidi aldığını bildirdi. Oda numarası, yazılı izin belgesi veya tavan yüksekliği varsayılmadı. Altı aylık takvim dört ardışık pakete dönüştürüldü: İP1 1–2. ay %35; İP2 3. ay %20; İP3 4–5. ay %30; İP4 6. ay %15. Önceki beş paketli dağılım tarihsel sürümdür. Toplam bütçe 11.500 TL; ayrı kargo kaldırılarak 300 TL telefon sabitlemesine aktarıldı.

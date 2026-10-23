@@ -1,0 +1,394 @@
+{
+  "date": "2026-10-23",
+  "timezone": "Europe/Istanbul",
+  "observations": [
+    {
+      "key": "control",
+      "source_url": "https://www.robolinkmarket.com/esp32-wroom-cp2102-wifi-ve-bluetooth-modulu-type-c",
+      "http": 200,
+      "html_sha256": "3e5ee537b62d34fcd6376473c502c9a560652fbbe54ffe2cb0a4ef296de74279",
+      "name": "ESP32-WROOM CP2102 Wifi ve Bluetooth Modülü - Type C",
+      "observed_vat_included_TRY": "630.00",
+      "structured_offer": {
+        "@type": "Offer",
+        "url": "https://www.robolinkmarket.com/esp32-wroom-cp2102-wifi-ve-bluetooth-modulu-type-c",
+        "priceCurrency": "TRY",
+        "price": "630.00",
+        "priceValidUntil": "2026-11-23",
+        "validFrom": "2025-08-01T11:58:17+03:00",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 30,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn",
+          "applicableCountry": "TR",
+          "merchantReturnLink": "https://www.robolinkmarket.com/garanti-ve-iade-kosullari"
+        }
+      },
+      "scope": "23 Ekim 2026 satış sayfası gözlemi; bağlayıcı satıcı teklifi, rezerve stok veya bütünleşik uyum onayı değildir."
+    },
+    {
+      "key": "motor",
+      "source_url": "https://www.direnc.net/6v-300rpm-enkoderli-motor",
+      "http": 200,
+      "html_sha256": "a80ceca3a29a5cbc0870a7638ec4694f6a6edca084b7cfe36bd606afb38b4974",
+      "name": "JGA12-N20B - 6V 300RPM Enkoderli Motor",
+      "observed_vat_included_TRY": "406.82",
+      "structured_offer": {
+        "@type": "Offer",
+        "url": "https://www.direnc.net/6v-300rpm-enkoderli-motor",
+        "priceCurrency": "TRY",
+        "price": "339.02",
+        "priceValidUntil": "2026-11-23",
+        "validFrom": "2024-12-05T09:06:35+03:00",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      },
+      "scope": "23 Ekim 2026 satış sayfası gözlemi; bağlayıcı satıcı teklifi, rezerve stok veya bütünleşik uyum onayı değildir."
+    },
+    {
+      "key": "sensor",
+      "source_url": "https://www.direnc.net/gy-vl53l0xv2-lazer-mesafe-modulu",
+      "http": 200,
+      "html_sha256": "05537d2cfdc9360be644742a181709a4979c1171f0b4bf164d34631245902744",
+      "name": "GY-VL53L0XV2 Lazer Mesafe Modülü",
+      "observed_vat_included_TRY": "435.88",
+      "structured_offer": {
+        "@type": "Offer",
+        "url": "https://www.direnc.net/gy-vl53l0xv2-lazer-mesafe-modulu",
+        "priceCurrency": "TRY",
+        "price": "363.23",
+        "priceValidUntil": "2026-11-23",
+        "validFrom": "2018-12-31T19:42:10+03:00",
+        "availability": "https://schema.org/OutOfStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      },
+      "scope": "23 Ekim 2026 satış sayfası gözlemi; bağlayıcı satıcı teklifi, rezerve stok veya bütünleşik uyum onayı değildir."
+    },
+    {
+      "key": "battery",
+      "source_url": "https://www.direnc.net/74v-2s1p-1000-mah-15c-li-polymer-pil-soketli",
+      "http": 200,
+      "html_sha256": "bc8a82d2de12b2f53f53875bbd48d372670841eea6133e306b97dad6fdae346d",
+      "name": "7.4V 2S1P 1000 mAh (15C) Li-Polymer Pil - Soketli",
+      "observed_vat_included_TRY": "1019.96",
+      "structured_offer": {
+        "@type": "Offer",
+        "url": "https://www.direnc.net/74v-2s1p-1000-mah-15c-li-polymer-pil-soketli",
+        "priceCurrency": "TRY",
+        "price": "849.97",
+        "priceValidUntil": "2026-11-23",
+        "validFrom": "2020-01-08T20:02:19+03:00",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      },
+      "scope": "23 Ekim 2026 satış sayfası gözlemi; bağlayıcı satıcı teklifi, rezerve stok veya bütünleşik uyum onayı değildir."
+    },
+    {
+      "key": "charger",
+      "source_url": "https://www.robolinkmarket.com/a3-kompakt-lipo-2s-3s-sarj-aleti",
+      "http": 200,
+      "html_sha256": "a1b96a073a73fd65b76460d2f0a297fd4fa89eaa2e6d6a89a768e78811f65a78",
+      "name": "A3 Kompakt Lipo (2S - 3S) Şarj Aleti",
+      "observed_vat_included_TRY": "871.50",
+      "structured_offer": {
+        "@type": "Offer",
+        "url": "https://www.robolinkmarket.com/a3-kompakt-lipo-2s-3s-sarj-aleti",
+        "priceCurrency": "TRY",
+        "price": "871.50",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "priceType": "https://schema.org/StrikethroughPrice",
+          "price": "1042.50",
+          "priceCurrency": "TRY"
+        },
+        "priceValidUntil": "2026-11-23",
+        "validFrom": "2025-08-01T11:57:51+03:00",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 30,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn",
+          "applicableCountry": "TR",
+          "merchantReturnLink": "https://www.robolinkmarket.com/garanti-ve-iade-kosullari"
+        }
+      },
+      "scope": "23 Ekim 2026 satış sayfası gözlemi; bağlayıcı satıcı teklifi, rezerve stok veya bütünleşik uyum onayı değildir."
+    },
+    {
+      "key": "coklayici",
+      "source_url": "https://www.robolinkmarket.com/tca9548a-i2c-coklayici",
+      "http": 200,
+      "html_sha256": "29921851778f519e2b2866f20d7230ed70458fff79584251247905acbd8ff104",
+      "name": "TCA9548A I2C Çoklayıcı",
+      "observed_vat_included_TRY": "76.50",
+      "structured_offer": {
+        "@type": "Offer",
+        "url": "https://www.robolinkmarket.com/tca9548a-i2c-coklayici",
+        "priceCurrency": "TRY",
+        "price": "76.50",
+        "priceValidUntil": "2026-11-23",
+        "validFrom": "2025-08-01T11:57:54+03:00",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 30,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn",
+          "applicableCountry": "TR",
+          "merchantReturnLink": "https://www.robolinkmarket.com/garanti-ve-iade-kosullari"
+        }
+      },
+      "scope": "23 Ekim 2026 satış sayfası gözlemi; bağlayıcı satıcı teklifi, rezerve stok veya bütünleşik uyum onayı değildir."
+    },
+    {
+      "key": "driver",
+      "source_url": "https://www.direnc.net/tb6612fng-dc-ve-step-motor-surucu-modulu",
+      "http": 200,
+      "html_sha256": "6152a0be4b327115c5a895af7c892b9d88dec6e47a92d6b78041702a6b4f4b8f",
+      "name": "TB6612FNG DC ve Step Motor Sürücü Modülü",
+      "observed_vat_included_TRY": "81.36",
+      "structured_offer": {
+        "@type": "Offer",
+        "url": "https://www.direnc.net/tb6612fng-dc-ve-step-motor-surucu-modulu",
+        "priceCurrency": "TRY",
+        "price": "67.80",
+        "priceValidUntil": "2026-11-23",
+        "validFrom": "2022-12-01T15:46:44+03:00",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      },
+      "scope": "23 Ekim 2026 satış sayfası gözlemi; bağlayıcı satıcı teklifi, rezerve stok veya bütünleşik uyum onayı değildir."
+    },
+    {
+      "key": "caster",
+      "source_url": "https://www.direnc.net/mini-sarhos-tekerlek-plastik-2-adet",
+      "http": 200,
+      "html_sha256": "d3671442a78e72afc8e6ad513b9f310c71b75da883f25417d7393d83a0f41b32",
+      "name": "Mini Sarhoş Tekerlek Plastik - 2 Adet",
+      "observed_vat_included_TRY": "56.58",
+      "structured_offer": {
+        "@type": "Offer",
+        "url": "https://www.direnc.net/mini-sarhos-tekerlek-plastik-2-adet",
+        "priceCurrency": "TRY",
+        "price": "47.15",
+        "priceValidUntil": "2026-11-23",
+        "validFrom": "2023-03-13T10:56:21+03:00",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      },
+      "scope": "23 Ekim 2026 satış sayfası gözlemi; bağlayıcı satıcı teklifi, rezerve stok veya bütünleşik uyum onayı değildir."
+    },
+    {
+      "key": "reg5",
+      "source_url": "https://www.robolinkmarket.com/fpv-ubec-5v-3a-2-6s-dc-dc-voltaj-regulatoru",
+      "http": 200,
+      "html_sha256": "cd9084f946a4b1d6bc47802c1ffc947482aba3c3080f86c55227d3b4c8fe9b79",
+      "name": "FPV UBEC 5V 3A 2-6S DC-DC Voltaj Regülatörü",
+      "observed_vat_included_TRY": "214.50",
+      "structured_offer": {
+        "@type": "Offer",
+        "url": "https://www.robolinkmarket.com/fpv-ubec-5v-3a-2-6s-dc-dc-voltaj-regulatoru",
+        "priceCurrency": "TRY",
+        "price": "214.50",
+        "priceValidUntil": "2026-11-23",
+        "validFrom": "2026-09-02T23:28:20+03:00",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 30,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn",
+          "applicableCountry": "TR",
+          "merchantReturnLink": "https://www.robolinkmarket.com/garanti-ve-iade-kosullari"
+        }
+      },
+      "scope": "23 Ekim 2026 satış sayfası gözlemi; bağlayıcı satıcı teklifi, rezerve stok veya bütünleşik uyum onayı değildir."
+    },
+    {
+      "key": "reg33",
+      "source_url": "https://www.robolinkmarket.com/ams1117-33v-voltaj-regulator-modulu",
+      "http": 200,
+      "html_sha256": "c8669cae2f3bc52bf8ab3b394adb85405acb85b5fe6cd8387bac8cc2c5ace530",
+      "name": "Ams1117 3.3v Voltaj Regülatör Modülü",
+      "observed_vat_included_TRY": "27.00",
+      "structured_offer": {
+        "@type": "Offer",
+        "url": "https://www.robolinkmarket.com/ams1117-33v-voltaj-regulator-modulu",
+        "priceCurrency": "TRY",
+        "price": "27.00",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "priceType": "https://schema.org/StrikethroughPrice",
+          "price": "31.50",
+          "priceCurrency": "TRY"
+        },
+        "priceValidUntil": "2026-11-23",
+        "validFrom": "2025-08-01T11:58:03+03:00",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 30,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn",
+          "applicableCountry": "TR",
+          "merchantReturnLink": "https://www.robolinkmarket.com/garanti-ve-iade-kosullari"
+        }
+      },
+      "scope": "23 Ekim 2026 satış sayfası gözlemi; bağlayıcı satıcı teklifi, rezerve stok veya bütünleşik uyum onayı değildir."
+    },
+    {
+      "key": "perfboard",
+      "source_url": "https://www.robolinkmarket.com/6x13-delikli-pertinaks",
+      "http": 200,
+      "html_sha256": "1d1246a2a906944fe9fba3289b51250783d09fdc7a3ee3513fc03ba71e7782ef",
+      "name": "6x13 Delikli Pertinaks",
+      "observed_vat_included_TRY": "39.00",
+      "structured_offer": {
+        "@type": "Offer",
+        "url": "https://www.robolinkmarket.com/6x13-delikli-pertinaks",
+        "priceCurrency": "TRY",
+        "price": "39.00",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "priceType": "https://schema.org/StrikethroughPrice",
+          "price": "85.50",
+          "priceCurrency": "TRY"
+        },
+        "priceValidUntil": "2026-11-23",
+        "validFrom": "2025-08-01T11:58:35+03:00",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 30,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn",
+          "applicableCountry": "TR",
+          "merchantReturnLink": "https://www.robolinkmarket.com/garanti-ve-iade-kosullari"
+        }
+      },
+      "scope": "23 Ekim 2026 satış sayfası gözlemi; bağlayıcı satıcı teklifi, rezerve stok veya bütünleşik uyum onayı değildir."
+    },
+    {
+      "key": "usb",
+      "source_url": "https://www.robolinkmarket.com/type-c-usb-a-kablo-1-metre",
+      "http": 200,
+      "html_sha256": "a76fb527617c1945143e6a2385800f1e823e8908e2e4fe8abdacfb6cd56aaecc",
+      "name": "Type C - USB A Kablo - 1 Metre",
+      "observed_vat_included_TRY": "36.00",
+      "structured_offer": {
+        "@type": "Offer",
+        "url": "https://www.robolinkmarket.com/type-c-usb-a-kablo-1-metre",
+        "priceCurrency": "TRY",
+        "price": "36.00",
+        "priceValidUntil": "2026-11-23",
+        "validFrom": "2025-08-01T11:58:19+03:00",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 30,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn",
+          "applicableCountry": "TR",
+          "merchantReturnLink": "https://www.robolinkmarket.com/garanti-ve-iade-kosullari"
+        }
+      },
+      "scope": "23 Ekim 2026 satış sayfası gözlemi; bağlayıcı satıcı teklifi, rezerve stok veya bütünleşik uyum onayı değildir."
+    },
+    {
+      "key": "jumper",
+      "source_url": "https://www.robolinkmarket.com/40-pin-ayrilabilen-disi-erkek-jumper-kablo-200mm",
+      "http": 200,
+      "html_sha256": "aaefa3e6b227d4441b4a136a45a108f807f1339b6c48d9b65da3c20a53837322",
+      "name": "40 Pin Ayrılabilen Dişi-Erkek Jumper Kablo-200mm",
+      "observed_vat_included_TRY": "51.00",
+      "structured_offer": {
+        "@type": "Offer",
+        "url": "https://www.robolinkmarket.com/40-pin-ayrilabilen-disi-erkek-jumper-kablo-200mm",
+        "priceCurrency": "TRY",
+        "price": "51.00",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "priceType": "https://schema.org/StrikethroughPrice",
+          "price": "63.00",
+          "priceCurrency": "TRY"
+        },
+        "priceValidUntil": "2026-11-23",
+        "validFrom": "2025-08-01T11:57:58+03:00",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 30,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn",
+          "applicableCountry": "TR",
+          "merchantReturnLink": "https://www.robolinkmarket.com/garanti-ve-iade-kosullari"
+        }
+      },
+      "scope": "23 Ekim 2026 satış sayfası gözlemi; bağlayıcı satıcı teklifi, rezerve stok veya bütünleşik uyum onayı değildir."
+    },
+    {
+      "key": "multimeter",
+      "source_url": "https://www.direnc.net/aneng-xl830l-dijital-kademeli-multimetre",
+      "http": 200,
+      "html_sha256": "63d172091c92666b39422c90913bb6d16c076da90471c8da045bc7e5d6ff6ad7",
+      "name": "ANENG XL830L Dijital Kademeli Multimetre",
+      "observed_vat_included_TRY": "276.06",
+      "structured_offer": {
+        "@type": "Offer",
+        "url": "https://www.direnc.net/aneng-xl830l-dijital-kademeli-multimetre",
+        "priceCurrency": "TRY",
+        "price": "230.05",
+        "priceValidUntil": "2026-11-23",
+        "validFrom": "2021-02-19T17:07:57+03:00",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      },
+      "scope": "23 Ekim 2026 satış sayfası gözlemi; bağlayıcı satıcı teklifi, rezerve stok veya bütünleşik uyum onayı değildir."
+    }
+  ],
+  "delivery_plan": {
+    "separate_requested_TRY": "0",
+    "strategy": "Ana elektronikler her biri 1.500 TL eşiğini aşan birleştirilmiş yurt içi siparişlerle; küçük mekanik/montaj malzemeleri yerel teslimle temin edilecek. Teslim koşulları siparişte tekrar doğrulanacak.",
+    "sources": [
+      {
+        "url": "https://www.robolinkmarket.com/teslimat-kosullari",
+        "http": 200,
+        "html_sha256": "128f77f8f4bd8cf9bf89efeb60379b3397cfb997bfee0a3a7063694548e1bfe5",
+        "free_delivery_threshold_TRY": "1500",
+        "below_threshold_flat_rate_verified": false
+      },
+      {
+        "url": "https://www.direnc.net/odeme-ve-teslimat",
+        "http": 200,
+        "html_sha256": "d85bfe48900c39b7e146b9babc101bbc83ca3ce3612f17d84917b808965c8cd8",
+        "free_delivery_threshold_TRY": "1500",
+        "below_threshold_flat_rate_verified": false
+      }
+    ]
+  },
+  "excluded_chassis": {
+    "url": "https://www.robolinkmarket.com/akrilik-sase-4wd-robot-araba",
+    "observed_vat_included_TRY": "150.00",
+    "scope": "4WD plaka, 255 × 15 mm şeklindeki şüpheli boyut satırı ve stok yokluğu; 25 × 20 cm zarf ve enkoderli motor montajı onaylanmadı; K08 teklifi sayılmadı."
+  },
+  "formal_quotes_obtained": false
+}

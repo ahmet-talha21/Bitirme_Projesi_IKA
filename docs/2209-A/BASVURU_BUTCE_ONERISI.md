@@ -1,41 +1,23 @@
-# TÜBİTAK 2209-A — Bütçe önerisi
+# TÜBİTAK 2209-A — Gerekçeli bütçe
 
-**22 Ekim 2026 · Kullanıcının seçtiği plan · Danışman incelemesi için taslak**
+23 Ekim 2026 · Ahmet Talha Arslan · Akademik danışman: Prof. Dr. Murat Ceylan
 
-**Proje:** Kullanıcı tarafından belirlenen rota bilgisine göre hareket eden otonom araç tasarımı
+**Proje:** Kullanıcı tanımlı rotada sabit engelden kaçınma ve rotaya yeniden katılma: küçük ölçekli bir kara aracında deneysel değerlendirme
 
-**Yürütücü:** Ahmet Talha Arslan · **Danışman:** Prof. Dr. Murat Ceylan
+Talep edilen toplam **11.500 TL**, KDV dahil planlama tahminidir. Gerçekleşmiş harcama veya bağlayıcı satıcı teklifi değildir. 21 gider kalemi vardır; ayrı kargo ödeneği talep edilmemektedir.
 
-Kullanıcının seçtiği planlanan destek talebi **11.500,00 TL**'dir. Aşağıdaki birim bedeller **KDV dahil tahmini planlama ödenekleridir; satıcı teklifleri veya doğrulanmış ürün fiyatları değildir.** Tarihli satış fiyatı gözlemleri, tahminlerin dayanağı olarak ayrı tutulmuştur. Kullanıcı “11.500 TL bütçe önerisini kullanalım.” yanıtıyla bu toplamı seçmiştir. Bu seçim, başvurunun gönderildiği veya destek tutarının onaylandığı anlamına gelmez.
+## Gider kalemleri
 
-## Kapsam ve toplam
-
-Plan; bir araç prototipi, iki enkoderli motor, beş sabit ToF öncelikli sensör, bilgisayar öncelikli arayüz ve seçilen 40 denemelik değerlendirme için hazırlanmıştır. Altı aylık iş planı, 10 cm waypoint/rotaya dönüş ve 120 saniye deneme hedefleri korunmuştur.
-
-| Grup | Planlanan tutar |
-| --- | --- |
-| Kontrol ve algılama | 3.500,00 TL |
-| Hareket ve şasi | 2.850,00 TL |
-| Güç sistemi | 2.850,00 TL |
-| Montaj ve bağlantı | 700,00 TL |
-| Deney düzeni | 1.300,00 TL |
-| Yurt içi teslim | 300,00 TL |
-| **Planlanan toplam talep** | **11.500,00 TL** |
-
-Program sayfasındaki 12.000 TL üst sınırına göre talep dışındaki aritmetik fark **500,00 TL**'dir. Bütçeye “beklenmeyen gider” veya karşılıksız bir yedek tutar eklenmemiştir.
-
-## Kalemlere göre planlama
-
-| Kalem | Miktar | Birim ödenek | Toplam |
+| Kalem | Miktar | Birim bedel | Toplam |
 | --- | --- | --- | --- |
-| K01 — ESP32 geliştirme kartı | 1 adet | 700,00 TL | 700,00 TL |
+| K01 — Kablosuz haberleşmeli kontrol kartı | 1 adet | 700,00 TL | 700,00 TL |
 | K02 — Sabit ToF mesafe sensörü | 5 adet | 500,00 TL | 2.500,00 TL |
 | K03 — I²C çoklayıcı | 1 adet | 100,00 TL | 100,00 TL |
 | K04 — Gerekli sinyal seviye uyarlama ve bağlantı parçaları | 1 takım | 200,00 TL | 200,00 TL |
 | K05 — Enkoderli DC motor | 2 adet | 600,00 TL | 1.200,00 TL |
 | K06 — İki motor için uygun sürücü düzeni | 1 takım | 400,00 TL | 400,00 TL |
 | K07 — İki tekerlek ve iki motor bağlantı aparatı | 1 takım | 400,00 TL | 400,00 TL |
-| K08 — Boş şasi veya şasi imalatı | 1 adet | 750,00 TL | 750,00 TL |
+| K08 — İki motorlu araç için gövde plakası | 1 adet | 750,00 TL | 750,00 TL |
 | K09 — Serbest taşıyıcı tekerlek paketi | 1 paket | 100,00 TL | 100,00 TL |
 | K10 — Uygun hazır batarya paketi | 1 adet | 1.200,00 TL | 1.200,00 TL |
 | K11 — Bataryayla uyumlu şarj cihazı | 1 adet | 1.000,00 TL | 1.000,00 TL |
@@ -46,36 +28,43 @@ Program sayfasındaki 12.000 TL üst sınırına göre talep dışındaki aritme
 | K16 — Sensör sabitleme aparatı/malzemesi | 5 adet | 60,00 TL | 300,00 TL |
 | K17 — Alan ve kalibrasyon işaretleme malzemesi | 1 takım | 150,00 TL | 150,00 TL |
 | K18 — Sabit deney engeli malzemesi | 1 adet | 150,00 TL | 150,00 TL |
-| K19 — Mevcut telefon için sabitleme düzeni | 1 takım | 500,00 TL | 500,00 TL |
+| K19 — Mevcut telefon için sabitleme düzeni | 1 takım | 800,00 TL | 800,00 TL |
 | K20 — Temel elektriksel kontroller için multimetre | 1 adet | 400,00 TL | 400,00 TL |
 | K21 — Uzunluk ölçüm aracı | 1 adet | 100,00 TL | 100,00 TL |
-| K22 — Yurt içi ürün teslim/kargo gideri | 1 takım | 300,00 TL | 300,00 TL |
+| **TOPLAM** | | | **11.500,00 TL** |
 
-## Fiyat dayanakları ve tahminlerin sınırı
+## Gövde ve teslim kapsamı
 
-22 Ekim devam kontrolünde aşağıdaki sayfalar doğrudan açıldı. Bu fiyatlar, tabloda önerilen yuvarlatılmış ödeneklerden ayrıdır.
+K08 yalnızca bir gövde plakasını kapsar; motor, tekerlek, elektronik ve diğer kalemlerdeki bağlantılar tekrar bütçelenmez. Plakanın motor montajı ve araç zarfıyla uyumu satın almadan önce teyit edilecektir. Uygun bir ürünün doğrudan teklifi henüz alınmamıştır.
 
-| Dayanak | Görülen bedel | Değerlendirme |
+Ana elektronikler, her biri 1.500 TL ve üzeri toplu siparişlerle, küçük mekanik parçalar yerel teslimle temin edilecektir. İncelenen iki satıcının tarihli teslim koşulları bu eşikte ücretsizdir. Böylece önceki K22 kaldırılmış ve 300 TL kamera sabitlemesine aktarılmıştır; K19 800 TL, deney düzeni grubu 1.600 TL olmuştur. Diğer grup tutarları değişmemiştir. Teslim şartları sipariş sırasında tekrar kontrol edilecektir.
+
+## 23 Ekim fiyat dayanakları
+
+Aşağıdakiler satış sayfası gözlemleridir. Birim ödeneklerle aynı tutarlar oldukları veya kesin teknik eşdeğerliği gösterdikleri iddia edilmez.
+
+| Kalem dayanağı | KDV dahil görülen tutar | Kaynak |
 | --- | --- | --- |
-| [ESP32 kartı](https://www.robolinkmarket.com/esp32-wroom-cp2102-wifi-ve-bluetooth-modulu-type-c) | 630,00 TL | Kart için 700 TL planlandı. Önceki aynı gün kaydındaki 628,50 TL yerine yeni kontrolde 630,00 TL görüldü. |
-| [Enkoderli motor adayı](https://www.direnc.net/6v-300rpm-enkoderli-motor) | 406,82 TL/adet | Motor başına 600 TL hedeflendi. Sıkışma akımı ve enkoder bilgileri eksik; belgeli referans motorla aynı ürün sayılmadı. |
-| [ToF taşıyıcı adayı](https://www.direnc.net/gy-vl53l0xv2-lazer-mesafe-modulu) | 435,88 TL/adet | Sensör başına 500 TL planlandı. Stok verisi OutOfStock; stok veya arayüz uyumu doğrulanmış değildir. |
-| [Temel multimetre adayı](https://www.direnc.net/aneng-xl830l-dijital-kademeli-multimetre) | 276,06 TL | Gereksinim oluşursa 400 TL planlandı. Kullanıcının bu ürünü aldığı veya ekipmana sahip olduğu varsayılmadı. |
+| control — ESP32-WROOM CP2102 Wifi ve Bluetooth Modülü - Type C | 630,00 TL | [Satış sayfası](https://www.robolinkmarket.com/esp32-wroom-cp2102-wifi-ve-bluetooth-modulu-type-c) |
+| motor — JGA12-N20B - 6V 300RPM Enkoderli Motor | 406,82 TL | [Satış sayfası](https://www.direnc.net/6v-300rpm-enkoderli-motor) |
+| sensor — GY-VL53L0XV2 Lazer Mesafe Modülü | 435,88 TL | [Satış sayfası](https://www.direnc.net/gy-vl53l0xv2-lazer-mesafe-modulu) |
+| battery — 7.4V 2S1P 1000 mAh (15C) Li-Polymer Pil - Soketli | 1.019,96 TL | [Satış sayfası](https://www.direnc.net/74v-2s1p-1000-mah-15c-li-polymer-pil-soketli) |
+| charger — A3 Kompakt Lipo (2S - 3S) Şarj Aleti | 871,50 TL | [Satış sayfası](https://www.robolinkmarket.com/a3-kompakt-lipo-2s-3s-sarj-aleti) |
+| coklayici — TCA9548A I2C Çoklayıcı | 76,50 TL | [Satış sayfası](https://www.robolinkmarket.com/tca9548a-i2c-coklayici) |
+| driver — TB6612FNG DC ve Step Motor Sürücü Modülü | 81,36 TL | [Satış sayfası](https://www.direnc.net/tb6612fng-dc-ve-step-motor-surucu-modulu) |
+| caster — Mini Sarhoş Tekerlek Plastik - 2 Adet | 56,58 TL | [Satış sayfası](https://www.direnc.net/mini-sarhos-tekerlek-plastik-2-adet) |
+| reg5 — FPV UBEC 5V 3A 2-6S DC-DC Voltaj Regülatörü | 214,50 TL | [Satış sayfası](https://www.robolinkmarket.com/fpv-ubec-5v-3a-2-6s-dc-dc-voltaj-regulatoru) |
+| reg33 — Ams1117 3.3v Voltaj Regülatör Modülü | 27,00 TL | [Satış sayfası](https://www.robolinkmarket.com/ams1117-33v-voltaj-regulator-modulu) |
+| perfboard — 6x13 Delikli Pertinaks | 39,00 TL | [Satış sayfası](https://www.robolinkmarket.com/6x13-delikli-pertinaks) |
+| usb — Type C - USB A Kablo - 1 Metre | 36,00 TL | [Satış sayfası](https://www.robolinkmarket.com/type-c-usb-a-kablo-1-metre) |
+| jumper — 40 Pin Ayrılabilen Dişi-Erkek Jumper Kablo-200mm | 51,00 TL | [Satış sayfası](https://www.robolinkmarket.com/40-pin-ayrilabilen-disi-erkek-jumper-kablo-200mm) |
+| multimeter — ANENG XL830L Dijital Kademeli Multimetre | 276,06 TL | [Satış sayfası](https://www.direnc.net/aneng-xl830l-dijital-kademeli-multimetre) |
 
-Diğer önceki tarihli fiyatlar [kaynaklı fiyat taslağında](https://github.com/ahmet-talha21/Bitirme_Projesi_IKA/blob/main/docs/2209-A/FIYATLI_BUTCE_TASLAGI.md) bulunur: çoklayıcı 76,50 TL; taşıyıcı tekerlek paketi 56,58 TL; batarya 1.019,96 TL; şarj cihazı 870,00 TL; iki regülatör 241,50 TL; pertinaks/USB/sinyal kablosu toplamı 126,00 TL. Bunlar da ürün eşleşmesi veya bağlayıcı teslim teklifi değildir.
+ToF adayı için yapılandırılmış stok kaydı “stokta yok” şeklindedir. Bu fiyat beş uygun taşıyıcının temin edildiğini göstermez. Gövde, tekerlek/motor aparatları, uyarlama ve montaj malzemeleri, kamera sabitlemesi ile alan malzemeleri için doğrudan teklif bulunmayan tutarlar tahmin olarak kalır. Hazır 4WD plaka sayfası 150 TL gösterse de boyut/bağlantı ve stok sorunları nedeniyle K08 için doğrulanmış eşdeğer sayılmamıştır.
 
-Şasi/imalat, yerel tekerlek ve motor aparatları, montaj parçaları, sinyal uyarlama, alan/engel malzemesi, sabitleme ve kargo tutarları **doğrudan teklif alınmadan oluşturulmuş tahminlerdir**. Kalemlerin ayrıntılı gerekçesi CSV ve kaynak kaydında verilmiştir. 400 TL'lik yerel tekerlek/aparat ödeneği, önceki ithal Pololu setinin fiyatı olarak sunulmamıştır.
+## Teslim koşulu kaynakları
 
-## Seçim ve başvuru öncesi kontrol
+- [1.500 TL ve üzeri ücretsiz teslim koşulu](https://www.robolinkmarket.com/teslimat-kosullari) — 23 Ekim 2026; alt eşik için kesin ücret doğrulanmadı.
+- [1.500 TL ve üzeri ücretsiz teslim koşulu](https://www.direnc.net/odeme-ve-teslimat) — 23 Ekim 2026; alt eşik için kesin ücret doğrulanmadı.
 
-Bu öneri, yerel tedarikle uygun ürünlerin seçilmesine dayanır. Özellikle iki enkoderli motorun 600 TL/adet ve beş uygun ToF taşıyıcısının 500 TL/adet çerçevesinde bulunabilirliği ve bağlantı uyumu kontrol edilecektir. Uygun modeller bu çerçeveye sığmazsa tutarlar başvuru tamamlanmadan gözden geçirilecektir. Bu bütçe tek başına tüm parçaların birlikte çalıştığının kanıtı değildir.
-
-Batarya ile şarj cihazının akım, koruma ve soket eşleşmesi; motor ile sürücünün akım gereksinimi; sensör ve enkoderlerin 3,3 V bağlantıları ürün seçimi sırasında tamamlanacaktır. Paket korumalıysa ikinci koruma modülü; kitlere dahil bağlantılar varsa aynı parçalar tekrar alınmayacaktır.
-
-Mevcut telefon ve lehim ekipmanı için yeniden alım yazılmamıştır. Ölçüm araçlarına veya sabitleme düzenine mevcut erişim yeterliyse ilgili alım kalemleri başvuru öncesinde çıkarılabilir. Kullanıcının kişisel katkı yapacağı veya araçlara ücretsiz erişiminin kesin olduğu varsayılmamıştır. İsteğe bağlı IMU ve yurt dışı ithalat giderleri bu yerel tedarik önerisine dahil değildir.
-
-Stokta bulunmak başvuru şartı olarak kullanılmamıştır. Esas olan gerekçeli maliyet ve uygulanabilir temin planıdır. Kullanıcı toplam tutarı seçmiştir. Danışman değerlendirmesi ve güncel ürün/fiyat kontrolünden sonra TYBS'nin ilgili bütçe alanları uygun gider türleriyle doldurulacaktır. Çağrının 2.2 maddesi gereği talep edilen bütçe tutarı başvurular sona erdikten sonra değiştirilemez.
-
-**Kaynak ve hesap kaydı:** [Planlama CSV'si](https://raw.githubusercontent.com/ahmet-talha21/Bitirme_Projesi_IKA/main/docs/2209-A/BASVURU_BUTCE_ONERISI.csv) · [Fiyat gözlemleri ve tahmin gerekçeleri](https://github.com/ahmet-talha21/Bitirme_Projesi_IKA/blob/main/docs/2209-A/tedarik/basvuru_butce_onerisi_2026-10-22.json)
-
-[2026 program sayfası](https://tubitak.gov.tr/tr/burslar/lisans-onlisans/destek-programlari/2209-universite-ogrencileri-arastirma-projeleri-destekleme-programi) · [2026 çağrı duyurusu](https://tubitak.gov.tr/sites/default/files/2026-10/2209-A_2026_Yili_Cagri_Duyurusu.pdf)
+Güncel sayfa gözlemleri ve dosya özetleri `tedarik/fiyat_kayitlari_2026-10-23.json` dosyasındadır. Teknik kapsam ve fiyatların teyidi için hazırlanmış `TEDARIK_FIYAT_TEYIDI_TALEBI.md` metni gönderilmemiştir. Çağrının 2.2 maddesi gereği toplam talep, başvurular kapandıktan sonra değiştirilemez.

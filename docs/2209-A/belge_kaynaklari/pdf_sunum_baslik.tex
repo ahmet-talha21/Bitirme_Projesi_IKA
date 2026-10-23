@@ -27,3 +27,11 @@
 \setlength{\parskip}{4pt}
 \setlength{\emergencystretch}{2em}
 \AtBeginDocument{\hypersetup{linkcolor=BrandNavy,urlcolor=BrandNavy}}
+
+% Uzun tablo içeren sayfalarda da aynı üstbilgi ve sayfa numarası kullanılır.
+\fancypagestyle{plain}{
+\fancyhf{}
+\fancyhead[C]{\color{BrandNavy}\fontsize{8}{9}\selectfont\bfseries 2209-A ÜNİVERSİTE ÖĞRENCİLERİ ARAŞTIRMA PROJELERİ DESTEKLEME PROGRAMI\\ARAŞTIRMA ÖNERİSİ}
+\fancyfoot[R]{\color{CaptionInk}\footnotesize\thepage}
+\renewcommand{\headrulewidth}{0.6pt}
+}

@@ -23,7 +23,7 @@ ROOT = Path(__file__).resolve().parents[1]
 STEM = "ARASTIRMA_ONERISI_BIRLESIK_TASLAK"
 
 
-def make_reference(path, sunum=False):
+def make_reference(path, sunum=False, butce=False):
     document = Document()
     section = document.sections[0]
     section.page_width, section.page_height = Cm(21), Cm(29.7)
@@ -52,6 +52,8 @@ def make_reference(path, sunum=False):
     caption.font.color.rgb = RGBColor.from_string("475569")
     header = section.header.paragraphs[0]
     header.text = "TÜBİTAK 2209-A  |  Araştırma önerisi" + ("" if sunum else " taslağı")
+    if butce:
+        header.text = "TÜBİTAK 2209-A | Gerekçeli bütçe"
     if sunum:
         header.text = "2209-A ÜNİVERSİTE ÖĞRENCİLERİ ARAŞTIRMA PROJELERİ DESTEKLEME PROGRAMI\nARAŞTIRMA ÖNERİSİ"
         header.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -125,7 +127,7 @@ def finish_layout(path, title=None, sunum=False):
                     paragraph_rule(paragraph, "bottom", "CBD7E0")
 
     for paragraph in document.paragraphs:
-        if sunum and paragraph.text in {"KAYNAKLAR", "3. PROJE YÖNETİMİ", "6. EKLER"}:
+        if sunum and paragraph.text in {"KAYNAKLAR", "6. EKLER"}:
             paragraph.paragraph_format.page_break_before = True
         if not sunum and paragraph.text in {
             "1. Bilimsel nitelik", "2. Yöntem", "3. Proje yönetimi",
@@ -228,6 +230,8 @@ def finish_layout(path, title=None, sunum=False):
                     shade.set(qn("w:fill"), "EAF1F7")
                     cell._tc.get_or_add_tcPr().append(shade)
                 for paragraph in cell.paragraphs:
+                    if label == "Dönem":
+                        paragraph.paragraph_format.keep_with_next = row_index < len(table.rows) - 1
                     paragraph.paragraph_format.space_after = Pt(3)
                     paragraph.paragraph_format.line_spacing = 1.05
                     for run in paragraph.runs:
@@ -242,7 +246,8 @@ def main(stem=STEM, title=None, sunum=False):
     output = ROOT / f"{stem}.docx"
     with tempfile.TemporaryDirectory(prefix="ika-belge-") as temporary:
         reference = Path(temporary) / "reference.docx"
-        make_reference(reference, sunum)
+        butce = stem == "BASVURU_BUTCE_ONERISI"
+        make_reference(reference, sunum, butce)
         subprocess.run([
             "pandoc", str(source), "--from=markdown-implicit_figures+autolink_bare_uris", "--standalone",
             "--metadata=lang:tr-TR", f"--resource-path={ROOT}",
@@ -258,7 +263,7 @@ def main(stem=STEM, title=None, sunum=False):
             "pandoc", str(source), "--from=markdown-implicit_figures+autolink_bare_uris", "--standalone",
             "--pdf-engine=xelatex", f"--resource-path={ROOT}",
             f"--lua-filter={ROOT / 'belge_kaynaklari/pdf_yerlesim.lua'}",
-            f"--include-in-header={ROOT / ('belge_kaynaklari/pdf_sunum_baslik.tex' if sunum else 'belge_kaynaklari/pdf_baslik.tex')}",
+            f"--include-in-header={ROOT / ('belge_kaynaklari/pdf_sunum_baslik.tex' if sunum else 'belge_kaynaklari/pdf_butce_baslik.tex' if butce else 'belge_kaynaklari/pdf_baslik.tex')}",
             "-V", "mainfont=" + ("Liberation Sans" if sunum else "DejaVu Serif"),
             "-V", "sansfont=" + ("Liberation Sans" if sunum else "DejaVu Sans"),
             "-V", "papersize=a4",

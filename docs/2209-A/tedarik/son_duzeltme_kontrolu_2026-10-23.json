@@ -1,0 +1,26 @@
+{
+  "tarih": "2026-10-23",
+  "pdf_sayfa": 14,
+  "ozet_kelime": 250,
+  "bolum_karakter": {
+    "1.1": 5173,
+    "1.2": 1733,
+    "Yöntem": 26794
+  },
+  "kaynak": 9,
+  "doi_dogrulanan": 8,
+  "butce_kalem": 21,
+  "butce_toplam_TL": "11500.00",
+  "is_paketi": 4,
+  "sure_ay": 6,
+  "katki_yuzde": 100,
+  "risk": 8,
+  "word_gorsel": 5,
+  "word_tablo": 11,
+  "butce_pdf_sayfa": 3,
+  "fiziksel_sonuc_eklenmedi": true,
+  "resmi_satici_teklifi_alindi": false,
+  "derslik_teyidi": "Kullanıcı bölümden teyit aldığını bildirdi; yazılı belge veya oda numarası varsayılmadı.",
+  "pdf_sha256": "ddbe342eb9973462dc6cc1693e2ac1df7a5c6edd7681b5c0ffec4698e5dbf382",
+  "docx_sha256": "beb47b1907f570069211e4ea1c79225ccd054ac2b644b357a7ca88311a88dd0a"
+}

@@ -1,3 +1,11 @@
+# Güncel rapor kontrol kaydı
+
+23 Ekim 2026 revizyonu: [Son düzeltmeler ve doğrulamalar](SON_DUZELTMELER_2026-10-23.md). Ana rapor dosyaları `ARASTIRMA_ONERISI.md/.pdf/.docx` dosyalarıdır.
+
+Güncel sürüm dokuz kaynak, sekiz DOI, dört iş paketi, sekiz risk ve toplam 11.500 TL tutarında 21 gider kalemi içerir. Önceki sayısal kontroller aşağıda tarihsel kayıt olarak korunur; güncel sayfa/özet sayımları son düzeltmeler kaydında belirtilir.
+
+## Önceki kontrol kaydı
+
 # Danışmana sunum kontrol kaydı
 
 Tarih: 22 Ekim 2026. Güncel rapor: [Araştırma önerisi](ARASTIRMA_ONERISI.md) · [PDF](ARASTIRMA_ONERISI.pdf) · [Word](ARASTIRMA_ONERISI.docx).

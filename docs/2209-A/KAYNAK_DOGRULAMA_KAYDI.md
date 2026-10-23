@@ -1,5 +1,17 @@
 # Kaynak ve DOI doğrulama kaydı
 
+## 23 Ekim 2026 — güncel dokuz kaynak
+
+Ana kaynakça dokuz eserden oluşur; DOI'si olan sekiz eser `tedarik/kaynak_dogrulama_2026-10-23.json` dosyasında yeniden doğrulanmıştır. Her DOI doğrudan açıldı: HTTP 302 yönlendirmesi ve Crossref HTTP 200 kimlik kaydı alındı; başlık, yıl, yazarlar, dergi/cilt/sayfa kayıtları karşılaştırıldı. İlk eşzamanlı taramada Corke sorgusu HTTP 429 verdi; daha düşük eşzamanlılıkla yinelenen sorgu HTTP 200 oldu. 429 başarılı kimlik doğrulaması olarak sayılmadı.
+
+- Borenstein, J., Feng, L. (1996), DOI `10.1109/70.544770`: sistematik odometri hatalarının incelenmesi ve kalibrasyon yaklaşımı için eklendi. Crossref ikinci yazarın tam adını ayrıştırmadan “Liqiang Feng” olarak döndürüyor; künyede soyadı Feng, baş harfi L. kullanıldı.
+- Zhang, Z. (2000), DOI `10.1109/34.888718`: düzlemsel örüntüyle kamera iç parametreleri/mercek bozulması kalibrasyonu için eklendi.
+- Bu iki eserin IEEE açılış sayfaları HTTP 202/boş yanıt verdi. Yazarların kurum/Microsoft PDF adresleri ağ aracısında 403 ile engellendi; denenen başka bir PDF yolu 404 verdi. DOI/kimlik doğrulaması yapılmıştır; bu incelemede bu iki makalenin tam metnine erişildiği veya tamamının okunduğu iddia edilmez.
+- STMicroelectronics (2024) veri sayfası resmî URL'den 23 Ekim'de yeniden indirildi. Ürün kodunun öne çıkmasını azaltmak için belgedeki gerçek alt başlık **Time-of-Flight ranging sensor** kullanıldı; kurumsal yazar, DS11555 belge numarası, revizyon, yıl ve resmî bağlantı korundu. Başlık uydurulmadı ve belge kimliği gizlenmedi. Veri sayfasında DOI yoktur.
+- Bilgi notu/bibliyografik açıklamalar, metin içi atıf ile izlenebilir tam kaynakça ister. Kaynakça yazar/başlık bilgilerini silme veya bir ürüne atıf yapmayı başlı başına yasaklama kuralı saptanmadı. Çağrı 4.1.8 ticari ürün/marka **öne çıkarmamayı** ister. Satın alma gereksinimi ile kaynak künyesi ayrı işlevlerdir.
+
+## Önceki 22 Ekim kaydı
+
 Tarih: 22 Ekim 2026. Bu kayıt bilimsel metnin dışında tutulur. DOI doğrulaması eserin kimliğine ve bağlantı çözümlemesine ilişkindir; tam metnin okunması ayrı bir erişim kaydıdır.
 
 | Kaynak | DOI yönlendirmesi | Crossref kaydı |

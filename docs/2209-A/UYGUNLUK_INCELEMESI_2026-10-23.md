@@ -1,5 +1,7 @@
 # TÜBİTAK 2209-A — ayrıntılı uygunluk incelemesi
 
+> Bu kayıt, düzeltmelerden önceki `fe9357a` sürümünü inceler. Aynı günün sonraki değişiklikleri [son düzeltmeler kaydındadır](SON_DUZELTMELER_2026-10-23.md). Güncel PDF/Word bu eski inceleme sürümüyle aynı değildir.
+
 **Kontrol tarihi:** 23 Ekim 2026 (Türkiye). **İncelenen dosya:** kullanıcının yüklediği `Ahmet_Talha_Arslan_2209A.pdf`; depodaki `ARASTIRMA_ONERISI.pdf` ile SHA-256 düzeyinde aynıdır. **İncelenen rapor sürümü:** `fe9357a228b2ecd43da0c7dd72fa7d449c9c1132`, 14 sayfa. Bu kayıt bir değerlendirmedir; aşağıdaki öneriler rapora uygulanmış gibi sunulmamaktadır. Ana PDF/Word değiştirilmemiştir.
 
 **Sonuç:** Ana bölüm yapısı, metin uzunlukları, Türkçe dil, atıf düzeni, bütçe ve proje süresi temel şartlarla örtüşmektedir. Bununla birlikte takvimdeki paralel iş paketlerinin süre hesabı resmî bilgi notunun ifadesiyle netleştirilmeli; kaynakçadaki bir kitap künyesi tamamlanmalıdır. Yöntemde temas sonrası durdurma açıklığı, derslik/kamera erişimi ve başvuru sistemindeki zorunlu işlemler de tamamlanmadan “başvuruya bütünüyle hazır” sonucu verilmez. Bilimsel kabul veya belirli bir değerlendirme puanı öngörülmez.

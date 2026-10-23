@@ -87,3 +87,7 @@ Kullanıcının son görsel düzen talebi ve TÜBİTAK üslubu uyarısı doğrul
 ## On bir maddelik güncel revizyon
 
 Kullanıcının son düzeltme listesi uygulandı; ayrıntılı eşleştirme REVIZYON_KONTROLU_2026-10-22.md dosyasındadır. Önceki başlık seçimi yeni deneysel değerlendirme başlığıyla güncellendi. Üniversitede bir derslik kullanım planı kullanıcıdan alındı; fiziksel konum veya izin onaylanmış sayılmadı. Mantıksal ön çalışma gerçek kod çalıştırmasıyla üretildi. Kaynakça/DOI doğrulaması ve özel ÜYZ beyanı ayrı kayıtlandı. Yeni raporda fiziksel ölçüm sonucu uydurulmadı.
+
+## 23 Ekim 2026 — ikinci düzeltme
+
+Kullanıcının on maddelik talebi `SON_DUZELTMELER_2026-10-23.md` dosyasında izlendi. Dokuz kaynak, sekiz doğrulanmış DOI, dört iş paketi, sekiz risk ve 21 gider kalemi kullanıldı. Derslik teyidi kullanıcı beyanına dayanır; tavan/montaj ölçümü yapılmış sayılmadı. Satış sayfası gözlemleri satıcı teklifi değildir; gönderilmemiş fiyat teyidi metni ayrıca hazırlandı. Fiziksel deney sonucu eklenmedi.
