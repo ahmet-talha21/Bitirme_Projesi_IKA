@@ -58,7 +58,8 @@ function Table(tbl)
     return (heading and "\\rowcolor{TableHead}" or "") .. table.concat(cells, " & ") .. " \\\\ \\hline\n"
   end
   local reserve = label == "Dönem" and "\\Needspace{7cm}" or ""
-  local lines = {reserve .. "\\begingroup\\fontsize{9}{10.5}\\selectfont\\setlength{\\tabcolsep}{4pt}\\renewcommand{\\arraystretch}{1.12}",
+  local table_font = label == "Senaryo" and "\\fontsize{10}{11.5}" or "\\fontsize{9}{10.5}"
+  local lines = {reserve .. "\\begingroup" .. table_font .. "\\selectfont\\setlength{\\tabcolsep}{4pt}\\renewcommand{\\arraystretch}{1.12}",
     "\\arrayrulecolor{TableRule}\\begin{longtable}{|" .. table.concat(specs,"|") .. "|}\\hline"}
   local head = ""
   for _, row in ipairs(tbl.head.rows) do head = head .. row_text(row,true) end

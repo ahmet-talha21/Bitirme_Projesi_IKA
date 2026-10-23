@@ -21,8 +21,8 @@
   "fiziksel_sonuc_eklenmedi": true,
   "resmi_satici_teklifi_alindi": false,
   "derslik_teyidi": "Kullanıcı bölümden teyit aldığını bildirdi; yazılı belge veya oda numarası varsayılmadı.",
-  "pdf_sha256": "d7395541b68e9127b601ea5746083a242adccbab3ee15bca10f3237c00b4b1bb",
-  "docx_sha256": "a9363a209ce243e1481f7d882493d445cfd7e8f6b1d59c54bcd78fec477792f5",
+  "pdf_sha256": "e66a8a4ce9d1a80007ce31c326a6c829fe8e05ab742382df080634d3b36b9876",
+  "docx_sha256": "18f9e067b9e7e6790b2135898afbeed02eaebdbac4c648f76efc7f0e183f1826",
   "butce_aciklama_cumle": 2,
   "ureticinin_adi_gecis_sayisi": 2,
   "veri_sayfasi_url_gorunur": true,
@@ -31,5 +31,11 @@
   "fiyat_kaydi_olmayan_kalem": 10,
   "calisma_takvimi_baslik_sayfa": 11,
   "calisma_takvimi_tablo_sayfa": 11,
-  "sayfa_duzenlemesinde_icerik_degismedi": true
+  "sayfa_duzenlemesinde_icerik_degismedi": true,
+  "sayfa10_icerik_alt_siniri_once_pt": 557.4,
+  "sayfa10_icerik_alt_siniri_sonra_pt": 681.0,
+  "sayfa10_kullanilan_alan_artisi_cm": 4.4,
+  "sentetik_veri_kayitlari_degismedi": true,
+  "sayfa10_11_gorsel_kontrol": true,
+  "metin_sayfa_sinirlarini_asmiyor": true
 }

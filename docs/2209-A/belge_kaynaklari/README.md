@@ -25,3 +25,5 @@ Bu adım Matplotlib gerektirir ve PNG/PDF/SVG üretir. PDF raporu vektör çizim
 Durum makinesinin sentetik ön çalışması ve Şekil 4 için `python docs/2209-A/on_calisma/durum_simulasyonu.py` çalıştırılır. Şekil 3–4 PDF çıktılarında DejaVu Sans Type 42 gömülür; görüntü ve metin katmanı Türkçe karakterler bakımından birlikte kontrol edilir. Kapak başlığı kaynak Markdown'dan alınır.
 
 Son yerleşimde proje yönetimi yeni sayfada başlar; çalışma takvimi başlığı, açıklaması ve tablosu birlikte tutulur. PDF’de tablo için yeterli alan ayrılır; Word’de açıklama ve tablo satırları sonraki öğeyle birlikte tutulur. Bütçe dosyası `--stem BASVURU_BUTCE_ONERISI --title "TÜBİTAK 2209-A — Gerekçeli bütçe"` ile ayrıca üretilir; bu dosyada hazırlık/taslak üstbilgisi kullanılmaz.
+
+Sayfa 10’daki ön çalışma senaryo tablosunda 10 punto yazı kullanılır; Şekil 4 daha okunaklı bir dikey çizim alanıyla üretilir. Bu yerleşim değişikliği sentetik zaman serisi ve durum geçişi kayıtlarını değiştirmez.

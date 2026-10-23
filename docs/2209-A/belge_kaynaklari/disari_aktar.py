@@ -238,7 +238,7 @@ def finish_layout(path, title=None, sunum=False):
                     paragraph.paragraph_format.space_after = Pt(3)
                     paragraph.paragraph_format.line_spacing = 1.05
                     for run in paragraph.runs:
-                        run.font.size = Pt(10 if summary_table else 9.5)
+                        run.font.size = Pt(10 if summary_table or label == "Senaryo" else 9.5)
                         if row_index == 0 and not summary_table:
                             run.font.bold = True
     document.save(path)

@@ -42,3 +42,7 @@ Resmî kurallar bu incelemede kaynak künyesini bozma, başvuru öncesinde tamam
 ## Takvim başlığı ve tablo sayfa geçişi
 
 Son yerleşim düzeltmesinde “3. Proje Yönetimi”, “3.1. Çalışma takvimi”, açıklama ve dört satırlık takvim tablosu PDF'nin 11. sayfasında birleştirildi. Word'de de başlıktan önce sayfa sonu ve açıklama–tablo birlikte tutma ayarı uygulandı. Rapor 14 sayfada kaldı. Kaynak Markdown, Word paragraf metinleri ve tüm tablo hücreleri önceki sürümle birebir karşılaştırıldı; bilimsel veya bütçe içeriği değişmedi.
+
+## Sayfa 10’daki boşluğun dengelenmesi
+
+Ön çalışma senaryoları tablosunun yazıları ve Şekil 4’ün çizim alanı büyütüldü. Sayfa 10’da içerik alt sınırı 557,4 punto konumundan 681,0 punto konumuna ilerledi; yaklaşık 4,4 cm daha fazla alan kullanıldı. Takvim başlığı, açıklaması ve tablosu 11. sayfada birlikte kaldı; rapor yine 14 sayfadır. Sayfa 10–11 görsel olarak ve tüm sayfalar metin taşması bakımından kontrol edildi. Kaynak metin, Word paragraf ve tablo içerikleri ile sentetik CSV/JSON kayıtları birebir korundu; yalnız görünüm düzenlendi.

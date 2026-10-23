@@ -164,16 +164,16 @@ def draw(rows):
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt
     matplotlib.rcParams.update({'font.family': 'DejaVu Sans', 'pdf.fonttype': 42,
-                                'ps.fonttype': 42, 'font.size': 10})
+                                'ps.fonttype': 42, 'font.size': 11.5})
     labels = ['Rota izleme', 'Kenar izleme', 'Dönüş doğrulama', 'Görev tamamlandı']
     codes = {'ROTA': 0, 'KENAR': 1, 'DONUS_DOGRULAMA': 2, 'TAMAMLANDI': 3}
-    fig, ax = plt.subplots(figsize=(8.2, 3.15), layout='constrained')
+    fig, ax = plt.subplots(figsize=(8.2, 5.2), layout='constrained')
     ax.step([x['zaman_ms']/1000 for x in rows], [codes[x['durum']] for x in rows],
             where='post', color='#315c83', lw=2)
     ax.set(yticks=range(4), yticklabels=labels, xlabel='Benzetim zamanı (s)',
            xlim=(0, 10), ylim=(-.3, 3.3))
     ax.grid(color='#e4e8ec', lw=.7)
-    ax.set_title('S2: Sentetik girdiler altında durum geçişleri', color='#203e5c', fontsize=11)
+    ax.set_title('S2: Sentetik girdiler altında durum geçişleri', color='#203e5c', fontsize=12)
     for sp in ax.spines.values(): sp.set_color('#879CAE')
     out = ROOT.parent/'gorseller/akademik_duzen'
     for ext in ['png', 'pdf', 'svg']:
